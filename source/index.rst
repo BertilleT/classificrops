@@ -6,10 +6,6 @@
 Agrivolution's documentation
 ============================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 Agrivolution is an interface able to request easily Graphic Parcel Registers (RPG) databases published by the French Payment and Services Agency since 2010. The answer of the request should be viewable on a map. 
 
 
@@ -19,6 +15,16 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Index
+-----
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   Nomenclature_Wallance
+   EuropeanNomenclature
 
 Features
 --------
