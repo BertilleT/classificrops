@@ -1,5 +1,4 @@
-#ignore .DS_Store, Agrivolution_env, docs/build, docs/source/_templates
-.DS_Store
+#ignore Agrivolution_env, docs/build, docs/source/_templates
 Agrivolution_env
 docs/build
 docs/source/_templates/
