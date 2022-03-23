@@ -1,9 +1,8 @@
 import pandas as pd
 import requests
-URL=input("URL to parse?")
-src=requests.get(URL).content
-nametosave=input("what name to save tables by?")
+
+src=requests.get('https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend').content
 df_list = pd.read_html(src)
-for i, df in enumerate(df_list):
-    df.to_csv(f'{nametosave} {i}.csv'.format(i))
-#Pretty neat and tiny.
+predata = df_list[6].drop(columns=df_list[6].columns[0])
+data = predata.drop(labels=1, axis=0)
+data.to_csv('grpCulture_2020_Wallonie.csv')

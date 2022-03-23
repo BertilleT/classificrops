@@ -20,9 +20,6 @@ Index
 -----
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
    docuPages/Nomenclature_Wallance
    docuPages/EuropeanNomenclature
 
