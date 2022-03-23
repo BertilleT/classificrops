@@ -23,8 +23,8 @@ Index
    :maxdepth: 2
    :caption: Contents:
 
-   Nomenclature_Wallance
-   EuropeanNomenclature
+   docuPages/Nomenclature_Wallance
+   docuPages/EuropeanNomenclature
 
 Features
 --------
