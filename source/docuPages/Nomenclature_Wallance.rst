@@ -4,12 +4,12 @@ Nomenclature_Wallance
 This section is dedicated to the comparison of nomenclatures of agricultural plots between Wallonia and France. How are they categorized ? 
 
 1) In Wallonia
-    A) source data : hyperlink https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend
+    A) source data : https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend
     B) csv file
     C) image
 
 2) In france
-    A) source data : hyperlink https://geoservices.ign.fr/sites/default/files/2021-11/REF_CULTURES_GROUPES_CULTURES_2020.csv
+    A) source data : https://geoservices.ign.fr/sites/default/files/2021-11/REF_CULTURES_GROUPES_CULTURES_2020.csv
     B) csv file
     C) image
 
