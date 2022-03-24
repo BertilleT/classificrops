@@ -9,17 +9,11 @@ Agrivolution's documentation
 Agrivolution is an interface able to request easily Graphic Parcel Registers (RPG) databases published by the French Payment and Services Agency since 2010. The answer of the request should be viewable on a map. 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 Index
 -----
 
 .. toctree::
+   docuPages/languages.rst
    docuPages/Nomenclature_Wallance
    docuPages/EuropeanNomenclature
 

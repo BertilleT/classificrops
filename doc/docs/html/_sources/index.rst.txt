@@ -20,6 +20,7 @@ Index
 -----
 
 .. toctree::
+   docuPages/languages.rst
    docuPages/Nomenclature_Wallance
    docuPages/EuropeanNomenclature
 

@@ -2,6 +2,11 @@ EuropeanNomenclature
 ====================
 
 To be done
+- investigae classification methodology. --> documentation
+- create a clasification
+- think how to code to associate each agricultural parcels to each class --> algorithm writing
+
+
 
 En liens pratiques sur ce point, qq idées de nomenclature pivot par taille/complexité un peu croissante :
 
