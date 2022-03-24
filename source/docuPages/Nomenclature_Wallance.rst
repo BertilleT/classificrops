@@ -5,7 +5,7 @@ This section is dedicated to the comparison of nomenclatures of agricultural plo
 
 1) In Wallonia
     A) source data : https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend
-    B) csv file focusing on cultural groups :download:`/../data/csv/grpCulture_2020_Wallonie.csv`
+    B) csv file focusing on cultural groups :download:`/../data/csv/grpCulture_2020_Wallonia.csv`
     C) image
 
 2) In france
@@ -15,8 +15,8 @@ This section is dedicated to the comparison of nomenclatures of agricultural plo
 
 3) both in one table
     comparison table 
-    Wallonie | France
+    Wallonia | France
 
 Recap of this section : 
-Wallonie and France have differents way to classify their agricultural plots, which makes impossible to analys the evolution of agricultural parcesl of the 2 countries combined. 
+Wallonia and France have different way to classify their agricultural plots, which makes impossible to analyse the evolution of agricultural parcels of the 2 countries combined. 
 We understand why, to study agricultural plots at an european level, we have to draw a shared classification for all countries from Europe... which brings us to the folowwing question : how to define a shared classification ? 
