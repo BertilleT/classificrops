@@ -5,12 +5,12 @@ This section is dedicated to the comparison of nomenclatures of agricultural plo
 
 1) In Wallonia
     A) source data : https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend
-    B) csv file focusing on cultural groups :download:`/../../data/csv/grpCulture_2020_Wallonie.csv`
+    B) csv file focusing on cultural groups :download:`/../data/csv/grpCulture_2020_Wallonie.csv`
     C) image
 
 2) In france
     A) source data : https://geoservices.ign.fr/documentation/donnees/vecteur/rpg
-    B) csv file focusing on cultural groups :download:`/../../data/csv/grpCulture_2020_France.csv`
+    B) csv file focusing on cultural groups :download:`/../data/csv/grpCulture_2020_France.csv`
     C) image
 
 3) both in one table
