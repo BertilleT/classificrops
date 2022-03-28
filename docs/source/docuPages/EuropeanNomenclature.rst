@@ -1,7 +1,13 @@
 EuropeanNomenclature
 ====================
 
-To be done
-- investigate classification methodology. --> documentation
-- create a classification
-- think how to code to associate each agricultural parcels to each class --> algorithm writing
+The European classification chosen is the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO).  
+    source data : https://www.fao.org/3/a0135e/A0135E10.htm#app3 
+    csv file : 
+
+Tree structure of data/csv 
+---------------------------
+Those tables have been designed with the idea to translate them into SQL databases
+
+Classifier generic algorithm
+----------------------------

@@ -1,0 +1,150 @@
+"TYPE (1=TEMPORARY, 2 = PERMANENT) ",ID_GROUP,GROUP,ID_CROPS,CROPS,Sub-crops,
+1,1,Cereals,11,Wheat,,
+1,1,Cereals,12,Maize,,
+1,1,Cereals,13,Rice,,
+1,1,Cereals,14,Sorghum,,
+1,1,Cereals,15,Barley,,
+1,1,Cereals,16,Rye,,
+1,1,Cereals,17,Oats,,
+1,1,Cereals,18,Millets,,
+1,1,Cereals,19,"Other cereals, n.e.c",191,Mixed cereals
+1,1,Cereals,19,"Other cereals, n.e.c",192,Other
+1,2,Vegetables and melons,21,Leafy or stem vegetables,211,Artichokes
+1,2,Vegetables and melons,21,Leafy or stem vegetables,212,Asparagus
+1,2,Vegetables and melons,21,Leafy or stem vegetables,213,Cabbages
+1,2,Vegetables and melons,21,Leafy or stem vegetables,214,Cauliflowers & broccoli
+1,2,Vegetables and melons,21,Leafy or stem vegetables,215,Lettuce
+1,2,Vegetables and melons,21,Leafy or stem vegetables,216,Spinach
+1,2,Vegetables and melons,21,Leafy or stem vegetables,217,Chicory
+1,2,Vegetables and melons,21,Leafy or stem vegetables,219,"Other leafy or stem vegetables, n.e.c."
+1,2,Vegetables and melons,21,Fruit-bearing vegetables,221,Cucumbers
+1,2,Vegetables and melons,22,Fruit-bearing vegetables,222,Eggplants (aubergines)
+1,2,Vegetables and melons,22,Fruit-bearing vegetables,223,Tomatoes
+1,2,Vegetables and melons,22,Fruit-bearing vegetables,224,Watermelons
+1,2,Vegetables and melons,22,Fruit-bearing vegetables,225,Cantaloupes and other melons
+1,2,Vegetables and melons,22,Fruit-bearing vegetables,226,"Pumpkin, squash and gourds"
+1,2,Vegetables and melons,22,Fruit-bearing vegetables,229,"Other fruit-bearing vegetables, n.e.c."
+1,2,Vegetables and melons,23,"Root, bulb, or tuberous vegetables",231,Carrots
+1,2,Vegetables and melons,23,"Root, bulb, or tuberous vegetables",232,Turnips
+1,2,Vegetables and melons,23,"Root, bulb, or tuberous vegetables",233,Garlic
+1,2,Vegetables and melons,23,"Root, bulb, or tuberous vegetables",234,Onions (incl. shallots)
+,2,Vegetables and melons,23,"Root, bulb, or tuberous vegetables",235,Leeks & other alliaceous vegetables
+1,2,Vegetables and melons,23,"Root, bulb, or tuberous vegetables",239,"Other root, bulb, or tuberous vegetables, n.e.c."
+1,2,Vegetables and melons,24,Mushrooms and truffles,,Mushrooms and truffles
+1,2,Vegetables and melons,29,"Vegetables, n.e.c",,"Vegetables, n.e.c"
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,311,Avocados
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,312,Bananas & plantains
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,313,Dates
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,314,Figs
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,315,Mangoes
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,316,Papayas
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,317,Pineapples
+2,3,Fruit and nuts,31,Tropical and subtropical fruits,319,"Other tropical and subtropical fruits, n.e.c."
+2,3,Fruit and nuts,32,Citrus fruits,321,Grapefruit & pomelo
+2,3,Fruit and nuts,32,Citrus fruits,322,Lemons and Limes
+2,3,Fruit and nuts,32,Citrus fruits,323,Oranges
+2,3,Fruit and nuts,32,Citrus fruits,324,"Tangerines, mandarins, clementines"
+2,3,Fruit and nuts,32,Citrus fruits,329,"Other citrus fruit, n.e.c."
+2,3,Fruit and nuts,33,Berries,341,Currants
+2,3,Fruit and nuts,33,Berries,342,Gooseberries
+2,3,Fruit and nuts,33,Berries,343,Kiwi fruit
+2,3,Fruit and nuts,33,Berries,344,Raspberries
+2,3,Fruit and nuts,33,Berries,345,Strawberries
+,3,Fruit and nuts,33,Berries,346,Blueberries
+2,3,Fruit and nuts,33,Berries,349,Other berries
+2,3,Fruit and nuts,,Pome fruits and stone fruits,351,Apples
+2,3,Fruit and nuts,,Pome fruits and stone fruits,352,Apricots
+2,3,Fruit and nuts,,Pome fruits and stone fruits,353,Cherries & sour cherries
+2,3,Fruit and nuts,,Pome fruits and stone fruits,354,Peaches & nectarines
+2,3,Fruit and nuts,,Pome fruits and stone fruits,355,Pears & quinces
+2,3,Fruit and nuts,,Pome fruits and stone fruits,356,Plums and sloes
+2,3,Fruit and nuts,,Pome fruits and stone fruits,359,"Other pome fruits and stone fruits, n.e.c."
+2,3,Fruit and nuts,,Nuts,361,Almonds
+2,3,Fruit and nuts,,Nuts,362,Cashew nuts
+2,3,Fruit and nuts,,Nuts,363,Chestnuts
+2,3,Fruit and nuts,,Nuts,364,Hazelnuts
+2,3,Fruit and nuts,,Nuts,365,Pistachios
+2,3,Fruit and nuts,,Nuts,366,Walnuts
+2,3,Fruit and nuts,,Nuts,369,Other nuts n.e.c.
+2,3,Fruit and nuts,39,"Other fruits, n.e.c",,"Other fruits, n.e.c"
+,4,Oilseed crops,,Oilseed crops,,Oilseed crops
+1,4,Soya beans,41,Soya beans,,Soya beans
+1,4,Groundnuts,42,Groundnuts,,Groundnuts
+1,4,Other temporary oilseed crops,43,Other temporary oilseed crops,,Other temporary oilseed crops
+1,4,,,Castor bean,431,Castor bean
+1,4,,,Linseed,432,Linseed
+1,4,,,Mustard,433,Mustard
+1,4,,,Niger seed,434,Niger seed
+1,4,,,Rapeseed,435,Rapeseed
+1,4,,,Safflower,436,Safflower
+1,4,,,Sesame,437,Sesame
+1,4,,,Sunflower,438,Sunflower
+1,4,,,"Other temporary oilseed crops, n.e.c.",439,"Other temporary oilseed crops, n.e.c."
+2,4,Permanent oilseed crops,44,Permanent oilseed crops,,Permanent oilseed crops
+2,4,,,Coconuts,441,Coconuts
+2,4,,,Olives,442,Olives
+2,4,,,Oil palms,443,Oil palms
+2,4,,,"Other oleaginous fruits, n.e.c.",449,"Other oleaginous fruits, n.e.c."
+1,5,Root/tuber crops with high starch or inulin content,,Root/tuber crops with high starch or inulin content,,Root/tuber crops with high starch or inulin content
+1,5,Potatoes,51,Potatoes,,Potatoes
+1,5,Sweet potatoes,52,Sweet potatoes,,Sweet potatoes
+1,5,Cassava,53,Cassava,,Cassava
+1,5,Yams,54,Yams,,Yams
+1,5,"Other roots & tubers, n.e.c",59,"Other roots & tubers, n.e.c",,"Other roots & tubers, n.e.c"
+,6,Beverage and spice crops,,Beverage and spice crops,,Beverage and spice crops
+2,6,Beverage crops,61,Beverage crops,,Beverage crops
+2,6,,,Coffee,611,Coffee
+2,6,,,Tea,612,Tea
+2,6,,,Maté,613,Maté
+2,6,,,Cocoa,614,Cocoa
+2,6,,,"Other beverage crops, n.e.c.",619,"Other beverage crops, n.e.c."
+,6,Spice crops,62,Spice crops,,Spice crops
+1,6,,,Temporary spice crops,621,Temporary spice crops
+1,6,,,,,Chilies & peppers (capsicum spp.)
+1,6,,,,,"Anise, badian, and fennel"
+1,6,,,,,"Other temporary spice crops, n.e.c"
+2,6,,,Permanent spice crops,622,Permanent spice crops
+2,6,,,,,Pepper (piper spp.)
+2,6,,,,,"Nutmeg, mace, cardamoms"
+2,6,,,,,Cinnamon (canella)
+2,6,,,,,Cloves
+2,6,,,,,Ginger
+2,6,,,,,Vanilla
+2,6,,,,,"Other permanent spice crops, n.e.c"
+1,7,Leguminous crops,,Leguminous crops,,Leguminous crops
+1,7,Beans,71,Beans,,Beans
+1,7,Broad beans,72,Broad beans,,Broad beans
+1,7,Chick peas,73,Chick peas,,Chick peas
+1,7,Cow peas,74,Cow peas,,Cow peas
+1,7,Lentils,75,Lentils,,Lentils
+1,7,Lupins,76,Lupins,,Lupins
+1,7,Peas,77,Peas,,Peas
+1,7,Pigeon peas,78,Pigeon peas,,Pigeon peas
+1,7,"Leguminous crops, n.e.c",79,"Leguminous crops, n.e.c",,"Leguminous crops, n.e.c"
+1,8,Sugar crops,,Sugar crops,,Sugar crops
+1,8,Sugar beet,81,Sugar beet,,Sugar beet
+1,8,Sugar cane,82,Sugar cane,,Sugar cane
+1,8,Sweet sorghum,83,Sweet sorghum,,Sweet sorghum
+1,8,Other sugar crops n.e.c,89,Other sugar crops n.e.c,,Other sugar crops n.e.c
+,9,Other crops,,Other crops,,Other crops
+,9,Grasses and other fodder crops,91,Grasses and other fodder crops,,Grasses and other fodder crops
+1,9,,,Temporary grass crops,911,Temporary grass crops
+2,9,,,Permanent grass crops,912,Permanent grass crops
+,9,Fibre crops,92,Fibre crops,,Fibre crops
+1,9,,,Temporary fibre crops,921,Temporary fibre crops
+1,9,,,,,Cotton
+1,9,,,,,"Jute, kenaf, and other similar crops"
+1,9,,,,,"Flax, hemp, and other similar products"
+1,9,,,,,Other temporary fibre crops
+2,9,,,Permanent fibre crops,922,Permanent fibre crops
+,9,"Medicinal, aromatic, pesticidal, or similar crops",93,"Medicinal, aromatic, pesticidal, or similar crops",,"Medicinal, aromatic, pesticidal, or similar crops"
+1,9,,,"Temporary medicinal, etc. crops",931,"Temporary medicinal, etc. crops"
+2,9,,,"Permanent medicinal, etc. crops",932,"Permanent medicinal, etc. crops"
+2,9,Rubber,94,Rubber,,Rubber
+,9,Flower crops,95,Flower crops,,Flower crops
+1,9,,,Temporary flower crops,951,Temporary flower crops
+2,9,,,Permanent flower crops,952,Permanent flower crops
+1,9,Tobacco,96,Tobacco,,Tobacco
+,9,Other crops,99,Other crops,,Other crops
+1,9,,,Other crops - temporary,991,Other crops - temporary
+2,9,,,Other crops - permanent,992,Other crops - permanent

@@ -1,0 +1,144 @@
+,1
+0,201 : Maïs ensilage
+2,311 : Froment d'hiver
+3,312 : Froment de printemps
+4,321 : Orge d'hiver
+5,322 : Orge de printemps
+6,323 : Orge de brasserie
+7,331 : Seigle d'hiver
+8,332 : Seigle de printemps
+9,34 : Avoine
+10,341 : Avoine d'hiver
+11,342 : Avoine de printemps
+12,351 : Triticale d'hiver
+13,352 : Triticale de printemps
+14,36 : Epeautre
+15,37 : Sarrasin
+16,381 : Sorgho
+17,382 : Quinoa
+18,39 : Céréales ET légumineuses
+19,4111 : Colza d'hiver
+20,4121 : Colza de printemps
+21,42 : Tournesol
+22,43 : Soja
+23,45 : Lin oléagineux
+24,46 : Autres oléagineux
+25,51 : Pois protéagineux
+26,511 : Pois protéagineux d'hiver
+27,512 : Pois protéagineux de printemps
+28,521 : Fèves et Féveroles d'hiver
+29,522 : Fèves et Féveroles de printemps
+30,53 : Lupin doux
+31,541 : Mélange protéagineux d'hiver + céréales ou autres espèces
+32,542 : Mélange protéagineux de printemps + céréales ou autres espèces
+33,543 : Mélange légumineuses fourragères + céréales ou autres espèces
+34,55 : Autres protéagineux
+35,56 : Luzerne lupuline
+36,58 : Sainfoin (Onobrychis sativa)
+37,6 : Prairie et fourrage
+38,60 : Prairies
+39,71 : Betterave fourragère
+40,72 : Trèfles
+41,73 : Luzerne
+42,742 : Carottes fourragères
+43,743 : Autres fourrages
+44,7431 : Ortie
+45,7433 : Carotte
+46,746 : Navets fourragers
+47,80 : Jachère
+48,812 : jachère non herbacée
+49,831 : Pois (autres que récoltés secs) (transformation industrielle)
+50,8410 : Haricots verts (transformation industrielle)
+51,8456 : Courges butternut (transformation industrielle)
+52,85 : Autres couverts semés
+53,851 : Couvert favorisant la faune
+54,8512 : Chou de Bruxelles (transformation industrielle)
+55,8514 : Oignons (non-hâtifs) (transformation industrielle)
+56,8516 : Cultures fruitières annuelles - Fraise sous serre
+57,8517 : Rhubarbe- industrie
+58,8519 : Epinards (transformation industrielle)
+59,8523 : Chou-fleur (transformation industrielle)
+60,8524 : Chou frisé (transformation industrielle)
+61,8525 : Brocoli (transformation industrielle)
+62,8535 : Carotte (non hâtive)(consommation) (transformation industrielle)
+63,8538 : Poireau (transformation industrielle)
+64,8541 : Courgettes (transformation industrielle)
+65,8543 : Céleri-rave (transformation industrielle)
+66,8548 : Céleri vert (transformation industrielle)
+67,8551 : Céleri-branche (transformation industrielle)
+68,8561 : Endives de Bruxelles (pour la racine) (transformation industrielle)
+69,8563 : Oignons (hâtifs) (transformation industrielle)
+70,8564 : Carotte (hâtive)(consommation) (transformation industrielle)
+71,859 : Persil (transformation industrielle)
+72,860 : Cerfeuil (transformation industrielle)
+73,872 : Chanvre non textile (culture soumise à autorisation préalable au semis)
+74,881 : Angélique
+75,883 : Cultures forestières à rotation courte (taillis à très courte rotation)
+76,884 : Miscanthus
+77,885 : Cultures permanentes sous serre
+78,895 : Boisement de terre agricole (art 31 du R.(CE) 1257/1999)  dérogation
+79,901 : Pomme de terre (non hâtives)
+80,902 : Pomme de terre (plants)
+81,903 : Pomme de terre féculière
+82,904 : Pomme de terre hâtives
+83,"905 : Pomme de terre (primeur, arrachage avant le 20 juin)"
+84,91 : Betterave sucrière
+85,9201 : Noisetier
+86,9202 : Noyer
+87,921 : Lin textile
+88,922 : Chanvre textile (culture soumise à autorisation préalable au semis)
+89,"931 : Pois récoltés à l'état frais, pois de conserverie"
+90,9410 : Haricots de conserverie
+91,9456 : Courges butternut (consommation au frais)
+92,951 : Autres légumes de plein air
+93,9511 : FR-Asperges - vers
+94,9512 : Chou de Bruxelles (consommation au frais)
+95,9513 : Echalotes (consommation au frais)
+96,9514 : Oignons (non-hâtifs) (consommation au frais)
+97,9515 : Endives (chicons)
+98,9516 : Cultures fruitières annuelles - Fraises
+99,9517 : FR-Rabarber - vers
+100,9518 : Laitues pommées (consommation au frais)
+101,9519 : Epinards (consommation au frais)
+102,952 : Cultures maraîchères sous verre
+103,9520 : Pépinières de plants fruitiers ou de plantes ornementales
+104,9521 : Autres cultures de légumes sous serre
+105,9523 : Chou-fleur (consommation au choix)
+106,9525 : Brocoli (consommation au frais)
+107,9527 : Choux rouge (consommation au frais)
+108,9529 : Choux-rave (consommation au frais)
+109,953 : Plantes aromatiques
+110,9534 : Fenouil (de Florence)(consommation au frais)
+111,9535 : Carotte (non hâtive)(consommation) (consommation au frais)
+112,9538 : Poireau (consommation au frais)
+113,954 : Autres plantes ornementales de plein air
+114,9540 : Chou blanc (consommation au frais)
+115,9541 : Courgettes (consommation au frais)
+116,9543 : Céleri-rave (consommation au frais)
+117,9548 : Choux - Légumes
+118,9551 : Céleri-branche (consommation au frais)
+119,9552 : Tomates (consommation au frais)
+120,9560 : Pépinières de plants forestiers
+121,9563 : Oignons (hâtifs) (consommation au frais)
+122,9564 : Carotte (hâtive)(consommation) (consommation au frais)
+123,957 : Plantes médicinales
+124,958 : Autres plantes ornementales sous serre
+125,9588 : Fleurs et plantes ornementales sous serre
+126,959 : Persil (consommation au frais)
+127,96 : Cultures horticoles non-comestibles
+128,960 : Cerfeuil (consommation au frais)
+129,962 : Sapins de Noël
+130,966 : Légume légumineuse
+131,9716 : Vignes
+132,9717 : Cultures fruitières annuelles - Framboises
+133,9724 : Fraisiers
+134,9741 : Cultures fruitière pluriannuelles-basses tiges
+135,9742 : Cultures fruitière pluriannuelles-hautes tiges
+136,9811 : Chicorée à inuline
+137,9812 : Chicorée à café
+138,9821 : Tabac
+139,9822 : Houblon
+140,99 : Autres
+141,"993 : utilisation non agricole (stockage de grume, ..) ou terrain vague"
+142,"9942 : Brousailles, ronces, ligneux bas, buissons sur parcelle non paturée"
+143,9943 : parcelle boisée présentant un couvert forestier
