@@ -1,3 +1,0 @@
-#translation
-result = translator.translate_text("Hello, world!", target_lang="FR")
-print(result)
