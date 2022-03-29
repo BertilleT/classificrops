@@ -10,6 +10,6 @@ translator = deepl.Translator(os.getenv("DEEPL_AUTH_KEY"))
 def translate(word, language):
     result = translator.translate_text(word, target_lang=language)
       # "Bonjour, le monde !"
-    return print(result)
+    return result
 
-translate('cereals', 'fr')
+#translate('cereals', 'fr')
