@@ -1,4 +1,4 @@
-EuropeanNomenclature
+europeanNomenclature
 ====================
 
 The European classification chosen is the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO).  
