@@ -1,5 +1,5 @@
-nomenclature_Wallance
-======================
+wallanceNomenclature
+============================
 
 This section is dedicated to the comparison of nomenclatures of agricultural plots between Wallonia and France. How are they categorized ? 
 
