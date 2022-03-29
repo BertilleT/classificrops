@@ -11,4 +11,4 @@ Those tables have been designed with the idea to translate them into SQL databas
 
 Classifier generic algorithm
 ----------------------------
-how to avoir imbricated for loops ? Recursivity
+how to avoid imbricated for loops ? Recursivity
