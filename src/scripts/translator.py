@@ -9,7 +9,4 @@ translator = deepl.Translator(os.getenv("DEEPL_AUTH_KEY"))
 # Translate text into a target language, in this case, French
 def translate(word, language):
     result = translator.translate_text(word, target_lang=language)
-      # "Bonjour, le monde !"
     return result
-
-#translate('cereals', 'fr')

@@ -19,7 +19,7 @@ def add_groups_french(input_file, output_file, transform_row):
             transform_row(row, csv_reader.line_num)
             # Write the updated row / list to the output file
             csv_writer.writerow(row)
-
-add_groups_french('../../data/csv/JECAM/JECAM_en.csv', '../../data/csv/JECAM/JECAM_ue.csv', lambda row, line_num: row.append(translator.translate(f"{row[2]}", "fr")))
+add_groups_french('../../data/JECAM/JECAM_en.csv', '../../data/JECAM/JECAM_fr1.csv', lambda row, line_num: row.append(translator.translate(f"{row[2]}", "fr")))
+add_groups_french('../../data/JECAM/JECAM_fr1.csv', '../../data/JECAM/JECAM_fr.csv', lambda row, line_num: row.append(translator.translate(f"{row[4]}", "fr")))
 
 #issue if this method : does not recognize when the word already has been translated
