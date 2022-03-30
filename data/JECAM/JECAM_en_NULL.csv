@@ -1,0 +1,134 @@
+"TYPE (1=TEMPORARY, 2 = PERMANENT) ",ID_GROUP,GROUP,ID_CROPS,CROPS,ID_SUBCROPS,SUBCROPS,ID_SUBSUBCROPS,SUBSUBCROPS
+1.0,1,Cereals,11.0,Wheat,,NULL,,NULL
+1.0,1,Cereals,12.0,Maize,,NULL,,NULL
+1.0,1,Cereals,13.0,Rice,,NULL,,NULL
+1.0,1,Cereals,14.0,Sorghum,,NULL,,NULL
+1.0,1,Cereals,15.0,Barley,,NULL,,NULL
+1.0,1,Cereals,16.0,Rye,,NULL,,NULL
+1.0,1,Cereals,17.0,Oats,,NULL,,NULL
+1.0,1,Cereals,18.0,Millets,,NULL,,NULL
+1.0,1,Cereals,19.0,"Other cereals, n.e.c",191.0,Mixed cereals,,NULL
+1.0,1,Cereals,19.0,"Other cereals, n.e.c",192.0,Other,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,211.0,Artichokes,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,212.0,Asparagus,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,213.0,Cabbages,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,214.0,Cauliflowers & broccoli,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,215.0,Lettuce,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,216.0,Spinach,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,217.0,Chicory,,NULL
+1.0,2,Vegetables and melons,21.0,Leafy or stem vegetables,219.0,"Other leafy or stem vegetables, n.e.c.",,NULL
+1.0,2,Vegetables and melons,21.0,Fruit-bearing vegetables,221.0,Cucumbers,,NULL
+1.0,2,Vegetables and melons,22.0,Fruit-bearing vegetables,222.0,Eggplants (aubergines),,NULL
+1.0,2,Vegetables and melons,22.0,Fruit-bearing vegetables,223.0,Tomatoes,,NULL
+1.0,2,Vegetables and melons,22.0,Fruit-bearing vegetables,224.0,Watermelons,,NULL
+1.0,2,Vegetables and melons,22.0,Fruit-bearing vegetables,225.0,Cantaloupes and other melons,,NULL
+1.0,2,Vegetables and melons,22.0,Fruit-bearing vegetables,226.0,"Pumpkin, squash and gourds",,NULL
+1.0,2,Vegetables and melons,22.0,Fruit-bearing vegetables,229.0,"Other fruit-bearing vegetables, n.e.c.",,NULL
+1.0,2,Vegetables and melons,23.0,"Root, bulb, or tuberous vegetables",231.0,Carrots,,NULL
+1.0,2,Vegetables and melons,23.0,"Root, bulb, or tuberous vegetables",232.0,Turnips,,NULL
+1.0,2,Vegetables and melons,23.0,"Root, bulb, or tuberous vegetables",233.0,Garlic,,NULL
+1.0,2,Vegetables and melons,23.0,"Root, bulb, or tuberous vegetables",234.0,Onions (incl. shallots),,NULL
+,2,Vegetables and melons,23.0,"Root, bulb, or tuberous vegetables",235.0,Leeks & other alliaceous vegetables,,NULL
+1.0,2,Vegetables and melons,23.0,"Root, bulb, or tuberous vegetables",239.0,"Other root, bulb, or tuberous vegetables, n.e.c.",,NULL
+1.0,2,Vegetables and melons,24.0,Mushrooms and truffles,,NULL,,NULL
+1.0,2,Vegetables and melons,29.0,"Vegetables, n.e.c",,NULL,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,311.0,Avocados,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,312.0,Bananas & plantains,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,313.0,Dates,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,314.0,Figs,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,315.0,Mangoes,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,316.0,Papayas,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,317.0,Pineapples,,NULL
+2.0,3,Fruit and nuts,31.0,Tropical and subtropical fruits,319.0,"Other tropical and subtropical fruits, n.e.c.",,NULL
+2.0,3,Fruit and nuts,32.0,Citrus fruits,321.0,Grapefruit & pomelo,,NULL
+2.0,3,Fruit and nuts,32.0,Citrus fruits,322.0,Lemons and Limes,,NULL
+2.0,3,Fruit and nuts,32.0,Citrus fruits,323.0,Oranges,,NULL
+2.0,3,Fruit and nuts,32.0,Citrus fruits,324.0,"Tangerines, mandarins, clementines",,NULL
+2.0,3,Fruit and nuts,32.0,Citrus fruits,329.0,"Other citrus fruit, n.e.c.",,NULL
+2.0,3,Fruit and nuts,33.0,Grapes,,NULL,,NULL
+2.0,3,Fruit and nuts,34.0,Berries,341.0,Currants,,NULL
+2.0,3,Fruit and nuts,34.0,Berries,342.0,Gooseberries,,NULL
+2.0,3,Fruit and nuts,34.0,Berries,343.0,Kiwi fruit,,NULL
+2.0,3,Fruit and nuts,34.0,Berries,344.0,Raspberries,,NULL
+2.0,3,Fruit and nuts,34.0,Berries,345.0,Strawberries,,NULL
+,3,Fruit and nuts,34.0,Berries,346.0,Blueberries,,NULL
+2.0,3,Fruit and nuts,34.0,Berries,349.0,Other berries,,NULL
+2.0,3,Fruit and nuts,35.0,Pome fruits and stone fruits,351.0,Apples,,NULL
+2.0,3,Fruit and nuts,35.0,Pome fruits and stone fruits,352.0,Apricots,,NULL
+2.0,3,Fruit and nuts,35.0,Pome fruits and stone fruits,353.0,Cherries & sour cherries,,NULL
+2.0,3,Fruit and nuts,35.0,Pome fruits and stone fruits,354.0,Peaches & nectarines,,NULL
+2.0,3,Fruit and nuts,35.0,Pome fruits and stone fruits,355.0,Pears & quinces,,NULL
+2.0,3,Fruit and nuts,35.0,Pome fruits and stone fruits,356.0,Plums and sloes,,NULL
+2.0,3,Fruit and nuts,35.0,Pome fruits and stone fruits,359.0,"Other pome fruits and stone fruits, n.e.c.",,NULL
+2.0,3,Fruit and nuts,36.0,Nuts,361.0,Almonds,,NULL
+2.0,3,Fruit and nuts,36.0,Nuts,362.0,Cashew nuts,,NULL
+2.0,3,Fruit and nuts,36.0,Nuts,363.0,Chestnuts,,NULL
+2.0,3,Fruit and nuts,36.0,Nuts,364.0,Hazelnuts,,NULL
+2.0,3,Fruit and nuts,36.0,Nuts,365.0,Pistachios,,NULL
+2.0,3,Fruit and nuts,36.0,Nuts,366.0,Walnuts,,NULL
+2.0,3,Fruit and nuts,36.0,Nuts,369.0,Other nuts n.e.c.,,NULL
+2.0,3,Fruit and nuts,39.0,"Other fruits, n.e.c",,NULL,,NULL
+1.0,4,Oilseed crops,41.0,Soya beans,,NULL,,NULL
+1.0,4,Oilseed crops,42.0,Groundnuts,,NULL,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,431.0,Castor bean,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,432.0,Linseed,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,433.0,Mustard,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,434.0,Niger seed,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,435.0,Rapeseed,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,436.0,Safflower,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,437.0,Sesame,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,438.0,Sunflower,,NULL
+1.0,4,Oilseed crops,43.0,Other temporary oilseed crops,439.0,"Other temporary oilseed crops, n.e.c.",,NULL
+2.0,4,Oilseed crops,44.0,Permanent oilseed crops,441.0,Coconuts,,NULL
+2.0,4,Oilseed crops,44.0,Permanent oilseed crops,442.0,Olives,,NULL
+2.0,4,Oilseed crops,44.0,Permanent oilseed crops,443.0,Oil palms,,NULL
+2.0,4,Oilseed crops,44.0,Permanent oilseed crops,449.0,"Other oleaginous fruits, n.e.c.",,NULL
+1.0,5,Root/tuber crops with high starch or inulin content,,Root/tuber crops with high starch or inulin content,,NULL,,NULL
+1.0,5,Root/tuber crops with high starch or inulin content,51.0,Potatoes,,NULL,,NULL
+1.0,5,Root/tuber crops with high starch or inulin content,52.0,Sweet potatoes,,NULL,,NULL
+1.0,5,Root/tuber crops with high starch or inulin content,53.0,Cassava,,NULL,,NULL
+1.0,5,Root/tuber crops with high starch or inulin content,54.0,Yams,,NULL,,NULL
+1.0,5,Root/tuber crops with high starch or inulin content,59.0,"Other roots & tubers, n.e.c",,NULL,,NULL
+2.0,6,Beverage and spice crops,61.0,Beverage crops,611.0,Coffee,,NULL
+2.0,6,Beverage and spice crops,61.0,Beverage crops,612.0,Tea,,NULL
+2.0,6,Beverage and spice crops,61.0,Beverage crops,613.0,Maté,,NULL
+2.0,6,Beverage and spice crops,61.0,Beverage crops,614.0,Cocoa,,NULL
+2.0,6,Beverage and spice crops,61.0,Beverage crops,619.0,"Other beverage crops, n.e.c.",,NULL
+1.0,6,Beverage and spice crops,62.0,Spice crops,621.0,Temporary spice crops,6211.0,Chilies & peppers (capsicum spp.)
+1.0,6,Beverage and spice crops,62.0,Spice crops,621.0,Temporary spice crops,6212.0,"Anise, badian, and fennel"
+1.0,6,Beverage and spice crops,62.0,Spice crops,621.0,Temporary spice crops,6219.0,"Other temporary spice crops, n.e.c"
+2.0,6,Beverage and spice crops,62.0,Spice crops,622.0,Permanent spice crops,6221.0,Pepper (piper spp.)
+2.0,6,Beverage and spice crops,62.0,Spice crops,622.0,Permanent spice crops,6222.0,"Nutmeg, mace, cardamoms"
+2.0,6,Beverage and spice crops,62.0,Spice crops,622.0,Permanent spice crops,6223.0,Cinnamon (canella)
+2.0,6,Beverage and spice crops,62.0,Spice crops,622.0,Permanent spice crops,6224.0,Cloves
+2.0,6,Beverage and spice crops,62.0,Spice crops,622.0,Permanent spice crops,6225.0,Ginger
+2.0,6,Beverage and spice crops,62.0,Spice crops,622.0,Permanent spice crops,6226.0,Vanilla
+2.0,6,Beverage and spice crops,62.0,Spice crops,622.0,Permanent spice crops,6229.0,"Other permanent spice crops, n.e.c"
+1.0,7,Leguminous crops,71.0,Beans,,NULL,,NULL
+1.0,7,Leguminous crops,72.0,Broad beans,,NULL,,NULL
+1.0,7,Leguminous crops,73.0,Chick peas,,NULL,,NULL
+1.0,7,Leguminous crops,74.0,Cow peas,,NULL,,NULL
+1.0,7,Leguminous crops,75.0,Lentils,,NULL,,NULL
+1.0,7,Leguminous crops,76.0,Lupins,,NULL,,NULL
+1.0,7,Leguminous crops,77.0,Peas,,NULL,,NULL
+1.0,7,Leguminous crops,78.0,Pigeon peas,,NULL,,NULL
+1.0,7,Leguminous crops,79.0,"Leguminous crops, n.e.c",,NULL,,NULL
+1.0,8,Sugar crops,81.0,Sugar beet,,NULL,,NULL
+1.0,8,Sugar crops,82.0,Sugar cane,,NULL,,NULL
+1.0,8,Sugar crops,83.0,Sweet sorghum,,NULL,,NULL
+1.0,8,Sugar crops,89.0,Other sugar crops n.e.c,,NULL,,NULL
+1.0,9,Other crops,91.0,Grasses and other fodder crops,911.0,Temporary grass crops,,NULL
+2.0,9,Other crops,91.0,Grasses and other fodder crops,912.0,Permanent grass crops,,NULL
+1.0,9,Other crops,92.0,Fibre crops,921.0,Temporary fibre crops,9211.0,Cotton
+1.0,9,Other crops,92.0,Fibre crops,921.0,Temporary fibre crops,9212.0,"Jute, kenaf, and other similar crops"
+1.0,9,Other crops,92.0,Fibre crops,921.0,Temporary fibre crops,9213.0,"Flax, hemp, and other similar products"
+1.0,9,Other crops,92.0,Fibre crops,921.0,Temporary fibre crops,9219.0,Other temporary fibre crops
+2.0,9,Other crops,92.0,Fibre crops,922.0,Permanent fibre crops,,NULL
+1.0,9,Other crops,93.0,"Medicinal, aromatic, pesticidal, or similar crops",931.0,"Temporary medicinal, etc. crops",,NULL
+2.0,9,Other crops,93.0,"Medicinal, aromatic, pesticidal, or similar crops",932.0,"Permanent medicinal, etc. crops",,NULL
+2.0,9,Other crops,94.0,Rubber,,NULL,,NULL
+1.0,9,Other crops,95.0,Flower crops,951.0,Temporary flower crops,,NULL
+2.0,9,Other crops,95.0,Flower crops,952.0,Permanent flower crops,,NULL
+1.0,9,Other crops,96.0,Tobacco,,NULL,,NULL
+1.0,9,Other crops,99.0,Other crops,991.0,Other crops - temporary,,NULL
+2.0,9,Other crops,99.0,Other crops,992.0,Other crops - permanent,,NULL
