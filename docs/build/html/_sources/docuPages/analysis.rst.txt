@@ -9,11 +9,11 @@ Actors
 Specifications
 ---------------
     
-The standard user should be able :  
-| - to select an area of several parcels. The area can be selected at an european level. (example : select all the agricultural lands from Italia and Slovenia).
-| - to make specific request about the growing type of an area (example : where in Catalonia tomatoes are cultivated ?). 
-| - to generate statistics on an area (example : what is the proportion of barley growing in Wallonia ?)
-| - to visualize the evolution of agricultural parcels in a specific period of time (example : in Occitania, where agricultural lands have disappeared ?)
+The standard user should be able to :  
+* select an area of several parcels. The area can be selected at an european level. (example : select all the agricultural lands from Italia and Slovenia).
+* make specific request about the growing type of an area (example : where in Catalonia tomatoes are cultivated ?). 
+* to generate statistics on an area (example : what is the proportion of barley growing in Wallonia ?)
+* to visualize the evolution of agricultural parcels in a specific period of time (example : in Occitania, where agricultural lands have disappeared ?)
 
 
 Detailed specifications

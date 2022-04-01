@@ -15,6 +15,3 @@ Classes
 
 Data format
 ----------------
-cross table format  
-
-table of a country
