@@ -17,7 +17,7 @@ for c in countries:
         conversion_$c = converte(c)
         #for every entity concerned by the area, if the conversion table does not exist yet, create it. 
     p = SELECT location, superficies FROM CAP_DB_$c INNER JOIN conversion_$c ON CAP_DB_$c.key = conversion_$c.key 
-    #location is conceived as a list of vertex coordinates. Superficie is asked aso in case we would like to generate statistics too. 
+    #location is conceived as a list of vertex coordinates. Superficie is asked also in case we would like to generate statistics too. 
     places.append(p)
     displayMap(places) #display on QGIS map all th places location returned by the select requests 
     
