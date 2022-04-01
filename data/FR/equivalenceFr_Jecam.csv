@@ -68,10 +68,10 @@ PPT,Pois de printemps semé tardivement (après le 31/05),8,Protéagineux,7
 CHV,Chanvre,9,Plantes à fibres,9
 CSE,Chanvre sans étiquette conforme,9,Plantes à fibres,9
 LIF,Lin fibres,9,Plantes à fibres,9
-J5M,Jachère de 5 ans ou moins,11,Gel (surfaces gelées sans production),
-J6P,Jachère de 6 ans ou plus,11,Gel (surfaces gelées sans production),
-J6S,Jachère de 6 ans ou plus déclarée comme Surface d’intérêt écologique,11,Gel (surfaces gelées sans production),
-JNO,Jachère noire,11,Gel (surfaces gelées sans production),
+J5M,Jachère de 5 ans ou moins,11,Gel (surfaces gelées sans production),9
+J6P,Jachère de 6 ans ou plus,11,Gel (surfaces gelées sans production),9
+J6S,Jachère de 6 ans ou plus déclarée comme Surface d’intérêt écologique,11,Gel (surfaces gelées sans production),9
+JNO,Jachère noire,11,Gel (surfaces gelées sans production),9
 RIZ,Riz,14,Riz,1
 LEC,Lentille cultivée (non fourragère),15,Légumineuses à grains,7
 PCH,Pois chiche,15,Légumineuses à grains,7
@@ -181,13 +181,13 @@ VE8,Vesce implantée pour la récolte 2018,16,Fourrage,9
 VED,Vesce déshydratée,16,Fourrage,9
 VES,Autre vesce,16,Fourrage,9
 XFE,X-Felium de 5 ans ou moins,16,Fourrage,9
-BOP,Bois pâturé,17,Estives et landes,
+BOP,Bois pâturé,17,Estives et landes,9
 SPH,Surface pastorale - herbe prédominante et ressources fourragères ligneuses présentes,17,Estives et landes,9
 SPL,Surface pastorale - ressources fourragères ligneuses prédominantes,17,Estives et landes,9
-PPH,Prairie permanente - herbe prédominante (ressources fourragères ligneuses absentes ou peu présentes),18,Prairies permanentes,
-PRL,Prairie en rotation longue (6 ans ou plus),18,Prairies permanentes,
-PTR,Autre prairie temporaire de 5 ans ou moins,19,Prairies temporaires,
-RGA,Ray-grass de 5 ans ou moins,19,Prairies temporaires,
+PPH,Prairie permanente - herbe prédominante (ressources fourragères ligneuses absentes ou peu présentes),18,Prairies permanentes,9
+PRL,Prairie en rotation longue (6 ans ou plus),18,Prairies permanentes,9
+PTR,Autre prairie temporaire de 5 ans ou moins,19,Prairies temporaires,9
+RGA,Ray-grass de 5 ans ou moins,19,Prairies temporaires,9
 AGR,Agrume,20,Vergers,3
 ANA,Ananas,20,Vergers,3
 AVO,Avocat,20,Vergers,3
@@ -219,54 +219,54 @@ NOS,Noisette,22,Fruits à coque,3
 NOX,Noix,22,Fruits à coque,3
 PIS,Pistache,22,Fruits à coque,3
 OLI,Oliveraie,23,Oliviers,4
-ANE,Aneth,24,Autres cultures industrielles,
-ANG,Angélique,24,Autres cultures industrielles,
+ANE,Aneth,24,Autres cultures industrielles,9
+ANG,Angélique,24,Autres cultures industrielles,9
 ANI,Anis,24,Autres cultures industrielles,6
-BAR,Bardane,24,Autres cultures industrielles,
+BAR,Bardane,24,Autres cultures industrielles,9
 BAS,Basilic,24,Autres cultures industrielles,9
-BRH,Bourrache de 5 ans ou moins,24,Autres cultures industrielles,
-BTN,Betterave non fourragère / Bette,24,Autres cultures industrielles,8?
-CAV,Carvi,24,Autres cultures industrielles,
-CHR,Chardon Marie,24,Autres cultures industrielles,
+BRH,Bourrache de 5 ans ou moins,24,Autres cultures industrielles,9
+BTN,Betterave non fourragère / Bette,24,Autres cultures industrielles,2
+CAV,Carvi,24,Autres cultures industrielles,6
+CHR,Chardon Marie,24,Autres cultures industrielles,9
 CIB,Ciboulette,24,Autres cultures industrielles,9
-CML,Cameline,24,Autres cultures industrielles,
-CMM,Camomille,24,Autres cultures industrielles,
+CML,Cameline,24,Autres cultures industrielles,9
+CMM,Camomille,24,Autres cultures industrielles,9
 CRD,Coriandre,24,Autres cultures industrielles,9
-CRF,Cerfeuil,24,Autres cultures industrielles,
+CRF,Cerfeuil,24,Autres cultures industrielles,9
 CUM,Cumin,24,Autres cultures industrielles,6
 CUR,Curcuma,24,Autres cultures industrielles,6
 EST,Estragon,24,Autres cultures industrielles,9
 FNO,Fenouil,24,Autres cultures industrielles,6
-FNU,Fenugrec,24,Autres cultures industrielles,
-HBL,Houblon,24,Autres cultures industrielles,
-LAV,Lavande / Lavandin,24,Autres cultures industrielles,
-MAV,Mauve,24,Autres cultures industrielles,
-MLI,Mélisse,24,Autres cultures industrielles,
-MLP,Millepertuis,24,Autres cultures industrielles,
+FNU,Fenugrec,24,Autres cultures industrielles,9
+HBL,Houblon,24,Autres cultures industrielles,6
+LAV,Lavande / Lavandin,24,Autres cultures industrielles,9
+MAV,Mauve,24,Autres cultures industrielles,9
+MLI,Mélisse,24,Autres cultures industrielles,9
+MLP,Millepertuis,24,Autres cultures industrielles,9
 MOT,Moutarde,24,Autres cultures industrielles,4
 MRJ,Marjolaine / Origan,24,Autres cultures industrielles,9
 MTH,Menthe,24,Autres cultures industrielles,9
-ORT,Ortie,24,Autres cultures industrielles,
-OSE,Oseille,24,Autres cultures industrielles,
+ORT,Ortie,24,Autres cultures industrielles,9
+OSE,Oseille,24,Autres cultures industrielles,9
 PAR,Plante aromatique (autre que vanille),24,Autres cultures industrielles,9
 PMD,Plante médicinale,24,Autres cultures industrielles,9
-PPA,Autre plante à parfum,24,Autres cultures industrielles,
-PPF,Plante à parfum (autre que géranium et vétiver),24,Autres cultures industrielles,
-PPP,Autre plante à parfum,24,Autres cultures industrielles,
+PPA,Autre plante à parfum,24,Autres cultures industrielles,9
+PPF,Plante à parfum (autre que géranium et vétiver),24,Autres cultures industrielles,9
+PPP,Autre plante à parfum,24,Autres cultures industrielles,9
 PSL,Persil,24,Autres cultures industrielles,9
-PSN,Psyllium noir de Provence,24,Autres cultures industrielles,
-PSY,Plantain psyllium,24,Autres cultures industrielles,
+PSN,Psyllium noir de Provence,24,Autres cultures industrielles,9
+PSY,Plantain psyllium,24,Autres cultures industrielles,9
 ROM,Romarin,24,Autres cultures industrielles,9
 SGE,Sauge,24,Autres cultures industrielles,9
-SRI,Sarriette,24,Autres cultures industrielles,
+SRI,Sarriette,24,Autres cultures industrielles,9
 TAB,Tabac,24,Autres cultures industrielles,9
 THY,Thym,24,Autres cultures industrielles,9
 TOT,Tomate pour transformation,24,Autres cultures industrielles,2
-VAL,Valériane,24,Autres cultures industrielles,
+VAL,Valériane,24,Autres cultures industrielles,9
 VNB,Vanille sous bois,24,Autres cultures industrielles,6
 VNL,Vanille,24,Autres cultures industrielles,6
 VNV,Vanille verte,24,Autres cultures industrielles,6
-YLA,Ylang-ylang,24,Autres cultures industrielles,
+YLA,Ylang-ylang,24,Autres cultures industrielles,9
 AIL,Aïl,25,Légumes ou fleurs,2
 ART,Artichaut,25,Légumes ou fleurs,2
 AUB,Aubergine,25,Légumes ou fleurs,2
@@ -290,8 +290,8 @@ FLP,Autre légume ou fruit pérenne,25,Légumes ou fleurs,2
 FRA,Fraise,25,Légumes ou fleurs,2
 GER,Géranium,25,Légumes ou fleurs,9
 HAR,Haricot / Flageolet,25,Légumes ou fleurs,7
-HPC,Horticulture ornementale de plein champ,25,Légumes ou fleurs,
-HSA,Horticulture ornementale sous abri,25,Légumes ou fleurs,2
+HPC,Horticulture ornementale de plein champ,25,Légumes ou fleurs,9
+HSA,Horticulture ornementale sous abri,25,Légumes ou fleurs,9
 LBF,Laitue / Batavia / Feuille de chêne,25,Légumes ou fleurs,2
 LSA,Légume sous abri,25,Légumes ou fleurs,2
 MAC,Mâche,25,Légumes ou fleurs,2
@@ -322,31 +322,31 @@ CSF,Canne à sucre - fermage,26,Canne à sucre,8
 CSI,Canne à sucre - indivision,26,Canne à sucre,8
 CSP,Canne à sucre - propriété ou faire valoir direct,26,Canne à sucre,8
 CSR,Canne à sucre - réforme foncière,26,Canne à sucre,8
-ACA,Autre culture non précisée dans la liste (admissible),28,Divers,9?
-BFP,Bande admissible le long d’une forêt avec production,28,Divers,9?
-BFS,Bande admissible le long d’une forêt sans production,28,Divers,9?
-BOR,Bordure de champ,28,Divers,9?
-BRO,Brome de 5 ans ou moins,28,Divers,9?
-BTA,Bande tampon,28,Divers,9?
-CAE,Châtaigneraie entretenue par des porcins ou des petits ruminants,28,Divers,9?
-CEE,Chênaie entretenue par des porcins ou des petits ruminants,28,Divers,9?
-CNE,Chênaie non entretenue par des porcins ou des petits ruminants,28,Divers,9?
-CID,Cultures conduites en interrangs : 2 cultures représentant chacune plus de 25%,28,Divers,9?
-CIT,Cultures conduites en interrangs : 3 cultures représentant chacune plus de 25%,28,Divers,9?
-CUA,Culture sous abattis,28,Divers,9?
-MCT,Miscanthus,28,Divers,9?
-MPA,Autre mélange de plantes fixant l’azote,28,Divers,9?
-MRS,Marais salant,28,Divers,9?
-NYG,Nyger,28,Divers,9?
-PCL,Phacélie de 5 ans ou moins,28,Divers,9?
-PEP,Pépinière,28,Divers,
-ROS,Roselière,28,Divers,2?
-SBO,Surface boisée sur une ancienne terre agricole,28,Divers,9?
-SNA,Surface non agricole non visible sur l’orthophotographie,28,Divers,9?
-SNE,Surface agricole temporairement non exploitée,28,Divers,9?
+ACA,Autre culture non précisée dans la liste (admissible),28,Divers,9
+BFP,Bande admissible le long d’une forêt avec production,28,Divers,9
+BFS,Bande admissible le long d’une forêt sans production,28,Divers,9
+BOR,Bordure de champ,28,Divers,9
+BRO,Brome de 5 ans ou moins,28,Divers,9
+BTA,Bande tampon,28,Divers,9
+CAE,Châtaigneraie entretenue par des porcins ou des petits ruminants,28,Divers,9
+CEE,Chênaie entretenue par des porcins ou des petits ruminants,28,Divers,9
+CNE,Chênaie non entretenue par des porcins ou des petits ruminants,28,Divers,9
+CID,Cultures conduites en interrangs : 2 cultures représentant chacune plus de 25%,28,Divers,9
+CIT,Cultures conduites en interrangs : 3 cultures représentant chacune plus de 25%,28,Divers,9
+CUA,Culture sous abattis,28,Divers,9
+MCT,Miscanthus,28,Divers,9
+MPA,Autre mélange de plantes fixant l’azote,28,Divers,9
+MRS,Marais salant,28,Divers,9
+NYG,Nyger,28,Divers,9
+PCL,Phacélie de 5 ans ou moins,28,Divers,9
+PEP,Pépinière,28,Divers,9
+ROS,Roselière,28,Divers,9
+SBO,Surface boisée sur une ancienne terre agricole,28,Divers,9
+SNA,Surface non agricole non visible sur l’orthophotographie,28,Divers,9
+SNE,Surface agricole temporairement non exploitée,28,Divers,9
 TBT,Tubercule tropical,28,Divers,5
-TCR,Taillis à courte rotation,28,Divers,9?
+TCR,Taillis à courte rotation,28,Divers,9
 TRU,Truffière (chênaie de plants mycorhizés),28,Divers,2
-VET,Vétiver,28,Divers,9?
-ZZZ,Culture inconnue,28,Divers,9?
-MLS,Mélange de légumineuses non fourragères prépondérantes et de céréales et/ou d'oléagineux,8,Protéagineux,
+VET,Vétiver,28,Divers,9
+ZZZ,Culture inconnue,28,Divers,9
+MLS,Mélange de légumineuses non fourragères prépondérantes et de céréales et/ou d'oléagineux,8,Protéagineux,7

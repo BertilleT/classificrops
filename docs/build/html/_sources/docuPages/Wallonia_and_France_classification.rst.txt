@@ -17,15 +17,15 @@ This section is dedicated to the comparison of croplands classification between 
    :widths: 10, 1, 10
 
 
-France and Wallonia classification are different. To study a group crops evolution in both country, we could starts bt matching the different classes one by one. 
-Yet, this solution is really satisfying.  
+France and Wallonia classification are different. To study a group crops evolution in both country, we could starts by matching the different classes one by one. 
+Yet, this solution is not really satisfying.  
 
 Indeed, it is not so easy to apply it : where do you match protéagineux from France to Wallonia class ? 
 
 
-Moreover, when it comes to a classifications with much more classes, the complexity of the matching task increases and the time to do it too. Indeed, 
-what happened if you decide now to study a crop and not a group of crops. In Wallonia, 143 crops are listed, and 352 in France. We would have to match both lists. 
-To go further, you want now to study the evolution of a crop in France, Wallonia, Flandres, Netherlands, Germany and Austria. How to deal with it ? 
+Moreover, when it comes to a classification with much more classes, the complexity of the matching task increases. Indeed, 
+what happened if you decide now to study a crop and not a group of crops. In Wallonia, 143 crops are listed against 352 in France. We would have to match both lists. 
+To go further, let's imagine that you want to study the evolution of a crop in France, Wallonia, Flandres, Netherlands, Germany and Austria. How to deal with it ? 
 
 Let's go even further : you want now to study a cropland in all european union countries. There are 27 of them. Then we would have to compute (27*(27+1)/2 = ) 328 matching tasks, 
 and without taking into account that sometimes, crop classification are not centralized but managed at a regional level (as in Belgium for example). 
