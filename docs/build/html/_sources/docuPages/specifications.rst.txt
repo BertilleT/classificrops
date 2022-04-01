@@ -1,14 +1,16 @@
-specifications
-==============
+Analysis and conception
+=========================
 
+Analysis
+--------
 Actors
-------
-    - standard user. For example : land use planning consultant, employee of a local authority, agricultur minister, agricultural historian, common citizen
+~~~~~~~~
+    - standard user. For example : land use planning consultant, employee of a local authority, agriculture's minister, agricultural historian, common citizen
     - programmer
 
 
 Use cases
-----------
+~~~~~~~~~~
     
 The standard user should be able :  
 - to select an area of several parcels. The area can be selected at an european level. (example : select all the agricultural lands from Italia and Slovenia).
@@ -22,18 +24,25 @@ The standard user should be able :
 
 
 Detailed specifications
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 to be done
 
+conception
+-----------
 
 Classes
--------
+~~~~~~~~
     .. image:: ../../images/classes.png
       :width: 800
 
 
 Data format
------------
+~~~~~~~~~~~~
 cross table format  
 
 table of a country
+
+Recap
+------
+In the use cases drawing, the user can select a type, group, crop, sub-crop, sub-sub-crop. But this standards classification is not so obvious. 
+Let's go to an example to understand what I am talking about. 
