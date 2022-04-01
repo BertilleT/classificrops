@@ -11,9 +11,10 @@ Agrivolution is an interface able to request easily a database that stores anony
 -----
 
 .. toctree::
-   docuPages/conception
+   docuPages/analysis
    docuPages/Wallonia_and_France_classification
-   docuPages/europeanNomenclature
+   docuPages/european_classification
+   docuPages/conception
 
 
 Installation
