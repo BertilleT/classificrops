@@ -9,18 +9,10 @@ def converter(table_source_path, country):
     genericPath = 'path/to/data'
     with open(table_source_path, newline='') as sourceFile
     sourceDict = csv.DictReader(sourceFile)
-    #create a dictionnary with those data
-    # ...
-    # to be done 
-    # ...
 
     #open and read the target classes from JECAM into a dictionnary
     with open(genericPath + 'JECAM/JECAM_fr', newline='') as JECAMFile
     JECAMDict = csv.DictReader(JECAMFile)
-    #create a dictionnary with those data
-    # ...
-    # to be done 
-    # ...
 
     #create the conversion table into the folder of the country/region we are working with
     genericFileName = 'conversionTable'
