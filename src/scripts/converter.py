@@ -15,9 +15,7 @@ def converter(table_source_path, country):
     JECAMDict = csv.DictReader(JECAMFile)
 
     #create the conversion table into the folder of the country/region we are working with
-    genericFileName = 'conversionTable'
-    ext = '.csv'
-    specificPath = country + '/' + genericFileName + '_' + country + ext
+    specificPath = country + '/conversionTable_'+ country + '.csv'
     path = genericPath + specificPath
     f = open(path, 'w')
     #add columns name
