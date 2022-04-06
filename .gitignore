@@ -2,7 +2,7 @@
 src/scripts/__pycache__/
 
 #sources templates
-docs/src/scripts/_templates/
+docs/source/_templates/
 
 #sphinx build folder
 docs/build/
