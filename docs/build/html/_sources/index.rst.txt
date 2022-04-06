@@ -14,6 +14,7 @@ Agrivolution is an interface able to request easily a database that stores anony
    docuPages/analysis
    docuPages/Wallonia_and_France_classification
    docuPages/european_classification
+   docuPages/languages
    docuPages/conception
 
 

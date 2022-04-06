@@ -2,9 +2,14 @@ import csv
 import pandas as pd
 
 class match: 
-    attribut_origin: ''
-    attribut_target: ''
-    result: []
+    level: #level of match : 1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4
+    full_match: #TRUE|FALSE
+    src_words:
+    src_id: 
+    target_words:
+    target_id:
+
+nonDiscrimnantWords = ["à", "de", "ou", "et"]
 
 def converter(country, year):
     #read the origin data from France into a panda dataframe
@@ -25,7 +30,7 @@ def converter(country, year):
     for every line in srcDf:
         scanSource(line)
     
-
+srcDf[srcDf[sourceAttributes[s]].str.contains(word)]
 
 def scanTarget(s):
     if s !== len(sourceAttributes):
@@ -46,6 +51,9 @@ def scanSource():
         return scanSource(s+1)
 
 def matching(s,t): 
-    #to be defined
+    srcLevel = sourceAttributes[s]
+    trgLevel = sourceAttributes[t]
+    srcDf[srcDf[].str.contains(word)]
+
 
 converter("FR", "2020")

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>european classification &#8212; Agrivolution 1.0 documentation</title>
+    <title>languages &#8212; Agrivolution 1.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +16,8 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="languages" href="languages.html" />
-    <link rel="prev" title="Wallonia and France classification" href="Wallonia_and_France_classification.html" />
+    <link rel="next" title="Conception" href="conception.html" />
+    <link rel="prev" title="european classification" href="european_classification.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -34,36 +34,15 @@
 
           <div class="body" role="main">
             
-  <section id="european-classification">
-<h1>european classification<a class="headerlink" href="#european-classification" title="Permalink to this headline">¶</a></h1>
-<dl class="simple">
-<dt>The European classification chosen is the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO).</dt><dd><p>source data : <a class="reference external" href="https://www.fao.org/3/a0135e/A0135E10.htm#app3">https://www.fao.org/3/a0135e/A0135E10.htm#app3</a>
-csv file : ../../../data/JECAM_en.csv</p>
-</dd>
-</dl>
-<section id="tree-structure-of-data-csv">
-<h2>Tree structure of data/csv<a class="headerlink" href="#tree-structure-of-data-csv" title="Permalink to this headline">¶</a></h2>
-<p>Those tables have been designed with the idea to translate them into SQL databases</p>
-</section>
-<section id="classifier-generic-algorithm">
-<h2>Classifier generic algorithm<a class="headerlink" href="#classifier-generic-algorithm" title="Permalink to this headline">¶</a></h2>
-<p>how to avoid imbricated for loops ? Recursivity</p>
-<p>first algorithm :
-for:</p>
-<blockquote>
-<div><dl class="simple">
-<dt>for:</dt><dd><dl class="simple">
-<dt>for:</dt><dd><dl class="simple">
-<dt>for:</dt><dd><p>for:</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd>
-</dl>
-</div></blockquote>
-<p>second algorithm with recursivity :</p>
-</section>
+  <section id="languages">
+<h1>languages<a class="headerlink" href="#languages" title="Permalink to this headline">¶</a></h1>
+<p>How to compare croplands classification when they are written in various languages ? If we stick to the large run goal which is to study all countries from EU, we have
+at least ** 24** official languages.
+The idea is to create a table that contains JECAM classification written in the 24 official languages.
+To do so : 2 alternatives studies :
+- Use Deepl library : <a class="reference external" href="https://github.com/DeepLcom/deepl-python">https://github.com/DeepLcom/deepl-python</a>. But the number of languages available is limited. It could be usefull only o translate from ., ., ., ., ., ., ., ., .
+- Use google translation. to be studied.</p>
+<p>Comparison pros and cons of each method</p>
 </section>
 
 
@@ -86,12 +65,8 @@ for:</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="analysis.html">Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Wallonia_and_France_classification.html">Wallonia and France classification</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">european classification</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#tree-structure-of-data-csv">Tree structure of data/csv</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#classifier-generic-algorithm">Classifier generic algorithm</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="languages.html">languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="european_classification.html">european classification</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">languages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conception.html">Conception</a></li>
 </ul>
 
@@ -99,8 +74,8 @@ for:</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="Wallonia_and_France_classification.html" title="previous chapter">Wallonia and France classification</a></li>
-      <li>Next: <a href="languages.html" title="next chapter">languages</a></li>
+      <li>Previous: <a href="european_classification.html" title="previous chapter">european classification</a></li>
+      <li>Next: <a href="conception.html" title="next chapter">Conception</a></li>
   </ul></li>
 </ul>
 </div>
@@ -134,7 +109,7 @@ for:</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../_sources/docuPages/european_classification.rst.txt"
+      <a href="../_sources/docuPages/languages.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

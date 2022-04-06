@@ -14,7 +14,7 @@ This section is dedicated to the comparison of croplands classification between 
    :file: ../../../data/comparison_WL_FR.csv
    :header-rows: 1
    :class: longtable
-   :widths: 10, 1, 10
+   :widths: 1,10,1,1,10
 
 
 France and Wallonia classification are different. To study a group crops evolution in both country, we could starts by matching the different classes one by one. 
