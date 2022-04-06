@@ -1,0 +1,8 @@
+# pycache
+src/scripts/__pycache__/
+
+#sources templates
+home/BTemple-Boyer-Dury/Documents/Agrivolution/docs/source/_templates/
+
+#sphinx build folder
+docs/build/
