@@ -2,9 +2,9 @@ from csv import writer
 from csv import reader
 import translator
 
-#the function below is dedicated to the translation of JECAM crops groups to french. In a second time, I will have to apply the function to all languages, and also to crops inside a group. 
+#the function below is dedicated to the translation of JECAM crops groups to french, using deepl. In a second time, I will have to apply the function to all languages, and also to crops inside a group. 
 
-def add_groups_french(input_file, output_file, transform_row):
+def add_column(input_file, output_file, transform_row):
     """ Append a column in existing csv using csv.reader / csv.writer classes"""
     # Open the input_file in read mode and output_file in write mode
     with open(input_file, 'r') as read_obj, \
@@ -25,3 +25,9 @@ add_groups_french('../../data/JECAM/JECAM_fr2.csv', '../../data/JECAM/JECAM_fr3.
 add_groups_french('../../data/JECAM/JECAM_fr3.csv', '../../data/JECAM/JECAM_fr4.csv', lambda row, line_num: row.append(translator.translate(f"{row[8]}", "fr")))
 
 #issue if this method : does not recognize when the word already has been translated
+
+'''languages = [bg, ]
+#second issue : as a target language, deepl oly proposes : german spanish french italian dutsh polish portugese russian chinese. 
+copyfile('../../data/JECAM/JECAM_en_NULL.csv', path)
+for lang in languages: 
+    translateJECAM(lang)'''

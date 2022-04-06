@@ -1,4 +1,4 @@
-#pseudo code
+#pseudo code to answer a user request
 
 #User wants to know where on a map is located a crop in Wallonia, France and Catalunya. 
 
