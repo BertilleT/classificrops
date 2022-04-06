@@ -27,17 +27,20 @@ def converter(country, year):
 
     sourceAttributes=['GROUP', 'CROPS']
     targetAttributes=['GROUP', 'CROP', 'SUB-CROP', 'SUB-SUB-CROP']
-    for every line in srcDf:
+
+    '''for every line in srcDf:
         scanSource(line)
     
-srcDf[srcDf[sourceAttributes[s]].str.contains(word)]
+    srcDf[srcDf[sourceAttributes[s]].str.contains(word)]'''
 
 def scanTarget(s):
-    if s !== len(sourceAttributes):
-        for t in len(targetAttributes-1): 
-            return matching(s,targetAttributes[t])
-
-    #the condition below is dedicated to stop the recursive loop from scanSource when the all source attributes have been scanned and no mtaching have been found. 
+    #the condition below is dedicated to stop the recursive loop from scanSource() when all source attributes have been scanned and no matching have been found. 
+    if s !== len(sourceAttributes): 
+        #for every level of JECAM classification
+        for t in range(len(targetAttributes-1)): 
+            srcLevel = sourceAttributes[s]
+            trgLevel = sourceAttributes[t]
+            return matching(srcLevel,trgLevel)
     else 
         match.result.append(null) 
         print('zero matching have been found for the value : ' + value)
@@ -45,15 +48,14 @@ def scanTarget(s):
 
 def scanSource():
     s=0
-    if match.result !== []
+    if match.result !== [] #this condition could be replaced by something like : if maximum match pourcentage already found is superior to 50 %
         return #add value to df conversion
     else 
         return scanSource(s+1)
 
 def matching(s,t): 
-    srcLevel = sourceAttributes[s]
-    trgLevel = sourceAttributes[t]
     srcDf[srcDf[].str.contains(word)]
 
-
 converter("FR", "2020")
+
+#next idea : use fuzz.token_sort_ratio
