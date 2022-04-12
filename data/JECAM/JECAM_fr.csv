@@ -1,134 +1,134 @@
-"TYPE (1=TEMPORARY, 2 = PERMANENT) ",ID_GROUP,GROUP,GROUP_fr,CROPS,CROPS_fr,SUB-CROPS,SUB-CROPS_fr,SUB-SUB-CROPS,SUB-SUB-CROPS_fr
-1.0,1,Cereals,Céréales,Wheat,Blé,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,Maize,Maïs,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,Rice,Riz,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,Sorghum,Sorgho,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,Barley,Orge,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,Rye,Seigle,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,Oats,Avoine,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,Millets,Millets,NULL,NULL,NULL,NULL
-1.0,1,Cereals,Céréales,"Other cereals, n.e.c","Autres céréales, n.c.a.",Mixed cereals,Céréales mélangées,NULL,NULL
-1.0,1,Cereals,Céréales,"Other cereals, n.e.c","Autres céréales, n.c.a.",Other,Autre,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,Artichokes,Artichauts,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,Asparagus,Asperges,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,Cabbages,Choux,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,Cauliflowers & broccoli,Choux-fleurs et brocolis,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,Lettuce,Laitue,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,Spinach,Epinards,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,Chicory,Chicorée,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Leafy or stem vegetables,Légumes à feuilles ou à tiges,"Other leafy or stem vegetables, n.e.c.","Autres légumes à feuilles ou à tiges, n.c.a.",NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Fruit-bearing vegetables,Légumes à fruits,Cucumbers,Concombres,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Fruit-bearing vegetables,Légumes à fruits,Eggplants (aubergines),Eggplants (aubergines),NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Fruit-bearing vegetables,Légumes à fruits,Tomatoes,Tomates,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Fruit-bearing vegetables,Légumes à fruits,Watermelons,Pastèques,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Fruit-bearing vegetables,Légumes à fruits,Cantaloupes and other melons,Cantaloups et autres melons,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Fruit-bearing vegetables,Légumes à fruits,"Pumpkin, squash and gourds","Citrouille, courge et gourde",NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Fruit-bearing vegetables,Légumes à fruits,"Other fruit-bearing vegetables, n.e.c.","Autres légumes-fruits, n.c.a.",NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,"Root, bulb, or tuberous vegetables","Légumes-racines, bulbes ou tubercules",Carrots,Carottes,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,"Root, bulb, or tuberous vegetables","Légumes-racines, bulbes ou tubercules",Turnips,Navets,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,"Root, bulb, or tuberous vegetables","Légumes-racines, bulbes ou tubercules",Garlic,Ail,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,"Root, bulb, or tuberous vegetables","Légumes-racines, bulbes ou tubercules",Onions (incl. shallots),Oignons (y compris les échalotes),NULL,NULL
-,2,Vegetables and melons,Légumes et melons,"Root, bulb, or tuberous vegetables","Légumes-racines, bulbes ou tubercules",Leeks & other alliaceous vegetables,Poireaux et autres légumes alliacés,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,"Root, bulb, or tuberous vegetables","Légumes-racines, bulbes ou tubercules","Other root, bulb, or tuberous vegetables, n.e.c.","Autres légumes-racines, bulbes ou tubercules, n.c.a.",NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,Mushrooms and truffles,Champignons et truffes,NULL,NULL,NULL,NULL
-1.0,2,Vegetables and melons,Légumes et melons,"Vegetables, n.e.c","Légumes, n.c.a.",NULL,NULL,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,Avocados,Avocats,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,Bananas & plantains,Bananes et plantains,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,Dates,Dates,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,Figs,Figues,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,Mangoes,Mangues,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,Papayas,Papayes,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,Pineapples,Ananas,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux,"Other tropical and subtropical fruits, n.e.c.","Autres fruits tropicaux et subtropicaux, n.c.a.",NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Citrus fruits,Citrus fruits,Grapefruit & pomelo,Pamplemousse et pomelo,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Citrus fruits,Citrus fruits,Lemons and Limes,Citrons et Limes,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Citrus fruits,Citrus fruits,Oranges,Oranges,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Citrus fruits,Citrus fruits,"Tangerines, mandarins, clementines","Mandarines, mandarins, clémentines",NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Citrus fruits,Citrus fruits,"Other citrus fruit, n.e.c.","Autres agrumes, n.c.a.",NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Grapes,Grapes,NULL,NULL,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Berries,Baies,Currants,Groseilles,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Berries,Baies,Gooseberries,Groseilles à maquereau,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Berries,Baies,Kiwi fruit,Kiwi fruit,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Berries,Baies,Raspberries,Framboises,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Berries,Baies,Strawberries,Fraises,NULL,NULL
-,3,Fruit and nuts,Fruits et noix,Berries,Baies,Blueberries,Myrtilles,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Berries,Baies,Other berries,Autres baies,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau,Apples,Pommes,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau,Apricots,Abricots,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau,Cherries & sour cherries,Cerises et cerises acides,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau,Peaches & nectarines,Pêches et nectarines,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau,Pears & quinces,Poires et coings,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau,Plums and sloes,Prunes et prunelles,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau,"Other pome fruits and stone fruits, n.e.c.","Autres fruits à pépins et à noyau, n.c.a.",NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Nuts,Noix,Almonds,Amandes,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Nuts,Noix,Cashew nuts,Noix de cajou,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Nuts,Noix,Chestnuts,Châtaignes,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Nuts,Noix,Hazelnuts,Hazelnuts,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Nuts,Noix,Pistachios,Pistaches,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Nuts,Noix,Walnuts,Noix de Grenoble,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,Nuts,Noix,Other nuts n.e.c.,Autres fruits à coque n.c.a.,NULL,NULL
-2.0,3,Fruit and nuts,Fruits et noix,"Other fruits, n.e.c","Autres fruits, n.c.a.",NULL,NULL,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Soya beans,Fèves de soja,NULL,NULL,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Groundnuts,Arachides,NULL,NULL,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Castor bean,Le ricin,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Linseed,Linseed,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Mustard,Moutarde,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Niger seed,Graines du Niger,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Rapeseed,Colza,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Safflower,Carthame,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Sesame,Sésame,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,Sunflower,Tournesol,NULL,NULL
-1.0,4,Oilseed crops,Cultures oléagineuses,Other temporary oilseed crops,Autres cultures oléagineuses temporaires,"Other temporary oilseed crops, n.e.c.","Autres cultures oléagineuses temporaires, n.c.a.",NULL,NULL
-2.0,4,Oilseed crops,Cultures oléagineuses,Permanent oilseed crops,Cultures permanentes d'oléagineux,Coconuts,Noix de coco,NULL,NULL
-2.0,4,Oilseed crops,Cultures oléagineuses,Permanent oilseed crops,Cultures permanentes d'oléagineux,Olives,Olives,NULL,NULL
-2.0,4,Oilseed crops,Cultures oléagineuses,Permanent oilseed crops,Cultures permanentes d'oléagineux,Oil palms,Palmiers à huile,NULL,NULL
-2.0,4,Oilseed crops,Cultures oléagineuses,Permanent oilseed crops,Cultures permanentes d'oléagineux,"Other oleaginous fruits, n.e.c.","Autres fruits oléagineux, n.c.a.",NULL,NULL
-1.0,5,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,NULL,NULL,NULL,NULL
-1.0,5,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Potatoes,Pommes de terre,NULL,NULL,NULL,NULL
-1.0,5,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Sweet potatoes,Patates douces,NULL,NULL,NULL,NULL
-1.0,5,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Cassava,Manioc,NULL,NULL,NULL,NULL
-1.0,5,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Yams,Igname,NULL,NULL,NULL,NULL
-1.0,5,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,"Other roots & tubers, n.e.c","Autres racines et tubercules, n.c.a.",NULL,NULL,NULL,NULL
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Beverage crops,Cultures de boissons,Coffee,Café,NULL,NULL
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Beverage crops,Cultures de boissons,Tea,Thé,NULL,NULL
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Beverage crops,Cultures de boissons,Maté,Maté,NULL,NULL
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Beverage crops,Cultures de boissons,Cocoa,Cacao,NULL,NULL
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Beverage crops,Cultures de boissons,"Other beverage crops, n.e.c.","Autres cultures pour boissons, n.c.a.",NULL,NULL
-1.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Temporary spice crops,Cultures temporaires d'épices,Chilies & peppers (capsicum spp.),Piments et poivrons (capsicum spp.)
-1.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Temporary spice crops,Cultures temporaires d'épices,"Anise, badian, and fennel","Anis, badiane, et fenouil"
-1.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Temporary spice crops,Cultures temporaires d'épices,"Other temporary spice crops, n.e.c","Autres cultures temporaires d'épices, n.c.a."
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Permanent spice crops,Cultures permanentes d'épices,Pepper (piper spp.),Poivre (piper spp.)
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Permanent spice crops,Cultures permanentes d'épices,"Nutmeg, mace, cardamoms","Noix de muscade, macis, cardamome"
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Permanent spice crops,Cultures permanentes d'épices,Cinnamon (canella),Cannelle (canella)
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Permanent spice crops,Cultures permanentes d'épices,Cloves,Clous de girofle
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Permanent spice crops,Cultures permanentes d'épices,Ginger,Gingembre
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Permanent spice crops,Cultures permanentes d'épices,Vanilla,Vanille
-2.0,6,Beverage and spice crops,Cultures de boissons et d'épices,Spice crops,Cultures d'épices,Permanent spice crops,Cultures permanentes d'épices,"Other permanent spice crops, n.e.c","Autres cultures permanentes d'épices, n.c.a."
-1.0,7,Leguminous crops,Légumineuses,Beans,Haricots,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,Broad beans,Fèves,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,Chick peas,Pois chiches,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,Cow peas,Pois de vache,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,Lentils,Lentilles,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,Lupins,Lupin,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,Peas,Pois,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,Pigeon peas,Têtes de pigeons,NULL,NULL,NULL,NULL
-1.0,7,Leguminous crops,Légumineuses,"Leguminous crops, n.e.c","Légumineuses, n.c.a.",NULL,NULL,NULL,NULL
-1.0,8,Sugar crops,Cultures sucrières,Sugar beet,Betterave sucrière,NULL,NULL,NULL,NULL
-1.0,8,Sugar crops,Cultures sucrières,Sugar cane,Canne à sucre,NULL,NULL,NULL,NULL
-1.0,8,Sugar crops,Cultures sucrières,Sweet sorghum,Sorgho doux,NULL,NULL,NULL,NULL
-1.0,8,Sugar crops,Cultures sucrières,Other sugar crops n.e.c,Autres cultures sucrières n.c.a.,NULL,NULL,NULL,NULL
-1.0,9,Other crops,Autres cultures,Grasses and other fodder crops,Graminées et autres cultures fourragères,Temporary grass crops,Cultures d'herbes temporaires,NULL,NULL
-2.0,9,Other crops,Autres cultures,Grasses and other fodder crops,Graminées et autres cultures fourragères,Permanent grass crops,Cultures permanentes d'herbe,NULL,NULL
-1.0,9,Other crops,Autres cultures,Fibre crops,Cultures de fibres,Temporary fibre crops,Cultures temporaires de fibres,Cotton,Coton
-1.0,9,Other crops,Autres cultures,Fibre crops,Cultures de fibres,Temporary fibre crops,Cultures temporaires de fibres,"Jute, kenaf, and other similar crops","Jute, kenaf, et autres cultures similaires"
-1.0,9,Other crops,Autres cultures,Fibre crops,Cultures de fibres,Temporary fibre crops,Cultures temporaires de fibres,"Flax, hemp, and other similar products","Lin, chanvre et autres produits similaires"
-1.0,9,Other crops,Autres cultures,Fibre crops,Cultures de fibres,Temporary fibre crops,Cultures temporaires de fibres,Other temporary fibre crops,Autres cultures temporaires de fibres
-2.0,9,Other crops,Autres cultures,Fibre crops,Cultures de fibres,Permanent fibre crops,Permanent fibre crops,NULL,NULL
-1.0,9,Other crops,Autres cultures,"Medicinal, aromatic, pesticidal, or similar crops","Cultures médicinales, aromatiques, pesticides ou similaires","Temporary medicinal, etc. crops","Cultures temporaires médicinales, etc.",NULL,NULL
-2.0,9,Other crops,Autres cultures,"Medicinal, aromatic, pesticidal, or similar crops","Cultures médicinales, aromatiques, pesticides ou similaires","Permanent medicinal, etc. crops","Cultures permanentes médicinales, etc.",NULL,NULL
-2.0,9,Other crops,Autres cultures,Rubber,Caoutchouc,NULL,NULL,NULL,NULL
-1.0,9,Other crops,Autres cultures,Flower crops,Cultures de fleurs,Temporary flower crops,Cultures de fleurs temporaires,NULL,NULL
-2.0,9,Other crops,Autres cultures,Flower crops,Cultures de fleurs,Permanent flower crops,Cultures florales permanentes,NULL,NULL
-1.0,9,Other crops,Autres cultures,Tobacco,Tabac,NULL,NULL,NULL,NULL
-1.0,9,Other crops,Autres cultures,Other crops,Autres cultures,Other crops - temporary,Autres cultures - temporaires,NULL,NULL
-2.0,9,Other crops,Autres cultures,Other crops,Autres cultures,Other crops - permanent,Autres cultures - permanentes,NULL,NULL
+ID_GROUP,GROUP_fr,CROPS_fr,SUB-CROPS_fr,SUB-SUB-CROPS_fr
+1,Céréales,Blé,NULL,NULL
+1,Céréales,Maïs,NULL,NULL
+1,Céréales,Riz,NULL,NULL
+1,Céréales,Sorgho,NULL,NULL
+1,Céréales,Orge,NULL,NULL
+1,Céréales,Seigle,NULL,NULL
+1,Céréales,Avoine,NULL,NULL
+1,Céréales,Millets,NULL,NULL
+1,Céréales,"Autres céréales, n.c.a.",Céréales mélangées,NULL
+1,Céréales,"Autres céréales, n.c.a.",Autre,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,Artichauts,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,Asperges,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,Choux,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,Choux-fleurs et brocolis,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,Laitue,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,Epinards,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,Chicorée,NULL
+2,Légumes et melons,Légumes à feuilles ou à tiges,"Autres légumes à feuilles ou à tiges, n.c.a.",NULL
+2,Légumes et melons,Légumes à fruits,Concombres,NULL
+2,Légumes et melons,Légumes à fruits,Eggplants (aubergines),NULL
+2,Légumes et melons,Légumes à fruits,Tomates,NULL
+2,Légumes et melons,Légumes à fruits,Pastèques,NULL
+2,Légumes et melons,Légumes à fruits,Cantaloups et autres melons,NULL
+2,Légumes et melons,Légumes à fruits,"Citrouille, courge et gourde",NULL
+2,Légumes et melons,Légumes à fruits,"Autres légumes-fruits, n.c.a.",NULL
+2,Légumes et melons,"Légumes-racines, bulbes ou tubercules",Carottes,NULL
+2,Légumes et melons,"Légumes-racines, bulbes ou tubercules",Navets,NULL
+2,Légumes et melons,"Légumes-racines, bulbes ou tubercules",Ail,NULL
+2,Légumes et melons,"Légumes-racines, bulbes ou tubercules",Oignons (y compris les échalotes),NULL
+2,Légumes et melons,"Légumes-racines, bulbes ou tubercules",Poireaux et autres légumes alliacés,NULL
+2,Légumes et melons,"Légumes-racines, bulbes ou tubercules","Autres légumes-racines, bulbes ou tubercules, n.c.a.",NULL
+2,Légumes et melons,Champignons et truffes,NULL,NULL
+2,Légumes et melons,"Légumes, n.c.a.",NULL,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,Avocats,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,Bananes et plantains,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,Dates,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,Figues,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,Mangues,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,Papayes,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,Ananas,NULL
+3,Fruits et noix,Fruits tropicaux et subtropicaux,"Autres fruits tropicaux et subtropicaux, n.c.a.",NULL
+3,Fruits et noix,Citrus fruits,Pamplemousse et pomelo,NULL
+3,Fruits et noix,Citrus fruits,Citrons et Limes,NULL
+3,Fruits et noix,Citrus fruits,Orge,NULL
+3,Fruits et noix,Citrus fruits,"Mandarines, mandarins, clémentines",NULL
+3,Fruits et noix,Citrus fruits,"Autres agrumes, n.c.a.",NULL
+3,Fruits et noix,Grapes,NULL,NULL
+3,Fruits et noix,Baies,Groseilles,NULL
+3,Fruits et noix,Baies,Groseilles à maquereau,NULL
+3,Fruits et noix,Baies,Kiwi fruit,NULL
+3,Fruits et noix,Baies,Framboises,NULL
+3,Fruits et noix,Baies,Fraises,NULL
+3,Fruits et noix,Baies,Myrtilles,NULL
+3,Fruits et noix,Baies,Autres baies,NULL
+3,Fruits et noix,Fruits à pépins et fruits à noyau,Pommes,NULL
+3,Fruits et noix,Fruits à pépins et fruits à noyau,Abricots,NULL
+3,Fruits et noix,Fruits à pépins et fruits à noyau,Cerises et cerises acides,NULL
+3,Fruits et noix,Fruits à pépins et fruits à noyau,Pêches et nectarines,NULL
+3,Fruits et noix,Fruits à pépins et fruits à noyau,Poires et coings,NULL
+3,Fruits et noix,Fruits à pépins et fruits à noyau,Prunes et prunelles,NULL
+3,Fruits et noix,Fruits à pépins et fruits à noyau,"Autres fruits à pépins et à noyau, n.c.a.",NULL
+3,Fruits et noix,Noix,Amandes,NULL
+3,Fruits et noix,Noix,Noix de cajou,NULL
+3,Fruits et noix,Noix,Châtaignes,NULL
+3,Fruits et noix,Noix,Hazelnuts,NULL
+3,Fruits et noix,Noix,Pistaches,NULL
+3,Fruits et noix,Noix,Noix de Grenoble,NULL
+3,Fruits et noix,Noix,Autres fruits à coque n.c.a.,NULL
+3,Fruits et noix,"Autres fruits, n.c.a.",NULL,NULL
+4,Cultures oléagineuses,Fèves de soja,NULL,NULL
+4,Cultures oléagineuses,Arachides,NULL,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Le ricin,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Linseed,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Moutarde,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Graines du Niger,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Colza,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Carthame,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Sésame,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,Tournesol,NULL
+4,Cultures oléagineuses,Autres cultures oléagineuses temporaires,"Autres cultures oléagineuses temporaires, n.c.a.",NULL
+4,Cultures oléagineuses,Cultures permanentes d'oléagineux,Noix de coco,NULL
+4,Cultures oléagineuses,Cultures permanentes d'oléagineux,Olives,NULL
+4,Cultures oléagineuses,Cultures permanentes d'oléagineux,Palmiers à huile,NULL
+4,Cultures oléagineuses,Cultures permanentes d'oléagineux,"Autres fruits oléagineux, n.c.a.",NULL
+5,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,NULL,NULL
+5,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Pommes de terre,NULL,NULL
+5,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Patates douces,NULL,NULL
+5,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Manioc,NULL,NULL
+5,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,Igname,NULL,NULL
+5,Cultures de racines/tubercules à forte teneur en amidon ou en inuline,"Autres racines et tubercules, n.c.a.",NULL,NULL
+6,Cultures de boissons et d'épices,Cultures de boissons,Café,NULL
+6,Cultures de boissons et d'épices,Cultures de boissons,Thé,NULL
+6,Cultures de boissons et d'épices,Cultures de boissons,Maté,NULL
+6,Cultures de boissons et d'épices,Cultures de boissons,Cacao,NULL
+6,Cultures de boissons et d'épices,Cultures de boissons,"Autres cultures pour boissons, n.c.a.",NULL
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures temporaires d'épices,Piments et poivrons (capsicum spp.)
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures temporaires d'épices,"Anis, badiane, et fenouil"
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures temporaires d'épices,"Autres cultures temporaires d'épices, n.c.a."
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures permanentes d'épices,Poivre (piper spp.)
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures permanentes d'épices,"Noix de muscade, macis, cardamome"
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures permanentes d'épices,Cannelle (canella)
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures permanentes d'épices,Clous de girofle
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures permanentes d'épices,Gingembre
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures permanentes d'épices,Vanille
+6,Cultures de boissons et d'épices,Cultures d'épices,Cultures permanentes d'épices,"Autres cultures permanentes d'épices, n.c.a."
+7,Légumineuses,Haricots,NULL,NULL
+7,Légumineuses,Fèves,NULL,NULL
+7,Légumineuses,Pois chiches,NULL,NULL
+7,Légumineuses,Pois de vache,NULL,NULL
+7,Légumineuses,Lentilles,NULL,NULL
+7,Légumineuses,Lupin,NULL,NULL
+7,Légumineuses,Pois,NULL,NULL
+7,Légumineuses,Têtes de pigeons,NULL,NULL
+7,Légumineuses,"Légumineuses, n.c.a.",NULL,NULL
+8,Cultures sucrières,Betterave sucrière,NULL,NULL
+8,Cultures sucrières,Canne à sucre,NULL,NULL
+8,Cultures sucrières,Sorgho doux,NULL,NULL
+8,Cultures sucrières,Autres cultures sucrières n.c.a.,NULL,NULL
+9,Autres cultures,Graminées et autres cultures fourragères,Cultures d'herbes temporaires,NULL
+9,Autres cultures,Graminées et autres cultures fourragères,Cultures permanentes d'herbe,NULL
+9,Autres cultures,Cultures de fibres,Cultures temporaires de fibres,Coton
+9,Autres cultures,Cultures de fibres,Cultures temporaires de fibres,"Jute, kenaf, et autres cultures similaires"
+9,Autres cultures,Cultures de fibres,Cultures temporaires de fibres,"Lin, chanvre et autres produits similaires"
+9,Autres cultures,Cultures de fibres,Cultures temporaires de fibres,Autres cultures temporaires de fibres
+9,Autres cultures,Cultures de fibres,Permanent fibre crops,NULL
+9,Autres cultures,"Cultures médicinales, aromatiques, pesticides ou similaires","Cultures temporaires médicinales, etc.",NULL
+9,Autres cultures,"Cultures médicinales, aromatiques, pesticides ou similaires","Cultures permanentes médicinales, etc.",NULL
+9,Autres cultures,Caoutchouc,NULL,NULL
+9,Autres cultures,Cultures de fleurs,Cultures de fleurs temporaires,NULL
+9,Autres cultures,Cultures de fleurs,Cultures florales permanentes,NULL
+9,Autres cultures,Tabac,NULL,NULL
+9,Autres cultures,Autres cultures,Autres cultures - temporaires,NULL
+9,Autres cultures,Autres cultures,Autres cultures - permanentes,NULL

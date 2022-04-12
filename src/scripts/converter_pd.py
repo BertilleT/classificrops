@@ -24,6 +24,8 @@ jcmDf = pd.DataFrame()
 #to pass from a classification from a country/region and from a specific year to a unified/european one, the user should call the following function
 def converter(country, year):
     global jcmDf
+    global srcDf
+    print('---------------------------------------begin converter')
     genericPath = '../../data/'
     #read the origin data into a pandas dataframe. 
     srcDf = pd.read_csv(genericPath + '/' + country + '/' + country + '_' + year + '.csv')
@@ -32,32 +34,25 @@ def converter(country, year):
     #create the conversion table into the folder of the country/region we are working with
     specificPath = country + '/conversionTable_'+ country + '.csv'
     path = genericPath + specificPath
-
-
-    '''srcDf.apply(
-    lambda rowS: scanSource(rowS), axis=1
-    )'''
-    print(srcDf)
-    for line in srcDf.itertuples():
-        scanSource(line)    
+    scanSource(srcDf)    
+    '''for line in srcDf.itertuples():
+        scanSource(line)   ''' 
 
     #order list from the higher to the lower group by id_Crops_fr
     conversionDf = pd.DataFrame(resultList, columns=['ID_CROPS_FR', 'ID_GROUP_JECAM', 'similarity'])
     conversionDf.to_csv(path)
 
-def scanSource(rowS):
+def scanSource(srcDf):
     print('---------------------------------------begin scan source')
-    print(f" type {type(rowS)}")
-    print(rowS)
-    print(rowS[1])
     for srcClass in srcAttributes: 
-        print(type(srcClass))
-        scanTarget(srcClass,rowS)
-        if rowS.srcClass in [item[0] for item in resultList]:
+        #print (srcDf.srcClass)
+        srcDf.apply(lambda x:scanTarget(x.ID_CROPS_FR), axis=1)
+        '''if rowS.srcClass in [item[0] for item in resultList]:
+            print('I am in the if loop')
             break
         else: 
             if index(srcClass) == len(srcAttributes)-1:
-                return print('zero matching have been found') #for the value : ' + value)
+                return print('zero matching have been found') #for the value : ' + value)'''
 
 def scanTarget(srcClass,rowS):
     print('---------------------------------------begin scan target')
@@ -65,6 +60,7 @@ def scanTarget(srcClass,rowS):
     print(rowS)
     for jcmClass in jcmAttributes: 
         print("I am in the first loop")
+        print(rowS.srcClass)
         print(jcmClass)
         for rowT in jcmDf.itertuples():
             print(rowT)
