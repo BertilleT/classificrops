@@ -12,8 +12,9 @@ resultList = [] # example : [['BRO',3,0.8]]
 srcDf = pd.read_csv('../../data/FR/FR_2020.csv')
 jcmDf = pd.read_csv('../../data/JECAM/JECAM_fr.csv')
 columns = list(jcmDf) 
-print(columns)
-srcDf.drop_duplicates(subset = ["GROUP_FR"])
+#print(columns)
+srcDf2 = srcDf.drop_duplicates(subset = ["GROUP_FR"])
+print(srcDf2)
 
 def scanTarget(g):
     for jcmClass in columns: 
@@ -29,7 +30,7 @@ def matching(g,c,l):
     print('target : ')
     print(c)'''
     nb = 0
-    print(nb)
+    #print(c)
     if c != 'NaN' and type(c) == str:
         #print('--------------------------------------------fuzz_ratio is called')
         nb = fuzz.ratio(g,c)
@@ -37,5 +38,5 @@ def matching(g,c,l):
         if nb > 75: 
             resultList.append([g, c, l, nb])
 
-srcDf.apply(lambda x:scanTarget(x.GROUP_FR), axis=1)
+srcDf2.apply(lambda x:scanTarget(x.GROUP_FR), axis=1)
 print(resultList)
