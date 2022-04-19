@@ -5,17 +5,25 @@
 
 Agrivolution's documentation
 ============================
+The project is divided in 2 parts. 
 
-Agrivolution is an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map. 
+1) classification standardization
+    expected deliverable : a tool coded in python, able to convert one crops classification to another one, with a clean documentation written in sphinx. 
+    Data storage need ? No. 
+
+2) SIG software to study crops evolution and repartition in Europe.
+    expected deliverable : to be detailed. 
+    Data ? Yes : SIG database with anonymous geographic data used to receive funds from the agricole common policy. 
+    [Agrivolution is an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map.]
 
 -----
 
 .. toctree::
-   docuPages/analysis
-   docuPages/Wallonia_and_France_classification
-   docuPages/european_classification
-   docuPages/languages
-   docuPages/conception
+   1/Wallonia_and_France_classification
+   1/european_classification
+   1/languages
+   2/analysis
+   2/conception
 
 
 Installation

@@ -16,7 +16,7 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analysis" href="docuPages/analysis.html" />
+    <link rel="next" title="Wallonia and France classification" href="1/Wallonia_and_France_classification.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -35,28 +35,43 @@
             
   <section id="agrivolution-s-documentation">
 <h1>Agrivolution’s documentation<a class="headerlink" href="#agrivolution-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Agrivolution is an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map.</p>
+<p>The project is divided in 2 parts.</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>classification standardization</dt><dd><p>expected deliverable : a tool coded in python, able to convert one crops classification to another one, with a clean documentation written in sphinx.
+Data storage need ? No.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>SIG software to study crops evolution and repartition in Europe.</dt><dd><p>expected deliverable : to be detailed.
+Data ? Yes : SIG database with anonymous geographic data used to receive funds from the agricole common policy.
+[Agrivolution is an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map.]</p>
+</dd>
+</dl>
+</li>
+</ol>
 <hr class="docutils" />
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/analysis.html">Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/analysis.html#actors">Actors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/analysis.html#specifications">Specifications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/analysis.html#restrictions">Restrictions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/analysis.html#detailed-specifications">Detailed specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1/Wallonia_and_France_classification.html">Wallonia and France classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1/european_classification.html">european classification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1/european_classification.html#tree-structure-of-data-csv">Tree structure of data/csv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1/european_classification.html#classifier-generic-algorithm">Classifier generic algorithm</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/Wallonia_and_France_classification.html">Wallonia and France classification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/european_classification.html">european classification</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/european_classification.html#tree-structure-of-data-csv">Tree structure of data/csv</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/european_classification.html#classifier-generic-algorithm">Classifier generic algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1/languages.html">languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2/analysis.html">Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2/analysis.html#actors">Actors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2/analysis.html#specifications">Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2/analysis.html#restrictions">Restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2/analysis.html#detailed-specifications">Detailed specifications</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/languages.html">languages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/conception.html">Conception</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/conception.html#use-cases">Use cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/conception.html#classes">Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docuPages/conception.html#data-format">Data format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2/conception.html">Conception</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2/conception.html#use-cases">Use cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2/conception.html#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2/conception.html#data-format">Data format</a></li>
 </ul>
 </li>
 </ul>
@@ -132,18 +147,18 @@ As we want to write a technical documentation, we wil use rst and Shpinx.</p>
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/analysis.html">Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/Wallonia_and_France_classification.html">Wallonia and France classification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/european_classification.html">european classification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/languages.html">languages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docuPages/conception.html">Conception</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1/Wallonia_and_France_classification.html">Wallonia and France classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1/european_classification.html">european classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1/languages.html">languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2/analysis.html">Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2/conception.html">Conception</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="docuPages/analysis.html" title="next chapter">Analysis</a></li>
+      <li>Next: <a href="1/Wallonia_and_France_classification.html" title="next chapter">Wallonia and France classification</a></li>
   </ul></li>
 </ul>
 </div>
