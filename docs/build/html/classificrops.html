@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1. classificrops &#8212; Agrivolution 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Agrivolution" href="agrivolution.html" />
+    <link rel="prev" title="Agrivolution’s documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="classificrops">
+<h1><span class="section-number">1. </span>classificrops<a class="headerlink" href="#classificrops" title="Permalink to this headline">¶</a></h1>
+<section id="wallonia-and-france-classification">
+<h2><span class="section-number">1.1. </span>Wallonia and France classification<a class="headerlink" href="#wallonia-and-france-classification" title="Permalink to this headline">¶</a></h2>
+<p>This section is dedicated to the comparison of croplands classification between Wallonia and France. We focus on the level 1 of classification (by group of crops).</p>
+<p>1) In Wallonia
+| source data : <a class="reference external" href="https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend">https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend</a></p>
+<p>2) In France
+| source data : <a class="reference external" href="https://geoservices.ign.fr/documentation/donnees/vecteur/rpg">https://geoservices.ign.fr/documentation/donnees/vecteur/rpg</a></p>
+<p>France and Wallonia classification are different. To study a group crops evolution in both country, we could start by matching the different classes one by one.
+Yet, this solution is not really satisfying.</p>
+<p>When it comes to a classification with much more classes, the complexity of the matching task increases. Indeed,
+what happen if you decide now to study a crop and not a group of crops. In Wallonia, 143 crops are listed against 352 in France. We would have to match both lists.
+To go further, let’s imagine that you want to study the evolution of a crop in France, Wallonia, Flandres, Netherlands, Germany and Austria. How to deal with it ?</p>
+<p>Let’s go even further : you want now to study a cropland in all european union countries. There are 27 of them. Then we would have to compute (27*(27+1)/2 = ) 328 matching tasks,
+and without taking into account that sometimes, crop classification are not centralized but managed at a regional level (as in Belgium for example).
+So in reality, it would represent even more than 378 matching tasks.</p>
+<p>We understand why, to study agricultural croplands at an european level, we have to draw a shared classification for all countries from Europe…
+which brings us to the following question : how to define a shared classification ?</p>
+</section>
+<section id="european-classification">
+<h2><span class="section-number">1.2. </span>european_classification<a class="headerlink" href="#european-classification" title="Permalink to this headline">¶</a></h2>
+<p>Instead of creating a shared clasification from scratch, we will choose an existing classification as a reference.
+The European classification chosen is the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO).
+| source data : <a class="reference external" href="https://www.fao.org/3/a0135e/A0135E10.htm#app3">https://www.fao.org/3/a0135e/A0135E10.htm#app3</a></p>
+</section>
+<section id="languages">
+<h2><span class="section-number">1.3. </span>languages<a class="headerlink" href="#languages" title="Permalink to this headline">¶</a></h2>
+<p>How to compare croplands classification when they are written in various languages ? If we stick to the large run goal which is to study all countries from EU, we have
+at least <strong>24</strong> official languages.
+The idea is to create a table that contains ICC classification written in the 24 official languages.
+To do so : 2 alternatives studies :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Use Deepl library : <a class="reference external" href="https://github.com/DeepLcom/deepl-python">https://github.com/DeepLcom/deepl-python</a>. But the number of source languages from Europe available is limited : there are only german, spanish, french, italian, dutsh, polish and portugese.</p></li>
+<li><p>Use google translation. to be studied.</p></li>
+</ul>
+</div></blockquote>
+<p>Comparison pros and cons of each method</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Agrivolution</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. classificrops</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wallonia-and-france-classification">1.1. Wallonia and France classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#european-classification">1.2. european_classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#languages">1.3. languages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="agrivolution.html">2. Agrivolution</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Agrivolution’s documentation</a></li>
+      <li>Next: <a href="agrivolution.html" title="next chapter"><span class="section-number">2. </span>Agrivolution</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Bertille Temple.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/classificrops.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
