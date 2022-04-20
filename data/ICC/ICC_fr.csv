@@ -1,0 +1,197 @@
+,code,broader,label_en,label_fr
+0,1,,Cereals,Céréales
+1,1.01,1,Wheat,Blé
+2,1.02,1,Maize,Maïs
+3,1.03,1,Rice,Riz
+4,1.04,1,Sorghum,Sorgho
+5,1.05,1,Barley,Orge
+6,1.06,1,Rye,Seigle
+7,1.07,1,Oats,Avoine
+8,1.08,1,Millet,Millet
+9,1.09,1,Triticale,Triticale
+10,1.1,1,Buckwheat,Sarrasin
+11,1.11,1,Fonio,Fonio
+12,1.12,1,Quinoa,Quinoa
+13,1.13,1,Canary seed,Graine de canari
+14,1.14,1,Mixed cereals,Céréales mélangées
+15,1.9,1,"Other cereals, n.e.c.","Autres céréales, n.c.a."
+16,2,,Vegetables and melons,Légumes et melons
+17,2.01,2,Leafy or stem vegetables,Légumes à feuilles ou à tiges
+18,2.01.01,2.01,Artichokes,Artichauts
+19,2.01.02,2.01,Asparagus,Asperges
+20,2.01.03,2.01,Cabbages,Choux
+21,2.01.04,2.01,Cauliflower and broccoli,Chou-fleur et brocoli
+22,2.01.05,2.01,Lettuce,Laitue
+23,2.01.06,2.01,Spinach,Epinards
+24,2.01.07,2.01,Chicory,Chicorée
+25,2.01.90,2.01,"Other leafy or stem vegetables, n.e.c.","Autres légumes à feuilles ou à tiges, n.c.a."
+26,2.02,2,Fruit-bearing vegetables,Légumes à fruits
+27,2.02.01,2.02,Cucumbers,Concombres
+28,2.02.02,2.02,Eggplants (aubergines),Eggplants (aubergines)
+29,2.02.03,2.02,Tomatoes,Tomates
+30,2.02.04,2.02,"Pumpkin, squash and gourds","Citrouille, courge et gourde"
+31,2.02.05,2.02,Okra,Gombo
+32,2.02.90,2.02,"Other fruit-bearing vegetables, n.e.c.","Autres légumes-fruits, n.c.a."
+33,2.03,2,"Root, bulb or tuberous vegetables","Légumes-racines, bulbes ou tubercules"
+34,2.03.01,2.03,Carrots,Carottes
+35,2.03.02,2.03,Turnips,Navets
+36,2.03.03,2.03,Garlic,Ail
+37,2.03.04,2.03,Onions (incl. shallots),Oignons (y compris les échalotes)
+38,2.03.05,2.03,Leeks and other alliaceous vegetables,Poireaux et autres légumes alliacés
+39,2.03.90,2.03,"Other root, bulb, or tuberous vegetables, n.e.c.","Autres légumes-racines, bulbes ou tubercules, n.c.a."
+40,2.04,2,Mushrooms and truffles,Champignons et truffes
+41,2.05,2,Melons,Melons
+42,2.05.01,2.05,Watermelons,Pastèques
+43,2.05.02,2.05,Cantaloupes and other melons,Cantaloups et autres melons
+44,2.9,2,Other vegetables n.e.c.,Autres légumes n.c.a.
+45,3,,Fruit and nuts,Fruits et noix
+46,3.01,3,Tropical and subtropical fruits,Fruits tropicaux et subtropicaux
+47,3.01.01,3.01,Avocados,Avocats
+48,3.01.02,3.01,Bananas,Bananes
+49,3.01.03,3.01,Plantains,Plantains
+50,3.01.04,3.01,Dates,Dates
+51,3.01.05,3.01,Figs,Figues
+52,3.01.06,3.01,"Mangoes, guavas and mangosteens","Mangues, goyaves et mangoustans"
+53,3.01.07,3.01,Papayas,Papayes
+54,3.01.08,3.01,Pineapples,Ananas
+55,3.01.90,3.01,"Other tropical and subtropical fruits, n.e.c.","Autres fruits tropicaux et subtropicaux, n.c.a."
+56,3.02,3,Citrus fruits,Citrus fruits
+57,3.02.01,3.02,Grapefruit and pomelo,Pamplemousse et pomelo
+58,3.02.02,3.02,Lemons and limes,Citrons et limes
+59,3.02.03,3.02,Oranges,Oranges
+60,3.02.04,3.02,"Tangerines mandarins, clementines","Mandarines, mandarines, clémentines"
+61,3.02.90,3.02,"Other citrus fruits, n.e.c.","Autres agrumes, n.c.a."
+62,3.03,3,Grapes,Grapes
+63,3.04,3,Berries,Baies
+64,3.04.01,3.04,Currants,Groseilles
+65,3.04.02,3.04,Gooseberries,Groseilles à maquereau
+66,3.04.03,3.04,Kiwi fruit,Kiwi fruit
+67,3.04.04,3.04,Raspberries,Framboises
+68,3.04.05,3.04,Strawberries,Fraises
+69,3.04.06,3.04,Blueberries,Myrtilles
+70,3.04.07,3.04,Cranberries,Canneberges
+71,3.04.90,3.04,"Other berries, n.e.c","Autres baies, n.c.a."
+72,3.05,3,Pome fruits and stone fruits,Fruits à pépins et fruits à noyau
+73,3.05.01,3.05,Apples,Pommes
+74,3.05.02,3.05,Apricots,Abricots
+75,3.05.03,3.05,Cherries and sour cherries,Cerises et cerises acides
+76,3.05.04,3.05,Peaches and nectarines,Pêches et nectarines
+77,3.05.05,3.05,Pears and quinces,Poires et coings
+78,3.05.06,3.05,Plums and sloes,Prunes et prunelles
+79,3.05.90,3.05,"Other pome fruits and stone fruits, n.e.c.","Autres fruits à pépins et à noyau, n.c.a."
+80,3.06,3,Nuts,Noix
+81,3.06.01,3.06,Almonds,Amandes
+82,3.06.02,3.06,Cashew nuts,Noix de cajou
+83,3.06.03,3.06,Chestnuts,Châtaignes
+84,3.06.04,3.06,Hazelnuts,Hazelnuts
+85,3.06.05,3.06,Pistachios,Pistaches
+86,3.06.06,3.06,Walnuts,Noix de Grenoble
+87,3.06.07,3.06,Brazil nuts,Noix du Brésil
+88,3.06.08,3.06,Areca nuts,Noix d'Areca
+89,3.06.09,3.06,Cola nuts,Noix de cola
+90,3.06.90,3.06,"Other nuts, n.e.c.","Autres fruits à coque, n.c.a."
+91,3.9,3,"Other fruits, n.e.c.","Autres fruits, n.c.a."
+92,4,,Oilseed crops and oleaginous fruits,Plantes oléagineuses et fruits oléagineux
+93,4.01,4,Soya beans,Fèves de soja
+94,4.02,4,Groundnuts,Arachides
+95,4.03,4,Other temporary oilseed crops,Autres cultures oléagineuses temporaires
+96,4.03.01,4.03,Castor bean,Le ricin
+97,4.03.02,4.03,Linseed,Linseed
+98,4.03.03,4.03,Mustard,Moutarde
+99,4.03.04,4.03,Niger seed,Graines du Niger
+100,4.03.05,4.03,Rapeseed,Colza
+101,4.03.06,4.03,Safflower,Carthame
+102,4.03.07,4.03,Sesame,Sésame
+103,4.03.08,4.03,Sunflower,Tournesol
+104,4.03.09,4.03,Shea tree (shea butter or karite nuts),Karité (beurre de karité ou noix de karité)
+105,4.03.10,4.03,Tung tree,Arbre de tung
+106,4.03.11,4.03,Jojoba,Jojoba
+107,4.03.12,4.03,Poppy,Coquelicot
+108,4.03.13,4.03,Tallow tree,Arbre à suif
+109,4.03.90,4.03,"Other temporary oilseed crops, n.e.c.","Autres cultures oléagineuses temporaires, n.c.a."
+110,4.04,4,Permanent oilseed crops,Cultures permanentes d'oléagineux
+111,4.04.01,4.04,Coconuts,Noix de coco
+112,4.04.02,4.04,Olives,Olives
+113,4.04.03,4.04,Oil palms,Palmiers à huile
+114,4.04.90,4.04,"Other oleaginous fruits, n.e.c.","Autres fruits oléagineux, n.c.a."
+115,5,,Root/tuber crops with high starch or inulin content,Cultures de racines/tubercules à forte teneur en amidon ou en inuline
+116,5.01,5,Potatoes,Pommes de terre
+117,5.02,5,Sweet potatoes,Patates douces
+118,5.03,5,Cassava,Manioc
+119,5.04,5,Yams,Igname
+120,5.05,5,Taro,Taro
+121,5.06,5,Yautia,Yautia
+122,5.9,5,"Other roots and tubers, n.e.c.","Autres racines et tubercules, n.c.a."
+123,6,,"Stimulant, spice and aromatic crops","Cultures stimulantes, épices et aromatiques"
+124,6.01,6,Stimulant crops,Cultures stimulantes
+125,6.01.01,6.01,Coffee,Café
+126,6.01.02,6.01,Tea,Thé
+127,6.01.03,6.01,Maté,Maté
+128,6.01.04,6.01,Cocoa,Cacao
+129,6.01.05,6.01,Chicory roots,Racines de chicorée
+130,6.01.90,6.01,"Other stimulant crops, n.e.c.","Autres cultures stimulantes, n.c.a."
+131,6.02,6,Spice and aromatic crops,Cultures d'épices et d'aromates
+132,6.02.01,6.02,Temporary spice and aromatic crops,Cultures temporaires d'épices et d'aromates
+133,6.02.01.01,6.02.01,Chillies and peppers (capsicum spp.),Piments et poivrons (capsicum spp.)
+134,6.02.01.02,6.02.01,"Anise, badian, and fennel","Anis, badiane, et fenouil"
+135,6.02.01.90,6.02.01,"Other temporary spice crops, n.e.c.","Autres cultures temporaires d'épices, n.c.a."
+136,6.02.02,6.02,Permanent spice and aromatic crops,Cultures permanentes d'épices et d'aromates
+137,6.02.02.01,6.02.02,Pepper (piper spp.),Poivre (piper spp.)
+138,6.02.02.02,6.02.02,"Nutmeg, mace, cardamoms","Noix de muscade, macis, cardamomes"
+139,6.02.02.03,6.02.02,Cinnamon (canella),Cannelle (canella)
+140,6.02.02.04,6.02.02,Cloves,Clous de girofle
+141,6.02.02.05,6.02.02,Ginger,Gingembre
+142,6.02.02.06,6.02.02,Vanilla,Vanille
+143,6.02.02.07,6.02.02,Hops,Houblon
+144,6.02.02.90,6.02.02,"Other permanent spice and aromatic crops, n.e.c.","Autres cultures permanentes d'épices et d'aromates, n.c.a."
+145,7,,Leguminous crops,Légumineuses
+146,7.01,7,Beans,Haricots
+147,7.02,7,Broad beans,Fèves
+148,7.03,7,Chickpeas,Pois chiches
+149,7.04,7,Cowpeas,Niébé
+150,7.05,7,Lentils,Lentilles
+151,7.06,7,Lupins,Lupin
+152,7.07,7,Peas,Pois
+153,7.08,7,Pigeon peas,Têtes de pigeons
+154,7.09,7,Bambara beans,Haricots bambara
+155,7.1,7,Vetches,Vêches
+156,7.9,7,"Leguminous crops, n.e.c.","Légumineuses, n.c.a."
+157,8,,Sugar crops,Cultures sucrières
+158,8.01,8,Sugar beet,Betterave sucrière
+159,8.02,8,Sugar cane,Canne à sucre
+160,8.03,8,Sweet sorghum,Sorgho doux
+161,8.9,8,"Other sugar crops, n.e.c.","Autres cultures sucrières, n.c.a."
+162,9,,Other crops,Autres cultures
+163,9.01,9,Grasses and other fodder crops,Graminées et autres cultures fourragères
+164,9.01.01,9.01,Temporary grass and fodder crops,Herbes et cultures fourragères temporaires
+165,9.01.02,9.01,Permanent grass and fodder crops,Herbes et cultures fourragères permanentes
+166,9.02,9,Fibre crops,Cultures de fibres
+167,9.02.01,9.02,Temporary fibre crops,Cultures temporaires de fibres
+168,9.02.01.01,9.02.01,Cotton,Coton
+169,9.02.01.02,9.02.01,"Jute, kenaf, and other similar crops","Jute, kenaf, et autres cultures similaires"
+170,9.02.01.03,9.02.01,Flax,Lin
+171,9.02.01.04,9.02.01,Hemp,Chanvre
+172,9.02.01.90,9.02.01,"Other temporary fibre crops, n.e.c.","Autres cultures temporaires de fibres, n.c.a."
+173,9.02.02,9.02,Permanent fibre crops,Permanent fibre crops
+174,9.02.02.01,9.02.02,Ramie,Ramie
+175,9.02.02.02,9.02.02,Sisal,Sisal
+176,9.02.02.90,9.02.02,"Other permanent fibre crops, n.e.c.","Autres cultures de fibres permanentes, n.c.a."
+177,9.03,9,"Medicinal, pesticidal or similar crops","Cultures médicinales, pesticides ou similaires"
+178,9.03.01,9.03,"Temporary medicinal, pesticidal or similar crops","Cultures temporaires médicinales, pesticides ou similaires"
+179,9.03.01.01,9.03.01,Mint,Menthe
+180,9.03.01.02,9.03.01,Basil,Basilic
+181,9.03.01.90,9.03.01,"Other temporary medicinal, pesticidal or similar crops","Autres cultures temporaires médicinales, pesticides ou similaires"
+182,9.03.02,9.03,"Permanent medicinal, pesticidal or similar crops","Cultures permanentes médicinales, pesticides ou similaires"
+183,9.03.02.01,9.03.02,Ginseng,Ginseng
+184,9.03.02.02,9.03.02,Coca,Coca
+185,9.03.02.03,9.03.02,Kava,Kava
+186,9.03.02.04,9.03.02,Guarana,Guarana
+187,9.03.02.90,9.03.02,"Other permanent medicinal, pesticidal or similar crops","Autres cultures permanentes médicinales, pesticides ou similaires"
+188,9.04,9,Rubber,Caoutchouc
+189,9.05,9,Flower crops,Cultures de fleurs
+190,9.05.01,9.05,Temporary flower crops,Cultures de fleurs temporaires
+191,9.05.02,9.05,Permanent flower crops,Cultures florales permanentes
+192,9.06,9,Tobacco,Tabac
+193,9.9,9,"Other crops, n.e.c.","Autres cultures, n.c.a."
+194,9.90.01,9.9,"Other crops, n.e.c. – temporary","Autres cultures, n.c.a. - temporaire"
+195,9.90.02,9.9,"Other crops, n.e.c. – permanent","Autres cultures, n.c.a. - permanentes"
