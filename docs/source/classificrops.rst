@@ -13,7 +13,7 @@ This section is dedicated to the comparison of croplands classification between 
 
 
 .. csv-table:: Wallonia and France side by side
-   :file: ../../data/comparison_WL_FR.csv
+   :file: ../data/comparison_WL_FR.csv
    :header-rows: 1
    :class: longtable
    :widths: 1,10,1,1,10
