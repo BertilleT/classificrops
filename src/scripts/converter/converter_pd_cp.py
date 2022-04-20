@@ -37,7 +37,7 @@ def matching(c,idS,src,trg,idT):
         matchingList.append([c,idS, src, trg, idT, nb])
         #matchingList.append([idS, idT, nb])
 
-#create an empty list to store all the classes frome the origin data. In the French example, we have only 2 levels of classes : GROUP_FR and CROPS_FR.
+#create an empty list to store all the classes from the origin data. In the French example, we have only 2 levels of classes : GROUP_FR and CROPS_FR.
 srcClasses=[]
 columns = list(srcDf)
 for col in columns:

@@ -14,16 +14,15 @@ The project is divided in 2 parts.
 2) SIG software to study crops evolution and repartition in Europe.
     expected deliverable : to be detailed. 
     Data ? Yes : SIG database with anonymous geographic data used to receive funds from the agricole common policy. 
-    [Agrivolution is an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map.]
+    [Agrivolution will be an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map.]
 
 -----
 
 .. toctree::
-   1/Wallonia_and_France_classification
-   1/european_classification
-   1/languages
-   2/analysis
-   2/conception
+   :numbered:
+   
+   classificrops
+   agrivolution
 
 
 Installation
