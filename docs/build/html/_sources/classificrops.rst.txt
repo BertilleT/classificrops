@@ -1,4 +1,4 @@
-classificrops
+Classificrops
 ==============
 
 Wallonia and France classification
@@ -33,7 +33,7 @@ So in reality, it would represent even more than 378 matching tasks.
 We understand why, to study agricultural croplands at an european level, we have to draw a shared classification for all countries from Europe... 
 which brings us to the following question : how to define a shared classification ? 
 
-european_classification
+European classification
 ------------------------
 
 Instead of creating a shared clasification from scratch, we will choose an existing classification as a reference. 
@@ -41,7 +41,7 @@ The European classification chosen is the Indicative Crop Classification (ICC), 
 | source data : https://www.fao.org/3/a0135e/A0135E10.htm#app3 
 
 
-languages
+Languages
 ----------
 How to compare croplands classification when they are written in various languages ? If we stick to the large run goal which is to study all countries from EU, we have 
 at least **24** official languages. 
