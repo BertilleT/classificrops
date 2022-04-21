@@ -36,9 +36,10 @@ which brings us to the following question : how to define a shared classificatio
 European classification
 ------------------------
 
-Instead of creating a shared clasification from scratch, we will choose an existing classification as a reference. 
-The European classification chosen is the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO).  
+Instead of creating a shared classification from scratch, we will choose an existing classification as a reference. 
+At first glance, the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO) seems to fit well. 
 | source data : https://www.fao.org/3/a0135e/A0135E10.htm#app3 
+
 
 
 Languages
