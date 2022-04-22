@@ -1,197 +1,197 @@
-,Unnamed: 0.5,Unnamed: 0.4,Unnamed: 0.3,Unnamed: 0.2,Unnamed: 0.1,Unnamed: 0,code,broader,label_en,label_en_filtered,label_fr_filtered
-0,0,0,0,0,0,0,1,,Cereals,Cereals,Céréales
-1,1,1,1,1,1,1,1.01,1,Wheat,Wheat,Blé
-2,2,2,2,2,2,2,1.02,1,Maize,Maize,Maïs
-3,3,3,3,3,3,3,1.03,1,Rice,Rice,Riz
-4,4,4,4,4,4,4,1.04,1,Sorghum,Sorghum,Sorgho
-5,5,5,5,5,5,5,1.05,1,Barley,Barley,Orge
-6,6,6,6,6,6,6,1.06,1,Rye,Rye,Seigle
-7,7,7,7,7,7,7,1.07,1,Oats,Oats,Avoine
-8,8,8,8,8,8,8,1.08,1,Millet,Millet,Millet
-9,9,9,9,9,9,9,1.09,1,Triticale,Triticale,Triticale
-10,10,10,10,10,10,10,1.1,1,Buckwheat,Buckwheat,Sarrasin
-11,11,11,11,11,11,11,1.11,1,Fonio,Fonio,Fonio
-12,12,12,12,12,12,12,1.12,1,Quinoa,Quinoa,Quinoa
-13,13,13,13,13,13,13,1.13,1,Canary seed,Canary seed,Graine de canari
-14,14,14,14,14,14,14,1.14,1,Mixed cereals,Mixed cereals,Céréales mélangées
-15,15,15,15,15,15,15,1.9,1,"Other cereals, n.e.c.",cereals,céréales
-16,16,16,16,16,16,16,2,,Vegetables and melons,Vegetablesmelons,Légumes melons
-17,17,17,17,17,17,17,2.01,2,Leafy or stem vegetables,Leafystem vegetables,Légumes à feuilles
-18,18,18,18,18,18,18,2.01.01,2.01,Artichokes,Artichokes,Artichauts
-19,19,19,19,19,19,19,2.01.02,2.01,Asparagus,Asparagus,Asperges
-20,20,20,20,20,20,20,2.01.03,2.01,Cabbages,Cabbages,Choux
-21,21,21,21,21,21,21,2.01.04,2.01,Cauliflower and broccoli,Cauliflowerbroccoli,Chou-fleurbrocoli
-22,22,22,22,22,22,22,2.01.05,2.01,Lettuce,Lettuce,Laitue
-23,23,23,23,23,23,23,2.01.06,2.01,Spinach,Spinach,Epinards
-24,24,24,24,24,24,24,2.01.07,2.01,Chicory,Chicory,Chicorée
-25,25,25,25,25,25,25,2.01.90,2.01,"Other leafy or stem vegetables, n.e.c.",leafystem vegetables,légumes à feuilles
-26,26,26,26,26,26,26,2.02,2,Fruit-bearing vegetables,Fruitbearing vegetables,Légumes à fruits
-27,27,27,27,27,27,27,2.02.01,2.02,Cucumbers,Cucumbers,Concombres
-28,28,28,28,28,28,28,2.02.02,2.02,Eggplants (aubergines),Eggplants aubergines,Eggplants aubergines
-29,29,29,29,29,29,29,2.02.03,2.02,Tomatoes,Tomatoes,Tomates
-30,30,30,30,30,30,30,2.02.04,2.02,"Pumpkin, squash and gourds",Pumpkin squashgourds,Courges potironsgourdes
-31,31,31,31,31,31,31,2.02.05,2.02,Okra,Okra,Gombo
-32,32,32,32,32,32,32,2.02.90,2.02,"Other fruit-bearing vegetables, n.e.c.",fruitbearing vegetables,les légumes porteurs de fruits
-33,33,33,33,33,33,33,2.03,2,"Root, bulb or tuberous vegetables",Root bulbtuberous vegetables,Légumes bulbeux à racine
-34,34,34,34,34,34,34,2.03.01,2.03,Carrots,Carrots,Carottes
-35,35,35,35,35,35,35,2.03.02,2.03,Turnips,Turnips,Navets
-36,36,36,36,36,36,36,2.03.03,2.03,Garlic,Garlic,Ail
-37,37,37,37,37,37,37,2.03.04,2.03,Onions (incl. shallots),Onions incl shallots,Oignons et échalotes
-38,38,38,38,38,38,38,2.03.05,2.03,Leeks and other alliaceous vegetables,Leeks alliaceous vegetables,Poireaux légumes alliacés
-39,39,39,39,39,39,39,2.03.90,2.03,"Other root, bulb, or tuberous vegetables, n.e.c.",root bulbtuberous vegetables,légumes bulbeux à racines
-40,40,40,40,40,40,40,2.04,2,Mushrooms and truffles,Mushroomstruffles,Truffes de champignons
-41,41,41,41,41,41,41,2.05,2,Melons,Melons,Melons
-42,42,42,42,42,42,42,2.05.01,2.05,Watermelons,Watermelons,Pastèques
-43,43,43,43,43,43,43,2.05.02,2.05,Cantaloupes and other melons,Cantaloupes melons,Cantaloupes melons
-44,44,44,44,44,44,44,2.9,2,Other vegetables n.e.c.,vegetables,légumes
-45,45,45,45,45,45,45,3,,Fruit and nuts,Fruitnuts,Noix de fruits
-46,46,46,46,46,46,46,3.01,3,Tropical and subtropical fruits,Tropicalsubtropical fruits,Fruits tropicaux et subtropicaux
-47,47,47,47,47,47,47,3.01.01,3.01,Avocados,Avocados,Avocats
-48,48,48,48,48,48,48,3.01.02,3.01,Bananas,Bananas,Bananes
-49,49,49,49,49,49,49,3.01.03,3.01,Plantains,Plantains,Plantains
-50,50,50,50,50,50,50,3.01.04,3.01,Dates,Dates,Dates
-51,51,51,51,51,51,51,3.01.05,3.01,Figs,Figs,Figues
-52,52,52,52,52,52,52,3.01.06,3.01,"Mangoes, guavas and mangosteens",Mangoes guavasmangosteens,Mangues goyaves
-53,53,53,53,53,53,53,3.01.07,3.01,Papayas,Papayas,Papayes
-54,54,54,54,54,54,54,3.01.08,3.01,Pineapples,Pineapples,Ananas
-55,55,55,55,55,55,55,3.01.90,3.01,"Other tropical and subtropical fruits, n.e.c.",tropicalsubtropical fruits,fruits tropicaux-subtropicaux
-56,56,56,56,56,56,56,3.02,3,Citrus fruits,Citrus fruits,Citrus fruits
-57,57,57,57,57,57,57,3.02.01,3.02,Grapefruit and pomelo,Grapefruitpomelo,Pamplemousse pomelo
-58,58,58,58,58,58,58,3.02.02,3.02,Lemons and limes,Lemonslimes,Limonades
-59,59,59,59,59,59,59,3.02.03,3.02,Oranges,Oranges,Oranges
-60,60,60,60,60,60,60,3.02.04,3.02,"Tangerines mandarins, clementines",Tangerines mandarins clementines,Mandarines mandarines clémentines
-61,61,61,61,61,61,61,3.02.90,3.02,"Other citrus fruits, n.e.c.",citrus fruits,citrus fruits
-62,62,62,62,62,62,62,3.03,3,Grapes,Grapes,Grapes
-63,63,63,63,63,63,63,3.04,3,Berries,Berries,Baies
-64,64,64,64,64,64,64,3.04.01,3.04,Currants,Currants,Groseilles
-65,65,65,65,65,65,65,3.04.02,3.04,Gooseberries,Gooseberries,Groseilles à maquereau
-66,66,66,66,66,66,66,3.04.03,3.04,Kiwi fruit,Kiwi fruit,Kiwi fruit
-67,67,67,67,67,67,67,3.04.04,3.04,Raspberries,Raspberries,Framboises
-68,68,68,68,68,68,68,3.04.05,3.04,Strawberries,Strawberries,Fraises
-69,69,69,69,69,69,69,3.04.06,3.04,Blueberries,Blueberries,Myrtilles
-70,70,70,70,70,70,70,3.04.07,3.04,Cranberries,Cranberries,Canneberges
-71,71,71,71,71,71,71,3.04.90,3.04,"Other berries, n.e.c",berries,baies nec
-72,72,72,72,72,72,72,3.05,3,Pome fruits and stone fruits,Pome fruitsstone fruits,Fruits à pépins Fruits à noyau
-73,73,73,73,73,73,73,3.05.01,3.05,Apples,Apples,Pommes
-74,74,74,74,74,74,74,3.05.02,3.05,Apricots,Apricots,Abricots
-75,75,75,75,75,75,75,3.05.03,3.05,Cherries and sour cherries,Cherriessour cherries,Cerises à l'état pur
-76,76,76,76,76,76,76,3.05.04,3.05,Peaches and nectarines,Peachesnectarines,Pêches-nectarines
-77,77,77,77,77,77,77,3.05.05,3.05,Pears and quinces,Pearsquinces,Pearsquinces
-78,78,78,78,78,78,78,3.05.06,3.05,Plums and sloes,Plumssloes,Plumssloes
-79,79,79,79,79,79,79,3.05.90,3.05,"Other pome fruits and stone fruits, n.e.c.",pome fruitsstone fruits,fruits à pépins fruits à noyau
-80,80,80,80,80,80,80,3.06,3,Nuts,Nuts,Noix
-81,81,81,81,81,81,81,3.06.01,3.06,Almonds,Almonds,Amandes
-82,82,82,82,82,82,82,3.06.02,3.06,Cashew nuts,Cashew nuts,Noix de cajou
-83,83,83,83,83,83,83,3.06.03,3.06,Chestnuts,Chestnuts,Châtaignes
-84,84,84,84,84,84,84,3.06.04,3.06,Hazelnuts,Hazelnuts,Hazelnuts
-85,85,85,85,85,85,85,3.06.05,3.06,Pistachios,Pistachios,Pistaches
-86,86,86,86,86,86,86,3.06.06,3.06,Walnuts,Walnuts,Noix de Grenoble
-87,87,87,87,87,87,87,3.06.07,3.06,Brazil nuts,Brazil nuts,Noix du Brésil
-88,88,88,88,88,88,88,3.06.08,3.06,Areca nuts,Areca nuts,Noix d'Areca
-89,89,89,89,89,89,89,3.06.09,3.06,Cola nuts,Cola nuts,Noix de cola
-90,90,90,90,90,90,90,3.06.90,3.06,"Other nuts, n.e.c.",nuts,noix
-91,91,91,91,91,91,91,3.9,3,"Other fruits, n.e.c.",fruits,fruits
-92,92,92,92,92,92,92,4,,Oilseed crops and oleaginous fruits,Oilseed oleaginous fruits,Fruits oléagineux
-93,93,93,93,93,93,93,4.01,4,Soya beans,Soya beans,Fèves de soja
-94,94,94,94,94,94,94,4.02,4,Groundnuts,Groundnuts,Arachides
-95,95,95,95,95,95,95,4.03,4,Other temporary oilseed crops,temporary oilseed,oléagineux temporaire
-96,96,96,96,96,96,96,4.03.01,4.03,Castor bean,Castor bean,Le ricin
-97,97,97,97,97,97,97,4.03.02,4.03,Linseed,Linseed,Linseed
-98,98,98,98,98,98,98,4.03.03,4.03,Mustard,Mustard,Moutarde
-99,99,99,99,99,99,99,4.03.04,4.03,Niger seed,Niger seed,Graines du Niger
-100,100,100,100,100,100,100,4.03.05,4.03,Rapeseed,Rapeseed,Colza
-101,101,101,101,101,101,101,4.03.06,4.03,Safflower,Safflower,Carthame
-102,102,102,102,102,102,102,4.03.07,4.03,Sesame,Sesame,Sésame
-103,103,103,103,103,103,103,4.03.08,4.03,Sunflower,Sunflower,Tournesol
-104,104,104,104,104,104,104,4.03.09,4.03,Shea tree (shea butter or karite nuts),Shea tree shea butterkarite nuts,Arbre à karité beurre de karité noix de karité
-105,105,105,105,105,105,105,4.03.10,4.03,Tung tree,Tung tree,Arbre de tung
-106,106,106,106,106,106,106,4.03.11,4.03,Jojoba,Jojoba,Jojoba
-107,107,107,107,107,107,107,4.03.12,4.03,Poppy,Poppy,Coquelicot
-108,108,108,108,108,108,108,4.03.13,4.03,Tallow tree,Tallow tree,Arbre à suif
-109,109,109,109,109,109,109,4.03.90,4.03,"Other temporary oilseed crops, n.e.c.",temporary oilseed,oléagineux temporaire
-110,110,110,110,110,110,110,4.04,4,Permanent oilseed crops,Permanent oilseed,Oléagineux permanent
-111,111,111,111,111,111,111,4.04.01,4.04,Coconuts,Coconuts,Noix de coco
-112,112,112,112,112,112,112,4.04.02,4.04,Olives,Olives,Olives
-113,113,113,113,113,113,113,4.04.03,4.04,Oil palms,Oil palms,Palmiers à huile
-114,114,114,114,114,114,114,4.04.90,4.04,"Other oleaginous fruits, n.e.c.",oleaginous fruits,fruits oléagineux
-115,115,115,115,115,115,115,5,,Root/tuber crops with high starch or inulin content,Roottuber with high starchinulin content,Roottuber à haute teneur en amidon et en insuline
-116,116,116,116,116,116,116,5.01,5,Potatoes,Potatoes,Pommes de terre
-117,117,117,117,117,117,117,5.02,5,Sweet potatoes,Sweet potatoes,Patates douces
-118,118,118,118,118,118,118,5.03,5,Cassava,Cassava,Manioc
-119,119,119,119,119,119,119,5.04,5,Yams,Yams,Igname
-120,120,120,120,120,120,120,5.05,5,Taro,Taro,Taro
-121,121,121,121,121,121,121,5.06,5,Yautia,Yautia,Yautia
-122,122,122,122,122,122,122,5.9,5,"Other roots and tubers, n.e.c.",rootstubers,rootstubers
-123,123,123,123,123,123,123,6,,"Stimulant, spice and aromatic crops",Stimulant spicearomatic,Stimulant spicaromatique
-124,124,124,124,124,124,124,6.01,6,Stimulant crops,Stimulant,Stimulant
-125,125,125,125,125,125,125,6.01.01,6.01,Coffee,Coffee,Café
-126,126,126,126,126,126,126,6.01.02,6.01,Tea,Tea,Thé
-127,127,127,127,127,127,127,6.01.03,6.01,Maté,Maté,Maté
-128,128,128,128,128,128,128,6.01.04,6.01,Cocoa,Cocoa,Cacao
-129,129,129,129,129,129,129,6.01.05,6.01,Chicory roots,Chicory roots,Racines de chicorée
-130,130,130,130,130,130,130,6.01.90,6.01,"Other stimulant crops, n.e.c.",stimulant,stimulant
-131,131,131,131,131,131,131,6.02,6,Spice and aromatic crops,Spicearomatic,Spicearomatic
-132,132,132,132,132,132,132,6.02.01,6.02,Temporary spice and aromatic crops,Temporary spicearomatic,Spicearomatic temporaire
-133,133,133,133,133,133,133,6.02.01.01,6.02.01,Chillies and peppers (capsicum spp.),Chilliespeppers capsicum,Poivron pimenté
-134,134,134,134,134,134,134,6.02.01.02,6.02.01,"Anise, badian, and fennel",Anise badianfennel,Anise badianfennel
-135,135,135,135,135,135,135,6.02.01.90,6.02.01,"Other temporary spice crops, n.e.c.",temporary spice,épice temporaire
-136,136,136,136,136,136,136,6.02.02,6.02,Permanent spice and aromatic crops,Permanent spicearomatic,Spicearomatic permanent
-137,137,137,137,137,137,137,6.02.02.01,6.02.02,Pepper (piper spp.),Pepper piper,Piper de poivre
-138,138,138,138,138,138,138,6.02.02.02,6.02.02,"Nutmeg, mace, cardamoms",Nutmeg mace cardamoms,Noix de muscade macis cardamomes
-139,139,139,139,139,139,139,6.02.02.03,6.02.02,Cinnamon (canella),Cinnamon canella,Cannelle cannelle
-140,140,140,140,140,140,140,6.02.02.04,6.02.02,Cloves,Cloves,Clous de girofle
-141,141,141,141,141,141,141,6.02.02.05,6.02.02,Ginger,Ginger,Gingembre
-142,142,142,142,142,142,142,6.02.02.06,6.02.02,Vanilla,Vanilla,Vanille
-143,143,143,143,143,143,143,6.02.02.07,6.02.02,Hops,Hops,Houblon
-144,144,144,144,144,144,144,6.02.02.90,6.02.02,"Other permanent spice and aromatic crops, n.e.c.",permanent spicearomatic,spicaromatique permanent
-145,145,145,145,145,145,145,7,,Leguminous crops,Leguminous,Légumineuses
-146,146,146,146,146,146,146,7.01,7,Beans,Beans,Haricots
-147,147,147,147,147,147,147,7.02,7,Broad beans,Broad beans,Fèves
-148,148,148,148,148,148,148,7.03,7,Chickpeas,Chickpeas,Pois chiches
-149,149,149,149,149,149,149,7.04,7,Cowpeas,Cowpeas,Niébé
-150,150,150,150,150,150,150,7.05,7,Lentils,Lentils,Lentilles
-151,151,151,151,151,151,151,7.06,7,Lupins,Lupins,Lupin
-152,152,152,152,152,152,152,7.07,7,Peas,Peas,Pois
-153,153,153,153,153,153,153,7.08,7,Pigeon peas,Pigeon peas,Têtes de pigeons
-154,154,154,154,154,154,154,7.09,7,Bambara beans,Bambara beans,Haricots bambara
-155,155,155,155,155,155,155,7.1,7,Vetches,Vetches,Vêches
-156,156,156,156,156,156,156,7.9,7,"Leguminous crops, n.e.c.",Leguminous,Légumineuses
-157,157,157,157,157,157,157,8,,Sugar crops,Sugar,Sucre
-158,158,158,158,158,158,158,8.01,8,Sugar beet,Sugar beet,Betterave sucrière
-159,159,159,159,159,159,159,8.02,8,Sugar cane,Sugar cane,Canne à sucre
-160,160,160,160,160,160,160,8.03,8,Sweet sorghum,Sweet sorghum,Sorgho doux
-161,161,161,161,161,161,161,8.9,8,"Other sugar crops, n.e.c.",sugar,sucre
-162,162,162,162,162,162,162,9,,Other crops,,
-163,163,163,163,163,163,163,9.01,9,Grasses and other fodder crops,Grasses fodder,Fourrage de graminées
-164,164,164,164,164,164,164,9.01.01,9.01,Temporary grass and fodder crops,Temporary grassfodder,Fourrage temporaire
-165,165,165,165,165,165,165,9.01.02,9.01,Permanent grass and fodder crops,Permanent grassfodder,Fourrage permanent
-166,166,166,166,166,166,166,9.02,9,Fibre crops,Fibre,Fibres
-167,167,167,167,167,167,167,9.02.01,9.02,Temporary fibre crops,Temporary fibre,Fibre temporaire
-168,168,168,168,168,168,168,9.02.01.01,9.02.01,Cotton,Cotton,Coton
-169,169,169,169,169,169,169,9.02.01.02,9.02.01,"Jute, kenaf, and other similar crops",Jute kenaf similar,Jute de kenaf similaire
-170,170,170,170,170,170,170,9.02.01.03,9.02.01,Flax,Flax,Lin
-171,171,171,171,171,171,171,9.02.01.04,9.02.01,Hemp,Hemp,Chanvre
-172,172,172,172,172,172,172,9.02.01.90,9.02.01,"Other temporary fibre crops, n.e.c.",temporary fibre,fibre temporaire
-173,173,173,173,173,173,173,9.02.02,9.02,Permanent fibre crops,Permanent fibre,Permanent fibre
-174,174,174,174,174,174,174,9.02.02.01,9.02.02,Ramie,Ramie,Ramie
-175,175,175,175,175,175,175,9.02.02.02,9.02.02,Sisal,Sisal,Sisal
-176,176,176,176,176,176,176,9.02.02.90,9.02.02,"Other permanent fibre crops, n.e.c.",permanent fibre,permanent fibre
-177,177,177,177,177,177,177,9.03,9,"Medicinal, pesticidal or similar crops",Medicinal pesticidalsimilar,Pesticides médicinaux similaires
-178,178,178,178,178,178,178,9.03.01,9.03,"Temporary medicinal, pesticidal or similar crops",Temporary medicinal pesticidalsimilar,Pesticides médicinaux temporaires similaires
-179,179,179,179,179,179,179,9.03.01.01,9.03.01,Mint,Mint,Menthe
-180,180,180,180,180,180,180,9.03.01.02,9.03.01,Basil,Basil,Basilic
-181,181,181,181,181,181,181,9.03.01.90,9.03.01,"Other temporary medicinal, pesticidal or similar crops",temporary medicinal pesticidalsimilar,pesticide médicinal temporaire similaire
-182,182,182,182,182,182,182,9.03.02,9.03,"Permanent medicinal, pesticidal or similar crops",Permanent medicinal pesticidalsimilar,Pesticides médicinaux permanents similaires
-183,183,183,183,183,183,183,9.03.02.01,9.03.02,Ginseng,Ginseng,Ginseng
-184,184,184,184,184,184,184,9.03.02.02,9.03.02,Coca,Coca,Coca
-185,185,185,185,185,185,185,9.03.02.03,9.03.02,Kava,Kava,Kava
-186,186,186,186,186,186,186,9.03.02.04,9.03.02,Guarana,Guarana,Guarana
-187,187,187,187,187,187,187,9.03.02.90,9.03.02,"Other permanent medicinal, pesticidal or similar crops",permanent medicinal pesticidalsimilar,pesticide médicinal permanent similaire
-188,188,188,188,188,188,188,9.04,9,Rubber,Rubber,Caoutchouc
-189,189,189,189,189,189,189,9.05,9,Flower crops,Flower,Fleur
-190,190,190,190,190,190,190,9.05.01,9.05,Temporary flower crops,Temporary flower,Fleur temporaire
-191,191,191,191,191,191,191,9.05.02,9.05,Permanent flower crops,Permanent flower,Fleur permanente
-192,192,192,192,192,192,192,9.06,9,Tobacco,Tobacco,Tabac
-193,193,193,193,193,193,193,9.9,9,"Other crops, n.e.c.",,
-194,194,194,194,194,194,194,9.90.01,9.9,"Other crops, n.e.c. – temporary",temporary,temporaire
-195,195,195,195,195,195,195,9.90.02,9.9,"Other crops, n.e.c. – permanent",permanent,permanent
+code,broader,label_en,label_en_filtered,label_fr_filtered
+1,,Cereals,Cereals,Céréales
+1.01,1,Wheat,Wheat,Blé
+1.02,1,Maize,Maize,Maïs
+1.03,1,Rice,Rice,Riz
+1.04,1,Sorghum,Sorghum,Sorgho
+1.05,1,Barley,Barley,Orge
+1.06,1,Rye,Rye,Seigle
+1.07,1,Oats,Oats,Avoine
+1.08,1,Millet,Millet,Millet
+1.09,1,Triticale,Triticale,Triticale
+1.1,1,Buckwheat,Buckwheat,Sarrasin
+1.11,1,Fonio,Fonio,Fonio
+1.12,1,Quinoa,Quinoa,Quinoa
+1.13,1,Canary seed,Canary seed,Graine de canari
+1.14,1,Mixed cereals,Mixed cereals,Céréales mélangées
+1.9,1,"Other cereals, n.e.c.",cereals,céréales
+2,,Vegetables and melons,Vegetablesmelons,Légumes melons
+2.01,2,Leafy or stem vegetables,Leafystem vegetables,Légumes à feuilles
+2.01.01,2.01,Artichokes,Artichokes,Artichauts
+2.01.02,2.01,Asparagus,Asparagus,Asperges
+2.01.03,2.01,Cabbages,Cabbages,Choux
+2.01.04,2.01,Cauliflower and broccoli,Cauliflowerbroccoli,Chou-fleurbrocoli
+2.01.05,2.01,Lettuce,Lettuce,Laitue
+2.01.06,2.01,Spinach,Spinach,Epinards
+2.01.07,2.01,Chicory,Chicory,Chicorée
+2.01.90,2.01,"Other leafy or stem vegetables, n.e.c.",leafystem vegetables,légumes à feuilles
+2.02,2,Fruit-bearing vegetables,Fruitbearing vegetables,Légumes à fruits
+2.02.01,2.02,Cucumbers,Cucumbers,Concombres
+2.02.02,2.02,Eggplants (aubergines),Eggplants aubergines,Eggplants aubergines
+2.02.03,2.02,Tomatoes,Tomatoes,Tomates
+2.02.04,2.02,"Pumpkin, squash and gourds",Pumpkin squashgourds,Courges potironsgourdes
+2.02.05,2.02,Okra,Okra,Gombo
+2.02.90,2.02,"Other fruit-bearing vegetables, n.e.c.",fruitbearing vegetables,les légumes porteurs de fruits
+2.03,2,"Root, bulb or tuberous vegetables",Root bulbtuberous vegetables,Légumes bulbeux à racine
+2.03.01,2.03,Carrots,Carrots,Carottes
+2.03.02,2.03,Turnips,Turnips,Navets
+2.03.03,2.03,Garlic,Garlic,Ail
+2.03.04,2.03,Onions (incl. shallots),Onions incl shallots,Oignons et échalotes
+2.03.05,2.03,Leeks and other alliaceous vegetables,Leeks alliaceous vegetables,Poireaux légumes alliacés
+2.03.90,2.03,"Other root, bulb, or tuberous vegetables, n.e.c.",root bulbtuberous vegetables,légumes bulbeux à racines
+2.04,2,Mushrooms and truffles,Mushroomstruffles,Truffes de champignons
+2.05,2,Melons,Melons,Melons
+2.05.01,2.05,Watermelons,Watermelons,Pastèques
+2.05.02,2.05,Cantaloupes and other melons,Cantaloupes melons,Cantaloupes melons
+2.9,2,Other vegetables n.e.c.,vegetables,légumes
+3,,Fruit and nuts,Fruitnuts,Noix de fruits
+3.01,3,Tropical and subtropical fruits,Tropicalsubtropical fruits,Fruits tropicaux et subtropicaux
+3.01.01,3.01,Avocados,Avocados,Avocats
+3.01.02,3.01,Bananas,Bananas,Bananes
+3.01.03,3.01,Plantains,Plantains,Plantains
+3.01.04,3.01,Dates,Dates,Dates
+3.01.05,3.01,Figs,Figs,Figues
+3.01.06,3.01,"Mangoes, guavas and mangosteens",Mangoes guavasmangosteens,Mangues goyaves
+3.01.07,3.01,Papayas,Papayas,Papayes
+3.01.08,3.01,Pineapples,Pineapples,Ananas
+3.01.90,3.01,"Other tropical and subtropical fruits, n.e.c.",tropicalsubtropical fruits,fruits tropicaux-subtropicaux
+3.02,3,Citrus fruits,Citrus fruits,Citrus fruits
+3.02.01,3.02,Grapefruit and pomelo,Grapefruitpomelo,Pamplemousse pomelo
+3.02.02,3.02,Lemons and limes,Lemonslimes,Limonades
+3.02.03,3.02,Oranges,Oranges,Oranges
+3.02.04,3.02,"Tangerines mandarins, clementines",Tangerines mandarins clementines,Mandarines mandarines clémentines
+3.02.90,3.02,"Other citrus fruits, n.e.c.",citrus fruits,citrus fruits
+3.03,3,Grapes,Grapes,Grapes
+3.04,3,Berries,Berries,Baies
+3.04.01,3.04,Currants,Currants,Groseilles
+3.04.02,3.04,Gooseberries,Gooseberries,Groseilles à maquereau
+3.04.03,3.04,Kiwi fruit,Kiwi fruit,Kiwi fruit
+3.04.04,3.04,Raspberries,Raspberries,Framboises
+3.04.05,3.04,Strawberries,Strawberries,Fraises
+3.04.06,3.04,Blueberries,Blueberries,Myrtilles
+3.04.07,3.04,Cranberries,Cranberries,Canneberges
+3.04.90,3.04,"Other berries, n.e.c",berries,baies nec
+3.05,3,Pome fruits and stone fruits,Pome fruitsstone fruits,Fruits à pépins Fruits à noyau
+3.05.01,3.05,Apples,Apples,Pommes
+3.05.02,3.05,Apricots,Apricots,Abricots
+3.05.03,3.05,Cherries and sour cherries,Cherriessour cherries,Cerises à l'état pur
+3.05.04,3.05,Peaches and nectarines,Peachesnectarines,Pêches-nectarines
+3.05.05,3.05,Pears and quinces,Pearsquinces,Pearsquinces
+3.05.06,3.05,Plums and sloes,Plumssloes,Plumssloes
+3.05.90,3.05,"Other pome fruits and stone fruits, n.e.c.",pome fruitsstone fruits,fruits à pépins fruits à noyau
+3.06,3,Nuts,Nuts,Noix
+3.06.01,3.06,Almonds,Almonds,Amandes
+3.06.02,3.06,Cashew nuts,Cashew nuts,Noix de cajou
+3.06.03,3.06,Chestnuts,Chestnuts,Châtaignes
+3.06.04,3.06,Hazelnuts,Hazelnuts,Hazelnuts
+3.06.05,3.06,Pistachios,Pistachios,Pistaches
+3.06.06,3.06,Walnuts,Walnuts,Noix de Grenoble
+3.06.07,3.06,Brazil nuts,Brazil nuts,Noix du Brésil
+3.06.08,3.06,Areca nuts,Areca nuts,Noix d'Areca
+3.06.09,3.06,Cola nuts,Cola nuts,Noix de cola
+3.06.90,3.06,"Other nuts, n.e.c.",nuts,noix
+3.9,3,"Other fruits, n.e.c.",fruits,fruits
+4,,Oilseed crops and oleaginous fruits,Oilseed oleaginous fruits,Fruits oléagineux
+4.01,4,Soya beans,Soya beans,Fèves de soja
+4.02,4,Groundnuts,Groundnuts,Arachides
+4.03,4,Other temporary oilseed crops,temporary oilseed,oléagineux temporaire
+4.03.01,4.03,Castor bean,Castor bean,Le ricin
+4.03.02,4.03,Linseed,Linseed,Linseed
+4.03.03,4.03,Mustard,Mustard,Moutarde
+4.03.04,4.03,Niger seed,Niger seed,Graines du Niger
+4.03.05,4.03,Rapeseed,Rapeseed,Colza
+4.03.06,4.03,Safflower,Safflower,Carthame
+4.03.07,4.03,Sesame,Sesame,Sésame
+4.03.08,4.03,Sunflower,Sunflower,Tournesol
+4.03.09,4.03,Shea tree (shea butter or karite nuts),Shea tree shea butterkarite nuts,Arbre à karité beurre de karité noix de karité
+4.03.10,4.03,Tung tree,Tung tree,Arbre de tung
+4.03.11,4.03,Jojoba,Jojoba,Jojoba
+4.03.12,4.03,Poppy,Poppy,Coquelicot
+4.03.13,4.03,Tallow tree,Tallow tree,Arbre à suif
+4.03.90,4.03,"Other temporary oilseed crops, n.e.c.",temporary oilseed,oléagineux temporaire
+4.04,4,Permanent oilseed crops,Permanent oilseed,Oléagineux permanent
+4.04.01,4.04,Coconuts,Coconuts,Noix de coco
+4.04.02,4.04,Olives,Olives,Olives
+4.04.03,4.04,Oil palms,Oil palms,Palmiers à huile
+4.04.90,4.04,"Other oleaginous fruits, n.e.c.",oleaginous fruits,fruits oléagineux
+5,,Root/tuber crops with high starch or inulin content,Roottuber with high starchinulin content,Roottuber à haute teneur en amidon et en insuline
+5.01,5,Potatoes,Potatoes,Pommes de terre
+5.02,5,Sweet potatoes,Sweet potatoes,Patates douces
+5.03,5,Cassava,Cassava,Manioc
+5.04,5,Yams,Yams,Igname
+5.05,5,Taro,Taro,Taro
+5.06,5,Yautia,Yautia,Yautia
+5.9,5,"Other roots and tubers, n.e.c.",rootstubers,rootstubers
+6,,"Stimulant, spice and aromatic crops",Stimulant spicearomatic,Stimulant spicaromatique
+6.01,6,Stimulant crops,Stimulant,Stimulant
+6.01.01,6.01,Coffee,Coffee,Café
+6.01.02,6.01,Tea,Tea,Thé
+6.01.03,6.01,Maté,Maté,Maté
+6.01.04,6.01,Cocoa,Cocoa,Cacao
+6.01.05,6.01,Chicory roots,Chicory roots,Racines de chicorée
+6.01.90,6.01,"Other stimulant crops, n.e.c.",stimulant,stimulant
+6.02,6,Spice and aromatic crops,Spicearomatic,Spicearomatic
+6.02.01,6.02,Temporary spice and aromatic crops,Temporary spicearomatic,Spicearomatic temporaire
+6.02.01.01,6.02.01,Chillies and peppers (capsicum spp.),Chilliespeppers capsicum,Poivron pimenté
+6.02.01.02,6.02.01,"Anise, badian, and fennel",Anise badianfennel,Anise badianfennel
+6.02.01.90,6.02.01,"Other temporary spice crops, n.e.c.",temporary spice,épice temporaire
+6.02.02,6.02,Permanent spice and aromatic crops,Permanent spicearomatic,Spicearomatic permanent
+6.02.02.01,6.02.02,Pepper (piper spp.),Pepper piper,Piper de poivre
+6.02.02.02,6.02.02,"Nutmeg, mace, cardamoms",Nutmeg mace cardamoms,Noix de muscade macis cardamomes
+6.02.02.03,6.02.02,Cinnamon (canella),Cinnamon canella,Cannelle cannelle
+6.02.02.04,6.02.02,Cloves,Cloves,Clous de girofle
+6.02.02.05,6.02.02,Ginger,Ginger,Gingembre
+6.02.02.06,6.02.02,Vanilla,Vanilla,Vanille
+6.02.02.07,6.02.02,Hops,Hops,Houblon
+6.02.02.90,6.02.02,"Other permanent spice and aromatic crops, n.e.c.",permanent spicearomatic,spicaromatique permanent
+7,,Leguminous crops,Leguminous,Légumineuses
+7.01,7,Beans,Beans,Haricots
+7.02,7,Broad beans,Broad beans,Fèves
+7.03,7,Chickpeas,Chickpeas,Pois chiches
+7.04,7,Cowpeas,Cowpeas,Niébé
+7.05,7,Lentils,Lentils,Lentilles
+7.06,7,Lupins,Lupins,Lupin
+7.07,7,Peas,Peas,Pois
+7.08,7,Pigeon peas,Pigeon peas,Têtes de pigeons
+7.09,7,Bambara beans,Bambara beans,Haricots bambara
+7.1,7,Vetches,Vetches,Vêches
+7.9,7,"Leguminous crops, n.e.c.",Leguminous,Légumineuses
+8,,Sugar crops,Sugar,Sucre
+8.01,8,Sugar beet,Sugar beet,Betterave sucrière
+8.02,8,Sugar cane,Sugar cane,Canne à sucre
+8.03,8,Sweet sorghum,Sweet sorghum,Sorgho doux
+8.9,8,"Other sugar crops, n.e.c.",sugar,sucre
+9,,Other crops,,
+9.01,9,Grasses and other fodder crops,Grasses fodder,Fourrage de graminées
+9.01.01,9.01,Temporary grass and fodder crops,Temporary grassfodder,Fourrage temporaire
+9.01.02,9.01,Permanent grass and fodder crops,Permanent grassfodder,Fourrage permanent
+9.02,9,Fibre crops,Fibre,Fibres
+9.02.01,9.02,Temporary fibre crops,Temporary fibre,Fibre temporaire
+9.02.01.01,9.02.01,Cotton,Cotton,Coton
+9.02.01.02,9.02.01,"Jute, kenaf, and other similar crops",Jute kenaf similar,Jute de kenaf similaire
+9.02.01.03,9.02.01,Flax,Flax,Lin
+9.02.01.04,9.02.01,Hemp,Hemp,Chanvre
+9.02.01.90,9.02.01,"Other temporary fibre crops, n.e.c.",temporary fibre,fibre temporaire
+9.02.02,9.02,Permanent fibre crops,Permanent fibre,Permanent fibre
+9.02.02.01,9.02.02,Ramie,Ramie,Ramie
+9.02.02.02,9.02.02,Sisal,Sisal,Sisal
+9.02.02.90,9.02.02,"Other permanent fibre crops, n.e.c.",permanent fibre,permanent fibre
+9.03,9,"Medicinal, pesticidal or similar crops",Medicinal pesticidalsimilar,Pesticides médicinaux similaires
+9.03.01,9.03,"Temporary medicinal, pesticidal or similar crops",Temporary medicinal pesticidalsimilar,Pesticides médicinaux temporaires similaires
+9.03.01.01,9.03.01,Mint,Mint,Menthe
+9.03.01.02,9.03.01,Basil,Basil,Basilic
+9.03.01.90,9.03.01,"Other temporary medicinal, pesticidal or similar crops",temporary medicinal pesticidalsimilar,pesticide médicinal temporaire similaire
+9.03.02,9.03,"Permanent medicinal, pesticidal or similar crops",Permanent medicinal pesticidalsimilar,Pesticides médicinaux permanents similaires
+9.03.02.01,9.03.02,Ginseng,Ginseng,Ginseng
+9.03.02.02,9.03.02,Coca,Coca,Coca
+9.03.02.03,9.03.02,Kava,Kava,Kava
+9.03.02.04,9.03.02,Guarana,Guarana,Guarana
+9.03.02.90,9.03.02,"Other permanent medicinal, pesticidal or similar crops",permanent medicinal pesticidalsimilar,pesticide médicinal permanent similaire
+9.04,9,Rubber,Rubber,Caoutchouc
+9.05,9,Flower crops,Flower,Fleur
+9.05.01,9.05,Temporary flower crops,Temporary flower,Fleur temporaire
+9.05.02,9.05,Permanent flower crops,Permanent flower,Fleur permanente
+9.06,9,Tobacco,Tobacco,Tabac
+9.9,9,"Other crops, n.e.c.",,
+9.90.01,9.9,"Other crops, n.e.c. – temporary",temporary,temporaire
+9.90.02,9.9,"Other crops, n.e.c. – permanent",permanent,permanent
