@@ -2,9 +2,11 @@ import csv
 import pandas as pd
 import deepl
 from fuzzywuzzy import fuzz, process
+import numpy as np
 
 ##My global variables
 matchingList = [] 
+resultDf = pd.DataFrame()
 resultDf = pd.DataFrame()
 srcClasses=[]
 
@@ -31,17 +33,14 @@ def filter(df, col, filters):
 
 # Translate text into a target language, in this case, French
 def translateWord(translator, word, language):
-    if word != 'none':
-        result = translator.translate_text(word, target_lang=language)
-        return result
-    else:
-        return word
+    result = translator.translate_text(word, target_lang=language)
+    return result
 
 def translateICC(df, lg):
     # Create a Translator object providing your DeepL API authentication key.
     DEEPL_AUTH_KEY="47c6c989-9eaa-5b30-4ee6-b2e4f1ebd530:fx"
     translator = deepl.Translator(DEEPL_AUTH_KEY)
-    df['label_'+lg.lower()+'_filtered'] = df['label_en_filtered'].apply(lambda crop: translateWord(translator,crop, lg))
+    df['label_'+lg.lower()+'_filtered'] = df['label_en_filtered'].apply(lambda crop: translateWord(translator, crop, lg) if (pd.notna(crop)) else crop)
     return df['label_'+lg.lower()+'_filtered']
 
 def parserICCCode(x):
@@ -52,7 +51,7 @@ def matchRow(c,idS,src,trg,idT):
     global matchingList
     nb = 0
     nb = fuzz.token_sort_ratio(src,trg)
-    if nb > 75: 
+    if nb > 60: 
         matchingList.append([c,idS, src, trg, idT, nb])
         #matchingList.append([idS, idT, nb])
 
@@ -81,11 +80,13 @@ def spreadMatch(id_src,id_trg):
     resultDf.loc[resultDf.ID_GROUP_FR == id_src, 'ID_GROUP_ICC'] = id_trg
     '''print('print global resultDf from spreadMatch function after processing')
     print(resultDf.head(50))'''
+    return
 
 #incDepth stands for increment depth
 #if no matching group have been found after match at source level = group and after the spreading, then go to the source level = crops in matchingDf
 #if matchingDf has a match at source crops level, then fill the resultDf with this value. 
 def incDepth(x): 
+    global matchingDf
     ID_C = x.ID_CROPS_FR
     ID_G = x.ID_GROUP_ICC
     if pd.isna(ID_G):
@@ -97,10 +98,11 @@ def incDepth(x):
 
 def converter(pathCsv, lg, srcDepth):
     global resultDf
+    global matchingDf
     ##Loading
     print('loading df ...')
     srcDf = pd.read_csv(pathCsv)
-    iccDf = pd.read_csv('../../../data/ICC/ICC_src.csv')
+    iccDf = pd.read_csv('../../../data/ICC/ICC.csv')
     print('df loaded')
 
     ##Listing
@@ -110,14 +112,10 @@ def converter(pathCsv, lg, srcDepth):
     ##Filtering1
     #filter non discrimnantory words and punctuations from the target df
     print('filtering 1 - ICC ...')
-    englishFilters=['other','crops',' and ',' or ','n.e.c.', 'spp']
+    englishFilters=['other','crops',' and ',' or ','n.e.c.', 'spp','n.e.c']
     iccDf['label_en_filtered'] = filter(iccDf,'label_en',englishFilters)
-    iccDf.label_en_filtered = iccDf.label_en_filtered.fillna('none')
-    r=iccDf.iloc[[162]]
-    v=r.label_en_filtered
-    print('hh'+v+'hh')
-    print(type(v))
-    
+    iccDf.replace('',np.nan,regex = True,inplace=True)
+        
     iccDf.to_csv('../../../data/ICC/ICC.csv')
     print('ICC filtered')
 
@@ -131,7 +129,7 @@ def converter(pathCsv, lg, srcDepth):
 
     ##Translating
     #if the target df is not yet translated into the source language, translate it
-    if 'label_'+lg.lower()+'_filtered' not in iccDf:
+    if 'label_'+lg.lower()+'_filtered' not in list(iccDf.columns):
         print('translating ICC ...')
         iccDf['label_'+lg.lower()+'_filtered'] = translateICC(iccDf, lg)
         iccDf.to_csv('../../../data/ICC/ICC.csv')
@@ -151,23 +149,20 @@ def converter(pathCsv, lg, srcDepth):
     #initialise the list where we will store the results from the matching. 
     print('initializing resultDf ...')
     resultDf = srcDf[['ID_CROPS_FR', 'ID_GROUP_FR']]
-    '''print(resultDf)'''
     print('resultDf initialized')
 
     ##Matching all
     print('matching df...')
     matchingDf = matchDf(srcDf,iccDf)
+    print(resultDf)
     print('df matched...')
-    print(matchingDf.head(50))
 
     ##Spreading
     #if in the matchingDf we get a result raw at first level source level (GROUP_FR), then stock this raw into rows
     print('spreading match...')
     rows = matchingDf.loc[matchingDf['class_level_src'] == 'GROUP_FR']
-    '''print(rows)'''
     #for the match found at level source 1 (group in french example), ie for each row from rows, spread the result found to the level 2 (crops) children of the group under study. 
-    resultDf = rows.apply(lambda x: spreadMatch(x.id_src, x.id_trg), axis=1)
-    '''print(resultDf)'''
+    rows.apply(lambda x: spreadMatch(x.id_src, x.id_trg), axis=1)
     print('match spread')
 
     ##Incrementing depth   
@@ -176,9 +171,10 @@ def converter(pathCsv, lg, srcDepth):
     resultDf.apply(lambda x: incDepth(x), axis=1)
     print('depth incremented')
 
-    #Writting
+    #Writting result
     print('writting resultDf into csv...') 
-    resultDf.to_csv('conversionTableFrICC_Test.csv')
+    resultDf.to_csv('../../../data/FR/conversionTable_FR_scriptMade.csv')
+    matchingDf.to_csv('../../../data/FR/matchingDf_FR_scriptMade.csv')
     print('resultDf written into csv') 
 
 converter('../../../data/FR/FR_2020.csv', 'FR', 1)

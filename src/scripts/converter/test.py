@@ -1,18 +1,21 @@
 import csv 
 import pandas as pd
-from fuzzywuzzy import fuzz, process
+import numpy as np
 
-'''srcDf = pd.read_csv('../../data/FR/FR_2020.csv')
-jcmDf = pd.read_csv('../../data/JECAM/JECAM_fr.csv')
+#test fillna
+d = {'col1': [0, 1, 2, 3], 'col2': ['','','he', 'hey']}
+df = pd.DataFrame(data=d, index=[0, 1, 2, 3])
+def isNaN(num):
+    return num != num
 
-def function2(row):
-    #print(rowS.ID_CROPS_FR)
-    if row.ID_CROPS_FR in ['BRO', 'BTA', 'CAE']:
-        return print(row.ID_CROPS_FR)
+print(df)
+r=df.iloc[[0]]
+v=r.col2
+print(v)
 
-def function1():
-    for row in srcDf.itertuples():
-        function2(row)
-
-function1()'''
-
+'''df['col2'].fillna('h', inplace = True)
+print(df)'''
+df.replace('',np.nan,regex = True,inplace=True)
+print(df)
+if isNaN(v.any()):
+    print('this is a nan')

@@ -1,0 +1,225 @@
+,class_level_src,id_src, words_src,words_trg,id_trg,similarity
+0,GROUP_FR,2,Maïs grainensilage,Graines du Niger,4,61
+1,GROUP_FR,3,Orge,Orge,1,100
+2,GROUP_FR,3,Orge,Oranges,3,73
+3,GROUP_FR,4,céréales,Céréales,1,100
+4,GROUP_FR,4,céréales,céréales,1,100
+5,GROUP_FR,4,céréales,Oranges,3,62
+6,GROUP_FR,4,céréales,Grapes,3,67
+7,GROUP_FR,4,céréales,Fraises,3,62
+8,GROUP_FR,5,Colza,Colza,4,100
+9,GROUP_FR,5,Colza,Coca,9,67
+10,GROUP_FR,6,Tournesol,Oranges,3,62
+11,GROUP_FR,6,Tournesol,Tournesol,4,100
+12,GROUP_FR,7,oléagineux,Fruits oléagineux,4,72
+13,GROUP_FR,7,oléagineux,oléagineux temporaire,4,62
+14,GROUP_FR,7,oléagineux,oléagineux temporaire,4,62
+15,GROUP_FR,7,oléagineux,Oléagineux permanent,4,64
+16,GROUP_FR,7,oléagineux,fruits oléagineux,4,72
+17,GROUP_FR,8,Protéagineux,Fruits oléagineux,4,67
+18,GROUP_FR,8,Protéagineux,fruits oléagineux,4,67
+19,GROUP_FR,9,Plantes à fibres,Céréales mélangées,1,64
+20,GROUP_FR,9,Plantes à fibres,Eggplants aubergines,2,65
+21,GROUP_FR,9,Plantes à fibres,Permanent fibre,9,69
+22,GROUP_FR,9,Plantes à fibres,permanent fibre,9,69
+23,GROUP_FR,14,Riz,Riz,1,100
+24,GROUP_FR,15,Légumineuses à grains,Légumes à fruits,2,65
+25,GROUP_FR,15,Légumineuses à grains,Légumineuses,7,76
+26,GROUP_FR,15,Légumineuses à grains,Légumineuses,7,76
+27,GROUP_FR,16,Fourrage,Orge,1,67
+28,GROUP_FR,16,Fourrage,Oranges,3,67
+29,GROUP_FR,16,Fourrage,Fourrage permanent,9,62
+30,GROUP_FR,18,Prairies permanentes,Spicearomatic permanent,6,65
+31,GROUP_FR,18,Prairies permanentes,spicaromatique permanent,6,68
+32,GROUP_FR,18,Prairies permanentes,permanent,9,62
+33,GROUP_FR,19,Prairies temporaires,oléagineux temporaire,4,70
+34,GROUP_FR,19,Prairies temporaires,oléagineux temporaire,4,70
+35,GROUP_FR,19,Prairies temporaires,Spicearomatic temporaire,6,68
+36,GROUP_FR,19,Prairies temporaires,épice temporaire,6,80
+37,GROUP_FR,19,Prairies temporaires,Fourrage temporaire,9,72
+38,GROUP_FR,19,Prairies temporaires,Fibre temporaire,9,78
+39,GROUP_FR,19,Prairies temporaires,fibre temporaire,9,78
+40,GROUP_FR,19,Prairies temporaires,Fleur temporaire,9,67
+41,GROUP_FR,19,Prairies temporaires,temporaire,9,67
+42,GROUP_FR,20,Vergers,Asperges,2,67
+43,GROUP_FR,21,Vignes,Avoine,1,67
+44,GROUP_FR,21,Vignes,Figues,3,67
+45,GROUP_FR,21,Vignes,Châtaignes,3,67
+46,GROUP_FR,21,Vignes,Igname,5,67
+47,GROUP_FR,22,Fruits à coque,Noix de fruits,3,62
+48,GROUP_FR,22,Fruits à coque,Citrus fruits,3,72
+49,GROUP_FR,22,Fruits à coque,citrus fruits,3,72
+50,GROUP_FR,22,Fruits à coque,fruits,3,67
+51,GROUP_FR,22,Fruits à coque,Coquelicot,4,64
+52,GROUP_FR,23,Oliviers,Olives,4,86
+53,GROUP_FR,25,Légumesfleurs,Légumes melons,2,64
+54,GROUP_FR,25,Légumesfleurs,légumes,2,67
+55,GROUP_FR,25,Légumesfleurs,Plumssloes,3,64
+56,GROUP_FR,25,Légumesfleurs,Légumineuses,7,70
+57,GROUP_FR,25,Légumesfleurs,Légumineuses,7,70
+58,GROUP_FR,26,Canne à sucre,Canneberges,3,64
+59,GROUP_FR,26,Canne à sucre,Sucre,8,62
+60,GROUP_FR,26,Canne à sucre,Canne à sucre,8,100
+61,GROUP_FR,26,Canne à sucre,sucre,8,62
+62,GROUP_FR,28,Divers,Olives,4,67
+63,CROPS_FR,MID,Maïs doux,Sorgho doux,8,63
+64,CROPS_FR,MIS,Maïs,Maïs,1,100
+65,CROPS_FR,MIS,Maïs,Maté,6,67
+66,CROPS_FR,ORH,Orge dhiver,Piper de poivre,6,62
+67,CROPS_FR,ORP,Orge de printemps,Fourrage de graminées,9,70
+68,CROPS_FR,AVH,Avoine dhiver,Avoine,1,63
+69,CROPS_FR,CAG,céréale dun genre,Céréales mélangées,1,62
+70,CROPS_FR,MCR,Mélange de céréales,Céréales mélangées,1,87
+71,CROPS_FR,MLT,Millet,Millet,1,100
+72,CROPS_FR,MLT,Millet,Myrtilles,3,67
+73,CROPS_FR,MLT,Millet,Vanille,6,62
+74,CROPS_FR,SGH,Seigle dhiver,Seigle,1,63
+75,CROPS_FR,SGP,Seigle de printemps,Graines du Niger,4,63
+76,CROPS_FR,SOG,Sorgho,Sorgho,1,100
+77,CROPS_FR,SOG,Sorgho,Sorgho doux,8,71
+78,CROPS_FR,SRS,Sarrasin,Sarrasin,1,100
+79,CROPS_FR,TTH,Triticale dhiver,Triticale,1,72
+80,CROPS_FR,CZP,Colza de printemps,Racines de chicorée,6,61
+81,CROPS_FR,TRN,Tournesol,Oranges,3,62
+82,CROPS_FR,TRN,Tournesol,Tournesol,4,100
+83,CROPS_FR,ARA,Arachide,Arachides,4,94
+84,CROPS_FR,ARA,Arachide,Ramie,9,62
+85,CROPS_FR,MOL,Mélange doléagineux,oléagineux temporaire,4,70
+86,CROPS_FR,MOL,Mélange doléagineux,oléagineux temporaire,4,70
+87,CROPS_FR,MOL,Mélange doléagineux,Oléagineux permanent,4,78
+88,CROPS_FR,NVE,Navette dété,Navets,2,62
+89,CROPS_FR,OAG,oléagineux dun genre,Fruits oléagineux,4,63
+90,CROPS_FR,OAG,oléagineux dun genre,fruits oléagineux,4,63
+91,CROPS_FR,OEI,Œillette,Millet,1,71
+92,CROPS_FR,FEV,Fève,Fèves,7,86
+93,CROPS_FR,PHI,Pois dhiver,Piper de poivre,6,62
+94,CROPS_FR,PHI,Pois dhiver,Pois chiches,7,70
+95,CROPS_FR,CHV,Chanvre,Châtaignes,3,62
+96,CROPS_FR,CHV,Chanvre,Chanvre,9,100
+97,CROPS_FR,LIF,Lin fibres,Fibres,9,75
+98,CROPS_FR,RIZ,Riz,Riz,1,100
+99,CROPS_FR,PCH,Pois chiche,Pois chiches,7,96
+100,CROPS_FR,BVF,Betterave fourragère,Betterave sucrière,8,78
+101,CROPS_FR,FAG,fourrage annuel dun genre,Fourrage de graminées,9,62
+102,CROPS_FR,FFO,féverole fourragère,Fourrage temporaire,9,67
+103,CROPS_FR,FFO,féverole fourragère,Fourrage permanent,9,69
+104,CROPS_FR,FSG,plante fourragère sarclée dun genre,Fourrage de graminées,9,64
+105,CROPS_FR,GAI,Gaillet,Millet,1,77
+106,CROPS_FR,GAI,Gaillet,Vanille,6,71
+107,CROPS_FR,GFP,graminée fourragère pure de 5 ansmoins,Fourrage de graminées,9,68
+108,CROPS_FR,LEF,Lentille fourragère,Fourrage temporaire,9,65
+109,CROPS_FR,LEF,Lentille fourragère,Fourrage permanent,9,67
+110,CROPS_FR,LFH,lupin fourrager dhiver,Fourrage de graminées,9,67
+111,CROPS_FR,LFP,lupin fourrager de printemps,Fourrage de graminées,9,71
+112,CROPS_FR,MEL,mélilot,Millet,1,67
+113,CROPS_FR,MIN,Minette,Millet,1,62
+114,CROPS_FR,MIN,Minette,Menthe,9,62
+115,CROPS_FR,NVF,Navet fourrager,Fourrage de graminées,9,63
+116,CROPS_FR,NVF,Navet fourrager,Fourrage temporaire,9,65
+117,CROPS_FR,NVF,Navet fourrager,Fourrage permanent,9,73
+118,CROPS_FR,PFH,pois fourrager dhiver,Fourrage de graminées,9,68
+119,CROPS_FR,PFP,pois fourrager de printemps,Fourrage de graminées,9,72
+120,CROPS_FR,PFP,pois fourrager de printemps,Fourrage temporaire,9,61
+121,CROPS_FR,RDF,Radis fourrager,Fourrage de graminées,9,74
+122,CROPS_FR,RDF,Radis fourrager,Fourrage temporaire,9,71
+123,CROPS_FR,RDF,Radis fourrager,Fourrage permanent,9,67
+124,CROPS_FR,VES,vesce,Fèves,7,67
+125,CROPS_FR,PTR,prairie temporaire de 5 ansmoins,Spicearomatic temporaire,6,61
+126,CROPS_FR,PTR,prairie temporaire de 5 ansmoins,pesticide médicinal temporaire similaire,9,62
+127,CROPS_FR,AGR,Agrume,légumes,2,67
+128,CROPS_FR,ANA,Ananas,Bananes,3,77
+129,CROPS_FR,ANA,Ananas,Plantains,3,67
+130,CROPS_FR,ANA,Ananas,Ananas,3,100
+131,CROPS_FR,ANA,Ananas,Amandes,3,62
+132,CROPS_FR,ANA,Ananas,,9,67
+133,CROPS_FR,ANA,Ananas,Guarana,9,62
+134,CROPS_FR,ANA,Ananas,,9,67
+135,CROPS_FR,AVO,Avocat,Avocats,3,92
+136,CROPS_FR,CAC,Café Cacao,Cacao,6,71
+137,CROPS_FR,CAC,Café Cacao,Coca,9,62
+138,CROPS_FR,CAB,Caroube,Carottes,2,67
+139,CROPS_FR,CTG,Châtaigne,Châtaignes,3,94
+140,CROPS_FR,CTG,Châtaigne,Chanvre,9,67
+141,CROPS_FR,NOX,Noix,Noix,3,100
+142,CROPS_FR,NOX,Noix,noix,3,100
+143,CROPS_FR,PIS,Pistache,Pistaches,3,94
+144,CROPS_FR,OLI,Oliveraie,Olives,4,67
+145,CROPS_FR,ANI,Anis,Plantains,3,62
+146,CROPS_FR,ANI,Anis,Baies,3,67
+147,CROPS_FR,BAR,Bardane,Bananes,3,71
+148,CROPS_FR,BAS,Basilic,Basilic,9,100
+149,CROPS_FR,BTN,Betterave non fourragère Bette,Betterave sucrière,8,61
+150,CROPS_FR,CML,Cameline,Ramie,9,62
+151,CROPS_FR,CMM,Camomille,Millet,1,67
+152,CROPS_FR,CMM,Camomille,Vanille,6,62
+153,CROPS_FR,CRD,Coriandre,Oranges,3,62
+154,CROPS_FR,CRD,Coriandre,Chanvre,9,62
+155,CROPS_FR,FNU,Fenugrec,Fleur,9,62
+156,CROPS_FR,HBL,Houblon,Houblon,6,100
+157,CROPS_FR,MLI,Mélisse,Linseed,4,62
+158,CROPS_FR,MLP,Millepertuis,Millet,1,67
+159,CROPS_FR,MOT,Moutarde,Moutarde,4,100
+160,CROPS_FR,MTH,Menthe,Menthe,9,100
+161,CROPS_FR,ORT,Ortie,Orge,1,67
+162,CROPS_FR,OSE,Oseille,Seigle,1,77
+163,CROPS_FR,OSE,Oseille,Millet,1,62
+164,CROPS_FR,OSE,Oseille,Groseilles,3,82
+165,CROPS_FR,OSE,Oseille,Lentilles,7,62
+166,CROPS_FR,PSY,Plantain psyllium,Plantains,3,69
+167,CROPS_FR,TAB,Tabac,Tabac,9,100
+168,CROPS_FR,THY,Thym,Thé,6,67
+169,CROPS_FR,VNL,Vanille,Millet,1,62
+170,CROPS_FR,VNL,Vanille,Vanille,6,100
+171,CROPS_FR,VNL,Vanille,Lentilles,7,62
+172,CROPS_FR,VNV,Vanille verte,Vanille,6,70
+173,CROPS_FR,AIL,Aïl,Ail,2,80
+174,CROPS_FR,ART,Artichaut,Artichauts,2,95
+175,CROPS_FR,AUB,Aubergine,Eggplants aubergines,2,62
+176,CROPS_FR,CAR,Carotte,Carottes,2,93
+177,CROPS_FR,CAR,Carotte,Carthame,4,67
+178,CROPS_FR,CCN,Concombre Cornichon,Concombres,2,62
+179,CROPS_FR,CEL,Céleri,Le ricin,4,62
+180,CROPS_FR,CES,Chicorée Endive Scarole,Racines de chicorée,6,65
+181,CROPS_FR,CHU,Chou,Choux,2,89
+182,CROPS_FR,CRN,Cornille,Vanille,6,67
+183,CROPS_FR,CRS,Cresson,Céréales,1,62
+184,CROPS_FR,CRS,Cresson,céréales,1,62
+185,CROPS_FR,DOL,Dolique,Laitue,2,62
+186,CROPS_FR,DOL,Dolique,Olives,4,62
+187,CROPS_FR,EPI,Épinard,Epinards,2,86
+188,CROPS_FR,FRA,Fraise,Framboises,3,75
+189,CROPS_FR,FRA,Fraise,Fraises,3,92
+190,CROPS_FR,FRA,Fraise,fruits,3,67
+191,CROPS_FR,FRA,Fraise,Ramie,9,73
+192,CROPS_FR,LSA,Légume sous abri,Légumes à fruits,2,64
+193,CROPS_FR,MAC,Mâche,Vêches,7,67
+194,CROPS_FR,MLO,Melon,Melons,2,91
+195,CROPS_FR,NVT,Navet,Navets,2,91
+196,CROPS_FR,OIG,Oignon Échalote,Oignons et échalotes,2,85
+197,CROPS_FR,PAN,Panais,Bananes,3,62
+198,CROPS_FR,PAN,Panais,Plantains,3,80
+199,CROPS_FR,PAN,Panais,Papayes,3,62
+200,CROPS_FR,PAN,Panais,Ananas,3,67
+201,CROPS_FR,PAS,Pastèque,Laitue,2,62
+202,CROPS_FR,PAS,Pastèque,Pastèques,2,93
+203,CROPS_FR,PAS,Pastèque,Pearsquinces,3,63
+204,CROPS_FR,POT,Potiron Potimarron,Poivron pimenté,6,69
+205,CROPS_FR,PPO,Petits pois,Pois chiches,7,61
+206,CROPS_FR,PTC,Pomme de terre de consommation,Pommes de terre,5,62
+207,CROPS_FR,PTF,Pomme de terre féculière,Pommes de terre,5,76
+208,CROPS_FR,PVP,Poivron Piment,Poivron pimenté,6,100
+209,CROPS_FR,PVP,Poivron Piment,Piper de poivre,6,62
+210,CROPS_FR,RDI,Radis,Fraises,3,67
+211,CROPS_FR,ROQ,Roquette,Carottes,2,62
+212,CROPS_FR,RUT,Rutabaga,Tabac,9,62
+213,CROPS_FR,TOM,Tomate,Tomates,2,92
+214,CROPS_FR,TOM,Tomate,Maté,6,67
+215,CROPS_FR,CSA,Canne à sucre,Canneberges,3,64
+216,CROPS_FR,CSA,Canne à sucre,Sucre,8,62
+217,CROPS_FR,CSA,Canne à sucre,Canne à sucre,8,100
+218,CROPS_FR,CSA,Canne à sucre,sucre,8,62
+219,CROPS_FR,CSF,Canne à sucre fermage,Canneberges,3,67
+220,CROPS_FR,CSF,Canne à sucre fermage,Betterave sucrière,8,61
+221,CROPS_FR,CSF,Canne à sucre fermage,Canne à sucre,8,73
+222,CROPS_FR,CSI,Canne à sucre indivision,Canne à sucre,8,67
+223,CROPS_FR,ROS,Roselière,Groseilles,3,67
