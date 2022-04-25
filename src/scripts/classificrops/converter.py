@@ -3,7 +3,6 @@ import pandas as pd
 import deepl
 from fuzzywuzzy import fuzz, process
 import numpy as np
-from comparater import compare
 
 ##My global variables
 matchingList = [] 
@@ -64,7 +63,6 @@ def matchDf(srcDf,iccDf,threshold):
 def spreadMatch(id_src,id_trg):
     global resultDf
     resultDf.loc[resultDf.ID_GROUP_FR == id_src, 'ID_GROUP_ICC'] = id_trg
-    return
 
 def incDepth(x): 
     global matchingDf
@@ -74,6 +72,9 @@ def incDepth(x):
         i = matchingDf.loc[matchingDf['id_src'] == ID_C]
         if len(i.index) != 0:
             ID_G = i.id_trg
+        else: ID_G = 'nan'
+
+    return ID_G
 
 def compare(pathHandMade,computed,threshold):
     handmade = pd.read_csv(pathHandMade)
@@ -136,12 +137,14 @@ def converter(pathCsv, lg, srcDepth, threshold):
 
     ##Incrementing depth   
     resultDf = resultDf[['ID_CROPS_FR','ID_GROUP_ICC']]
-    resultDf.apply(lambda x: incDepth(x), axis=1)
+    print(resultDf.head(100))
+    resultDf['ID_GROUP_ICC'] = resultDf.apply(lambda x: incDepth(x), axis=1)
 
-#Writting result
+    #Writting result
     resultDf.to_csv('../../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
     matchingDf.to_csv('../../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
     print(matchingDf)    
+    resultDf['ID_GROUP_ICC'] = resultDf['ID_GROUP_ICC'].astype(float)
     compareList.append(compare('../../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
 
-converter('../../../data/FR/FR_2020.csv', 'FR', 1,60)
+converter('../../../data/FR/FR_2020.csv', 'FR', 1,90)
