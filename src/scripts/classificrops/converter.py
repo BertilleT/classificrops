@@ -41,14 +41,13 @@ def translateICC(df, lg):
 
 def parserICCCode(x):
     return "".join(x.split('.'))
-
+   
 def matchRow(c,idS,src,trg,idT,threshold): 
     global matchingList
     nb = 0
     nb = fuzz.token_sort_ratio(src,trg)
     if nb > threshold: 
         matchingList.append([c,idS, src, trg, idT, nb])
-        #matchingList.append([idS, idT, nb])
 
 def matchDf(srcDf,iccDf,threshold):
     for c in srcClasses: 
@@ -60,7 +59,6 @@ def matchDf(srcDf,iccDf,threshold):
     cols = ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
     mDf = pd.DataFrame(matchingList, columns=cols)
     idx = mDf.groupby(['id_src'])['similarity'].transform(max) == mDf['similarity']
-    print(mDf[idx])
     return mDf[idx]
 
 def spreadMatch(id_src,id_trg):
@@ -99,7 +97,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     global compareList
     ##Loading
     srcDf = pd.read_csv(pathCsv)
-    iccDf = pd.read_csv('../../data/ICC/ICC.csv')
+    iccDf = pd.read_csv('../../../data/ICC/ICC.csv')
 
     ##Listing
     classes(srcDf)
@@ -109,7 +107,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     iccDf['label_en_filtered'] = filter(iccDf,'label_en',englishFilters)
     iccDf.replace('',np.nan,regex = True,inplace=True)
         
-    iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+    iccDf.to_csv('../../../data/ICC/ICC.csv', index=False)
 
     ##Filtering2
     frenchFilters = ['autres','autre',' et ',' ou ']
@@ -119,7 +117,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     ##Translating
     if 'label_'+lg.lower()+'_filtered' not in list(iccDf.columns):
         iccDf['label_'+lg.lower()+'_filtered'] = translateICC(iccDf, lg)
-        iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+        iccDf.to_csv('../../../data/ICC/ICC.csv', index=False)
 
     ##Formating
     iccDf['code'] = iccDf['code'].apply(lambda code:parserICCCode(code))
@@ -139,11 +137,11 @@ def converter(pathCsv, lg, srcDepth, threshold):
     ##Incrementing depth   
     resultDf = resultDf[['ID_CROPS_FR','ID_GROUP_ICC']]
     resultDf.apply(lambda x: incDepth(x), axis=1)
-    
-    #Writting result
-    resultDf.to_csv('../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
-    matchingDf.to_csv('../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
-    print(matchingDf)
-    compareList.append(compare('../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
 
-converter('../../data/FR/FR_2020.csv', 'FR', 1,68)
+#Writting result
+    resultDf.to_csv('../../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
+    matchingDf.to_csv('../../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
+    print(matchingDf)    
+    compareList.append(compare('../../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
+
+converter('../../../data/FR/FR_2020.csv', 'FR', 1,60)

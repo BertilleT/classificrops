@@ -99,7 +99,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     global compareList
     ##Loading
     srcDf = pd.read_csv(pathCsv)
-    iccDf = pd.read_csv('../../data/ICC/ICC.csv')
+    iccDf = pd.read_csv('../../../../data/ICC/ICC.csv')
 
     ##Listing
     srcClasses = classes(srcDf)
@@ -109,7 +109,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     iccDf['label_en_filtered'] = filter(iccDf,'label_en',englishFilters)
     iccDf.replace('',np.nan,regex = True,inplace=True)
         
-    iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+    iccDf.to_csv('../../../../data/ICC/ICC.csv', index=False)
 
     ##Filtering2
     frenchFilters = ['autres','autre',' et ',' ou ']
@@ -119,7 +119,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     ##Translating
     if 'label_'+lg.lower()+'_filtered' not in list(iccDf.columns):
         iccDf['label_'+lg.lower()+'_filtered'] = translateICC(iccDf, lg)
-        iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+        iccDf.to_csv('../../../../data/ICC/ICC.csv', index=False)
 
     ##Formating
     iccDf['code'] = iccDf['code'].apply(lambda code:parserICCCode(code))
@@ -141,9 +141,9 @@ def converter(pathCsv, lg, srcDepth, threshold):
     resultDf.apply(lambda x: incDepth(x,matchingDf), axis=1)
     
     #Writting result
-    resultDf.to_csv('../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
-    matchingDf.to_csv('../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
+    resultDf.to_csv('../../../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
+    matchingDf.to_csv('../../../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
     print(matchingDf)
-    #compareList.append(compare('../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
+    compareList.append(compare('../../../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
 
-converter('../../data/FR/FR_2020.csv', 'FR', 1,60)
+converter('../../../../data/FR/FR_2020.csv', 'FR', 1,60)

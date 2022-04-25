@@ -119,7 +119,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     ##Loading
     #print('loading df ...')
     srcDf = pd.read_csv(pathCsv)
-    iccDf = pd.read_csv('../../data/ICC/ICC.csv')
+    iccDf = pd.read_csv('../../../../data/ICC/ICC.csv')
     #print('df loaded')
 
     ##Listing
@@ -133,7 +133,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     iccDf['label_en_filtered'] = filter(iccDf,'label_en',englishFilters)
     iccDf.replace('',np.nan,regex = True,inplace=True)
         
-    iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+    iccDf.to_csv('../../../../data/ICC/ICC.csv', index=False)
     #print('ICC filtered')
 
     ##Filtering2
@@ -149,7 +149,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     if 'label_'+lg.lower()+'_filtered' not in list(iccDf.columns):
         #print('translating ICC ...')
         iccDf['label_'+lg.lower()+'_filtered'] = translateICC(iccDf, lg)
-        iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+        iccDf.to_csv('../../../../data/ICC/ICC.csv', index=False)
         #print('ICC translated')
 
     ##Formating
@@ -188,19 +188,19 @@ def converter(pathCsv, lg, srcDepth, threshold):
     resultDf.apply(lambda x: incDepth(x), axis=1)
     #print('depth incremented')
     
-    compareList.append(compare('../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
+    compareList.append(compare('../../../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
 '''    #Writting result
     print('writting resultDf into csv...') 
-    resultDf.to_csv('../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
-    matchingDf.to_csv('../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
+    resultDf.to_csv('../../../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
+    matchingDf.to_csv('../../../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
     print('resultDf written into csv')
 
-    compareList.append(compare('../../data/FR/conversionTable_FR_handMade.csv','../../data/FR/conversionTable_FR_scriptMade.csv',threshold))'''    
+    compareList.append(compare('../../../../data/FR/conversionTable_FR_handMade.csv','../../../../data/FR/conversionTable_FR_scriptMade.csv',threshold))'''    
 
 
 
 
-'''genericPath = '../../data/'
+'''genericPath = '../../../../data/'
 #read the origin data into a pandas dataframe. 
 srcDf = pd.read_csv(genericPath + '/' + country + '/' + country + '_' + year + '.csv')
 #read the target data into a pandas dataframe. Until now and in this whole script, the target data is JECAM classification. 
