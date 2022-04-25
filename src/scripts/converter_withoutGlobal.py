@@ -6,14 +6,12 @@ import numpy as np
 from comparater import compare
 
 ##My global variables
-matchingList = [] 
 resultDf = pd.DataFrame()
 resultDf = pd.DataFrame()
-srcClasses = []
 compareList = []
 
 def classes(df):
-    global srcClasses
+    srcClasses = []
     columns = list(df)
     for col in columns:
         if 'ID' not in col: 
@@ -41,19 +39,24 @@ def translateICC(df, lg):
 
 def parserICCCode(x):
     return "".join(x.split('.'))
-
-def matchRow(c,idS,src,trg,idT,threshold): 
-    global matchingList
+   
+def matchRowRow(c,idS,src,trg,idT,threshold): 
     nb = 0
     nb = fuzz.token_sort_ratio(src,trg)
     if nb > threshold: 
-        matchingList.append([c,idS, src, trg, idT, nb])
-        #matchingList.append([idS, idT, nb])
+        return [c,idS, src, trg, idT, nb]
 
-def matchDf(srcDf,iccDf,threshold):
+def matchRowDf(x,iccDf,c,threshold):
+    matchingSubList = iccDf.apply(lambda y : matchRowRow(c, x['ID_' + c],x[c],y.label_fr_filtered,y.group_code,threshold), axis=1)
+    return matchingSubList
+
+def matchDfDf(srcDf,srcClasses,iccDf,threshold):
+    matchingList=[]
     for c in srcClasses: 
         srcDf2 = srcDf.drop_duplicates(subset = ['ID_' + c])
-        srcDf2.apply(lambda x:iccDf.apply(lambda y: matchRow(c, x['ID_' + c],x[c],y.label_fr_filtered,y.group_code,threshold), axis=1), axis=1)
+        matchingSubList = srcDf2.copy()
+        matchingSubList = srcDf2.apply(lambda x:matchRowDf(x,iccDf,c,threshold)), axis=1)
+        matchingList += matchingSubList        
         if 'ID_' + c in matchingList[:][1]:
             break
 
@@ -63,13 +66,11 @@ def matchDf(srcDf,iccDf,threshold):
     print(mDf[idx])
     return mDf[idx]
 
-def spreadMatch(id_src,id_trg):
-    global resultDf
+def spreadMatch(resultDf,id_src,id_trg):
     resultDf.loc[resultDf.ID_GROUP_FR == id_src, 'ID_GROUP_ICC'] = id_trg
-    return
+    return resultDf
 
-def incDepth(x): 
-    global matchingDf
+def incDepth(x,matchingDf): 
     ID_C = x.ID_CROPS_FR
     ID_G = x.ID_GROUP_ICC
     if pd.isna(ID_G):
@@ -94,7 +95,6 @@ def compare(pathHandMade,computed,threshold):
     return (threshold,per)
 
 def converter(pathCsv, lg, srcDepth, threshold):
-    global resultDf
     global matchingDf
     global compareList
     ##Loading
@@ -102,7 +102,7 @@ def converter(pathCsv, lg, srcDepth, threshold):
     iccDf = pd.read_csv('../../data/ICC/ICC.csv')
 
     ##Listing
-    classes(srcDf)
+    srcClasses = classes(srcDf)
 
     ##Filtering1
     englishFilters=['other','crops',' and ',' or ','n.e.c.', 'spp','n.e.c']
@@ -130,20 +130,20 @@ def converter(pathCsv, lg, srcDepth, threshold):
     resultDf = srcDf[['ID_CROPS_FR', 'ID_GROUP_FR']]
 
     ##Matching all
-    matchingDf = matchDf(srcDf,iccDf,threshold)
+    matchingDf = matchDfDf(srcDf,srcClasses,iccDf,threshold)
 
     ##Spreading
     rows = matchingDf.loc[matchingDf['class_level_src'] == 'GROUP_FR']
-    rows.apply(lambda x: spreadMatch(x.id_src, x.id_trg), axis=1)
+    rows.apply(lambda x: spreadMatch(resultDf, x.id_src, x.id_trg), axis=1)
 
     ##Incrementing depth   
     resultDf = resultDf[['ID_CROPS_FR','ID_GROUP_ICC']]
-    resultDf.apply(lambda x: incDepth(x), axis=1)
+    resultDf.apply(lambda x: incDepth(x,matchingDf), axis=1)
     
     #Writting result
     resultDf.to_csv('../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
     matchingDf.to_csv('../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
     print(matchingDf)
-    compareList.append(compare('../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
+    #compareList.append(compare('../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
 
-converter('../../data/FR/FR_2020.csv', 'FR', 1,68)
+converter('../../data/FR/FR_2020.csv', 'FR', 1,60)
