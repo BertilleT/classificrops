@@ -13,7 +13,7 @@ This section is dedicated to the comparison of croplands classification between 
 
 
 .. csv-table:: Wallonia and France side by side
-   :file: ../data/comparison_WL_FR.csv
+   :file: ../../data/comparison_WL_FR.csv
    :header-rows: 1
    :class: longtable
    :widths: 1,10,1,1,10
@@ -23,15 +23,18 @@ France and Wallonia classification are different. To study a group crops evoluti
 Yet, this solution is not really satisfying.  
 
 When it comes to a classification with much more classes, the complexity of the matching task increases. Indeed, 
-what happen if you decide now to study a crop and not a group of crops. In Wallonia, 143 crops are listed against 352 in France. We would have to match both lists. 
+what happen if you decide now to study a crop and not a group of crops. In Wallonia, 143 crops are listed against 352 in France. We would have to match both lists, ie to do a matching task. 
 To go further, let's imagine that you want to study the evolution of a crop in France, Wallonia, Flandres, Netherlands, Germany and Austria. How to deal with it ? 
 
 Let's go even further : you want now to study a cropland in all european union countries. There are 27 of them. Then we would have to compute (27*(27+1)/2 = ) 328 matching tasks, 
 and without taking into account that sometimes, crop classification are not centralized but managed at a regional level (as in Belgium for example). 
 So in reality, it would represent even more than 378 matching tasks. 
 
-We understand why, to study agricultural croplands at an european level, we have to draw a shared classification for all countries from Europe... 
-which brings us to the following question : how to define a shared classification ? 
+We understand why, to study agricultural croplands at an european level, we have to draw a shared classification for all countries from Europe... If we consider that we have to study n classifications, 
+in the first case we would have to compute (n*(n+1)/2) matching tasks. In the second case, we would have to compute n task. (to match the source classification to the shared classification).
+negative delta and a positive >> n²-n is never inferior to 0. n²+n-2n > 0 ie n(n+1) > 2n ie n*(n+1)/2 > n.
+
+This brings us to the following question : how to define a shared classification ? 
 
 European classification
 ------------------------
@@ -40,7 +43,7 @@ Instead of creating a shared classification from scratch, we will choose an exis
 At first glance, the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO) seems to fit well. 
 | source data : https://www.fao.org/3/a0135e/A0135E10.htm#app3 
 
-
+#explain the semi-automatisation
 
 Languages
 ----------
