@@ -68,12 +68,14 @@ def incDepth(x):
     global matchingDf
     ID_C = x.ID_CROPS_FR
     ID_G = x.ID_GROUP_ICC
-    if pd.isna(ID_G):
-        i = matchingDf.loc[matchingDf['id_src'] == ID_C]
-        if len(i.index) != 0:
-            ID_G = i.id_trg
-        else: ID_G = 'nan'
+    sim = x.similarity
 
+    i = matchingDf.loc[matchingDf['id_src'] == ID_C]
+    if len(i.index) != 0:
+        if pd.isna(ID_G) or sim < i.similarity:
+            ID_G = i.id_trg.iloc[0]
+            print(ID_G)
+    else: ID_G = np.nan
     return ID_G
 
 def compare(pathHandMade,computed,threshold):
@@ -91,6 +93,10 @@ def compare(pathHandMade,computed,threshold):
 
     print('The conversion table computed with the threshold = ' + str(threshold) + ', fits to the expected output at ' + str(per) + '%.')
     return (threshold,per)
+
+def spreadSim(id_c):
+    global matchingDf
+    matchingDf.apply(lambda y : y.similarity if (y.id_src==id_c) else 0,axis=1)
 
 def converter(pathCsv, lg, srcDepth, threshold):
     global resultDf
@@ -134,17 +140,20 @@ def converter(pathCsv, lg, srcDepth, threshold):
     ##Spreading
     rows = matchingDf.loc[matchingDf['class_level_src'] == 'GROUP_FR']
     rows.apply(lambda x: spreadMatch(x.id_src, x.id_trg), axis=1)
+    #print(resultDf.iloc[1:10])
 
     ##Incrementing depth   
-    resultDf = resultDf[['ID_CROPS_FR','ID_GROUP_ICC']]
-    print(resultDf.head(100))
+    #resultDf.drop_duplicates(subset ="id_src", keep = False, inplace = True)
+    resultDf['similarity'] = resultDf.apply(lambda x : spreadSim(x.ID_CROPS_FR),axis = 1)
     resultDf['ID_GROUP_ICC'] = resultDf.apply(lambda x: incDepth(x), axis=1)
 
     #Writting result
     resultDf.to_csv('../../../data/FR/conversionTable_FR_scriptMade.csv', index=False)
     matchingDf.to_csv('../../../data/FR/matchingDf_FR_scriptMade.csv', index=False)
-    print(matchingDf)    
-    resultDf['ID_GROUP_ICC'] = resultDf['ID_GROUP_ICC'].astype(float)
+    #print(matchingDf[matchingDf["id_src"] == 'MIS'])    
+    #print(resultDf.iloc[1:10])    
+    #resultDf['ID_GROUP_ICC'] = resultDf['ID_GROUP_ICC'].astype(float)
+    resultDf['ID_GROUP_ICC'] = resultDf.loc[:, ['ID_GROUP_ICC']].astype(float)
     compareList.append(compare('../../../data/FR/conversionTable_FR_handMade.csv',resultDf,threshold))
 
-converter('../../../data/FR/FR_2020.csv', 'FR', 1,90)
+converter('../../../data/FR/FR_2020.csv', 'FR', 1,50)
