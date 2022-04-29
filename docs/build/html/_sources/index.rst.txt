@@ -5,7 +5,7 @@
 
 Agrivolution's documentation
 ============================
-The project is divided in 2 parts. 
+The project is divided into 2 parts. 
 
 1) classification standardization
     expected deliverable : a tool coded in python, able to convert one crops classification to another one, with a clean documentation written in sphinx. 

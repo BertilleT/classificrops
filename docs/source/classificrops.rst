@@ -20,7 +20,7 @@ This section is dedicated to the comparison of croplands classification between 
 
 
 France and Wallonia classification are different. To study a group crops evolution in both country, we could start by matching the different classes one by one. 
-Yet, this solution is not really satisfying.  
+
 
 When it comes to a classification with much more classes, the complexity of the matching task increases. Indeed, 
 what happen if you decide now to study a crop and not a group of crops. In Wallonia, 143 crops are listed against 352 in France. We would have to match both lists, ie to do a matching task. 
@@ -43,15 +43,47 @@ Instead of creating a shared classification from scratch, we will choose an exis
 At first glance, the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO) seems to fit well. 
 | source data : https://www.fao.org/3/a0135e/A0135E10.htm#app3 
 
-#explain the semi-automatisation
+The following characteristics are interesting to qualify a crop : 
+    - growing cycle (temporary/permanent), 
+    - crop species, 
+    - crop variety (for example, hybrid/ordinary maize), 
+    - season (for example, winter/spring wheat), 
+    - land type (for example, wetland/dryland rice), 
+    - crop use (for example, pumpkin for food/fodder), 
+    - type of product (for example, fresh/dried beans), 
+    - how the crop is processed (for example, industrial crops), 
+    - cultivation methods (for example, crops grown under protective cover).
+
+
+ICC does not do the distinction between the pumpkin for food or pumpkin for fodder. If you need this information for your analysys, thus ICC does not fit well. 
+The EAGLE si another classification that seems really interesting by its oriented object approach. 
+Regarding the botanic classification, EPPO is very precise. 
+Recap of the classification under study : 
+    - ICC (FAO)
+    - LUCAS (selected by Dominique in NIVA project)
+    - EAGLE
+    - EPPO.
+
 
 Languages
 ----------
 How to compare croplands classification when they are written in various languages ? If we stick to the large run goal which is to study all countries from EU, we have 
 at least **24** official languages. 
 The idea is to create a table that contains ICC classification written in the 24 official languages. 
-To do so : 2 alternatives studies :  
+To do so : 2 alternatives studies : 
     - Use Deepl library : https://github.com/DeepLcom/deepl-python. But the number of source languages from Europe available is limited : there are only german, spanish, french, italian, dutsh, polish and portugese.
     - Use google translation. to be studied.
 
 Comparison pros and cons of each method
+
+
+Tool
+-----
+The goal is to semi automate the crossover between classification from a specific country to the "european" one.
+Please run the script src/scripts/classificrops/converter.py. 
+result with threshold = 99: correctness = 56%
+errorness = 2%
+
+Similarity computing
+---------------------
+Levenhestein distance with fuzzy research. 

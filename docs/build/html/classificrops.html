@@ -207,8 +207,7 @@
 </tr>
 </tbody>
 </table>
-<p>France and Wallonia classification are different. To study a group crops evolution in both country, we could start by matching the different classes one by one.
-Yet, this solution is not really satisfying.</p>
+<p>France and Wallonia classification are different. To study a group crops evolution in both country, we could start by matching the different classes one by one.</p>
 <p>When it comes to a classification with much more classes, the complexity of the matching task increases. Indeed,
 what happen if you decide now to study a crop and not a group of crops. In Wallonia, 143 crops are listed against 352 in France. We would have to match both lists, ie to do a matching task.
 To go further, let’s imagine that you want to study the evolution of a crop in France, Wallonia, Flandres, Netherlands, Germany and Austria. How to deal with it ?</p>
@@ -225,7 +224,32 @@ negative delta and a positive &gt;&gt; n²-n is never inferior to 0. n²+n-2n &g
 <p>Instead of creating a shared classification from scratch, we will choose an existing classification as a reference.
 At first glance, the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO) seems to fit well.
 | source data : <a class="reference external" href="https://www.fao.org/3/a0135e/A0135E10.htm#app3">https://www.fao.org/3/a0135e/A0135E10.htm#app3</a></p>
-<p>#explain the semi-automatisation</p>
+<dl class="simple">
+<dt>The following characteristics are interesting to qualify a crop :</dt><dd><ul class="simple">
+<li><p>growing cycle (temporary/permanent),</p></li>
+<li><p>crop species,</p></li>
+<li><p>crop variety (for example, hybrid/ordinary maize),</p></li>
+<li><p>season (for example, winter/spring wheat),</p></li>
+<li><p>land type (for example, wetland/dryland rice),</p></li>
+<li><p>crop use (for example, pumpkin for food/fodder),</p></li>
+<li><p>type of product (for example, fresh/dried beans),</p></li>
+<li><p>how the crop is processed (for example, industrial crops),</p></li>
+<li><p>cultivation methods (for example, crops grown under protective cover).</p></li>
+</ul>
+</dd>
+</dl>
+<p>ICC does not do the distinction between the pumpkin for food or pumpkin for fodder. If you need this information for your analysys, thus ICC does not fit well.
+The EAGLE si another classification that seems really interesting by its oriented object approach.
+Regarding the botanic classification, EPPO is very precise.
+Recap of the classification under study :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ICC (FAO)</p></li>
+<li><p>LUCAS (selected by Dominique in NIVA project)</p></li>
+<li><p>EAGLE</p></li>
+<li><p>EPPO.</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="languages">
 <h2><span class="section-number">1.3. </span>Languages<a class="headerlink" href="#languages" title="Permalink to this headline">¶</a></h2>
@@ -240,6 +264,17 @@ To do so : 2 alternatives studies :</p>
 </ul>
 </div></blockquote>
 <p>Comparison pros and cons of each method</p>
+</section>
+<section id="tool">
+<h2><span class="section-number">1.4. </span>Tool<a class="headerlink" href="#tool" title="Permalink to this headline">¶</a></h2>
+<p>The goal is to semi automate the crossover between classification from a specific country to the “european” one.
+Please run the script src/scripts/classificrops/converter.py.
+result with threshold = 99: correctness = 56%
+errorness = 2%</p>
+</section>
+<section id="similarity-computing">
+<h2><span class="section-number">1.5. </span>Similarity computing<a class="headerlink" href="#similarity-computing" title="Permalink to this headline">¶</a></h2>
+<p>Levenhestein distance with fuzzy research.</p>
 </section>
 </section>
 
@@ -265,6 +300,8 @@ To do so : 2 alternatives studies :</p>
 <li class="toctree-l2"><a class="reference internal" href="#wallonia-and-france-classification">1.1. Wallonia and France classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#european-classification">1.2. European classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#languages">1.3. Languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tool">1.4. Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#similarity-computing">1.5. Similarity computing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="agrivolution.html">2. Agrivolution</a></li>

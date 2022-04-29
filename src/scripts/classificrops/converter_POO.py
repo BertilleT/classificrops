@@ -91,7 +91,6 @@ class Class(SrcClassification):
         self.class_distinct.apply(matching)
         
 
-
 class MatchData():
     def __init__():
         self.class_level = 
