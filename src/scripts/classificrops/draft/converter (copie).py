@@ -44,7 +44,7 @@ def matchRow(c,idS,src,trg,idT,threshold):
     global matching_list
     #nb = 0
     if type(src) == str and type(trg) == str:
-        srcA = src.split()
+        '''srcA = src.split()
         length = len(srcA)
         trgA = trg.split()
         myList=[]
@@ -55,8 +55,8 @@ def matchRow(c,idS,src,trg,idT,threshold):
         myDf = pd.DataFrame(myList, columns=cols)
         r = myDf.groupby('index')['sim'].max().reset_index()
         total = r['sim'].sum()
-        nb = total / length
-        #nb = fuzz.token_set_ratio(src,trg)
+        nb = total / length'''
+        nb = fuzz.token_set_ratio(src,trg)
         if nb > threshold: 
             matching_list.append([c,idS, src, trg, idT, nb])
 
@@ -163,7 +163,6 @@ def converter(pathCsv, pl, lg, srcDepth, threshold):
     rows2.apply(lambda x: spreadMatch(x.id_src, x.id_trg,x.similarity), axis=1)
 
     ##Incrementing depth   
-    print(matching_df)
     cp = matching_df.copy()
     cp.apply(lambda x: spreadSim(x.id_src, x.similarity), axis=1)
     print(result_df.head(50))

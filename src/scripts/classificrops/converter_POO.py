@@ -78,7 +78,7 @@ class ICCClassification(Classification):
 #---------------------------------------------------------------------------------
 class Class(SrcClassification):
     def __init__(pathCsv,lg,level,class_level):
-        super(Class,self).__init__(pathCsv,lg))
+        super(Class,self).__init__(pathCsv,lg)
         self.level = level
         self.class_level = class_level
         self.class_distinct = pd.Dataframe()
@@ -116,6 +116,8 @@ def converter(path,lg):
     spreadResult
     incDepth 
     etc ... 
+
+
 
 converter('../../../../data/FR/FR_2020.csv', 'FR')
 

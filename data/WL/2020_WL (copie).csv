@@ -1,0 +1,188 @@
+,Annexe 3 : CODES CULTURES,,,,
+,,"Destination
+secondaire V","Demande d’aide BIO -
+groupe bio**",,Paiement vert
+Culture,Code culture,"« verdissement
+»",,Groupe diversification***,Type pour calcul des exemptions
+CEREALES ET ASSIMILES,,,,,
+Avoine d’hiver,341,-,3,,Surface agricole - Terres arables
+Avoine de printemps,342,-,3,Av-p,Surface agricole - Terres arables
+Epeautre,36,-,3,,Surface agricole - Terres arables
+Froment d’hiver,311,-,3,Tr-h,Surface agricole - Terres arables
+Froment de printemps,312,-,3,,Surface agricole - Terres arables
+Maïs ensilage,201,-,1,Ze,Surface agricole - Terres arables
+Maïs grain,202,-,3,Ze,Surface agricole - Terres arables
+Céréales + légumineuses*,39,-,3,MEL,Surface agricole - Terres arables
+Orge d’hiver,321,-,3,,Surface agricole - Terres arables
+Orge de printemps,322,-,3,Ho-p,Surface agricole - Terres arables
+Orge de brasserie,323,-,3,Ho-p,Surface agricole - Terres arables
+Sarrasin,37,-,3,,Surface agricole - Terres arables
+Seigle d’hiver,331,-,3,,Surface agricole - Terres arables
+Seigle de printemps,332,-,3,,Surface agricole - Terres arables
+Triticale d’hiver,351,-,3,,Surface agricole - Terres arables
+Triticale de printemps,352,-,3,,Surface agricole - Terres arables
+Sorgho,381,-,3,,Surface agricole - Terres arables
+Quinoa,382,-,3,,Surface agricole - Terres arables
+CULTURES HORTICOLES,,,,,
+Cultures fruitières annuelles - Fraises,9516,-,2,Fr,Surface agricole - Terres arables
+Cultures fruitières annuelles - Framboises,9717,-,2,,Surface agricole - Cultures permanentes
+Cultures fruitière pluriannuelles-hautes tiges ( de 50 à 250 arbres/ha)*,9742,-,3,,Surface agricole - Cultures permanentes
+Cultures fruitière pluriannuelles-basses tiges ( plus de 250 arbres /ha)*,9741,-,2,,Surface agricole - Cultures permanentes
+Cultures permanentes sous serre*,885,-,2,,Surface agricole - Cultures permanentes
+Cultures horticoles non-comestibles*,96,-,2,Autres,Surface agricole - Terres arables
+Autres légumes plein air,951,-,2,Autres,Surface agricole - Terres arables
+Autres plantes ornementales de plein air,954,,2,,Surface agricole – Cultures permanentes
+Autres plantes ornementales sous serre,958,,2,,Surface agricole – Cultures permanentes
+Autres cultures de légumes sous serre,9521,,2,Autres,Surface agricole - Terres arables
+Asperges (consommation au frais),9511,-,2,,Surface agricole – Cultures permanentes
+Asperges (transformation industrielle),8511,-,2,,Surface agricole – Cultures permanentes
+Brocolis (consommation au frais),9525,-,2,Braole,Surface agricole - Terres arables
+Brocoli (transformation industrielle),8525,-,2,Braole,Surface agricole - Terres arables
+Carotte (non hâtive) (consommation) (transformation industrielle),8535,-,2,Da,Surface agricole - Terres arables
+Carotte (hâtive)(consommation) (transformation industrielle),8564,-,2,Da,Surface agricole - Terres arables
+Carotte ( non hâtive) (consommation au frais),9535,-,2,Da,Surface agricole - Terres arables
+Carotte ( hâtive) (consommation au frais),9564,-,2,Da,Surface agricole - Terres arables
+Céleri-rave (transformation industrielle),8543,-,2,Apium graveolens,Surface agricole - Terres arables
+Céleri-branche ( transformation industrielle),8551,-,2,Apium graveolens,Surface agricole - Terres arables
+Céleri à côtes ( transformation industrielle),8539,-,2,Apium graveolens,Surface agricole - Terres arables
+Céleri-rave (consommation au frais),9543,-,2,Apium graveolens,Surface agricole - Terres arables
+Céleri vert ( transformation industrielle),8548,-,2,Apium graveolens,Surface agricole - Terres arables
+Cerfeuil (consommation au frais),960,-,2,Ant,Surface agricole - Terres arables
+Cerfeuil ( transformation industrielle),860,-,2,Ant,Surface agricole - Terres arables
+Champignons,9536,-,2,,Surface agricole – Cultures permanentes
+Choux-rave (consommation au frais),9529,-,2,Braole,Surface agricole - Terres arables
+Choux-rave (transformation industrielle),8529,-,2,Braole,Surface agricole - Terres arables
+Chou de Bruxelles (transformation industrielle),8512,-,2,Braole,Surface agricole - Terres arables
+Chou de Bruxelles (consommation au frais),9512,-,2,Braole,Surface agricole - Terres arables
+Chou-fleur (transformation industrielle),8523,-,2,Braole,Surface agricole - Terres arables
+Chou-fleur (consommation au frais),9523,-,2,Braole,Surface agricole - Terres arables
+Choux – légumes/Céleri vert (consommation au frais),9548,-,2,Braole,Surface agricole - Terres arables
+Choux rouge (consommation au frais),9527,-,2,Braole,Surface agricole - Terres arables
+Choux rouge (transformation industrielle),8527,-,2,Braole,Surface agricole - Terres arables
+Chou blanc (transformation industrielle),8540,-,2,Braole,Surface agricole - Terres arables
+Chou blanc (consommation au frais),9540,-,2,Braole,Surface agricole - Terres arables
+Chou frisé (transformation industrielle),8524,-,2,Braole,Surface agricole - Terres arables
+Chou de Milan ( transformation industrielle),8546,-,2,Braole,Surface agricole - Terres arables
+Chou chinois,8526,-,2,Brarap-p,Surface agricole - Terres arables
+Courgettes ( consommation au frais),9541,-,2,Cucpep,Surface agricole - Terres arables
+Courgettes (transformation industrielle),8541,-,2,Cucpep,Surface agricole - Terres arables
+Courges butternut ( consommation au frais),9456,-,2,Cucmos,Surface agricole - Terres arables
+Courges butternut (transformation industrielle),8456,-,2,Cucmos,Surface agricole - Terres arables
+Echalotes en frais,9513,-,2,All,Surface agricole - Terres arables
+Echalotes industrielle,8513,-,2,All,Surface agricole - Terres arables
+Endives de Bruxelles (pour la racine) (transformation industrielle),8561,-,2,Ci,Surface agricole - Terres arables
+Endives (chicons),9515,-,2,Ci,Surface agricole - Terres arables
+Epinards (consommation au frais),9519,-,2,Spi,Surface agricole - Terres arables
+Epinards ( transformation industrielle),8519,-,2,Spi,Surface agricole - Terres arables
+Fenouil ( de Florence) ( consommation au frais),9534,-,2,Foe,Surface agricole - Terres arables
+Fenouil (de Florence) ( transformation industrielle),8534,-,2,Foe,Surface agricole - Terres arables
+Fleurs et plantes ornementales sous serre,9588,,2,,Surface agricole - Cultures permanentes
+Plants de fraisiers de plein air,9724,-,2,Fr,Surface agricole - Terres arables
+Cultures fruitières annuelles- Fraises sous serres,8516,_,2,Fr,Surface agricole - Terres arables
+Haricots de conserverie,9410,-,2,,Surface agricole - Terres arables - Légumineuse
+Haricots verts (transformation industrielle),8410,-,2,Ph,Surface agricole - Terres arables - Légumineuse
+Laitues pommées (consommation au frais),9518,-,2,Lac,Surface agricole - Terres arables
+Laitues pommées (transformation industrielle),8518,-,2,Lac,Surface agricole - Terres arables
+Légume légumineuse,966,-,2,Autres,Surface agricole - Terres arables - Légumineuse
+Navets fourragers,746,-,1,Brarap-p,Surface agricole - Terres arables
+Oignons (hâtifs) (transformation industrielle),8563,-,2,All,Surface agricole - Terres arables
+Oignons (non hâtifs) ( transformation industrielle),8514,-,2,All,Surface agricole - Terres arables
+Oignons (hâtifs) (consommation au frais),9563,-,2,All,Surface agricole - Terres arables
+Oignons (non hâtifs) (consommation au frais),9514,-,2,All,Surface agricole - Terres arables
+Pépinières de plants forestiers,9560,-,2,,Surface agricole - Cultures permanentes
+Pépinières de plants fruitiers ou de plantes ornementales,9520,-,2,,Surface agricole - Cultures permanentes
+Persil ( consommation au frais),959,-,2,Pet,Surface agricole - Terres arables
+Persil (transformation industrielle),859,-,2,Pet,Surface agricole - Terres arables
+Plantes aromatiques,953,-,2,Autres,Surface agricole - Terres arables
+Plantes vivaces ornementales de plein air,9584,,2,,Surface agricole - Cultures permanentes
+Poireau (consommation au frais),9538,-,2,All,Surface agricole - Terres arables
+Poireau (transformation industrielle),8538,-,2,All,Surface agricole - Terres arables
+"Pois récoltés à l’état frais, pois de conserverie",931,-,2,Pi-p,Surface agricole - Terres arables - Légumineuse
+Pois (autres que récoltés secs) (transformation industrielle),831,-,2,Pi-p,Surface agricole - Terres arables - Légumineuse
+Rhubarbe ( consommation au frais),9517,-,2,,Surface agricole – Cultures permanentes
+Rhubarbe ( transformation industrielle),8517,-,2,,Surface agricole – Cultures permanentes
+Scaroles (transformation industrielle),8537,-,2,Ci,Surface agricole - Terres arables
+Scaroles (consommation au frais),9537,-,2,Ci,Surface agricole - Terres arables
+Scorsonère (transformation industrielle),8533,-,2,Sco,Surface agricole - Terres arables
+Tomates (consommation au frais),9552,-,2,Sollyc,Surface agricole - Terres arables
+Tomates ( transformation industrielle),8552,-,2,Sollyc,Surface agricole - Terres arables
+Cultures maraîchères sous serres ou sous protection fixe,952,-,2,Autres,Surface agricole - Terres arables
+Vignes,9716,-,2,,Surface agricole - Cultures permanentes
+FRUITS A COQUES,,,,,
+Noisetier,9201,-,2,,Surface agricole - Cultures permanentes
+Noyer,9202,-,2,,Surface agricole - Cultures permanentes
+OLEAGINEUX,,,,,
+Colza d’hiver,4111,-,3,,Surface agricole - Terres arables
+Navette d’hiver (graines),4112,-,3,,Surface agricole - Terres arables
+Colza de printemps,4121,-,3,,Surface agricole - Terres arables
+Navette de printemps (graines),4122,-,3,,Surface agricole - Terres arables
+Lin oléagineux,45,-,3,Li,Surface agricole - Terres arables
+Soja,43,V,3,,Surface agricole - Terres arables - Légumineuse
+Tournesol,42,-,3,,Surface agricole - Terres arables
+Autres oléagineux*,46,-,3,Autres,Surface agricole - Terres arables
+PLANTES A FIBRES,,,,,
+Chanvre textile (culture soumise à autorisation préalable au semis),922,-,3,Ca,Surface agricole - Terres arables
+Chanvre non textile (culture soumise à autorisation préalable au semis),872,-,3,Ca,Surface agricole - Terres arables
+Lin textile,921,-,3,Li,Surface agricole - Terres arables
+POMMES DE TERRE,,,,,
+Pomme de terre (plants),902,-,2,Soltub,Surface agricole - Terres arables
+Pomme de terre (non hâtives),901,-,3,Soltub,Surface agricole - Terres arables
+Pomme de terre féculière,903,-,3,Soltub,Surface agricole - Terres arables
+Pomme de terre hâtives,904,-,3,Soltub,Surface agricole - Terres arables
+"Pomme de terre (primeur, arrachage avant le 20 juin)",905,-,3,Soltub,Surface agricole - Terres arables
+PRODUCTIONS FOURRAGERES,,,,,
+Betterave fourragère,71,-,3,Be,Surface agricole - Terres arables
+Luzerne,73,V,1,,Surface agricole - Terres arables - Légumineuse
+"Prairie permanente (taux de couverture > 90%), hors rotation depuis 5 ans****",610,-,1,,Surface agricole - Prairies permanentes
+"Prairie permanente (taux de couverture > 90%),avec contrat d’aide complémentaire
+environnemental, hors rotation depuis 5 ans****",618,-,1,,Surface agricole - Prairies permanentes
+"Prairie permanente (50%<taux de couverture <= 90%), hors rotation depuis 5 ans****",670,-,1,,Surface agricole - Prairies permanentes
+"Prairie permanente (50%<taux de couverture <= 90%), avec contrat d’aide
+complémentaire environnemental, hors rotation depuis 5 ans****",678,-,1,,Surface agricole - Prairies permanentes
+"Autres surfaces pâturées (taux de couverture <= 50%), hors rotation depuis 5 ans****",600,-,-,,Surface non agricole
+"Autres surfaces pâturées (taux de couverture <= 50%), avec contrat d’aide
+complémentaire environnemental, hors rotation depuis 5 ans****",608,-,-,,Surface non agricole
+Prairie temporaire,62,-,1,F,"Surface agricole - Terres arables - Herbe ou plante fourragère
+herbacée"
+Prairie à vocation à devenir permanente pour les parcelles en MAEC et N2000,623,,1,F,"Surface agricole - Terres arables - Herbe ou plante fourragère
+herbacée"
+Trèfles,72,V,1,,Surface agricole - Terres arables - Légumineuse
+Carotte,7433,-,2,Da,Surface agricole - Terres arables
+Carottes fourragères,742,-,1,Da,Surface agricole - Terres arables
+Autres fourrages*,743,-,1,Autres,Surface agricole - Terres arables
+Fèves et Féveroles d’hiver,521,V,3,,Surface agricole - Terres arables - Légumineuse
+Fèves et Féveroles de printemps,522,V,3,,Surface agricole - Terres arables - Légumineuse
+Lotier corniculé (Lotus corniculatis),57,V,1,Lo,Surface agricole - Terres arables - Légumineuse
+Lupin doux,53,V,3,,Surface agricole - Terres arables - Légumineuse
+Luzerne lupuline,56,V,1,Me,Surface agricole - Terres arables - Légumineuse
+Mélange protéagineux d'hiver + céréales ou autres espèces,541,V,3,MEL,Surface agricole - Terres arables - Légumineuse
+Mélange protéagineux de printemps + céréales ou autres espèces,542,V,3,MEL,Surface agricole - Terres arables - Légumineuse
+Mélange légumineuses fourragères + graminées prairiales,543,V,1,F,Surface agricole - Terres arables - Herbe ou plante fourragère
+Pois protéagineux d’hiver,511,V,3,Pi-h,Surface agricole - Terres arables – Légumineuse
+Pois protéagineux de printemps,512,V,3,Pi-p,Surface agricole - Terres arables - Légumineuse
+Sainfoin ( Onobrychis sativa),58,V,1,Ono,Surface agricole - Terres arables - Légumineuse
+Autres protéagineux*,55,-,3,Autres,Surface agricole - Terres arables - Légumineuse
+AUTRES UTILISATIONS DU SOL,,,,,
+Angél i que,881,-,2,,Surface agricole - Terres arables
+Betterave sucrière,91,-,3,Be,Surface agricole - Terres arables
+Chicorée à inuline,9811,-,3,Ci,Surface agricole - Terres arables
+Chicorée à café,9812,-,3,Ci,Surface agricole - Terres arables
+Jachère herbacée,811,V,-,J,Surface agricole - Terres arables – Jachère
+Jachère NON herbacée,812,V,-,J,Surface agricole - Terres arables – Jachère
+Jachère mellifère,813,V,-,J,Surface agricole - Terres arables – Jachère
+Cultures forestières à rotation courte (taillis à très courte rotation),883,V,-,,Surface agricole - Cultures permanentes
+Multiplication de semences en mode de production biologique*,821,-,2,Autres,Surface agricole - Terres arables
+Houblon,9822,-,2,,Surface agricole - Cultures permanentes
+Miscanthus,884,V,-,,Surface agricole - Cultures permanentes
+Ortie,7431,-,2,,Surface agricole - Terres arables
+Plantes aromatiques,953,-,2,Autres,Surface agricole - Terres arables
+Plantes médicinales,957,-,2,Autres,Surface agricole - Terres arables
+Tabac,9821,-,-,,Surface agricole - Terres arables
+Couvert à finalité environnementale rémunéré par des tiers privés,874,-,-,Autres,Surface agricole - Terres arables
+Tounière enherbée,751,-,-,F,Surface agricole - Terres arables - Herbe ou plante
+"Bande/parcelle aménagée MAE – MC7, MC8",754,_,-,J,Surface agricole - Terres arables – Jachère
+Bande bordure de champ,752,V,-,F,Surface agricole - Terres arables - Herbe ou plante
+Parcours BIO (volaille ou porc),760,-,1,F,Surface agricole - Terres arables - Herbe ou plante
+Autres couverts semés *,85,-,-,Autres,Surface agricole - Terres arables
+CULTURE NE PERMETTANT PAS L'UTILISATION DE DROITS AU PAIEMENT DE BASE,,,,,
+Sapins de Noël,962,-,-,,Surface non agricole

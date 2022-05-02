@@ -1,5 +1,5 @@
 code,broader,label_en,label_en_filtered,label_fr_filtered
-1,,Cereals,Cereals,Céréales
+1,,Cereals,Cereals,céréales
 1.01,1,Wheat,Wheat,Blé
 1.02,1,Maize,Maize,Maïs
 1.03,1,Rice,Rice,Riz
@@ -44,7 +44,7 @@ code,broader,label_en,label_en_filtered,label_fr_filtered
 2.05.01,2.05,Watermelons,Watermelons,Pastèques
 2.05.02,2.05,Cantaloupes and other melons,Cantaloupes melons,Cantaloupes melons
 2.9,2,Other vegetables n.e.c.,vegetables,légumes
-3,,Fruit and nuts,Fruit nuts,Fruits à coque
+3,,Fruit and nuts,Fruit nuts,Fruits et noix
 3.01,3,Tropical and subtropical fruits,Tropical subtropical fruits,Fruits tropicaux et subtropicaux
 3.01.01,3.01,Avocados,Avocados,Avocats
 3.01.02,3.01,Bananas,Bananas,Bananes
