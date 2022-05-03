@@ -58,15 +58,29 @@ def matchRow(c,idS,src,trg,idT,threshold):
         nb = total / length'''
         nb = fuzz.token_set_ratio(src,trg)
         if nb > threshold: 
-            matching_list.append([c,idS, src, trg, idT, nb])
+            return [c,idS, src, trg, idT, nb]
+        '''else:
+            return [np.nan,np.nan,np.nan,np.nan,np.nan,np.nan]'''
 
 def matchDf(srcDf,iccDf,threshold):
+    cols = ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
+    df = pd.DataFrame()
     for c in src_classes: 
         srcDf2 = srcDf.drop_duplicates(subset = ['ID_' + c])
-        srcDf2.apply(lambda x:iccDf.apply(lambda y: matchRow(c, x['ID_' + c],x[c],y.label_fr_filtered,y.group_code,threshold), axis=1), axis=1)
-
+        df[c] = srcDf2.apply(lambda x:iccDf.apply(lambda y: matchRow(c, x['ID_' + c],x[c],y.label_fr_filtered,y.group_code,threshold), axis=1), axis=1)
+        print(df)
+    # Create an empty list
+    print(df)
+    Row_list =[]
+    
+    # Iterate over each row
+    for index, rows in df.iterrows():
+        # Create list for the current row
+        my_list =[rows.result]
+        # append the list to the final list
+        Row_list.append(my_list)
     cols = ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
-    mDf = pd.DataFrame(matching_list, columns=cols)
+    mDf = pd.DataFrame(Row_list, columns=cols)
     idx = mDf.groupby(['id_src'])['similarity'].transform(max) == mDf['similarity']
     return mDf[idx]
     #return mDf

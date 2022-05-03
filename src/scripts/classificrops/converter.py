@@ -44,7 +44,7 @@ def matchRow(c,idS,src,trg,idT,threshold):
     global matching_list
     #nb = 0
     if type(src) == str and type(trg) == str:
-        srcA = src.split()
+        '''srcA = src.split()
         length = len(srcA)
         trgA = trg.split()
         myList=[]
@@ -55,8 +55,8 @@ def matchRow(c,idS,src,trg,idT,threshold):
         myDf = pd.DataFrame(myList, columns=cols)
         r = myDf.groupby('index')['sim'].max().reset_index()
         total = r['sim'].sum()
-        nb = total / length
-        #nb = fuzz.token_set_ratio(src,trg)
+        nb = total / length'''
+        nb = fuzz.token_set_ratio(src,trg)
         if nb > threshold: 
             matching_list.append([c,idS, src, trg, idT, nb])
 
@@ -175,5 +175,5 @@ def converter(pathCsv, pl, lg, srcDepth, threshold):
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
     compare_list.append(compare('../../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold))
 
-#converter('../../../data/FR/FR_2020.csv', 'FR','FR', 1,99)
-converter('../../../data/WL/WL_2020.csv', 'WL','FR', 1,80)
+converter('../../../data/FR/FR_2020.csv', 'FR','FR', 1,99)
+#converter('../../../data/WL/WL_2020.csv', 'WL','FR', 1,50)
