@@ -1,28 +1,16 @@
-.. Agrivolution documentation master file, created by
+.. Classificrops documentation master file, created by
    sphinx-quickstart on Mon Mar 21 11:00:50 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Agrivolution's documentation
-============================
-The project is divided into 2 parts. 
-
-1) classification standardization
-    expected deliverable : a tool coded in python, able to convert one crops classification to another one, with a clean documentation written in sphinx. 
-    Data storage need ? No. 
-
-2) SIG software to study crops evolution and repartition in Europe.
-    expected deliverable : to be detailed. 
-    Data ? Yes : SIG database with anonymous geographic data used to receive funds from the agricole common policy. 
-    [Agrivolution will be an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map.]
-
------
+Classificrops's documentation
+==============================
 
 .. toctree::
    :numbered:
    
-   classificrops
-   agrivolution
+   user guide
+   analysis and conception notes
 
 
 Installation
@@ -30,7 +18,7 @@ Installation
 
 Install by running:
 
-    install agrivolution
+    install classificrops
 
 
 Languages spoken in ... 
@@ -71,13 +59,13 @@ As we want to write a technical documentation, we wil use rst and Shpinx.
 Contribute
 ----------
 
-- Issue Tracker: github.com/BertilleT/Agrivolution/issues
-- Source Code: github.com/BertilleT/Agrivolution
+- Issue Tracker: github.com/BertilleT/Classificrops/issues
+- Source Code: github.com/BertilleT/Classificrops
 
 Support
 -------
 
-If you are having issues, please let me know at btemple-boyer-dury@ign.fr
+If you are having issues, please let me know at bertilletemple@yahoo.fr
 
 License
 -------
