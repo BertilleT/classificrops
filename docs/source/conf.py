@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Agrivolution'
+project = 'Classificrops'
 copyright = '2022, Bertille Temple'
 author = 'Bertille Temple'
 
