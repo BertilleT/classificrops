@@ -5,4 +5,4 @@ src/scripts/__pycache__/
 docs/source/_templates/
 
 #sphinx build folder
-docs/build/
+#docs/build/
