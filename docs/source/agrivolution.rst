@@ -1,15 +1,13 @@
-Agrivolution
-=============
 Analysis
----------
+=========
 Actors
-~~~~~~~
+-------
     - standard user. For example : land use planning consultant, employee of a local authority, agriculture's minister, agricultural historian, common citizen
     - programmer
 
 
 Specifications
-~~~~~~~~~~~~~~~
+--------------
     
 The standard user should be able to :  
     - select an area of several parcels. The area can be selected at an european level. (example : select all the agricultural lands from Italia and Slovenia).
@@ -19,24 +17,24 @@ The standard user should be able to :
 
 
 Restrictions
-~~~~~~~~~~~~
+------------
 To begin with, we will focus on France and border countries from EU : Belgium, Luxembourg, Germany, Suisse, Italy, Spain. 
 
 Detailed specifications
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 to be done
 
 
 Conception
------------
+==========
 
 Use cases
-~~~~~~~~~~
+---------
 
   .. image:: ../images/useCases.png
     :width: 800
 
 Classes
-~~~~~~~~
+--------
     .. image:: ../images/classes.png
       :width: 800
