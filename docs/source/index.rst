@@ -27,4 +27,4 @@ If you are having issues, please let me know at bertilletemple@yahoo.fr
 License
 -------
 
-Open source. 
+GNU General Public License v3.0
