@@ -1,11 +1,11 @@
-from converter2 import *
+from converter_test_sim import *
 
-'''thresholds =[]
+thresholds =[]
 num = 1
 while num <= 100: 
   num+=1 
   if num % 10 == 0: 
-    thresholds.append(num)'''
+    thresholds.append(num)
 
 #for t in thresholds:
 for t in [80,90]:
