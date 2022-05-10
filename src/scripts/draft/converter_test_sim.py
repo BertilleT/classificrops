@@ -175,10 +175,10 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     result_df['ID_GROUP_ICC'] = result_df.apply(lambda x: incDepth(x), axis=1)
 
     #Writting result
-    result_df.to_csv('../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
-    matching_df.to_csv('../../data/'+place+'/matching_df_'+place+'_scriptMade.csv', index=False)
+'''    result_df.to_csv('../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
+    matching_df.to_csv('../../data/'+place+'/matching_df_'+place+'_scriptMade.csv', index=False)'''
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
     compare_list.append(compare('../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold))
 
-#converter('../../data/FR/FR_2020.csv', 'FR','FR', 80,'basic')
+converter('../../data/FR/FR_2020.csv', 'FR','FR', 80,'basic')
 #converter('../../data/WL/WL_2020.csv', 'WL','FR', 1,50)
