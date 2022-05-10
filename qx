@@ -1,0 +1,810 @@
+[33mcommit 587c9110a70b76216a1916b2f276e95c3d78b3a4[m[33m ([m[1;36mHEAD -> [m[1;32mimprove_converter[m[33m)[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue May 10 15:57:29 2022 +0200
+
+    add a config file
+
+[33mcommit 1cd2d1ce5ce54c539b8b9f350ddaa8537a4d7fe3[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu May 5 14:03:02 2022 +0200
+
+    minor changes in user guide
+
+[33mcommit c9d1d0fef533d12db1fed0f405b80f38ed4a4e22[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu May 5 11:31:32 2022 +0200
+
+    update the docu user guide
+
+[33mcommit 9cb15f76bd528467d44d72009080e9393b07385d[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu May 5 11:27:41 2022 +0200
+
+    updae the docu with user guide
+
+[33mcommit f73072aa2a0f3a9308908a5783290ee9d5306e36[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 18:48:33 2022 +0200
+
+    add a nojekyll file
+
+[33mcommit ba0344687922ddfea01db24e1da867a3d492b75e[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 18:33:52 2022 +0200
+
+    test
+
+[33mcommit ca3ee11b797da37b703427646032b59ced0a429e[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed May 4 18:33:23 2022 +0200
+
+    stop ignoring docs/build
+
+[33mcommit efb0991dcf3358ad9da2f181f4ecd329073702a1[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed May 4 18:28:08 2022 +0200
+
+    from agrivolution to classificrops distinct documentation
+
+[33mcommit 86fcfff538e178e0a6d0bb08ceeda29d7874f6ad[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 18:25:09 2022 +0200
+
+    update docu
+
+[33mcommit 79ee4e0dc9e3838e5040e3286158b74b38dbdce8[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 18:02:47 2022 +0200
+
+    divide repo into 2 folders
+
+[33mcommit 3d796b4a38a6592fc62096a93af2abf65c79c7f7[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 17:55:29 2022 +0200
+
+    devise project into 2
+
+[33mcommit f477bb6856760f386e17b236ce196c0d400c6074[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 17:50:24 2022 +0200
+
+    update index.rst docu
+
+[33mcommit 8b5ab8045f8054ea7cf94001207fe3654c2818a4[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 17:48:33 2022 +0200
+
+    update agrivolution docu
+
+[33mcommit 3271704e262ccd93a3dfb9b8b36dcd9c057a76e8[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed May 4 17:46:37 2022 +0200
+
+    update classificrops docu
+
+[33mcommit 5b0b4a0466155460df284546600231d8140d89d2[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue May 3 14:49:49 2022 +0200
+
+    update versionning
+
+[33mcommit 64ea6006323c3df1661934253de99f90d5bcd69c[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon May 2 18:19:45 2022 +0200
+
+    make variable namemore conventional + wallonie data updated
+
+[33mcommit 0772cac8d3b4914125ff79c87a33607d02e8e609[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 29 17:43:39 2022 +0200
+
+    update converter;py. Works well
+
+[33mcommit f7612f4867b751224faba46015ba4c6db511436e[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 27 16:28:53 2022 +0200
+
+    update converter.py, result of 47% !
+
+[33mcommit 18c45f6b889a1fb8299d30fa4a462b2b6286e25e[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 27 16:05:18 2022 +0200
+
+    update
+
+[33mcommit 30a2576c885428e241da6485b6c0f0b61d747b6a[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Apr 26 18:16:45 2022 +0200
+
+    working on POO script
+
+[33mcommit e5c5d282991a8fe5abb4f9fe9fcae4cafe1e1238[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Apr 26 12:30:06 2022 +0200
+
+    working on POO scipt ...
+
+[33mcommit 09446a2152b396a4d98854965470cdf1b3a456aa[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 25 14:27:51 2022 +0200
+
+    update the inc function that did not work before
+
+[33mcommit 4b00dd493ff94842d6ab0ec1e324176a8fb3d872[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 25 12:08:04 2022 +0200
+
+    Revert "change sphinx theme"
+    
+    This reverts commit c30e4380ffb56cd45c8b60fa0a3ebe6661fe1fe6.
+
+[33mcommit 7377f0e84b527c687320b9d328cb3efc70f652c0[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 25 12:04:13 2022 +0200
+
+    change sphinx theme
+
+[33mcommit 558f624447a7325a7e56fb2ca0a2a5a9b7683d5c[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 25 11:21:21 2022 +0200
+
+    updating arbrescence and cleanig/renaming copies
+
+[33mcommit f6c5109f24727f0fea5481dabcb73f254daf9631[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 25 10:47:44 2022 +0200
+
+    working
+
+[33mcommit ab0427905baa949ff816424e2da5b11dfb11c18a[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 22 17:59:35 2022 +0200
+
+    cleaning and update arboresence + update converter Fr_ICC
+
+[33mcommit 891d0ef5d922ef847c440e2ce32ba01d46acc5d2[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 22 12:29:49 2022 +0200
+
+    push working script converting FR_ICC. select max similarity need to be done
+
+[33mcommit 8617a8f6630be7faabafebdf6a61f0338c85f661[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Apr 21 19:11:09 2022 +0200
+
+    update script fr to icc, put some order in functions. Pb with filling empty cell with fillna
+
+[33mcommit de3d235517728528699a0efaa7db08a3284cfa1b[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Apr 21 12:22:45 2022 +0200
+
+    finish filter function + make clearerconverter_pd_cp
+
+[33mcommit 3d94e4b42f1bbf476603443ac6b79b210534561f[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Apr 21 12:22:29 2022 +0200
+
+    finish filter function + make clearerconverter_pd_cp
+
+[33mcommit 0ff74d381675413dcd50e5c386973ffeaf3409a9[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 20 17:29:28 2022 +0200
+
+    update docu, minor change capitaliz letter
+
+[33mcommit 1b7b2c79bba2c9a03326d201f8850d4cfb74e0ec[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 20 17:26:58 2022 +0200
+
+    update odcu, 4th attempt
+
+[33mcommit 1f59983f1693a778fcb8d7c1921d81e05757ec29[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 20 17:25:23 2022 +0200
+
+    update docu, third attempt
+
+[33mcommit b0e76790c7c18bd84fde13778bea6085c8f6eb29[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 20 17:18:22 2022 +0200
+
+    update docu
+
+[33mcommit 299b2d466d20a4d7698ff2cd0f6ea171b5437c81[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 20 17:12:07 2022 +0200
+
+    update docu
+
+[33mcommit 7add211013301e4fc0c82a87d1f5872c1a9a95f6[m
+Merge: 5b335cd ff172f7
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed Apr 20 17:05:02 2022 +0200
+
+    Merge pull request #2 from BertilleT/converter_pd_intNotSuscriptable_Fix
+    
+    Converter pd int not suscriptable fix
+
+[33mcommit ff172f747be608bb305d7a0e3480c77560e30d38[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 20 17:01:28 2022 +0200
+
+    update tree + script to filter punctuations and non discrimnatory wods from classifier
+
+[33mcommit 58ffe9c8187e077a2245bd306f0881167735fbc1[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Apr 19 18:26:29 2022 +0200
+
+    working script for France ICC conversion
+
+[33mcommit a86fe1e383c7451d0404a60c92feed2c83b20631[m
+Author: BertilleT <bertilletemple@yahoo.fr>
+Date:   Fri Apr 15 16:59:57 2022 +0200
+
+    updtae script FR-ICC
+
+[33mcommit bb92d34926515cb2a7e1c9360bf6d5b5eb56d0bd[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Apr 14 18:27:48 2022 +0200
+
+    update converter script to ICC
+
+[33mcommit da9d376265d6ca35ba352acf171f9b37921a930e[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 13 18:43:05 2022 +0200
+
+    add a working converter script to icc
+
+[33mcommit 34ca1cb3030667fc2228aef6eba6e42b7a2f40ce[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 13 17:22:42 2022 +0200
+
+    conversion script working with JECAM
+
+[33mcommit 9e59e84d1d0aeb94b5fe3e5a01d230ebafed7288[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 13 17:12:27 2022 +0200
+
+    add a scripts to translate icc classification to french
+
+[33mcommit 1a486d0c9e52aa16ac7227082aade50d5cc8710f[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Apr 12 17:41:48 2022 +0200
+
+    update converter script to make it only for group level of source classification
+
+[33mcommit d227568787e02268ba8f91fd99c97d41a9d7bef8[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Apr 12 17:32:50 2022 +0200
+
+    update script translator_pd.py
+
+[33mcommit f9726f045b8b3c654a813746a378e312975de9af[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 8 17:32:32 2022 +0200
+
+    update converter pandas script
+
+[33mcommit 5b335cd046f38a87b8820dcd6a3d701bdc51acda[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Apr 7 19:07:24 2022 +0200
+
+    update converter_pd.py
+
+[33mcommit 429e53d222cfab480f881869aea9825d4486cf02[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 18:02:46 2022 +0200
+
+    update gitignore
+
+[33mcommit 1fa301906be6ff593909a46364a105f473c7c149[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 18:01:31 2022 +0200
+
+    update gitignore
+
+[33mcommit 20ce2bef57d240ddd8ef95ce3029856918c43b39[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 17:57:48 2022 +0200
+
+    update gitignore
+
+[33mcommit d4ee593381e261584aedcc7c687827ffd9b15583[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 17:55:48 2022 +0200
+
+    add gitignore
+
+[33mcommit 23d784e2ba75337ec22ef6307de388f9638fde66[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 17:27:02 2022 +0200
+
+    clean scrips folder, delete old scripts not usefull
+
+[33mcommit 412b8ca54304c4d92ecc202a4db73b908901ba2f[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 17:15:15 2022 +0200
+
+    change tiy details on docu + update pandas classification automation script
+
+[33mcommit f6922ce758b9234048627279f7f513d1988a6d4a[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 16:27:50 2022 +0200
+
+    update docu
+
+[33mcommit c8fb807b9c18a6b76f1cafe8cf61ea3163b16562[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Apr 6 12:25:29 2022 +0200
+
+    add the beggining of a translating nomenclature script using pandas
+
+[33mcommit 2c79cc76e7ce665e7f2f3a0397147c336c654148[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 4 16:02:43 2022 +0200
+
+    test proxy
+
+[33mcommit 774f218da57ff1145e7b02d91ef6b104d3c926d6[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 4 15:00:24 2022 +0200
+
+    updte script to create french conversion table, second attempt
+
+[33mcommit e240fd0c9240b855e67cc699f107e32044dbfc57[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 4 14:58:09 2022 +0200
+
+    updte script to create french conversion table, second attempt
+
+[33mcommit 27f90e2d211c0096476ade485b6f43a6bd78c493[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 4 14:55:43 2022 +0200
+
+    updte script to create french conversion table
+
+[33mcommit 0a51e540f13195d054ea74427d35ab05ad83180f[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 4 11:19:05 2022 +0200
+
+    starts a script to associate french crops to jecam groups
+
+[33mcommit 7173a01ab490cf8d85d49059d59b4218f356fa19[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Apr 4 09:15:38 2022 +0200
+
+    to begin, add geographic restrictions to border countries and not all UE
+
+[33mcommit 85f4cd30e9e4795bf91d0ee2d1c750fa5f8ecf43[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 1 17:00:03 2022 +0200
+
+    update source tree
+
+[33mcommit bacbe97fe854b46a18444953365dc8b3e89c7b0b[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 1 16:45:11 2022 +0200
+
+    update drawings
+
+[33mcommit 8be74b9b3035a737c41f986a42a9cac2581a1f9f[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 1 16:29:11 2022 +0200
+
+    change a page title
+
+[33mcommit 1e1af7da988be2415f06308fc87a2d21309a8c44[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 1 16:23:23 2022 +0200
+
+    rearrange docs index, second attempt
+
+[33mcommit f8a3ba12a9b52c760fc22e450d5ec6047c40767e[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 1 16:21:47 2022 +0200
+
+    rearrange docs index
+
+[33mcommit 5ff455c02faede87967ae47cb4ca0e3480428e34[m
+Merge: cf070fe da20e06
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Fri Apr 1 15:51:30 2022 +0200
+
+    Merge pull request #1 from BertilleT/add-license-1
+    
+    Create LICENSE.md
+
+[33mcommit da20e068d22b4965674feb2531a4b79e5c40c338[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Fri Apr 1 15:51:14 2022 +0200
+
+    Create LICENSE.md
+
+[33mcommit cf070fec244e61208e3740c55f08670635723324[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 1 15:46:44 2022 +0200
+
+    update documentation
+
+[33mcommit 0607e9e9b6ed5db5562aa729d49a2ccb21c44428[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Fri Apr 1 11:17:42 2022 +0200
+
+    add pseudo-code executed when a standard user makes a simple request to locate a crop in a selected area
+
+[33mcommit bcb4483381cb834259b19ed81d8445f36193068c[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 30 16:03:06 2022 +0200
+
+    add equivalence table France-JECAM,to be completed
+
+[33mcommit fd6f61dfe7122c57aba946ddbaa0b0460fcf59d9[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 30 11:26:28 2022 +0200
+
+    update crops translation to french
+
+[33mcommit dd5df90e84a20e2ed5684a062395ad17a00a15cf[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 29 18:22:31 2022 +0200
+
+    tiny change on useCases image
+
+[33mcommit 797f0a0565a83123e6f17d0518b7c336c7f4968e[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 29 18:19:35 2022 +0200
+
+    tiny change on classes image. This class diagram must be improved (particularly the area country region part)
+
+[33mcommit c7bb64628b07900f732cd52317ceb6292b676643[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 29 17:12:04 2022 +0200
+
+    update docu, second attempt
+
+[33mcommit cf27d9c343b90e2a71fd446dd2c9a4779ec3b1cf[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 29 17:06:24 2022 +0200
+
+    merge 2 docuPages into one and update docu
+
+[33mcommit 0745982267e8951321f7d76f253add2dd21da665[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 29 16:54:45 2022 +0200
+
+    add useCases and classes diagram
+
+[33mcommit ec60bfe62b96ebd69bae7ba90f270b148d9b0df6[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 29 09:05:53 2022 +0200
+
+    add script to translate JECAM groups to french
+
+[33mcommit 5d92f9b083f63ab0e302d1274f58b114a3e2c7ad[m
+Merge: e12c50f b351508
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 16:53:25 2022 +0200
+
+    Merge branch 'main' of https://github.com/BertilleT/Agrivolution into main
+    cete fusion est nécessaire
+
+[33mcommit e12c50ffb5763be7fbee906a123c47f7f591bbaf[m
+Merge: 59f2109 505e26a
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 16:50:40 2022 +0200
+
+    Merge branch 'main' of https://github.com/BertilleT/Agrivolution into main
+
+[33mcommit b35150837a9ec49979d44ba638c5bddb6e832f2e[m
+Merge: 59f2109 505e26a
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 16:50:40 2022 +0200
+
+    Merge branch 'main' of https://github.com/BertilleT/Agrivolution into main
+
+[33mcommit 59f2109ac3deda18bcc47d4ecd379272cbd312c4[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 16:50:12 2022 +0200
+
+    translateJECAM translates all groups into french without distinct
+
+[33mcommit 505e26a6f6f978673986d04e62ef14dd8cccd3ec[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Mon Mar 28 14:44:43 2022 +0200
+
+    Create README.md
+
+[33mcommit 13d0c6e2a3d767a129757282d18220aa783dfea5[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Mon Mar 28 14:42:39 2022 +0200
+
+    Update index.html
+
+[33mcommit 6b3552ab52f0e7945b49e414718edcd6db63515e[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Mon Mar 28 14:40:26 2022 +0200
+
+    Update and rename index.html to docs/index.html
+
+[33mcommit ec6da2489666b204d058faf944f8a4e8f1fa1203[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Mon Mar 28 14:39:36 2022 +0200
+
+    Delete .nojekyll
+
+[33mcommit 67ff9e82fb274f13fd2d8bad99064b2c414eba44[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 14:36:14 2022 +0200
+
+    make html without gitignore file
+
+[33mcommit 8fa389145802568f555a9dd1f8f2b5bfbbdc4d7d[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Mon Mar 28 14:35:15 2022 +0200
+
+    delete gitigore because not useful
+
+[33mcommit 9b114dcbf71f34672fc8ecae8b5e7364c1e97e8b[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 14:30:03 2022 +0200
+
+    docu mise à jour
+
+[33mcommit 4e292e3050bd67e5bd6f77aba9506e816bf7d403[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 14:24:12 2022 +0200
+
+    update european nomenclature
+
+[33mcommit 121c47bd8970b9e75e55e55e84679d15e01d9a26[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 12:31:03 2022 +0200
+
+    update data/FR to get the data file format we want
+
+[33mcommit 348d7c9764136fb68c54e80a31fd126494ab1605[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 10:57:47 2022 +0200
+
+    configurate environment variable and update tranlator script to print hello world
+
+[33mcommit 4cd01fd837cd53b9f2ca5311e965d004fabf16c0[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Mon Mar 28 10:28:30 2022 +0200
+
+    delete translator double
+
+[33mcommit dc79f6ff19fbf482f4ac16537c26fec9ec6f86c9[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 28 10:26:39 2022 +0200
+
+    update csv tables and add translation scripts
+
+[33mcommit 5a6bb45a54c8523c30a027f47482bb851d8fe980[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Thu Mar 24 15:54:08 2022 +0100
+
+    Create .nojekyll
+
+[33mcommit 273b23e6af6ed83ff5a698f82305d74e7970036b[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 15:52:06 2022 +0100
+
+    create index.html at root directory, second attempt
+
+[33mcommit 816829d7b975170d6ab806a44fb8f2f8244c6d06[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 15:50:58 2022 +0100
+
+    create index.html at root directory
+
+[33mcommit ac6ff4893495f32d4c09af354765e87145981f60[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Thu Mar 24 15:21:18 2022 +0100
+
+    delete readme because not accurate anymore
+    
+    looking for a better way to redirect user towards GithubPages
+
+[33mcommit ed6458385d3bfda97e6e0eb1bd2ecb9355457667[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Thu Mar 24 15:20:05 2022 +0100
+
+    change link because broken after updatating arborescence
+    
+    while looking for a good way to redirect the user towards the github pages, write a temporary version of readme
+
+[33mcommit f06ac030f0e2ca597b7740551b6d6737c16a8af1[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 15:07:42 2022 +0100
+
+    update arborescence with Nicolas advice, second attempt
+
+[33mcommit ca8213e6716fa7b05ed96e9ada49bcaca2556935[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 15:06:15 2022 +0100
+
+    update arborescence with Nicolas advice
+
+[33mcommit 89edeee252e5329c41fa407bce84e8b228527716[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 13:30:30 2022 +0100
+
+    delete some files
+
+[33mcommit 592a9321f1474844c2ca7309f36063972426e268[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 13:24:15 2022 +0100
+
+    correct mispelling + update the definition of the project to extend it to all Europe
+
+[33mcommit 731db7ea30dbaf3e50dd81d8969aaa82f3d01299[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 10:16:42 2022 +0100
+
+    delete build because docs fulfill its function + rewrite the path to csv files into Nomenclature_Wallance + details correction in languages
+
+[33mcommit d498d14a0a89813f187e63d0c0b2de6dec650ba2[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 10:07:10 2022 +0100
+
+    change arborescence, take out docs from doc
+
+[33mcommit d94e5dc62e337588a31613c84c0f4bfb07c10ba4[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Thu Mar 24 10:02:00 2022 +0100
+
+    Update README.rst
+
+[33mcommit f52aaf5883503f9e52ed5e71db7b2bcc20f8b8bf[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Thu Mar 24 09:59:00 2022 +0100
+
+    add a leanguages section to explain choix python, sphinx, rst + write clearly the futures goals
+
+[33mcommit 8bd0a11931edc8091d131334ee6e8695b2f9d890[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed Mar 23 17:54:45 2022 +0100
+
+    delete theme file
+    
+    I do not need it for now.
+
+[33mcommit fae6f751a8eebfd87b432ffd209f84e7b8950e09[m
+Merge: 39f35ca 3b0a2ae
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 23 17:50:14 2022 +0100
+
+    Merge branch 'main' of https://github.com/BertilleT/Agrivolution into main
+
+[33mcommit 39f35ca0456b5266a5c6439849ab0b74a80f5b57[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 23 17:49:40 2022 +0100
+
+    working to merge Walonnie and France classifications in one comparison csv file
+
+[33mcommit 3b0a2aebb5225ec1c13b690bc369f0012ed10113[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed Mar 23 15:09:55 2022 +0100
+
+    Set theme jekyll-theme-slate
+
+[33mcommit 77e5cabd26ba630de2ce00c8eed4bd742223c0fb[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed Mar 23 15:09:13 2022 +0100
+
+    correct the URL
+
+[33mcommit b7d5958038f3fe05dc83004b974a1cea27d49dac[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed Mar 23 15:06:35 2022 +0100
+
+    Update README.rst
+
+[33mcommit 0853966f915f21add541ccebd011b626dc3226f7[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed Mar 23 15:06:23 2022 +0100
+
+    Update README.rst
+
+[33mcommit a2ee2a5e6bec6d36a1092e660f6c75c964f25398[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 23 15:05:09 2022 +0100
+
+    move readme.rst to root directory
+
+[33mcommit 5c4cc16ae6988fe9017057fe80c0ed1c370bf8b3[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 23 14:59:09 2022 +0100
+
+    reorganization of project arborescence, to separate python files dedicated to parse data from documentation
+
+[33mcommit 7f5dc2a3a034d6bca314f8381840fce2a20aca58[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 23 14:17:34 2022 +0100
+
+    add csv files of groups of culture from France and Wallonie in 2020
+
+[33mcommit 0f18ef2be7f62cc604faf743dc9abd1ea2993db6[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Tue Mar 22 17:49:28 2022 +0100
+
+    Update README.rst
+
+[33mcommit 2e9a6c4405da72e0dbaf12d3677790c6d24a4564[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Tue Mar 22 17:49:13 2022 +0100
+
+    update readme
+    
+    add an explanation to guide the user
+
+[33mcommit bb56612b285786a27e6d1260fd1ee235c9ab5517[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Tue Mar 22 17:47:58 2022 +0100
+
+    Create README.rst
+    
+    add a readme that send the user towards the github pages
+
+[33mcommit fab82afcba8fd5689bbaa1e6f28f214e92b993ca[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 22 17:45:27 2022 +0100
+
+    index added and my work comparison btw France and Wallonie started to be edited
+
+[33mcommit 3e3770eb92dbf3d941cac419828c050b0d342e0c[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 22 15:31:55 2022 +0100
+
+    add .nojekyll file, second attempt
+
+[33mcommit 436ef296fe248c4f136a834cd7f751c2eabf20f6[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 22 15:20:32 2022 +0100
+
+    add a .nojekyll empty file
+
+[33mcommit 4e1aa020da04b64f247e783833beec6219c81d33[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Tue Mar 22 15:08:03 2022 +0100
+
+    config github pages
+
+[33mcommit 5f9e5ab4dac6b9fa1fa1ccfc529a80f7e6d17f51[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Tue Mar 22 14:06:54 2022 +0100
+
+    delete ignore .DS_Store
+    
+    .DS_Store is for MAC whereas I am working with linux
+
+[33mcommit f5394e8aace20d87bd4efe345db0cc7190597e89[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 21 13:58:34 2022 +0100
+
+    config sphinx with github
+
+[33mcommit 2dd9375a3217c5b15d28e43bad29f34b138ce0ba[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Mon Mar 21 11:32:45 2022 +0100
+
+    Sphinx documentation created
+
+[33mcommit c3a6c361c5979f57a98b3af93ef7915b977fa921[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 16 17:11:10 2022 +0100
+
+    update readme
+
+[33mcommit 04387c90133d867717e9112ade8d54a74ebf7ab6[m
+Author: Bertille Temple-Boyer-Dury <bertilletemple@yahoo.fr>
+Date:   Wed Mar 16 14:29:45 2022 +0100
+
+    Initial commit
+
+[33mcommit 3364932d749f7255fcf31656b4f400e5731214b7[m
+Author: BertilleT <71008158+BertilleT@users.noreply.github.com>
+Date:   Wed Mar 16 14:25:03 2022 +0100
+
+    Initial commit
