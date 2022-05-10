@@ -1,7 +1,7 @@
-import csv 
 import pandas as pd
+import csv
 import deepl
-from fuzzywuzzy import fuzz, process
+from fuzzywuzzy import fuzz
 import numpy as np
 
 ##My global variables
@@ -39,31 +39,36 @@ def translateICC(df, lg):
 
 def parserICCCode(x):
     return "".join(x.split('.'))
-   
-def matchRow(c,idS,src,trg,idT,threshold): 
-    global matching_list
-    #nb = 0
-    if type(src) == str and type(trg) == str:
-        '''srcA = src.split()
-        length = len(srcA)
-        trgA = trg.split()
-        myList=[]
-        for w in srcA:
-            for x in trgA:
-                myList.append([srcA.index(w),fuzz.ratio(w,x)])
-        cols = ['index', 'sim']
-        myDf = pd.DataFrame(myList, columns=cols)
-        r = myDf.groupby('index')['sim'].max().reset_index()
-        total = r['sim'].sum()
-        nb = total / length'''
-        nb = fuzz.token_set_ratio(src,trg)
-        if nb > threshold: 
-            matching_list.append([c,idS, src, trg, idT, nb])
 
-def matchDf(srcDf,iccDf,threshold):
+def matchRow(c,idS,src,trg,idT,threshold,sim_method): 
+    global matching_list
+    nb = 0
+    if sim_method == 'token_set_ratio':
+        nb = fuzz.token_set_ratio(src,trg)
+    elif sim_method == 'split+ratio':
+        if type(src) == str and type(trg) == str:
+            srcA = src.split()
+            length = len(srcA)
+            trgA = trg.split()
+            myList=[]
+            for w in srcA:
+                for x in trgA:
+                    myList.append([srcA.index(w),fuzz.ratio(w,x)])
+            cols = ['index', 'sim']
+            myDf = pd.DataFrame(myList, columns=cols)
+            r = myDf.groupby('index')['sim'].max().reset_index()
+            total = r['sim'].sum()
+            nb = total / length
+    elif sim_method == 'basic':
+        if src == trg:
+            nb = 100
+    if nb > threshold: 
+        matching_list.append([c,idS, src, trg, idT, nb])
+
+def matchDf(srcDf,iccDf,threshold,sim_method):
     for c in src_classes: 
         srcDf2 = srcDf.drop_duplicates(subset = ['ID_' + c])
-        srcDf2.apply(lambda x:iccDf.apply(lambda y: matchRow(c, x['ID_' + c],x[c],y.label_fr_filtered,y.group_code,threshold), axis=1), axis=1)
+        srcDf2.apply(lambda x: iccDf.apply(lambda y: matchRow(c, x['ID_' + c],x[c],y.label_fr_filtered,y.group_code,threshold,sim_method), axis=1), axis=1)
 
     cols = ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
     mDf = pd.DataFrame(matching_list, columns=cols)
@@ -116,7 +121,7 @@ def compare(pathHandMade,computed,threshold):
     print('The conversion script made '+str(err)+'%'+' of errors.')
     return (threshold,per)
 
-def converter(pathCsv, pl, lg, srcDepth, threshold):
+def converter(pathCsv, pl, lg, threshold,sim_method):
     global result_df
     global matching_df
     global compare_list
@@ -124,7 +129,7 @@ def converter(pathCsv, pl, lg, srcDepth, threshold):
     place = pl
     ##Loading
     srcDf = pd.read_csv(pathCsv)
-    iccDf = pd.read_csv('../../../data/ICC/ICC.csv')
+    iccDf = pd.read_csv('../../data/ICC/ICC.csv')
 
     ##Listing
     classes(srcDf)
@@ -134,7 +139,7 @@ def converter(pathCsv, pl, lg, srcDepth, threshold):
     iccDf['label_en_filtered'] = filter(iccDf,'label_en',englishFilters)
     iccDf.replace('',np.nan,regex = True,inplace=True)
         
-    iccDf.to_csv('../../../data/ICC/ICC.csv', index=False)
+    iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
 
     ##Filtering2
     frenchFilters = ['autres','autre',' et ',' ou ']
@@ -144,7 +149,7 @@ def converter(pathCsv, pl, lg, srcDepth, threshold):
     ##Translating
     if 'label_'+lg.lower()+'_filtered' not in list(iccDf.columns):
         iccDf['label_'+lg.lower()+'_filtered'] = translateICC(iccDf, lg)
-        iccDf.to_csv('../../../data/ICC/ICC.csv', index=False)
+        iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
 
     ##Formating
     iccDf['code'] = iccDf['code'].apply(lambda code:parserICCCode(code))
@@ -155,7 +160,7 @@ def converter(pathCsv, pl, lg, srcDepth, threshold):
     result_df = srcDf[['ID_CROPS_'+place, 'ID_GROUP_'+place]]
 
     ##Matching all
-    matching_df = matchDf(srcDf,iccDf,threshold)
+    matching_df = matchDf(srcDf,iccDf,threshold,sim_method)
 
     ##Spreading
     rows = matching_df.loc[matching_df['class_level_src'] == 'GROUP_'+place]
@@ -170,10 +175,10 @@ def converter(pathCsv, pl, lg, srcDepth, threshold):
     result_df['ID_GROUP_ICC'] = result_df.apply(lambda x: incDepth(x), axis=1)
 
     #Writting result
-    result_df.to_csv('../../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
-    matching_df.to_csv('../../../data/'+place+'/matching_df_'+place+'_scriptMade.csv', index=False)
+    result_df.to_csv('../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
+    matching_df.to_csv('../../data/'+place+'/matching_df_'+place+'_scriptMade.csv', index=False)
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    compare_list.append(compare('../../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold))
+    compare_list.append(compare('../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold))
 
-converter('../../../data/FR/FR_2020.csv', 'FR','FR', 1,99)
-#converter('../../../data/WL/WL_2020.csv', 'WL','FR', 1,50)
+converter('../../data/FR/FR_2020.csv', 'FR','FR', 80,'basic')
+#converter('../../data/WL/WL_2020.csv', 'WL','FR', 1,50)
