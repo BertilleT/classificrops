@@ -1,5 +1,4 @@
 import pandas as pd
-import csv
 import deepl
 from fuzzywuzzy import fuzz
 import numpy as np
@@ -7,15 +6,11 @@ import numpy as np
 ##My global variables
 matching_list = [] 
 result_df = pd.DataFrame()
-src_classes = []
+src_classes = ['GROUP','CROPS']
 compare_list = []
 
-def classes(df):
-    global src_classes
-    columns = list(df)
-    for col in columns:
-        if 'ID' not in col: 
-            src_classes.append(col)
+def classes(classes,place):
+    src_classes = [c+'_'+place for c in classes]
     return src_classes
 
 def filter(df, col, filters):
@@ -28,16 +23,16 @@ def filter(df, col, filters):
     return df[col+'_filtered']
 
 def translateWord(translator, word, language):
-    result = translator.translate_text(word, target_lang=language)
+    result = translator.translate_text(word, target_lang=language.upper())
     return result
 
 def translateICC(df, lg):
     DEEPL_AUTH_KEY="47c6c989-9eaa-5b30-4ee6-b2e4f1ebd530:fx"
     translator = deepl.Translator(DEEPL_AUTH_KEY)
-    df['label_'+lg.lower()+'_filtered'] = df['label_en_filtered'].apply(lambda crop: translateWord(translator, crop, lg) if (pd.notna(crop)) else crop)
-    return df['label_'+lg.lower()+'_filtered']
+    df['label_'+lg+'_filtered'] = df['label_en_filtered'].apply(lambda crop: translateWord(translator, crop, lg) if (pd.notna(crop)) else crop)
+    return df['label_'+lg+'_filtered']
 
-def parserICCCode(x):
+def parse(x):
     return "".join(x.split('.'))
 
 def matchRow(c,idS,src,trg,idT,threshold,sim_method): 
@@ -127,32 +122,48 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     global compare_list
     global place
     place = pl
+    target = '../../data/ICC/ICC.csv'
+
     ##Loading
     srcDf = pd.read_csv(pathCsv)
-    iccDf = pd.read_csv('../../data/ICC/ICC.csv')
+    iccDf = pd.read_csv(target)
 
     ##Listing
-    classes(srcDf)
+    src_classes = classes(src_classes,place)
 
-    ##Filtering1
-    englishFilters=['other','crops',' and',' or','n.e.c.', 'spp','n.e.c']
-    iccDf['label_en_filtered'] = filter(iccDf,'label_en',englishFilters)
-    iccDf.replace('',np.nan,regex = True,inplace=True)
-        
-    iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+    ##Filtering1a
+    if 'label_en_filtered' not in list(iccDf.columns): 
+        englishFilters1=['n.e.c.', 'spp','n.e.c']
+        iccDf['label_en_filtered'] = filter(iccDf,'label_en',englishFilters1)
+        iccDf.replace('',np.nan,regex = True,inplace=True)
 
-    ##Filtering2
-    frenchFilters = ['autres','autre',' et ',' ou ']
-    for c in src_classes:
-        srcDf[c] = filter(srcDf,c,frenchFilters)
 
     ##Translating
-    if 'label_'+lg.lower()+'_filtered' not in list(iccDf.columns):
-        iccDf['label_'+lg.lower()+'_filtered'] = translateICC(iccDf, lg)
-        iccDf.to_csv('../../data/ICC/ICC.csv', index=False)
+    if 'label_'+lg+'_filtered' not in list(iccDf.columns):
+        iccDf['label_'+lg+'_filtered'] = translateICC(iccDf, lg)
+        iccDf.to_csv(target, index=False)
 
-    ##Formating
-    iccDf['code'] = iccDf['code'].apply(lambda code:parserICCCode(code))
+    #the ICC filtering is divided into 2 parts because if you do it in one step before translating
+    #you get "Grasses and other fodder crops" that becomes "Grasses fodder" translated into 
+    #"Fourrage de graminées whereas it should be translated into "Fourrages et graminées" or "Fourrages graminées". 
+    
+    ##Filtering1b
+    if 'label_en_filtered' not in list(iccDf.columns): 
+        englishFilters2=['other','crops',' and',' or']
+        iccDf['label_en_filtered'] = filter(iccDf,'label_en_filtered',englishFilters2)
+        iccDf.replace('',np.nan,regex = True,inplace=True)
+        iccDf.to_csv(target, index=False)
+
+    ##Filtering2
+    frenchFilters = ['autres','autre',' et',' ou']
+    for c in src_classes:
+        srcDf[c+'_filtered'] = filter(srcDf,c,frenchFilters)
+        srcDf.replace('',np.nan,regex = True,inplace=True)
+        if 'ID_'+c not in list(srcDf.columns):
+            srcDf['ID_'+c] = srcDf[c] #we could make an identifier generator more sophisticated in the future. 
+
+    ##Formating ICC
+    iccDf['code'] = iccDf['code'].apply(lambda code:parse(code))
     iccDf['code'] = iccDf['code'].astype('int')
     iccDf['group_code'] = iccDf['code'].astype('str').str[:1].astype('int')
 
@@ -180,5 +191,5 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
     compare_list.append(compare('../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold))
 
-#converter('../../data/FR/FR_2020.csv', 'FR','FR', 80,'basic')
+converter('../../data/FR/FR_2020.csv', 'FR','fr', 80,'basic')
 #converter('../../data/WL/WL_2020.csv', 'WL','FR', 1,50)
