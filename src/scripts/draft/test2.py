@@ -7,8 +7,8 @@ while num <= 100:
   if num % 10 == 0: 
     thresholds.append(num)
 
-#for t in thresholds:
-for t in [80,90]:
+for t in thresholds:
+#for t in [80,90]:
     converter('../../../../data/FR/FR_2020.csv', 'FR', 1,t)
 
 compareDf = pd.DataFrame (compareList, columns = ['threshold','correctness(%)'])
