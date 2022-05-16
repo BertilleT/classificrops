@@ -3,12 +3,6 @@ import deepl
 from fuzzywuzzy import fuzz
 import numpy as np
 
-##My global variables
-matching_list = [] 
-result_df = pd.DataFrame()
-src_classes = ['GROUP','CROPS']
-compare_list = []
-
 def classes(classes,place):
     src_classes = [c+'_'+place for c in classes]
     return src_classes
@@ -35,9 +29,9 @@ def translate_ICC(df, lg):
 def parse(x):
     return "".join(x.split('.'))
 
-def spread(src_df,x):
-    src_df.loc[src_df['ID_GROUP_'+lg] == x['ID_GROUP_'+lg], 'match'] = x.match
-    return src_df
+def spread(place, src_df2,x):
+    m = src_df2.loc[src_df2['ID_GROUP_'+place] == x['ID_GROUP_'+place],'match']
+    return m.iloc[0]
 
 def match_row_row(c,idS,src,trg,idT,threshold,sim_method): 
     nb = 0
@@ -62,58 +56,45 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
             nb = 100
 
     if nb > threshold: 
+        #return the following information when there is a match : ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
         return [c,idS, src, trg, idT, nb]
     else:
-        return np.nan
+        return []
 
 def match_row_df(lg,c,id_src,src,icc_df,threshold,sim_method):
-    icc_df['temp'] = icc_df.apply(lambda y : match_row_row(c,id_src,src,y['label_'+lg+'_filtered'],y.ID_GROUP,threshold,sim_method))
+    #in icc_df, create a column name "temp" that will be updated for each new raw of src_df
+    #"temp" column stores the result matches
+    icc_df['temp'] = icc_df.apply(lambda y : match_row_row(c,id_src,src,y['label_'+lg+'_filtered'],y['ID_GROUP'],threshold,sim_method), axis=1)
     my_list = icc_df['temp'].to_list()
-    new_list = [e for e in my_list if np.isnan(e) == False]
+    new_list = [e for e in my_list if e != []]
     if new_list:
         return new_list
     else:
-        return np.nan
+        return []
 
-def match_df_df(lg,src_df,icc_df,threshold,sim_method):
-    #GROUP
-    c = 'GROUP_' + lg
-    src_df2 = src_df.drop_duplicates(subset = ['ID_GROUP_' + lg])
+def match_df_df(place, lg,src_df,icc_df,threshold,sim_method):
+    #match df source at level = GROUP
+    c = 'GROUP_' + place
+    src_df2 = src_df.drop_duplicates(subset = ['ID_GROUP_' + place])
+    #create a column match in srcDf2 to store the match
     src_df2['match'] = src_df2.apply(lambda x: match_row_df(lg,c, x['ID_' + c], x[c],icc_df,threshold,sim_method), axis=1)
-    src_df = src_df2.apply(lambda x: spread (src_df,x), axis=1)
+    #spread the match identifies in src_df2 with unique values of group to the source dataframe. 
+    #src_df['match'] = src_df2.apply(lambda x: spread(place, src_df,x), axis=1)
+    src_df['match'] = src_df.apply(lambda x: spread(place, src_df2,x), axis=1)
     
     #CROPS
     #--------------------------------------------
-    c = 'CROPS_' + lg
-    src_df2['match'] = src_df2.apply(lambda x: x['match'] + match_row_df(lg,c, x['ID_' + c], x[c],icc_df,threshold,sim_method), axis=1)
+    c = 'CROPS_' + place
+    #in srcv_df2 concatenate the result already get in match at column level + the match get at crops level
+    src_df['match'] = src_df.apply(lambda x: x['match'] + match_row_df(lg,c, x['ID_' + c], x[c],icc_df,threshold,sim_method), axis=1)
+    return src_df['match']
 
-
-    #cols = ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
-    #mDf = pd.DataFrame(matching_list, columns=cols)
-    #idx = mDf.groupby(['id_src'])['similarity'].transform(max) == mDf['similarity']
-    #return mDf[idx]
-    #return mDf
-    return src_df2['match']
-
-#def spread_match(id_src,id_trg,sim):
-#    global result_df
-#    result_df.loc[result_df['ID_GROUP_'+place] == id_src, 'ID_GROUP_ICC'] = id_trg
-#    result_df.loc[result_df['ID_GROUP_'+place] == id_src, 'similarity'] = sim
-
-def inc_depth(x): 
-    global matching_df
-    ID_C = x['ID_CROPS_'+place]
-    ID_G = x.ID_GROUP_ICC
-    sim = x.similarity
-    i = matching_df.loc[matching_df['id_src'] == ID_C]
-    if len(i.index) != 0:
-        if pd.isna(ID_G) or sim < i.similarity.iloc[0]:
-            ID_G = i.id_trg.iloc[0]
-    return ID_G
-
-def spread_sim(id_src,sim):
-    global result_df
-    result_df.loc[result_df['ID_CROPS_'+place] == id_src, 'similarity'] = sim
+def max(matches_list):
+    t = [np.nan, np.nan, np.nan, np.nan, np.nan, 0]       
+    for l in matches_list:
+        if l[5] > t[5]:
+            t = l
+    return t
 
 def compare(pathHandMade,computed,threshold):
     handmade = pd.read_csv(pathHandMade)
@@ -137,13 +118,10 @@ def compare(pathHandMade,computed,threshold):
 
     print('The conversion table computed with the threshold = ' + str(threshold) + ', fits to the expected output at ' + str(per) + '%.')
     print('The conversion script made '+str(err)+'%'+' of errors.')
-    return (threshold,per)
+    return (threshold, per, err)
 
 def converter(pathCsv, pl, lg, threshold,sim_method):
-    global result_df
-    global matching_df
-    global compare_list
-    global place
+    src_classes = ['GROUP','CROPS']
     place = pl
     target = '../../data/ICC/ICC.csv'
 
@@ -159,7 +137,6 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
         englishFilters1=['n.e.c.', 'spp','n.e.c']
         icc_df['label_en_filtered'] = filter(icc_df,'label_en',englishFilters1)
         icc_df.replace('',np.nan,regex = True,inplace=True)
-
 
     ##Translating
     if 'label_'+lg+'_filtered' not in list(icc_df.columns):
@@ -190,30 +167,22 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     icc_df['ID'] = icc_df['ID'].astype('int')
     icc_df['ID_GROUP'] = icc_df['ID'].astype('str').str[:1].astype('int')
 
-    ##Initializing
-    result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_'+place]]
-
     ##Matching all
-    src_df['match'] = match_df_df(lg,src_df,icc_df,threshold,sim_method)
-    #########to be continued here
+    src_df['match'] = match_df_df(place,lg,src_df,icc_df,threshold,sim_method)
+    
+    src_df["max_match"] = src_df.apply(lambda x: max(x.match) if x.match != [] else [], axis = 1)
+    print(src_df)
 
-    ##Spreading
-    rows = matching_df.loc[matching_df['class_level_src'] == 'GROUP_'+place]
-    rows2 = rows.copy()
-    rows2.apply(lambda x: spread_match(x.id_src, x.id_trg,x.similarity), axis=1)
+    src_df['ID_GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][4] if x['max_match'] != [] else np.nan, axis = 1)
+    src_df['sim'] = src_df.apply(lambda x : x['max_match'][5] if x['max_match'] != [] else np.nan, axis = 1)
+    print(src_df)
 
-    ##Incrementing depth   
-    print(matching_df)
-    cp = matching_df.copy()
-    cp.apply(lambda x: spread_sim(x.id_src, x.similarity), axis=1)
-    print(result_df.head(50))
-    result_df['ID_GROUP_ICC'] = result_df.apply(lambda x: inc_depth(x), axis=1)
+    result_df = src_df[['ID_CROPS_FR', 'ID_GROUP_ICC']]
 
     #Writting result
     result_df.to_csv('../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
-    matching_df.to_csv('../../data/'+place+'/matching_df_'+place+'_scriptMade.csv', index=False)
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    compare_list.append(compare('../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold))
+    return compare('../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold)
 
-converter('../../data/FR/FR_2020.csv', 'FR','fr', 80,'basic')
+#converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
 #converter('../../data/WL/WL_2020.csv', 'WL','FR', 1,50)
