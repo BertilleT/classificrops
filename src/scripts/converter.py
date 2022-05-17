@@ -55,7 +55,7 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
         if src == trg:
             nb = 100
 
-    if nb > threshold: 
+    if nb >= threshold: 
         #return the following information when there is a match : ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
         return [c,idS, src, trg, idT, nb]
     else:
@@ -171,11 +171,9 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     src_df['match'] = match_df_df(place,lg,src_df,icc_df,threshold,sim_method)
     
     src_df["max_match"] = src_df.apply(lambda x: max(x.match) if x.match != [] else [], axis = 1)
-    print(src_df)
 
     src_df['ID_GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][4] if x['max_match'] != [] else np.nan, axis = 1)
     src_df['sim'] = src_df.apply(lambda x : x['max_match'][5] if x['max_match'] != [] else np.nan, axis = 1)
-    print(src_df)
 
     result_df = src_df[['ID_CROPS_FR', 'ID_GROUP_ICC']]
 
