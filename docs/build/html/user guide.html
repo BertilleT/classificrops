@@ -103,9 +103,9 @@ To sum up, Classificrops must be viewed as a helping tool to pre-work the conver
 <span id="id5"></span><h3><span class="section-number">1.3.5. </span>Choose your inputs<a class="headerlink" href="#choose-your-inputs" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 31%" />
-<col style="width: 47%" />
-<col style="width: 22%" />
+<col style="width: 23%" />
+<col style="width: 35%" />
+<col style="width: 43%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>name input</p></th>
@@ -118,24 +118,30 @@ To sum up, Classificrops must be viewed as a helping tool to pre-work the conver
 <td><p>‘data/’ + place + ‘/’ + tablename</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>language</p></td>
-<td><p>2 lowercase letters</p></td>
-<td><p>[en,fr,it,…]</p></td>
-</tr>
-<tr class="row-even"><td><p>place</p></td>
+<tr class="row-odd"><td><p>place</p></td>
 <td><p>2 capitalized letters</p></td>
 <td><p>[WL,CT,FR,IT]</p></td>
+</tr>
+<tr class="row-even"><td><p>language</p></td>
+<td><p>2 lowercase letters</p></td>
+<td><p>[en,fr,it,…]</p></td>
 </tr>
 <tr class="row-odd"><td><p>threshold</p></td>
 <td><p>a number</p></td>
 <td><p>[0,100]</p></td>
+</tr>
+<tr class="row-even"><td><p>sim_method</p></td>
+<td><p>a string</p></td>
+<td><p>[‘basic’,’split+ratio’,’token_set_ratio’]</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="run">
 <span id="id6"></span><h3><span class="section-number">1.3.6. </span>Run<a class="headerlink" href="#run" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">threshold</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-c</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">threshold</span> <span class="pre">sim_method</span></code>
+If you want to test different hreshold between 0 and 100 for a same similarity measure, please run :
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-t</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">sim_method</span></code></p>
 </section>
 </section>
 <section id="main-issues">

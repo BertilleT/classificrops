@@ -80,11 +80,20 @@ Comparison pros and cons of each method
 Tool
 ----
 The goal is to semi automate the crossover between classification from a specific country to the "european" one.
-Please run the script src/scripts/classificrops/converter.py. 
 result with threshold = 99: correctness = 56%
 errorness = 2%
 
+
+
 Similarity computing
 --------------------
-Levenhestein distance with fuzzy research. 
+Compare similarity computing and optimize the threshold : 
 
+   .. image:: ../images/FR_basic.png
+      :width: 800
+
+   .. image:: ../images/FR_split+ratio.png
+      :width: 800
+
+   .. image:: ../images/FR_token_set_ratio.png
+      :width: 800
