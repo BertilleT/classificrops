@@ -1,0 +1,15 @@
+converter
+../../data/FR/FR_2020.csv
+FR
+fr
+80
+token_set_ratio
+
+{
+    "fct": "converter", 
+    "path": "../../data/FR/FR_2020.csv", 
+    "place": "FR", 
+    "language": "fr", 
+    "threshold": 80, 
+    "similarity": "token_set_ratio"
+}

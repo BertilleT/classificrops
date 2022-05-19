@@ -155,9 +155,9 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
         icc_df.to_csv(target, index=False)
 
     ##Filtering2
-    frenchFilters = ['autres','autre',' et',' ou']
+    french_filters = ['autres','autre',' et',' ou']
     for c in src_classes:
-        src_df[c+'_filtered'] = filter(src_df,c,frenchFilters)
+        src_df[c+'_filtered'] = filter(src_df,c,french_filters)
         src_df.replace('',np.nan,regex = True,inplace=True)
         if 'ID_'+c not in list(src_df.columns):
             src_df['ID_'+c] = src_df[c] #we could make an identifier generator more sophisticated in the future. 
@@ -175,7 +175,7 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     src_df['ID_GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][4] if x['max_match'] != [] else np.nan, axis = 1)
     src_df['sim'] = src_df.apply(lambda x : x['max_match'][5] if x['max_match'] != [] else np.nan, axis = 1)
 
-    result_df = src_df[['ID_CROPS_FR', 'ID_GROUP_ICC']]
+    result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
 
     #Writting result
     result_df.to_csv('../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
