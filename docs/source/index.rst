@@ -9,8 +9,8 @@ Classificrops's documentation
 .. toctree::
    :numbered:
    
-   user guide
-   analysis and conception notes
+   user_guide
+   analysis_and_conception_notes
 
 
 Contribute

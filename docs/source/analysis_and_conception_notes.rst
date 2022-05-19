@@ -76,15 +76,6 @@ To do so : 2 alternatives studies :
 
 Comparison pros and cons of each method
 
-
-Tool
-----
-The goal is to semi automate the crossover between classification from a specific country to the "european" one.
-result with threshold = 99: correctness = 56%
-errorness = 2%
-
-
-
 Similarity computing
 --------------------
 Compare similarity computing and optimize the threshold : 
