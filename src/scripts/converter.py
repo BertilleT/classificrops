@@ -39,18 +39,47 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
         nb = fuzz.token_set_ratio(src,trg)
     elif sim_method == 'split+ratio':
         if type(src) == str and type(trg) == str:
-            srcA = src.split()
-            length = len(srcA)
-            trgA = trg.split()
+            src_l = src.split()
+            len_src = len(src_l)
+            trg_l = trg.split()
             myList=[]
-            for w in srcA:
-                for x in trgA:
-                    myList.append([srcA.index(w),fuzz.ratio(w,x)])
+            for w in src_l:
+                for x in trg_l:
+                    myList.append([src_l.index(w),fuzz.ratio(w,x)])
             cols = ['index', 'sim']
             myDf = pd.DataFrame(myList, columns=cols)
             r = myDf.groupby('index')['sim'].max().reset_index()
             total = r['sim'].sum()
-            nb = total / length
+            nb = total / len_src
+    
+    elif sim_method == 'split+ratio+symetric':
+        nb = 0
+        if type(src) == str and type(trg) == str:
+            src_l = src.split()
+            len_src = len(src_l)
+            trg_l = trg.split()
+            myList=[]
+            for w in src_l:
+                for x in trg_l:
+                    myList.append([src_l.index(w),fuzz.ratio(w,x)])
+            cols = ['index', 'sim']
+            myDf = pd.DataFrame(myList, columns=cols)
+            r = myDf.groupby('index')['sim'].max().reset_index()
+
+            if len(trg_l) == 1 :
+                #ranger r par ordre de similarité décroissante 
+                sorted_r = r.sort_values(["sim"], ascending=False)
+                #selectionner premier elment de r
+                nb = sorted_r.iloc[0,1]
+            else : 
+                total = r['sim'].sum()
+                nb = total / len_src
+            #total = r['sim'].sum()
+            #if len(trg_l) < len(src_l):
+            #    nb = total / len(trg_l)
+            #else : 
+            #    nb = total / len(src_l)
+
     elif sim_method == 'basic':
         if src == trg:
             nb = 100
@@ -180,6 +209,7 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     #Writting result
     result_df.to_csv('../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
+    src_df.to_csv('../../data/'+place+'/match_df_detailed_'+place+'.csv', index=False)
     return compare('../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold)
 
 #converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
