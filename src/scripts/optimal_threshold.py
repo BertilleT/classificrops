@@ -24,4 +24,4 @@ def optimal_threshold(path, place, lg,sim_method):
   plt.title('Wallonia : similarity method = '+sim_method)
   plt.show()
 
-optimal_threshold('../../data/WL/WL_2020.csv', 'WL','fr', 'token_set_ratio')
+#optimal_threshold('../../data/WL/WL_2020.csv', 'WL','fr', 'token_set_ratio')
