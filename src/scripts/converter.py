@@ -2,6 +2,7 @@ import pandas as pd
 import deepl
 from fuzzywuzzy import fuzz
 import numpy as np
+import os
 
 def classes(classes,place):
     src_classes = [c+'_'+place for c in classes]
@@ -152,7 +153,9 @@ def compare(pathHandMade,computed,threshold):
 def converter(pathCsv, pl, lg, threshold,sim_method):
     src_classes = ['GROUP','CROPS']
     place = pl
-    target = '../../data/ICC/ICC.csv'
+    rel_path_ICC = '../../data/ICC/ICC.csv'
+    abs_path_ICC = os.path.abspath(rel_path_ICC)
+    target = abs_path_ICC
 
     ##Loading
     src_df = pd.read_csv(pathCsv)
@@ -207,10 +210,16 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
 
     #Writting result
-    result_df.to_csv('../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv', index=False)
+    rel_path_result = '../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv'
+    abs_path_result = os.path.abspath(rel_path_result)
+    result_df.to_csv(abs_path_result, index=False)
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    src_df.to_csv('../../data/'+place+'/match_df_detailed_'+place+'.csv', index=False)
-    return compare('../../data/'+place+'/conversionTable_'+place+'_handMade.csv',result_df,threshold)
+    rel_path_det = '../../data/'+place+'/match_df_detailed_'+place+'.csv'
+    abs_path_det = os.path.abspath(rel_path_det)
+    src_df.to_csv(abs_path_det, index=False)
+    rel_path_handmade = '../../data/'+place+'/conversionTable_'+place+'_handMade.csv'
+    abs_path_handmade = os.path.abspath(rel_path_handmade)
+    return compare(abs_path_handmade,result_df,threshold)
 
 #converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
 #converter('../../data/WL/WL_2020.csv', 'WL','FR', 1,50)

@@ -1,5 +1,6 @@
 from converter import *
 import matplotlib.pyplot as plt
+import os
 
 def optimal_threshold(path, place, lg,sim_method): 
   compare_list = []
@@ -14,7 +15,10 @@ def optimal_threshold(path, place, lg,sim_method):
     compare_list.append(converter(path, place,lg, t,sim_method))
 
   compare_df = pd.DataFrame (compare_list, columns = ['threshold','correctness(%)', 'errorness(%)'])
-  compare_df.to_csv('../../data/FR/compare.csv', index=False)
+  
+  rel_path_compare = '../../data/FR/compare.csv'
+  abs_path_compare = os.path.abspath(rel_path_compare)
+  compare_df.to_csv(abs_path_compare, index=False)
 
   ax = plt.axis([0, 100, 0, 100])
   ax = plt.gca()
