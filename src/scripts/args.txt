@@ -1,3 +1,4 @@
+-f
 converter
 ../../data/FR/FR_2020.csv
 FR

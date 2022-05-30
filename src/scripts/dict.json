@@ -1,0 +1,8 @@
+{
+    "f": "converter", 
+    "pa": "../../data/FR/FR_2020.csv", 
+    "pl": "FR", 
+    "l": "fr", 
+    "s": "token_set_ratio",
+    "t": 80
+}
