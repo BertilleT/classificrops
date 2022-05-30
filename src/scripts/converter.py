@@ -1,12 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import os
 import pandas as pd
 import deepl
 from fuzzywuzzy import fuzz
 import numpy as np
-import os
-
-def classes(classes,place):
-    src_classes = [c+'_'+place for c in classes]
-    return src_classes
 
 def filter(df, col, filters):
     mydict = {f'(?i){word}':'' for word in filters}
@@ -150,19 +148,18 @@ def compare(pathHandMade,computed,threshold):
     print('The conversion script made '+str(err)+'%'+' of errors.')
     return (threshold, per, err)
 
-def converter(pathCsv, pl, lg, threshold,sim_method):
+def converter(path_csv, place, lg, threshold,sim_method):
     src_classes = ['GROUP','CROPS']
-    place = pl
     rel_path_ICC = '../../data/ICC/ICC.csv'
     abs_path_ICC = os.path.abspath(rel_path_ICC)
     target = abs_path_ICC
 
     ##Loading
-    src_df = pd.read_csv(pathCsv)
+    src_df = pd.read_csv(path_csv)
     icc_df = pd.read_csv(target)
 
-    ##Listing
-    src_classes = classes(src_classes,place)
+    ##Listing classes
+    src_classes = [c+'_'+place for c in src_classes]
 
     ##Filtering1a
     if 'label_en_filtered' not in list(icc_df.columns): 
@@ -184,15 +181,15 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
         englishFilters2=['other','crops',' and',' or']
         icc_df['label_en_filtered'] = filter(icc_df,'label_en_filtered',englishFilters2)
         icc_df.replace('',np.nan,regex = True,inplace=True)
-        icc_df.to_csv(target, index=False)
 
     ##Filtering2
     french_filters = ['autres','autre',' et',' ou']
+    #we should deal with all the languages ... 
     for c in src_classes:
         src_df[c+'_filtered'] = filter(src_df,c,french_filters)
         src_df.replace('',np.nan,regex = True,inplace=True)
         if 'ID_'+c not in list(src_df.columns):
-            src_df['ID_'+c] = src_df[c] #we could make an identifier generator more sophisticated in the future. 
+            src_df['ID_'+c] = src_df[c] #we could make an identifier generator more sophisticated in the future. example : take the 3 first letters. 
 
     ##Formating ICC
     icc_df['ID'] = icc_df['ID'].apply(lambda ID:parse(ID))
@@ -213,13 +210,17 @@ def converter(pathCsv, pl, lg, threshold,sim_method):
     rel_path_result = '../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv'
     abs_path_result = os.path.abspath(rel_path_result)
     result_df.to_csv(abs_path_result, index=False)
+
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
     rel_path_det = '../../data/'+place+'/match_df_detailed_'+place+'.csv'
     abs_path_det = os.path.abspath(rel_path_det)
     src_df.to_csv(abs_path_det, index=False)
+    
     rel_path_handmade = '../../data/'+place+'/conversionTable_'+place+'_handMade.csv'
     abs_path_handmade = os.path.abspath(rel_path_handmade)
     return compare(abs_path_handmade,result_df,threshold)
 
 #converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
-#converter('../../data/WL/WL_2020.csv', 'WL','FR', 1,50)
+hey = converter('data/WL/WL_2020.csv', 'WL','fr', 1,'basic')
+
+print(hey)

@@ -1,0 +1,26 @@
+Languages = {
+    "Bulgarian":
+    "Croatian":
+    "Czech":
+    "Danish":
+    "Dutch":
+    "English":
+    "Estonian":
+    "Finnish":
+    "French":"FR",
+    "German":
+    "Greek":
+    "Hungarian":
+    "Irish":
+    "Italian":
+    "Latvian":
+    "Lithuanian":
+    "Maltese":
+    "Polish":
+    "Portuguese":
+    "Romanian":
+    "Slovak":
+    "Slovene":
+    "Spanish":
+    "Swedish":
+}	
