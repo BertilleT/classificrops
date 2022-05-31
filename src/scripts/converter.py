@@ -5,12 +5,10 @@ import pandas as pd
 import deepl
 from fuzzywuzzy import fuzz
 import numpy as np
-from pathlib import Path
 
 def filter(df, col, filters):
-    df[col+'_filtered'] = df[col].str.replace(r"[\(\[].*?[\)\]]", '', regex=True)
     mydict = {f'(?i){word}':'' for word in filters}
-    df[col+'_filtered'] = df[col+'_filtered'].replace(mydict, regex=True)
+    df[col+'_filtered'] = df[col].replace(mydict, regex=True)
     df[col+'_filtered'] = df[col+'_filtered'].str.replace(r'[^\w\s]+', '', regex=True)
     df[col+'_filtered'] = df[col+'_filtered'].str.replace('   ', ' ')
     df[col+'_filtered'] = df[col+'_filtered'].str.replace('  ', ' ')
@@ -107,7 +105,7 @@ def match_df_df(place, lg,src_df,icc_df,threshold,sim_method):
     c = 'GROUP_' + place
     src_df2 = src_df.drop_duplicates(subset = ['ID_GROUP_' + place])
     #create a column match in srcDf2 to store the match
-    src_df2['match'] = src_df2.apply(lambda x: match_row_df(lg,c, x['ID_' + c], x[c+ '_filtered'],icc_df,threshold,sim_method), axis=1)
+    src_df2['match'] = src_df2.apply(lambda x: match_row_df(lg,c, x['ID_' + c], x[c],icc_df,threshold,sim_method), axis=1)
     #spread the match identifies in src_df2 with unique values of group to the source dataframe. 
     #src_df['match'] = src_df2.apply(lambda x: spread(place, src_df,x), axis=1)
     src_df['match'] = src_df.apply(lambda x: spread(place, src_df2,x), axis=1)
@@ -116,7 +114,7 @@ def match_df_df(place, lg,src_df,icc_df,threshold,sim_method):
     #--------------------------------------------
     c = 'CROPS_' + place
     #in srcv_df2 concatenate the result already get in match at column level + the match get at crops level
-    src_df['match'] = src_df.apply(lambda x: x['match'] + match_row_df(lg,c, x['ID_' + c], x[c+ '_filtered'],icc_df,threshold,sim_method), axis=1)
+    src_df['match'] = src_df.apply(lambda x: x['match'] + match_row_df(lg,c, x['ID_' + c], x[c],icc_df,threshold,sim_method), axis=1)
     return src_df['match']
 
 def max(matches_list):
@@ -126,8 +124,8 @@ def max(matches_list):
             t = l
     return t
 
-def compare(handmade_path,computed,threshold):
-    handmade = pd.read_csv(handmade_path)
+def compare(pathHandMade,computed,threshold):
+    handmade = pd.read_csv(pathHandMade)
     compare = handmade.copy()
     compare.rename(columns={'ID_GROUP_ICC':'ID_GROUP_ICC_handmade'}, inplace=True)
     compare['ID_GROUP_ICC_computed'] = computed['ID_GROUP_ICC']
@@ -150,16 +148,15 @@ def compare(handmade_path,computed,threshold):
     print('The conversion script made '+str(err)+'%'+' of errors.')
     return (threshold, per, err)
 
-def converter(src_file, place, lg, threshold,sim_method):
+def converter(path_csv, place, lg, threshold,sim_method):
     src_classes = ['GROUP','CROPS']
-    parent = Path(__file__).parents[2]
-    data_path = parent.joinpath('data')
-    ICC_path = data_path.joinpath('ICC','ICC.csv')
+    rel_path_ICC = '../../data/ICC/ICC.csv'
+    abs_path_ICC = os.path.abspath(rel_path_ICC)
+    target = abs_path_ICC
 
-    src_path = data_path.joinpath(place, src_file)
     ##Loading
-    src_df = pd.read_csv(src_path)
-    icc_df = pd.read_csv(ICC_path)
+    src_df = pd.read_csv(path_csv)
+    icc_df = pd.read_csv(target)
 
     ##Listing classes
     src_classes = [c+'_'+place for c in src_classes]
@@ -210,19 +207,20 @@ def converter(src_file, place, lg, threshold,sim_method):
     result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
 
     #Writting result
-    result_path = data_path.joinpath(place,'conversion_table_'+place+'_scriptMade.csv')
-    result_df.to_csv(result_path, index=False)
+    rel_path_result = '../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv'
+    abs_path_result = os.path.abspath(rel_path_result)
+    result_df.to_csv(abs_path_result, index=False)
 
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    details_path = data_path.joinpath(place,'match_df_detailed_'+place+'.csv')
-    src_df.to_csv(details_path, index=False)
-
-    handmade_path = data_path.joinpath(place,'conversion_table_'+place+'_handmade.csv')
-    print(handmade_path)
-    return compare(handmade_path,result_df,threshold)
+    rel_path_det = '../../data/'+place+'/match_df_detailed_'+place+'.csv'
+    abs_path_det = os.path.abspath(rel_path_det)
+    src_df.to_csv(abs_path_det, index=False)
+    
+    rel_path_handmade = '../../data/'+place+'/conversionTable_'+place+'_handMade.csv'
+    abs_path_handmade = os.path.abspath(rel_path_handmade)
+    return compare(abs_path_handmade,result_df,threshold)
 
 #converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
+hey = converter('data/WL/WL_2020.csv', 'WL','fr', 1,'basic')
 
-converter('FR_2020.csv', 'FR','fr', 90,'split+ratio')
-
-#print(hey)
+print(hey)

@@ -16,7 +16,7 @@ def optimal_threshold(path, place, lg,sim_method):
 
   compare_df = pd.DataFrame (compare_list, columns = ['threshold','correctness(%)', 'errorness(%)'])
   
-  rel_path_compare = '../../data/'+place+'/compare.csv'
+  rel_path_compare = '../../data/FR/compare.csv'
   abs_path_compare = os.path.abspath(rel_path_compare)
   compare_df.to_csv(abs_path_compare, index=False)
 
