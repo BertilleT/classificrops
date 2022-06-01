@@ -1,174 +1,174 @@
 CROPS_WL,ID_CROPS_WL,GROUP_WL,ID_GROUP_WL,GROUP_WL_filtered,CROPS_WL_filtered,match,max_match,ID_GROUP_ICC,sim
-Avoine d’hiver,341,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Avoine dhiver,"[['CROPS_WL', 341, 'Avoine d’hiver', 'Avoine', 1, 100]]","['CROPS_WL', 341, 'Avoine d’hiver', 'Avoine', 1, 100]",1.0,100.0
-Avoine de printemps,342,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Avoine de printemps,"[['CROPS_WL', 342, 'Avoine de printemps', 'Avoine', 1, 100]]","['CROPS_WL', 342, 'Avoine de printemps', 'Avoine', 1, 100]",1.0,100.0
+Avoine d’hiver,341,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Avoine dhiver,[],[],,
+Avoine de printemps,342,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Avoine de printemps,[],[],,
 Epeautre,36,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Epe,[],[],,
 Froment d’hiver,311,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Froment dhiver,[],[],,
 Froment de printemps,312,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Froment de printemps,[],[],,
-Maïs ensilage,201,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Maïs ensilage,"[['CROPS_WL', 201, 'Maïs ensilage', 'Maïs', 1, 100]]","['CROPS_WL', 201, 'Maïs ensilage', 'Maïs', 1, 100]",1.0,100.0
-Maïs grain,202,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Maïs grain,"[['CROPS_WL', 202, 'Maïs grain', 'Maïs', 1, 100]]","['CROPS_WL', 202, 'Maïs grain', 'Maïs', 1, 100]",1.0,100.0
-Céréales + légumineuses*,39,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Céréales légumineuses,"[['CROPS_WL', 39, 'Céréales + légumineuses*', 'Céréales', 1, 100]]","['CROPS_WL', 39, 'Céréales + légumineuses*', 'Céréales', 1, 100]",1.0,100.0
-Orge d’hiver,321,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Orge dhiver,"[['CROPS_WL', 321, 'Orge d’hiver', 'Orge', 1, 100]]","['CROPS_WL', 321, 'Orge d’hiver', 'Orge', 1, 100]",1.0,100.0
-Orge de printemps,322,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Orge de printemps,"[['CROPS_WL', 322, 'Orge de printemps', 'Orge', 1, 100]]","['CROPS_WL', 322, 'Orge de printemps', 'Orge', 1, 100]",1.0,100.0
-Orge de brasserie,323,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Orge de brasserie,"[['CROPS_WL', 323, 'Orge de brasserie', 'Orge', 1, 100]]","['CROPS_WL', 323, 'Orge de brasserie', 'Orge', 1, 100]",1.0,100.0
-Sarrasin,37,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Sarrasin,"[['CROPS_WL', 37, 'Sarrasin', 'Sarrasin', 1, 100]]","['CROPS_WL', 37, 'Sarrasin', 'Sarrasin', 1, 100]",1.0,100.0
-Seigle d’hiver,331,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Seigle dhiver,"[['CROPS_WL', 331, 'Seigle d’hiver', 'Seigle', 1, 100]]","['CROPS_WL', 331, 'Seigle d’hiver', 'Seigle', 1, 100]",1.0,100.0
-Seigle de printemps,332,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Seigle de printemps,"[['CROPS_WL', 332, 'Seigle de printemps', 'Seigle', 1, 100]]","['CROPS_WL', 332, 'Seigle de printemps', 'Seigle', 1, 100]",1.0,100.0
-Triticale d’hiver,351,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Triticale dhiver,"[['CROPS_WL', 351, 'Triticale d’hiver', 'Triticale', 1, 100]]","['CROPS_WL', 351, 'Triticale d’hiver', 'Triticale', 1, 100]",1.0,100.0
-Triticale de printemps,352,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Triticale de printemps,"[['CROPS_WL', 352, 'Triticale de printemps', 'Triticale', 1, 100]]","['CROPS_WL', 352, 'Triticale de printemps', 'Triticale', 1, 100]",1.0,100.0
-Sorgho,381,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Sorgho,"[['CROPS_WL', 381, 'Sorgho', 'Sorgho', 1, 100], ['CROPS_WL', 381, 'Sorgho', 'Sorgho doux', 8, 100.0]]","['CROPS_WL', 381, 'Sorgho', 'Sorgho', 1, 100]",1.0,100.0
-Quinoa,382,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Quinoa,"[['CROPS_WL', 382, 'Quinoa', 'Quinoa', 1, 100]]","['CROPS_WL', 382, 'Quinoa', 'Quinoa', 1, 100]",1.0,100.0
-Cultures fruitières annuelles - Fraises,9516,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitières annuelles Fraises,"[['CROPS_WL', 9516, 'Cultures fruitières annuelles - Fraises', 'Fraises', 3, 100]]","['CROPS_WL', 9516, 'Cultures fruitières annuelles - Fraises', 'Fraises', 3, 100]",3.0,100.0
-Cultures fruitières annuelles - Framboises,9717,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitières annuelles Framboises,"[['CROPS_WL', 9717, 'Cultures fruitières annuelles - Framboises', 'Framboises', 3, 100]]","['CROPS_WL', 9717, 'Cultures fruitières annuelles - Framboises', 'Framboises', 3, 100]",3.0,100.0
-Cultures fruitière pluriannuelles-hautes tiges ( de 50 à 250 arbres/ha)*,9742,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitière pluriannuelleshautes tiges de 50 à 250 arbresha,[],[],,
-Cultures fruitière pluriannuelles-basses tiges ( plus de 250 arbres /ha)*,9741,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitière pluriannuellesbasses tiges plus de 250 arbres ha,[],[],,
-Cultures permanentes sous serre*,885,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures permanentes sous serre,"[['CROPS_WL', 885, 'Cultures permanentes sous serre*', 'permanent', 9, 90]]","['CROPS_WL', 885, 'Cultures permanentes sous serre*', 'permanent', 9, 90]",9.0,90.0
+Maïs ensilage,201,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Maïs ensilage,[],[],,
+Maïs grain,202,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Maïs grain,[],[],,
+Céréales + légumineuses*,39,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Céréales légumineuses,[],[],,
+Orge d’hiver,321,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Orge dhiver,[],[],,
+Orge de printemps,322,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Orge de printemps,[],[],,
+Orge de brasserie,323,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Orge de brasserie,[],[],,
+Sarrasin,37,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Sarrasin,"[['CROPS_WL', 37, 'Sarrasin', 'Sarrasin', 1, 100.0]]","['CROPS_WL', 37, 'Sarrasin', 'Sarrasin', 1, 100.0]",1.0,100.0
+Seigle d’hiver,331,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Seigle dhiver,[],[],,
+Seigle de printemps,332,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Seigle de printemps,[],[],,
+Triticale d’hiver,351,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Triticale dhiver,[],[],,
+Triticale de printemps,352,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Triticale de printemps,[],[],,
+Sorgho,381,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Sorgho,"[['CROPS_WL', 381, 'Sorgho', 'Sorgho', 1, 100.0], ['CROPS_WL', 381, 'Sorgho', 'Sorgho doux', 8, 100.0]]","['CROPS_WL', 381, 'Sorgho', 'Sorgho', 1, 100.0]",1.0,100.0
+Quinoa,382,CEREALES ET ASSIMILES,CEREALES ET ASSIMILES,CEREALES ASSIMILES,Quinoa,"[['CROPS_WL', 382, 'Quinoa', 'Quinoa', 1, 100.0]]","['CROPS_WL', 382, 'Quinoa', 'Quinoa', 1, 100.0]",1.0,100.0
+Cultures fruitières annuelles - Fraises,9516,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitières annuelles Fraises,[],[],,
+Cultures fruitières annuelles - Framboises,9717,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitières annuelles Framboises,[],[],,
+Cultures fruitière pluriannuelles-hautes tiges ( de 50 à 250 arbres/ha)*,9742,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitière pluriannuelleshautes tiges,[],[],,
+Cultures fruitière pluriannuelles-basses tiges ( plus de 250 arbres /ha)*,9741,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitière pluriannuellesbasses tiges,[],[],,
+Cultures permanentes sous serre*,885,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures permanentes sous serre,[],[],,
 Cultures horticoles non-comestibles*,96,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures horticoles noncomestibles,[],[],,
-Autres légumes plein air,951,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,légumes plein air,"[['CROPS_WL', 951, 'Autres légumes plein air', 'légumes', 2, 100]]","['CROPS_WL', 951, 'Autres légumes plein air', 'légumes', 2, 100]",2.0,100.0
+Autres légumes plein air,951,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,légumes plein air,[],[],,
 Autres plantes ornementales de plein air,954,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,plantes ornementales de plein air,[],[],,
 Autres plantes ornementales sous serre,958,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,plantes ornementales sous serre,[],[],,
-Autres cultures de légumes sous serre,9521,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,cultures de légumes sous serre,"[['CROPS_WL', 9521, 'Autres cultures de légumes sous serre', 'légumes', 2, 100]]","['CROPS_WL', 9521, 'Autres cultures de légumes sous serre', 'légumes', 2, 100]",2.0,100.0
-Asperges (consommation au frais),9511,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Asperges consommation au frais,"[['CROPS_WL', 9511, 'Asperges (consommation au frais)', 'Asperges', 2, 100]]","['CROPS_WL', 9511, 'Asperges (consommation au frais)', 'Asperges', 2, 100]",2.0,100.0
-Asperges (transformation industrielle),8511,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Asperges transformation industrielle,"[['CROPS_WL', 8511, 'Asperges (transformation industrielle)', 'Asperges', 2, 100]]","['CROPS_WL', 8511, 'Asperges (transformation industrielle)', 'Asperges', 2, 100]",2.0,100.0
-Brocolis (consommation au frais),9525,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Brocolis consommation au frais,[],[],,
-Brocoli (transformation industrielle),8525,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Brocoli transformation industrielle,[],[],,
-Carotte (non hâtive) (consommation) (transformation industrielle),8535,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte non hâtive consommation transformation industrielle,"[['CROPS_WL', 8535, 'Carotte (non hâtive) (consommation) (transformation industrielle)', 'Carottes', 2, 93]]","['CROPS_WL', 8535, 'Carotte (non hâtive) (consommation) (transformation industrielle)', 'Carottes', 2, 93]",2.0,93.0
-Carotte (hâtive)(consommation) (transformation industrielle),8564,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte hâtiveconsommation transformation industrielle,"[['CROPS_WL', 8564, 'Carotte (hâtive)(consommation) (transformation industrielle)', 'Carottes', 2, 93]]","['CROPS_WL', 8564, 'Carotte (hâtive)(consommation) (transformation industrielle)', 'Carottes', 2, 93]",2.0,93.0
-Carotte ( non hâtive) (consommation au frais),9535,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte non hâtive consommation au frais,"[['CROPS_WL', 9535, 'Carotte ( non hâtive) (consommation au frais)', 'Carottes', 2, 93]]","['CROPS_WL', 9535, 'Carotte ( non hâtive) (consommation au frais)', 'Carottes', 2, 93]",2.0,93.0
-Carotte ( hâtive) (consommation au frais),9564,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte hâtive consommation au frais,"[['CROPS_WL', 9564, 'Carotte ( hâtive) (consommation au frais)', 'Carottes', 2, 93]]","['CROPS_WL', 9564, 'Carotte ( hâtive) (consommation au frais)', 'Carottes', 2, 93]",2.0,93.0
-Céleri-rave (transformation industrielle),8543,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Célerirave transformation industrielle,[],[],,
-Céleri-branche ( transformation industrielle),8551,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Céleribranche transformation industrielle,[],[],,
-Céleri à côtes ( transformation industrielle),8539,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Céleri à côtes transformation industrielle,[],[],,
-Céleri-rave (consommation au frais),9543,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Célerirave consommation au frais,[],[],,
-Céleri vert ( transformation industrielle),8548,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Céleri vert transformation industrielle,[],[],,
-Cerfeuil (consommation au frais),960,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cerfeuil consommation au frais,[],[],,
-Cerfeuil ( transformation industrielle),860,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cerfeuil transformation industrielle,[],[],,
+Autres cultures de légumes sous serre,9521,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,cultures de légumes sous serre,[],[],,
+Asperges (consommation au frais),9511,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Asperges,"[['CROPS_WL', 9511, 'Asperges', 'Asperges', 2, 100.0]]","['CROPS_WL', 9511, 'Asperges', 'Asperges', 2, 100.0]",2.0,100.0
+Asperges (transformation industrielle),8511,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Asperges,"[['CROPS_WL', 8511, 'Asperges', 'Asperges', 2, 100.0]]","['CROPS_WL', 8511, 'Asperges', 'Asperges', 2, 100.0]",2.0,100.0
+Brocolis (consommation au frais),9525,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Brocolis,[],[],,
+Brocoli (transformation industrielle),8525,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Brocoli,[],[],,
+Carotte (non hâtive) (consommation) (transformation industrielle),8535,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte,"[['CROPS_WL', 8535, 'Carotte', 'Carottes', 2, 93.0]]","['CROPS_WL', 8535, 'Carotte', 'Carottes', 2, 93.0]",2.0,93.0
+Carotte (hâtive)(consommation) (transformation industrielle),8564,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte,"[['CROPS_WL', 8564, 'Carotte', 'Carottes', 2, 93.0]]","['CROPS_WL', 8564, 'Carotte', 'Carottes', 2, 93.0]",2.0,93.0
+Carotte ( non hâtive) (consommation au frais),9535,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte,"[['CROPS_WL', 9535, 'Carotte', 'Carottes', 2, 93.0]]","['CROPS_WL', 9535, 'Carotte', 'Carottes', 2, 93.0]",2.0,93.0
+Carotte ( hâtive) (consommation au frais),9564,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Carotte,"[['CROPS_WL', 9564, 'Carotte', 'Carottes', 2, 93.0]]","['CROPS_WL', 9564, 'Carotte', 'Carottes', 2, 93.0]",2.0,93.0
+Céleri-rave (transformation industrielle),8543,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Célerirave,[],[],,
+Céleri-branche ( transformation industrielle),8551,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Céleribranche,[],[],,
+Céleri à côtes ( transformation industrielle),8539,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Céleri à côtes,[],[],,
+Céleri-rave (consommation au frais),9543,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Célerirave,[],[],,
+Céleri vert ( transformation industrielle),8548,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Céleri vert,[],[],,
+Cerfeuil (consommation au frais),960,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cerfeuil,[],[],,
+Cerfeuil ( transformation industrielle),860,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cerfeuil,[],[],,
 Champignons,9536,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Champignons,"[['CROPS_WL', 9536, 'Champignons', 'Truffes de champignons', 2, 91.0]]","['CROPS_WL', 9536, 'Champignons', 'Truffes de champignons', 2, 91.0]",2.0,91.0
-Choux-rave (consommation au frais),9529,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chouxrave consommation au frais,[],[],,
-Choux-rave (transformation industrielle),8529,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chouxrave transformation industrielle,[],[],,
-Chou de Bruxelles (transformation industrielle),8512,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou de Bruxelles transformation industrielle,[],[],,
-Chou de Bruxelles (consommation au frais),9512,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou de Bruxelles consommation au frais,[],[],,
-Chou-fleur (transformation industrielle),8523,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choufleur transformation industrielle,[],[],,
-Chou-fleur (consommation au frais),9523,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choufleur consommation au frais,[],[],,
-Choux – légumes/Céleri vert (consommation au frais),9548,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choux légumesCéleri vert consommation au frais,"[['CROPS_WL', 9548, 'Choux – légumes/Céleri vert (consommation au frais)', 'Choux', 2, 100]]","['CROPS_WL', 9548, 'Choux – légumes/Céleri vert (consommation au frais)', 'Choux', 2, 100]",2.0,100.0
-Choux rouge (consommation au frais),9527,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choux rouge consommation au frais,"[['CROPS_WL', 9527, 'Choux rouge (consommation au frais)', 'Choux', 2, 100]]","['CROPS_WL', 9527, 'Choux rouge (consommation au frais)', 'Choux', 2, 100]",2.0,100.0
-Choux rouge (transformation industrielle),8527,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choux rouge transformation industrielle,"[['CROPS_WL', 8527, 'Choux rouge (transformation industrielle)', 'Choux', 2, 100]]","['CROPS_WL', 8527, 'Choux rouge (transformation industrielle)', 'Choux', 2, 100]",2.0,100.0
-Chou blanc (transformation industrielle),8540,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou blanc transformation industrielle,[],[],,
-Chou blanc (consommation au frais),9540,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou blanc consommation au frais,[],[],,
-Chou frisé (transformation industrielle),8524,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou frisé transformation industrielle,[],[],,
-Chou de Milan ( transformation industrielle),8546,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou de Milan transformation industrielle,[],[],,
+Choux-rave (consommation au frais),9529,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chouxrave,[],[],,
+Choux-rave (transformation industrielle),8529,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chouxrave,[],[],,
+Chou de Bruxelles (transformation industrielle),8512,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou de Bruxelles,[],[],,
+Chou de Bruxelles (consommation au frais),9512,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou de Bruxelles,[],[],,
+Chou-fleur (transformation industrielle),8523,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choufleur,"[['CROPS_WL', 8523, 'Choufleur', 'Chou-fleur brocoli', 2, 95.0]]","['CROPS_WL', 8523, 'Choufleur', 'Chou-fleur brocoli', 2, 95.0]",2.0,95.0
+Chou-fleur (consommation au frais),9523,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choufleur,"[['CROPS_WL', 9523, 'Choufleur', 'Chou-fleur brocoli', 2, 95.0]]","['CROPS_WL', 9523, 'Choufleur', 'Chou-fleur brocoli', 2, 95.0]",2.0,95.0
+Choux – légumes/Céleri vert (consommation au frais),9548,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choux légumesCéleri vert,[],[],,
+Choux rouge (consommation au frais),9527,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choux rouge,[],[],,
+Choux rouge (transformation industrielle),8527,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Choux rouge,[],[],,
+Chou blanc (transformation industrielle),8540,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou blanc,[],[],,
+Chou blanc (consommation au frais),9540,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou blanc,[],[],,
+Chou frisé (transformation industrielle),8524,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou frisé,[],[],,
+Chou de Milan ( transformation industrielle),8546,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou de Milan,[],[],,
 Chou chinois,8526,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Chou chinois,[],[],,
-Courgettes ( consommation au frais),9541,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courgettes consommation au frais,[],[],,
-Courgettes (transformation industrielle),8541,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courgettes transformation industrielle,[],[],,
-Courges butternut ( consommation au frais),9456,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courges butternut consommation au frais,[],[],,
-Courges butternut (transformation industrielle),8456,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courges butternut transformation industrielle,[],[],,
+Courgettes ( consommation au frais),9541,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courgettes,[],[],,
+Courgettes (transformation industrielle),8541,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courgettes,[],[],,
+Courges butternut ( consommation au frais),9456,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courges butternut,[],[],,
+Courges butternut (transformation industrielle),8456,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Courges butternut,[],[],,
 Echalotes en frais,9513,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Echalotes en frais,[],[],,
 Echalotes industrielle,8513,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Echalotes industrielle,[],[],,
-Endives de Bruxelles (pour la racine) (transformation industrielle),8561,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Endives de Bruxelles pour la racine transformation industrielle,[],[],,
-Endives (chicons),9515,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Endives chicons,[],[],,
-Epinards (consommation au frais),9519,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Epinards consommation au frais,"[['CROPS_WL', 9519, 'Epinards (consommation au frais)', 'Epinards', 2, 100]]","['CROPS_WL', 9519, 'Epinards (consommation au frais)', 'Epinards', 2, 100]",2.0,100.0
-Epinards ( transformation industrielle),8519,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Epinards transformation industrielle,"[['CROPS_WL', 8519, 'Epinards ( transformation industrielle)', 'Epinards', 2, 100]]","['CROPS_WL', 8519, 'Epinards ( transformation industrielle)', 'Epinards', 2, 100]",2.0,100.0
-Fenouil ( de Florence) ( consommation au frais),9534,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Fenouil de Florence consommation au frais,[],[],,
-Fenouil (de Florence) ( transformation industrielle),8534,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Fenouil de Florence transformation industrielle,[],[],,
-Fleurs et plantes ornementales sous serre,9588,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Fleurs plantes ornementales sous serre,"[['CROPS_WL', 9588, 'Fleurs et plantes ornementales sous serre', 'Fleur', 9, 91]]","['CROPS_WL', 9588, 'Fleurs et plantes ornementales sous serre', 'Fleur', 9, 91]",9.0,91.0
+Endives de Bruxelles (pour la racine) (transformation industrielle),8561,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Endives de Bruxelles,[],[],,
+Endives (chicons),9515,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Endives,[],[],,
+Epinards (consommation au frais),9519,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Epinards,"[['CROPS_WL', 9519, 'Epinards', 'Epinards', 2, 100.0]]","['CROPS_WL', 9519, 'Epinards', 'Epinards', 2, 100.0]",2.0,100.0
+Epinards ( transformation industrielle),8519,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Epinards,"[['CROPS_WL', 8519, 'Epinards', 'Epinards', 2, 100.0]]","['CROPS_WL', 8519, 'Epinards', 'Epinards', 2, 100.0]",2.0,100.0
+Fenouil ( de Florence) ( consommation au frais),9534,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Fenouil,[],[],,
+Fenouil (de Florence) ( transformation industrielle),8534,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Fenouil,[],[],,
+Fleurs et plantes ornementales sous serre,9588,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Fleurs plantes ornementales sous serre,[],[],,
 Plants de fraisiers de plein air,9724,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Plants de fraisiers de plein air,[],[],,
-Cultures fruitières annuelles- Fraises sous serres,8516,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitières annuelles Fraises sous serres,"[['CROPS_WL', 8516, 'Cultures fruitières annuelles- Fraises sous serres', 'Fraises', 3, 100]]","['CROPS_WL', 8516, 'Cultures fruitières annuelles- Fraises sous serres', 'Fraises', 3, 100]",3.0,100.0
-Haricots de conserverie,9410,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Haricots de conserverie,"[['CROPS_WL', 9410, 'Haricots de conserverie', 'Haricots', 7, 100]]","['CROPS_WL', 9410, 'Haricots de conserverie', 'Haricots', 7, 100]",7.0,100.0
-Haricots verts (transformation industrielle),8410,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Haricots verts transformation industrielle,"[['CROPS_WL', 8410, 'Haricots verts (transformation industrielle)', 'Haricots', 7, 100]]","['CROPS_WL', 8410, 'Haricots verts (transformation industrielle)', 'Haricots', 7, 100]",7.0,100.0
-Laitues pommées (consommation au frais),9518,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Laitues pommées consommation au frais,"[['CROPS_WL', 9518, 'Laitues pommées (consommation au frais)', 'Laitue', 2, 92]]","['CROPS_WL', 9518, 'Laitues pommées (consommation au frais)', 'Laitue', 2, 92]",2.0,92.0
-Laitues pommées (transformation industrielle),8518,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Laitues pommées transformation industrielle,"[['CROPS_WL', 8518, 'Laitues pommées (transformation industrielle)', 'Laitue', 2, 92]]","['CROPS_WL', 8518, 'Laitues pommées (transformation industrielle)', 'Laitue', 2, 92]",2.0,92.0
+Cultures fruitières annuelles- Fraises sous serres,8516,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures fruitières annuelles Fraises sous serres,[],[],,
+Haricots de conserverie,9410,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Haricots de conserverie,[],[],,
+Haricots verts (transformation industrielle),8410,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Haricots verts,[],[],,
+Laitues pommées (consommation au frais),9518,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Laitues pommées,[],[],,
+Laitues pommées (transformation industrielle),8518,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Laitues pommées,[],[],,
 Légume légumineuse,966,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Légume légumineuse,[],[],,
-Navets fourragers,746,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Navets fourragers,"[['CROPS_WL', 746, 'Navets fourragers', 'Navets', 2, 100]]","['CROPS_WL', 746, 'Navets fourragers', 'Navets', 2, 100]",2.0,100.0
-Oignons (hâtifs) (transformation industrielle),8563,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons hâtifs transformation industrielle,[],[],,
-Oignons (non hâtifs) ( transformation industrielle),8514,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons non hâtifs transformation industrielle,[],[],,
-Oignons (hâtifs) (consommation au frais),9563,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons hâtifs consommation au frais,[],[],,
-Oignons (non hâtifs) (consommation au frais),9514,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons non hâtifs consommation au frais,[],[],,
+Navets fourragers,746,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Navets fourragers,[],[],,
+Oignons (hâtifs) (transformation industrielle),8563,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons,"[['CROPS_WL', 8563, 'Oignons', 'Oignons et échalotes', 2, 100.0]]","['CROPS_WL', 8563, 'Oignons', 'Oignons et échalotes', 2, 100.0]",2.0,100.0
+Oignons (non hâtifs) ( transformation industrielle),8514,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons,"[['CROPS_WL', 8514, 'Oignons', 'Oignons et échalotes', 2, 100.0]]","['CROPS_WL', 8514, 'Oignons', 'Oignons et échalotes', 2, 100.0]",2.0,100.0
+Oignons (hâtifs) (consommation au frais),9563,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons,"[['CROPS_WL', 9563, 'Oignons', 'Oignons et échalotes', 2, 100.0]]","['CROPS_WL', 9563, 'Oignons', 'Oignons et échalotes', 2, 100.0]",2.0,100.0
+Oignons (non hâtifs) (consommation au frais),9514,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Oignons,"[['CROPS_WL', 9514, 'Oignons', 'Oignons et échalotes', 2, 100.0]]","['CROPS_WL', 9514, 'Oignons', 'Oignons et échalotes', 2, 100.0]",2.0,100.0
 Pépinières de plants forestiers,9560,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Pépinières de plants forestiers,[],[],,
 Pépinières de plants fruitiers ou de plantes ornementales,9520,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Pépinières de plants fruitiers de plantes ornementales,[],[],,
-Persil ( consommation au frais),959,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Persil consommation au frais,[],[],,
-Persil (transformation industrielle),859,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Persil transformation industrielle,[],[],,
+Persil ( consommation au frais),959,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Persil,[],[],,
+Persil (transformation industrielle),859,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Persil,[],[],,
 Plantes aromatiques,953,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Plantes aromatiques,[],[],,
 Plantes vivaces ornementales de plein air,9584,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Plantes vivaces ornementales de plein air,[],[],,
-Poireau (consommation au frais),9538,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Poireau consommation au frais,[],[],,
-Poireau (transformation industrielle),8538,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Poireau transformation industrielle,[],[],,
-"Pois récoltés à l’état frais, pois de conserverie",931,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Pois récoltés à létat frais pois de conserverie,"[['CROPS_WL', 931, 'Pois récoltés à l’état frais, pois de conserverie', 'Pois', 7, 100]]","['CROPS_WL', 931, 'Pois récoltés à l’état frais, pois de conserverie', 'Pois', 7, 100]",7.0,100.0
-Pois (autres que récoltés secs) (transformation industrielle),831,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Pois que récoltés secs transformation industrielle,"[['CROPS_WL', 831, 'Pois (autres que récoltés secs) (transformation industrielle)', 'Pois', 7, 100]]","['CROPS_WL', 831, 'Pois (autres que récoltés secs) (transformation industrielle)', 'Pois', 7, 100]",7.0,100.0
-Rhubarbe ( consommation au frais),9517,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Rhubarbe consommation au frais,[],[],,
-Rhubarbe ( transformation industrielle),8517,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Rhubarbe transformation industrielle,[],[],,
-Scaroles (transformation industrielle),8537,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Scaroles transformation industrielle,[],[],,
-Scaroles (consommation au frais),9537,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Scaroles consommation au frais,[],[],,
-Scorsonère (transformation industrielle),8533,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Scorsonère transformation industrielle,[],[],,
-Tomates (consommation au frais),9552,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Tomates consommation au frais,"[['CROPS_WL', 9552, 'Tomates (consommation au frais)', 'Tomates', 2, 100]]","['CROPS_WL', 9552, 'Tomates (consommation au frais)', 'Tomates', 2, 100]",2.0,100.0
-Tomates ( transformation industrielle),8552,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Tomates transformation industrielle,"[['CROPS_WL', 8552, 'Tomates ( transformation industrielle)', 'Tomates', 2, 100]]","['CROPS_WL', 8552, 'Tomates ( transformation industrielle)', 'Tomates', 2, 100]",2.0,100.0
+Poireau (consommation au frais),9538,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Poireau,"[['CROPS_WL', 9538, 'Poireau', 'Poireaux légumes alliacés', 2, 93.0]]","['CROPS_WL', 9538, 'Poireau', 'Poireaux légumes alliacés', 2, 93.0]",2.0,93.0
+Poireau (transformation industrielle),8538,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Poireau,"[['CROPS_WL', 8538, 'Poireau', 'Poireaux légumes alliacés', 2, 93.0]]","['CROPS_WL', 8538, 'Poireau', 'Poireaux légumes alliacés', 2, 93.0]",2.0,93.0
+"Pois récoltés à l’état frais, pois de conserverie",931,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Pois récoltés à létat frais pois de conserverie,[],[],,
+Pois (autres que récoltés secs) (transformation industrielle),831,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Pois,"[['CROPS_WL', 831, 'Pois', 'Pois chiches', 7, 100.0], ['CROPS_WL', 831, 'Pois', 'Pois', 7, 100.0]]","['CROPS_WL', 831, 'Pois', 'Pois chiches', 7, 100.0]",7.0,100.0
+Rhubarbe ( consommation au frais),9517,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Rhubarbe,[],[],,
+Rhubarbe ( transformation industrielle),8517,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Rhubarbe,[],[],,
+Scaroles (transformation industrielle),8537,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Scaroles,[],[],,
+Scaroles (consommation au frais),9537,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Scaroles,[],[],,
+Scorsonère (transformation industrielle),8533,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Scorsonère,[],[],,
+Tomates (consommation au frais),9552,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Tomates,"[['CROPS_WL', 9552, 'Tomates', 'Tomates', 2, 100.0]]","['CROPS_WL', 9552, 'Tomates', 'Tomates', 2, 100.0]",2.0,100.0
+Tomates ( transformation industrielle),8552,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Tomates,"[['CROPS_WL', 8552, 'Tomates', 'Tomates', 2, 100.0]]","['CROPS_WL', 8552, 'Tomates', 'Tomates', 2, 100.0]",2.0,100.0
 Cultures maraîchères sous serres ou sous protection fixe,952,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Cultures maraîchères sous serres sous protection fixe,[],[],,
 Vignes,9716,CULTURES HORTICOLES,CULTURES HORTICOLES,CULTURES HORTICOLES,Vignes,[],[],,
 Noisetier,9201,FRUITS A COQUES,FRUITS A COQUES,FRUITS A COQUES,Noisetier,[],[],,
 Noyer,9202,FRUITS A COQUES,FRUITS A COQUES,FRUITS A COQUES,Noyer,[],[],,
-Colza d’hiver,4111,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Colza dhiver,"[['CROPS_WL', 4111, 'Colza d’hiver', 'Colza', 4, 100]]","['CROPS_WL', 4111, 'Colza d’hiver', 'Colza', 4, 100]",4.0,100.0
-Navette d’hiver (graines),4112,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Navette dhiver graines,[],[],,
-Colza de printemps,4121,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Colza de printemps,"[['CROPS_WL', 4121, 'Colza de printemps', 'Colza', 4, 100]]","['CROPS_WL', 4121, 'Colza de printemps', 'Colza', 4, 100]",4.0,100.0
-Navette de printemps (graines),4122,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Navette de printemps graines,[],[],,
-Lin oléagineux,45,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Lin oléagineux,"[['CROPS_WL', 45, 'Lin oléagineux', 'Lin', 9, 100]]","['CROPS_WL', 45, 'Lin oléagineux', 'Lin', 9, 100]",9.0,100.0
+Colza d’hiver,4111,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Colza dhiver,[],[],,
+Navette d’hiver (graines),4112,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Navette dhiver,[],[],,
+Colza de printemps,4121,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Colza de printemps,[],[],,
+Navette de printemps (graines),4122,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Navette de printemps,[],[],,
+Lin oléagineux,45,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Lin oléagineux,[],[],,
 Soja,43,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Soja,[],[],,
-Tournesol,42,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Tournesol,"[['CROPS_WL', 42, 'Tournesol', 'Tournesol', 4, 100]]","['CROPS_WL', 42, 'Tournesol', 'Tournesol', 4, 100]",4.0,100.0
-Autres oléagineux*,46,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,oléagineux,[],[],,
-Chanvre textile (culture soumise à autorisation préalable au semis),922,PLANTES A FIBRES,PLANTES A FIBRES,PLANTES A FIBRES,Chanvre textile culture soumise à autorisation préalable au semis,"[['CROPS_WL', 922, 'Chanvre textile (culture soumise à autorisation préalable au semis)', 'Chanvre', 9, 100]]","['CROPS_WL', 922, 'Chanvre textile (culture soumise à autorisation préalable au semis)', 'Chanvre', 9, 100]",9.0,100.0
-Chanvre non textile (culture soumise à autorisation préalable au semis),872,PLANTES A FIBRES,PLANTES A FIBRES,PLANTES A FIBRES,Chanvre non textile culture soumise à autorisation préalable au semis,"[['CROPS_WL', 872, 'Chanvre non textile (culture soumise à autorisation préalable au semis)', 'Chanvre', 9, 100]]","['CROPS_WL', 872, 'Chanvre non textile (culture soumise à autorisation préalable au semis)', 'Chanvre', 9, 100]",9.0,100.0
-Lin textile,921,PLANTES A FIBRES,PLANTES A FIBRES,PLANTES A FIBRES,Lin textile,"[['CROPS_WL', 921, 'Lin textile', 'Lin', 9, 100]]","['CROPS_WL', 921, 'Lin textile', 'Lin', 9, 100]",9.0,100.0
-Pomme de terre (plants),902,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre plants,"[['CROPS_WL', 902, 'Pomme de terre (plants)', 'Pommes', 3, 91]]","['CROPS_WL', 902, 'Pomme de terre (plants)', 'Pommes', 3, 91]",3.0,91.0
-Pomme de terre (non hâtives),901,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre non hâtives,"[['CROPS_WL', 901, 'Pomme de terre (non hâtives)', 'Pommes', 3, 91]]","['CROPS_WL', 901, 'Pomme de terre (non hâtives)', 'Pommes', 3, 91]",3.0,91.0
-Pomme de terre féculière,903,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre féculière,"[['CROPS_WL', 903, 'Pomme de terre féculière', 'Pommes', 3, 91]]","['CROPS_WL', 903, 'Pomme de terre féculière', 'Pommes', 3, 91]",3.0,91.0
-Pomme de terre hâtives,904,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre hâtives,"[['CROPS_WL', 904, 'Pomme de terre hâtives', 'Pommes', 3, 91]]","['CROPS_WL', 904, 'Pomme de terre hâtives', 'Pommes', 3, 91]",3.0,91.0
-"Pomme de terre (primeur, arrachage avant le 20 juin)",905,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre primeur arrachage avant le 20 juin,"[['CROPS_WL', 905, 'Pomme de terre (primeur, arrachage avant le 20 juin)', 'Pommes', 3, 91]]","['CROPS_WL', 905, 'Pomme de terre (primeur, arrachage avant le 20 juin)', 'Pommes', 3, 91]",3.0,91.0
+Tournesol,42,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,Tournesol,"[['CROPS_WL', 42, 'Tournesol', 'Tournesol', 4, 100.0]]","['CROPS_WL', 42, 'Tournesol', 'Tournesol', 4, 100.0]",4.0,100.0
+Autres oléagineux*,46,OLEAGINEUX,OLEAGINEUX,OLEAGINEUX,oléagineux,"[['CROPS_WL', 46, 'oléagineux', 'Fruits oléagineux', 4, 100.0], ['CROPS_WL', 46, 'oléagineux', 'oléagineux temporaire', 4, 100.0], ['CROPS_WL', 46, 'oléagineux', 'oléagineux temporaire', 4, 100.0], ['CROPS_WL', 46, 'oléagineux', 'Oléagineux permanent', 4, 90.0], ['CROPS_WL', 46, 'oléagineux', 'fruits oléagineux', 4, 100.0]]","['CROPS_WL', 46, 'oléagineux', 'Fruits oléagineux', 4, 100.0]",4.0,100.0
+Chanvre textile (culture soumise à autorisation préalable au semis),922,PLANTES A FIBRES,PLANTES A FIBRES,PLANTES A FIBRES,Chanvre textile,[],[],,
+Chanvre non textile (culture soumise à autorisation préalable au semis),872,PLANTES A FIBRES,PLANTES A FIBRES,PLANTES A FIBRES,Chanvre non textile,[],[],,
+Lin textile,921,PLANTES A FIBRES,PLANTES A FIBRES,PLANTES A FIBRES,Lin textile,[],[],,
+Pomme de terre (plants),902,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre,"[['CROPS_WL', 902, 'Pomme de terre', 'Pommes de terre', 5, 97.0]]","['CROPS_WL', 902, 'Pomme de terre', 'Pommes de terre', 5, 97.0]",5.0,97.0
+Pomme de terre (non hâtives),901,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre,"[['CROPS_WL', 901, 'Pomme de terre', 'Pommes de terre', 5, 97.0]]","['CROPS_WL', 901, 'Pomme de terre', 'Pommes de terre', 5, 97.0]",5.0,97.0
+Pomme de terre féculière,903,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre féculière,[],[],,
+Pomme de terre hâtives,904,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre hâtives,[],[],,
+"Pomme de terre (primeur, arrachage avant le 20 juin)",905,POMMES DE TERRE,POMMES DE TERRE,POMMES DE TERRE,Pomme de terre,"[['CROPS_WL', 905, 'Pomme de terre', 'Pommes de terre', 5, 97.0]]","['CROPS_WL', 905, 'Pomme de terre', 'Pommes de terre', 5, 97.0]",5.0,97.0
 Betterave fourragère,71,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Betterave fourragère,[],[],,
 Luzerne,73,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Luzerne,[],[],,
-"Prairie permanente (taux de couverture > 90%), hors rotation depuis 5 ans****",610,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie permanente taux de couverture 90 hors rotation depuis 5 ans,"[['CROPS_WL', 610, 'Prairie permanente (taux de couverture > 90%), hors rotation depuis 5 ans****', 'permanent', 9, 95]]","['CROPS_WL', 610, 'Prairie permanente (taux de couverture > 90%), hors rotation depuis 5 ans****', 'permanent', 9, 95]",9.0,95.0
+"Prairie permanente (taux de couverture > 90%), hors rotation depuis 5 ans****",610,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie permanente hors rotation depuis 5 ans,[],[],,
 "Prairie permanente (taux de couverture > 90%),avec contrat d’aide complémentaire
-environnemental, hors rotation depuis 5 ans****",618,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,"Prairie permanente taux de couverture 90avec contrat daide complémentaire
-environnemental hors rotation depuis 5 ans","[['CROPS_WL', 618, 'Prairie permanente (taux de couverture > 90%),avec contrat d’aide complémentaire\nenvironnemental, hors rotation depuis 5 ans****', 'permanent', 9, 95]]","['CROPS_WL', 618, 'Prairie permanente (taux de couverture > 90%),avec contrat d’aide complémentaire\nenvironnemental, hors rotation depuis 5 ans****', 'permanent', 9, 95]",9.0,95.0
-"Prairie permanente (50%<taux de couverture <= 90%), hors rotation depuis 5 ans****",670,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie permanente 50taux de couverture 90 hors rotation depuis 5 ans,"[['CROPS_WL', 670, 'Prairie permanente (50%<taux de couverture <= 90%), hors rotation depuis 5 ans****', 'permanent', 9, 95]]","['CROPS_WL', 670, 'Prairie permanente (50%<taux de couverture <= 90%), hors rotation depuis 5 ans****', 'permanent', 9, 95]",9.0,95.0
+environnemental, hors rotation depuis 5 ans****",618,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,"Prairie permanente avec contrat daide complémentaire
+environnemental hors rotation depuis 5 ans",[],[],,
+"Prairie permanente (50%<taux de couverture <= 90%), hors rotation depuis 5 ans****",670,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie permanente hors rotation depuis 5 ans,[],[],,
 "Prairie permanente (50%<taux de couverture <= 90%), avec contrat d’aide
-complémentaire environnemental, hors rotation depuis 5 ans****",678,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,"Prairie permanente 50taux de couverture 90 avec contrat daide
-complémentaire environnemental hors rotation depuis 5 ans","[['CROPS_WL', 678, 'Prairie permanente (50%<taux de couverture <= 90%), avec contrat d’aide\ncomplémentaire environnemental, hors rotation depuis 5 ans****', 'permanent', 9, 95]]","['CROPS_WL', 678, 'Prairie permanente (50%<taux de couverture <= 90%), avec contrat d’aide\ncomplémentaire environnemental, hors rotation depuis 5 ans****', 'permanent', 9, 95]",9.0,95.0
-"Autres surfaces pâturées (taux de couverture <= 50%), hors rotation depuis 5 ans****",600,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,surfaces pâturées taux de couverture 50 hors rotation depuis 5 ans,[],[],,
-"Autres surfaces pâturées (taux de couverture <= 50%), avec contrat d’aide
-complémentaire environnemental, hors rotation depuis 5 ans****",608,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,"surfaces pâturées taux de couverture 50 avec contrat daide
+complémentaire environnemental, hors rotation depuis 5 ans****",678,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,"Prairie permanente avec contrat daide
 complémentaire environnemental hors rotation depuis 5 ans",[],[],,
-Prairie temporaire,62,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie temporaire,"[['CROPS_WL', 62, 'Prairie temporaire', 'temporaire', 9, 100]]","['CROPS_WL', 62, 'Prairie temporaire', 'temporaire', 9, 100]",9.0,100.0
-Prairie à vocation à devenir permanente pour les parcelles en MAEC et N2000,623,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie à vocation à devenir permanente pour les parcelles en MAEC N2000,"[['CROPS_WL', 623, 'Prairie à vocation à devenir permanente pour les parcelles en MAEC et N2000', 'permanent', 9, 95]]","['CROPS_WL', 623, 'Prairie à vocation à devenir permanente pour les parcelles en MAEC et N2000', 'permanent', 9, 95]",9.0,95.0
+"Autres surfaces pâturées (taux de couverture <= 50%), hors rotation depuis 5 ans****",600,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,surfaces pâturées hors rotation depuis 5 ans,[],[],,
+"Autres surfaces pâturées (taux de couverture <= 50%), avec contrat d’aide
+complémentaire environnemental, hors rotation depuis 5 ans****",608,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,"surfaces pâturées avec contrat daide
+complémentaire environnemental hors rotation depuis 5 ans",[],[],,
+Prairie temporaire,62,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie temporaire,[],[],,
+Prairie à vocation à devenir permanente pour les parcelles en MAEC et N2000,623,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Prairie à vocation à devenir permanente pour les parcelles en MAEC N2000,[],[],,
 Trèfles,72,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Trèfles,[],[],,
-Carotte,7433,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Carotte,"[['CROPS_WL', 7433, 'Carotte', 'Carottes', 2, 93]]","['CROPS_WL', 7433, 'Carotte', 'Carottes', 2, 93]",2.0,93.0
-Carottes fourragères,742,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Carottes fourragères,"[['CROPS_WL', 742, 'Carottes fourragères', 'Carottes', 2, 100]]","['CROPS_WL', 742, 'Carottes fourragères', 'Carottes', 2, 100]",2.0,100.0
+Carotte,7433,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Carotte,"[['CROPS_WL', 7433, 'Carotte', 'Carottes', 2, 93.0]]","['CROPS_WL', 7433, 'Carotte', 'Carottes', 2, 93.0]",2.0,93.0
+Carottes fourragères,742,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Carottes fourragères,[],[],,
 Autres fourrages*,743,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,fourrages,[],[],,
-Fèves et Féveroles d’hiver,521,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Fèves Féveroles dhiver,"[['CROPS_WL', 521, 'Fèves et Féveroles d’hiver', 'Fèves', 7, 100]]","['CROPS_WL', 521, 'Fèves et Féveroles d’hiver', 'Fèves', 7, 100]",7.0,100.0
-Fèves et Féveroles de printemps,522,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Fèves Féveroles de printemps,"[['CROPS_WL', 522, 'Fèves et Féveroles de printemps', 'Fèves', 7, 100]]","['CROPS_WL', 522, 'Fèves et Féveroles de printemps', 'Fèves', 7, 100]",7.0,100.0
-Lotier corniculé (Lotus corniculatis),57,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Lotier corniculé Lotus corniculatis,[],[],,
-Lupin doux,53,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Lupin doux,"[['CROPS_WL', 53, 'Lupin doux', 'Lupin', 7, 100]]","['CROPS_WL', 53, 'Lupin doux', 'Lupin', 7, 100]",7.0,100.0
+Fèves et Féveroles d’hiver,521,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Fèves Féveroles dhiver,[],[],,
+Fèves et Féveroles de printemps,522,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Fèves Féveroles de printemps,[],[],,
+Lotier corniculé (Lotus corniculatis),57,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Lotier corniculé,[],[],,
+Lupin doux,53,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Lupin doux,[],[],,
 Luzerne lupuline,56,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Luzerne lupuline,[],[],,
-Mélange protéagineux d'hiver + céréales ou autres espèces,541,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Mélange protéagineux dhiver céréales espèces,"[['CROPS_WL', 541, ""Mélange protéagineux d'hiver + céréales ou autres espèces"", 'céréales', 1, 100]]","['CROPS_WL', 541, ""Mélange protéagineux d'hiver + céréales ou autres espèces"", 'céréales', 1, 100]",1.0,100.0
-Mélange protéagineux de printemps + céréales ou autres espèces,542,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Mélange protéagineux de printemps céréales espèces,"[['CROPS_WL', 542, 'Mélange protéagineux de printemps + céréales ou autres espèces', 'céréales', 1, 100]]","['CROPS_WL', 542, 'Mélange protéagineux de printemps + céréales ou autres espèces', 'céréales', 1, 100]",1.0,100.0
-Mélange légumineuses fourragères + graminées prairiales,543,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Mélange légumineuses fourragères graminées prairiales,"[['CROPS_WL', 543, 'Mélange légumineuses fourragères + graminées prairiales', 'Légumineuses', 7, 92], ['CROPS_WL', 543, 'Mélange légumineuses fourragères + graminées prairiales', 'Légumineuses', 7, 92]]","['CROPS_WL', 543, 'Mélange légumineuses fourragères + graminées prairiales', 'Légumineuses', 7, 92]",7.0,92.0
-Pois protéagineux d’hiver,511,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Pois protéagineux dhiver,"[['CROPS_WL', 511, 'Pois protéagineux d’hiver', 'Pois', 7, 100]]","['CROPS_WL', 511, 'Pois protéagineux d’hiver', 'Pois', 7, 100]",7.0,100.0
-Pois protéagineux de printemps,512,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Pois protéagineux de printemps,"[['CROPS_WL', 512, 'Pois protéagineux de printemps', 'Pois', 7, 100]]","['CROPS_WL', 512, 'Pois protéagineux de printemps', 'Pois', 7, 100]",7.0,100.0
-Sainfoin ( Onobrychis sativa),58,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Sainfoin Onobrychis sativa,[],[],,
+Mélange protéagineux d'hiver + céréales ou autres espèces,541,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Mélange protéagineux dhiver céréales espèces,[],[],,
+Mélange protéagineux de printemps + céréales ou autres espèces,542,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Mélange protéagineux de printemps céréales espèces,[],[],,
+Mélange légumineuses fourragères + graminées prairiales,543,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Mélange légumineuses fourragères graminées prairiales,[],[],,
+Pois protéagineux d’hiver,511,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Pois protéagineux dhiver,[],[],,
+Pois protéagineux de printemps,512,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Pois protéagineux de printemps,[],[],,
+Sainfoin ( Onobrychis sativa),58,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,Sainfoin,[],[],,
 Autres protéagineux*,55,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,PRODUCTIONS FOURRAGERES,protéagineux,[],[],,
 Angél i que,881,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Angél i que,[],[],,
 Betterave sucrière,91,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Betterave sucrière,"[['CROPS_WL', 91, 'Betterave sucrière', 'Betterave sucrière', 8, 100.0]]","['CROPS_WL', 91, 'Betterave sucrière', 'Betterave sucrière', 8, 100.0]",8.0,100.0
-Chicorée à inuline,9811,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Chicorée à inuline,"[['CROPS_WL', 9811, 'Chicorée à inuline', 'Chicorée', 2, 100]]","['CROPS_WL', 9811, 'Chicorée à inuline', 'Chicorée', 2, 100]",2.0,100.0
-Chicorée à café,9812,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Chicorée à café,"[['CROPS_WL', 9812, 'Chicorée à café', 'Chicorée', 2, 100]]","['CROPS_WL', 9812, 'Chicorée à café', 'Chicorée', 2, 100]",2.0,100.0
+Chicorée à inuline,9811,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Chicorée à inuline,[],[],,
+Chicorée à café,9812,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Chicorée à café,[],[],,
 Jachère herbacée,811,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Jachère herbacée,[],[],,
 Jachère NON herbacée,812,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Jachère NON herbacée,[],[],,
 Jachère mellifère,813,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Jachère mellifère,[],[],,
-Cultures forestières à rotation courte (taillis à très courte rotation),883,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Cultures forestières à rotation courte taillis à très courte rotation,[],[],,
+Cultures forestières à rotation courte (taillis à très courte rotation),883,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Cultures forestières à rotation courte,[],[],,
 Multiplication de semences en mode de production biologique*,821,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Multiplication de semences en mode de production biologique,[],[],,
-Houblon,9822,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Houblon,"[['CROPS_WL', 9822, 'Houblon', 'Houblon', 6, 100]]","['CROPS_WL', 9822, 'Houblon', 'Houblon', 6, 100]",6.0,100.0
+Houblon,9822,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Houblon,"[['CROPS_WL', 9822, 'Houblon', 'Houblon', 6, 100.0]]","['CROPS_WL', 9822, 'Houblon', 'Houblon', 6, 100.0]",6.0,100.0
 Miscanthus,884,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Miscanthus,[],[],,
 Ortie,7431,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Ortie,[],[],,
 Plantes aromatiques,953,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Plantes aromatiques,[],[],,
 Plantes médicinales,957,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Plantes médicinales,[],[],,
-Tabac,9821,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Tabac,"[['CROPS_WL', 9821, 'Tabac', 'Tabac', 9, 100]]","['CROPS_WL', 9821, 'Tabac', 'Tabac', 9, 100]",9.0,100.0
+Tabac,9821,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Tabac,"[['CROPS_WL', 9821, 'Tabac', 'Tabac', 9, 100.0]]","['CROPS_WL', 9821, 'Tabac', 'Tabac', 9, 100.0]",9.0,100.0
 Couvert à finalité environnementale rémunéré par des tiers privés,874,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Couvert à finalité environnementale rémunéré par des tiers privés,[],[],,
 Tounière enherbée,751,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Tounière enherbée,[],[],,
 "Bande/parcelle aménagée MAE – MC7, MC8",754,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Bandeparcelle aménagée MAE MC7 MC8,[],[],,
 Bande bordure de champ,752,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Bande bordure de champ,[],[],,
-Parcours BIO (volaille ou porc),760,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Parcours BIO volaille porc,[],[],,
+Parcours BIO (volaille ou porc),760,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,Parcours BIO,[],[],,
 Autres couverts semés *,85,AUTRES UTILISATIONS DU SOL,AUTRES UTILISATIONS DU SOL,UTILISATIONS DU SOL,couverts semés,[],[],,

@@ -61,13 +61,14 @@ parser.add_argument('-d', type=json.loads)
 #                    action = keyvalue)
 #mydict = args.d
 #print(mydict)
+
 '''args = parser.parse_args()
 args.__dict__.update(d)'''
 
 args = parser.parse_args()
-with open('dict.json') as json_file:
-    #json to dict
-    args.__dict__.update(json.load(json_file))
+#with open('dict.json') as json_file:
+#    #json to dict
+#    args.__dict__.update(json.load(json_file))
 
 # Execute parse_args()
 #argparse_dict = vars(args)
