@@ -4,14 +4,14 @@ from converter import *
 from optimal_threshold import *
 import json
 
-'''d = {
-    "f": "converter", 
+d = {
+    "f": "optimal_threshold", 
     "pa": "../../data/FR/FR_2020.csv", 
     "pl": "FR", 
     "l": "fr", 
-    "s": "token_set_ratio",
+    "s": "split+ratio+symetric",
     "t": 80
-}'''
+}
 
 class keyvalue(argparse.Action):
     # Constructor calling
@@ -30,8 +30,7 @@ class keyvalue(argparse.Action):
 parser = argparse.ArgumentParser(description = 'arguments for converter tool',fromfile_prefix_chars='@')
 
 parser.add_argument('-f',
-                    help='the function', 
-                    required = True)
+                    help='the function')
 
 parser.add_argument('-pa',
                     help='the path to the source classification')
@@ -61,23 +60,13 @@ parser.add_argument('-d', type=json.loads)
 #                    action = keyvalue)
 #mydict = args.d
 #print(mydict)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
 '''args = parser.parse_args()
 args.__dict__.update(d)'''
 
 args = parser.parse_args()
-<<<<<<< HEAD
 #with open('dict.json') as json_file:
 #    #json to dict
 #    args.__dict__.update(json.load(json_file))
-=======
-with open('dict.json') as json_file:
-    #json to dict
-    args.__dict__.update(json.load(json_file))
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
 
 # Execute parse_args()
 #argparse_dict = vars(args)

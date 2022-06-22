@@ -1,0 +1,120 @@
+,ID_CROPS_FR,GROUP_FR,CROPS_FR,ICC1.1,Nicolas_match,Bertille_match,same,good,rem
+52,SOJ,Autres olagineux,Soja,4.01,4.0,3,False,4,
+76,BVF,Fourrage,Betterave fourragre,8.01,8.0,9,False,,fourrage ?
+77,CAF,Fourrage,Carotte fourragre,2.03.01,2.0,9,False,,fourrage ?
+78,CHF,Fourrage,Chou fourrager,2.01.03,2.0,9,False,,fourrage ?
+79,CPL,Fourrage,Fourrage compos de crales et/ou de protagineux (en proportion <ÿ50%) et/ou de lgumineuses fourragres (en proportion < 50%),,,9,False,,fourrage ?
+81,FAG,Fourrage,Autre fourrage annuel d'un autre genre,,,9,False,,fourrage ?
+83,FF5,Fourrage,Fverole fourragre implante pour la rcolte 2015,7.02,7.0,9,False,,fourrage ?
+84,FF6,Fourrage,Fverole fourragre implante pour la rcolte 2016,7.02,7.0,9,False,,fourrage ?
+85,FF7,Fourrage,Fverole fourragre implante pour la rcolte 2017,7.02,7.0,9,False,,fourrage ?
+86,FF8,Fourrage,Fverole fourragre implante pour la rcolte 2018,7.02,7.0,9,False,,fourrage ?
+87,FFO,Fourrage,Autre fverole fourragre,7.02,7.0,9,False,,fourrage ?
+89,FSG,Fourrage,Autre plante fourragre sarcle d'un autre genre,2.01 2.03,2.0,9,False,,fourrage ?
+91,GES,Fourrage,Gesse,7.10ÿ 7.90,7.0,9,False,,fourrage ?
+93,JO5,Fourrage,Jarosse implante pour la rcolte 2015,7.10ÿ 7.90,7.0,9,False,,fourrage ?
+94,JO6,Fourrage,Jarosse implante pour la rcolte 2016,7.10ÿ 7.90,7.0,9,False,,fourrage ?
+95,JO7,Fourrage,Jarosse implante pour la rcolte 2017,7.10ÿ 7.90,7.0,9,False,,fourrage ?
+96,JO8,Fourrage,Jarosse implante pour la rcolte 2018,7.10ÿ 7.90,7.0,9,False,,fourrage ?
+97,JOD,Fourrage,Jarosse dshydrate,7.10ÿ 7.90,7.0,9,False,,fourrage ?
+98,JOS,Fourrage,Autre jarosse,7.10ÿ 7.90,7.0,9,False,,fourrage ?
+99,LEF,Fourrage,Lentille fourragre,7.05,7.0,9,False,,fourrage ?
+100,LFH,Fourrage,Autre lupin fourrager d'hiver,7.06,7.0,9,False,,fourrage ?
+101,LFP,Fourrage,Autre lupin fourrager de printemps,7.06,7.0,9,False,,fourrage ?
+102,LH5,Fourrage,Lupin fourrager d'hiver implant pour la rcolte 2015,7.06,7.0,9,False,,fourrage ?
+103,LH6,Fourrage,Lupin fourrager d'hiver implant pour la rcolte 2016,7.06,7.0,9,False,,fourrage ?
+104,LH7,Fourrage,Lupin fourrager d'hiver implant pour la rcolte 2017,7.06,7.0,9,False,,fourrage ?
+105,LH8,Fourrage,Lupin fourrager d'hiver implant pour la rcolte 2018,7.06,7.0,9,False,,fourrage ?
+109,LP5,Fourrage,Lupin fourrager de printemps implant pour la rcolte 2015,7.06,7.0,9,False,,fourrage ?
+110,LP6,Fourrage,Lupin fourrager de printemps implant pour la rcolte 2016,7.06,7.0,9,False,,fourrage ?
+111,LP7,Fourrage,Lupin fourrager de printemps implant pour la rcolte 2017,7.06,7.0,9,False,,fourrage ?
+112,LP8,Fourrage,Lupin fourrager de printemps implant pour la rcolte 2018,7.06,7.0,9,False,,fourrage ?
+119,MC5,Fourrage,Mlange de lgumineuses fourragres prpondrantes au semis implantes pour la rcolte 2015 et de crales,7.90,7.0,9,False,,fourrage ?
+120,MC6,Fourrage,Mlange de lgumineuses fourragres prpondrantes au semis implantes pour la rcolte 2016 et de crales,7.90,7.0,9,False,,fourrage ?
+121,MC7,Fourrage,Mlange de lgumineuses fourragres prpondrantes au semis implantes pour la rcolte 2017 et de crales,7.90,7.0,9,False,,fourrage ?
+122,MC8,Fourrage,Mlange de lgumineuses fourragres prpondrantes implantes pour la rcolte 2018 et de crales et d'olagineux,7.90,7.0,9,False,,fourrage ?
+129,MH5,Fourrage,Mlange de lgumineuses fourragres prpondrantes au semis implantes pour la rcolte 2015 et d'herbaces ou de gramines fourragres,7.90,7.0,9,False,,fourrage ?
+130,MH6,Fourrage,Mlange de lgumineuses fourragres prpondrantes au semis implantes pour la rcolte 2016 et d'herbaces ou de gramines fourragres,7.90,7.0,9,False,,fourrage ?
+131,MH7,Fourrage,Mlange de lgumineuses fourragres prpondrantes au semis implantes pour la rcolte 2017 et d'herbaces ou de gramines fourragres,7.90,7.0,9,False,,fourrage ?
+135,ML5,Fourrage,Mlange de lgumineuses fourragres implantes pour la rcolte 2015 (entre elles),7.90,7.0,9,False,,fourrage ?
+136,ML6,Fourrage,Mlange de lgumineuses fourragres implantes pour la rcolte 2016 (entre elles),7.90,7.0,9,False,,fourrage ?
+137,ML7,Fourrage,Mlange de lgumineuses fourragres implantes pour la rcolte 2017 (entre elles),7.90,7.0,9,False,,fourrage ?
+138,ML8,Fourrage,Mlange de lgumineuses fourragres implantes pour la rcolte 2018 (entre elles),7.90,7.0,9,False,,fourrage ?
+139,MLC,Fourrage,Mlange de lgumineuses fourragres prpondrantes et de crales et/ou d'olagineux,7.90,7.0,9,False,,fourrage ?
+140,MLD,Fourrage,Mlange de lgumineuses dshydrates (entre elles),7.90,7.0,9,False,,fourrage ?
+141,MLF,Fourrage,Mlange de lgumineuses fourragres (entre elles),7.90,7.0,9,False,,fourrage ?
+142,MLG,Fourrage,Mlange de lgumineuses prpondrantes au semis et de gramines fourragres de 5 ans ou moins,7.90,7.0,9,False,,fourrage ?
+143,MOH,Fourrage,Moha,1.08,1.0,9,False,,fourrage ?
+144,NVF,Fourrage,Navet fourrager,2.03.02,2.0,9,False,,fourrage ?
+146,PFH,Fourrage,Autre pois fourrager d'hiver,7.07,7.0,9,False,,fourrage ?
+147,PFP,Fourrage,Autre pois fourrager de printemps,7.07,7.0,9,False,,fourrage ?
+148,PH5,Fourrage,Pois fourrager d'hiver implant pour la rcolte 2015,7.07,7.0,9,False,,fourrage ?
+149,PH6,Fourrage,Pois fourrager d'hiver implant pour la rcolte 2016,7.07,7.0,9,False,,fourrage ?
+150,PH7,Fourrage,Pois fourrager d'hiver implant pour la rcolte 2017,7.07,7.0,9,False,,fourrage ?
+151,PH8,Fourrage,Pois fourrager d'hiver implant pour la rcolte 2018,7.07,7.0,9,False,,fourrage ?
+152,PP5,Fourrage,Pois fourrager de printemps implant pour la rcolte 2015,7.07,7.0,9,False,,fourrage ?
+153,PP6,Fourrage,Pois fourrager de printemps implant pour la rcolte 2016,7.07,7.0,9,False,,fourrage ?
+154,PP7,Fourrage,Pois fourrager de printemps implant pour la rcolte 2017,7.07,7.0,9,False,,fourrage ?
+155,PP8,Fourrage,Pois fourrager de printemps implant pour la rcolte 2018,7.07,7.0,9,False,,fourrage ?
+156,RDF,Fourrage,Radis fourrager,2.03.90,2.0,9,False,,fourrage ?
+175,VE5,Fourrage,Vesce implante pour la rcolte 2015,7.10,7.0,9,False,,fourrage ?
+176,VE6,Fourrage,Vesce implante pour la rcolte 2016,7.10,7.0,9,False,,fourrage ?
+177,VE7,Fourrage,Vesce implante pour la rcolte 2017,7.10,7.0,9,False,,fourrage ?
+178,VE8,Fourrage,Vesce implante pour la rcolte 2018,7.10,7.0,9,False,,fourrage ?
+179,VED,Fourrage,Vesce dshydrate,7.10,7.0,9,False,,fourrage ?
+180,VES,Fourrage,Autre vesce,7.10,7.0,9,False,,fourrage ?
+181,XFE,Fourrage,X-Felium de 5 ans ou moins,#indef,,9,False,-,
+182,BOP,Estives et landes,Bois ptur,#indef,,9,False,-,
+202,CAC,Vergers,Caf / Cacao,6.01,6.0,3,False,6,
+220,ANE,Autres cultures industrielles,Aneth,6.02.02.90,6.0,9,False,6,
+221,ANG,Autres cultures industrielles,Anglique,6.02.02.90,6.0,9,False,6,
+225,BRH,Autres cultures industrielles,Bourrache de 5 ans ou moins,#indef,,9,False,-,
+226,BTN,Autres cultures industrielles,Betterave non fourragre / Bette,8.01,8.0,2,False,8,
+229,CIB,Autres cultures industrielles,Ciboulette,,,9,False,6,
+230,CML,Autres cultures industrielles,Cameline,4.03.90,4.0,9,False,4,
+232,CRD,Autres cultures industrielles,Coriandre,6.02.01.90,6.0,9,False,6,
+233,CRF,Autres cultures industrielles,Cerfeuil,6.02.01.90,6.0,9,False,6,
+236,EST,Autres cultures industrielles,Estragon,6.02.02.90,6.0,9,False,6,
+238,FNU,Autres cultures industrielles,Fenugrec,7.90,7.0,9,False,6,
+241,MAV,Autres cultures industrielles,Mauve,#indef,,9,False,-,
+242,MLI,Autres cultures industrielles,Mlisse,6.02.02.90,6.0,9,False,6,
+245,MRJ,Autres cultures industrielles,Marjolaine / Origan,6.02.02.90,6.0,9,False,6,
+248,OSE,Autres cultures industrielles,Oseille,#indef,,9,False,-,
+249,PAR,Autres cultures industrielles,Plante aromatique (autre que vanille),6.02,6.0,9,False,6,
+251,PPA,Autres cultures industrielles,Autre plante  parfum aromatique et mdicinale annuelle,#indef,,9,False,-,
+253,PPP,Autres cultures industrielles,Autre plante  parfum aromatique et mdicinale prenne,#indef,,9,False,-,
+254,PSL,Autres cultures industrielles,Persil,6.02.01.90,6.0,9,False,6,
+257,ROM,Autres cultures industrielles,Romarin,6.02.02.90,6.0,9,False,6,
+258,SGE,Autres cultures industrielles,Sauge,6.02.01.90,6.0,9,False,6,
+261,THY,Autres cultures industrielles,Thym,6.02.02.90,6.0,9,False,6,
+281,CRN,Lgumes ou fleurs,Cornille,7.04,7.0,2,False,7,
+283,CSS,Lgumes ou fleurs,Culture sous serre hors sol,#indef,,2,False,-,
+284,DOL,Lgumes ou fleurs,Dolique,7.04,7.0,2,False,7,
+286,FLA,Lgumes ou fleurs,Autre lgume ou fruit annuel,#indef,,2,False,-,
+287,FLP,Lgumes ou fleurs,Autre lgume ou fruit prenne,#indef,,2,False,-,
+288,FRA,Lgumes ou fleurs,Fraise,3.04.05,3.0,2,False,3,
+294,LSA,Lgumes ou fleurs,Lgume sous abri,#indef,,2,False,-,
+306,PPO,Lgumes ou fleurs,Petits pois,7.07,7.0,2,False,7,
+309,PTF,Lgumes ou fleurs,Pomme de terre fculire,5.01,5.0,2,False,5,
+316,TOP,Lgumes ou fleurs,Topinambour,5.90,5.0,2,False,5,
+323,ACA,Divers,Autre culture non prcise dans la liste (admissible),#indef,,9,False,-,
+324,BFP,Divers,Bande admissible le long d'une fort avec production,#exclude,,9,False,-,
+325,BFS,Divers,Bande admissible le long d'une fort sans production,#exclude,,9,False,-,
+326,BOR,Divers,Bordure de champ,#exclude,,9,False,-,
+328,BTA,Divers,Bande tampon,#exclude,,9,False,-,
+329,CAE,Divers,Chtaigneraie entretenue par des porcins ou des petits ruminants,3.06.03,3.0,9,False,3,
+330,CEE,Divers,Chnaie entretenue par des porcins ou des petits ruminants,3.06.90,3.0,9,False,3,
+331,CNE,Divers,Chnaie non entretenue par des porcins ou des petits ruminants,3.06.90,3.0,9,False,3,
+332,CID,Divers,Cultures conduites en interrangsÿ: 2 cultures reprsentant chacune plus de 25%,#exclude,,9,False,-,
+333,CIT,Divers,Cultures conduites en interrangsÿ: 3 cultures reprsentant chacune plus de 25%,#exclude,,9,False,-,
+334,CUA,Divers,Culture sous abattis,#exclude,,9,False,-,
+336,MPA,Divers,Autre mlange de plantes fixant l'azote,#exclude,,9,False,-,
+337,MRS,Divers,Marais salant,#exclude,,9,False,-,
+338,NYG,Divers,Nyger,4.03.04,4.0,9,False,4,
+340,PEP,Divers,Ppinire,#exclude,,9,False,-,
+342,SBO,Divers,Surface boise sur une ancienne terre agricole,#exclude,,9,False,-,
+343,SNA,Divers,Surface non agricole non visible sur l'orthophotographie,#exclude,,9,False,-,
+344,SNE,Divers,Surface agricole temporairement non exploite,#exclude,,9,False,-,
+346,TCR,Divers,Taillis  courte rotation,#exclude,,9,False,-,
+349,ZZZ,Divers,Culture inconnue,#exclude,,9,False,-,
+350,MLS,Protagineux,Mlange de lgumineuses non fourragres prpondrantes et de crales et/ou d'olagineux,#exclude,,7,False,-,

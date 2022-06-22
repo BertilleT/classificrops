@@ -5,10 +5,7 @@ import pandas as pd
 import deepl
 from fuzzywuzzy import fuzz
 import numpy as np
-<<<<<<< HEAD
 from pathlib import Path
-=======
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
 
 def filter(df, col, filters):
     df[col+'_filtered'] = df[col].str.replace(r"[\(\[].*?[\)\]]", '', regex=True)
@@ -73,7 +70,7 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
             if len(trg_l) == 1 :
                 #ranger r par ordre de similarité décroissante 
                 sorted_r = r.sort_values(["sim"], ascending=False)
-                #selectionner premier elment de r
+                #selectionner premier element de r
                 nb = sorted_r.iloc[0,1]
             else : 
                 total = r['sim'].sum()
@@ -110,11 +107,7 @@ def match_df_df(place, lg,src_df,icc_df,threshold,sim_method):
     c = 'GROUP_' + place
     src_df2 = src_df.drop_duplicates(subset = ['ID_GROUP_' + place])
     #create a column match in srcDf2 to store the match
-<<<<<<< HEAD
     src_df2['match'] = src_df2.apply(lambda x: match_row_df(lg,c, x['ID_' + c], x[c+ '_filtered'],icc_df,threshold,sim_method), axis=1)
-=======
-    src_df2['match'] = src_df2.apply(lambda x: match_row_df(lg,c, x['ID_' + c], x[c],icc_df,threshold,sim_method), axis=1)
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
     #spread the match identifies in src_df2 with unique values of group to the source dataframe. 
     #src_df['match'] = src_df2.apply(lambda x: spread(place, src_df,x), axis=1)
     src_df['match'] = src_df.apply(lambda x: spread(place, src_df2,x), axis=1)
@@ -123,11 +116,7 @@ def match_df_df(place, lg,src_df,icc_df,threshold,sim_method):
     #--------------------------------------------
     c = 'CROPS_' + place
     #in srcv_df2 concatenate the result already get in match at column level + the match get at crops level
-<<<<<<< HEAD
     src_df['match'] = src_df.apply(lambda x: x['match'] + match_row_df(lg,c, x['ID_' + c], x[c+ '_filtered'],icc_df,threshold,sim_method), axis=1)
-=======
-    src_df['match'] = src_df.apply(lambda x: x['match'] + match_row_df(lg,c, x['ID_' + c], x[c],icc_df,threshold,sim_method), axis=1)
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
     return src_df['match']
 
 def max(matches_list):
@@ -137,13 +126,8 @@ def max(matches_list):
             t = l
     return t
 
-<<<<<<< HEAD
 def compare(handmade_path,computed,threshold):
     handmade = pd.read_csv(handmade_path)
-=======
-def compare(pathHandMade,computed,threshold):
-    handmade = pd.read_csv(pathHandMade)
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
     compare = handmade.copy()
     compare.rename(columns={'ID_GROUP_ICC':'ID_GROUP_ICC_handmade'}, inplace=True)
     compare['ID_GROUP_ICC_computed'] = computed['ID_GROUP_ICC']
@@ -166,7 +150,6 @@ def compare(pathHandMade,computed,threshold):
     print('The conversion script made '+str(err)+'%'+' of errors.')
     return (threshold, per, err)
 
-<<<<<<< HEAD
 def converter(src_file, place, lg, threshold,sim_method):
     src_classes = ['GROUP','CROPS']
     parent = Path(__file__).parents[2]
@@ -177,17 +160,6 @@ def converter(src_file, place, lg, threshold,sim_method):
     ##Loading
     src_df = pd.read_csv(src_path)
     icc_df = pd.read_csv(ICC_path)
-=======
-def converter(path_csv, place, lg, threshold,sim_method):
-    src_classes = ['GROUP','CROPS']
-    rel_path_ICC = '../../data/ICC/ICC.csv'
-    abs_path_ICC = os.path.abspath(rel_path_ICC)
-    target = abs_path_ICC
-
-    ##Loading
-    src_df = pd.read_csv(path_csv)
-    icc_df = pd.read_csv(target)
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
 
     ##Listing classes
     src_classes = [c+'_'+place for c in src_classes]
@@ -238,7 +210,6 @@ def converter(path_csv, place, lg, threshold,sim_method):
     result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
 
     #Writting result
-<<<<<<< HEAD
     result_path = data_path.joinpath(place,'conversion_table_'+place+'_scriptMade.csv')
     result_df.to_csv(result_path, index=False)
 
@@ -252,25 +223,6 @@ def converter(path_csv, place, lg, threshold,sim_method):
 
 #converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
 
-converter('FR_2020.csv', 'FR','fr', 90,'split+ratio')
+#converter('FR_2020.csv', 'FR','fr', 90,'split+ratio')
 
 #print(hey)
-=======
-    rel_path_result = '../../data/'+place+'/conversionTable_'+place+'_scriptMade.csv'
-    abs_path_result = os.path.abspath(rel_path_result)
-    result_df.to_csv(abs_path_result, index=False)
-
-    result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    rel_path_det = '../../data/'+place+'/match_df_detailed_'+place+'.csv'
-    abs_path_det = os.path.abspath(rel_path_det)
-    src_df.to_csv(abs_path_det, index=False)
-    
-    rel_path_handmade = '../../data/'+place+'/conversionTable_'+place+'_handMade.csv'
-    abs_path_handmade = os.path.abspath(rel_path_handmade)
-    return compare(abs_path_handmade,result_df,threshold)
-
-#converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
-hey = converter('data/WL/WL_2020.csv', 'WL','fr', 1,'basic')
-
-print(hey)
->>>>>>> 3f2cbac508812f96c9995d010ddefcdd997a845b
