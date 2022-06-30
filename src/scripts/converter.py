@@ -222,7 +222,4 @@ def converter(src_file, place, lg, threshold,sim_method):
     return compare(handmade_path,result_df,threshold)
 
 #converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
-
 #converter('FR_2020.csv', 'FR','fr', 90,'split+ratio')
-
-#print(hey)

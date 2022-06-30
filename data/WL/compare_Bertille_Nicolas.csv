@@ -1,0 +1,41 @@
+,CROPS_WL,ID_CROPS_WL,GROUP_WL,ICC1.1,Nicolas_match,Bertille_match,same,,
+2,Epeautre,36,CEREALES ET ASSIMILES,#indef,,1.0,False,-,
+7,Crales + lgumineuses*,39,CEREALES ET ASSIMILES,#indef,,,False,-,
+20,Cultures fruitire pluriannuelles-hautes tiges ( de 50  250 arbres/ha)*,9742,CULTURES HORTICOLES,#indef,,3.0,False,-,
+21,Cultures fruitire pluriannuelles-basses tiges ( plus de 250 arbres /ha)*,9741,CULTURES HORTICOLES,#indef,,3.0,False,-,
+22,Cultures permanentes sous serre*,885,CULTURES HORTICOLES,#indef,,,False,-,
+23,Cultures horticoles non-comestibles*,96,CULTURES HORTICOLES,9.05,9.0,,False,9,
+41,Cerfeuil (consommation au frais),960,CULTURES HORTICOLES,6.02.01.90,6.0,2.0,False,6,
+42,Cerfeuil ( transformation industrielle),860,CULTURES HORTICOLES,6.02.01.90,6.0,2.0,False,6,
+68,Fenouil ( de Florence) ( consommation au frais),9534,CULTURES HORTICOLES,6.02.01.02,6.0,2.0,False,6,
+69,Fenouil (de Florence) ( transformation industrielle),8534,CULTURES HORTICOLES,6.02.01.02,6.0,2.0,False,6,
+70,Fleurs et plantes ornementales sous serre,9588,CULTURES HORTICOLES,9.05,9.0,2.0,False,9,
+71,Plants de fraisiers de plein air,9724,CULTURES HORTICOLES,#indef,,,False,-,
+73,Haricots de conserverie,9410,CULTURES HORTICOLES,7.90,7.0,2.0,False,7,
+74,Haricots verts (transformation industrielle),8410,CULTURES HORTICOLES,7.90,7.0,2.0,False,7,
+77,Lgume lgumineuse,966,CULTURES HORTICOLES,7.90,7.0,,False,7,
+78,Navets fourragers,746,CULTURES HORTICOLES,2.03.02,2.0,9.0,False,2,-->navet ou fourrage ?
+83,Ppinires de plants forestiers,9560,CULTURES HORTICOLES,#indef,,,False,-,
+84,Ppinires de plants fruitiers ou de plantes ornementales,9520,CULTURES HORTICOLES,#indef,,,False,-,
+88,Plantes vivaces ornementales de plein air,9584,CULTURES HORTICOLES,9.05,9.0,,False,9,
+93,Rhubarbe ( consommation au frais),9517,CULTURES HORTICOLES,2.01.90,2.0,3.0,False,2,
+94,Rhubarbe ( transformation industrielle),8517,CULTURES HORTICOLES,2.01.90,2.0,3.0,False,2,
+97,Scorsonre (transformation industrielle),8533,CULTURES HORTICOLES,2.03.90,2.0,5.0,False,2,Les 2 se discutent
+100,Cultures marachres sous serres ou sous protection fixe,952,CULTURES HORTICOLES,#indef,,2.0,False,-,
+120,Betterave fourragre,71,PRODUCTIONS FOURRAGERES,8.01,8.0,9.0,False,8,fourrage
+132,Carottes fourragres,742,PRODUCTIONS FOURRAGERES,2.03.01,2.0,9.0,False,2,fourrage
+137,Lupin doux,53,PRODUCTIONS FOURRAGERES,7.06,7.0,9.0,False,7,fourrage
+139,Mlange protagineux d'hiver + crales ou autres espces,541,PRODUCTIONS FOURRAGERES,#indef,,7.0,False,-,
+140,Mlange protagineux de printemps + crales ou autres espces,542,PRODUCTIONS FOURRAGERES,#indef,,7.0,False,-,
+141,Mlange lgumineuses fourragres + gramines prairiales,543,PRODUCTIONS FOURRAGERES,#indef,,7.0,False,-,
+146,Anglique,881,AUTRES UTILISATIONS DU SOL,6.02.02.90,6.0,,False,6,
+151,Jachre NON herbace,812,AUTRES UTILISATIONS DU SOL,#indef,,9.0,False,-,
+153,Cultures forestires  rotation courte (taillis  trs courte rotation),883,AUTRES UTILISATIONS DU SOL,#exclude,,,False,-,
+154,Multiplication de semences en mode de production biologique*,821,AUTRES UTILISATIONS DU SOL,#exclude,,,False,-,
+159,Plantes mdicinales,957,AUTRES UTILISATIONS DU SOL,9.03.01.90,9.0,6.0,False,9,
+161,Couvert  finalit environnementale rmunr par des tiers privs,874,AUTRES UTILISATIONS DU SOL,#exclude,,,False,-,
+162,Tounire enherbe,751,AUTRES UTILISATIONS DU SOL,9.01.01,9.0,,False,9,
+163,"Bande/parcelle amnage MAE - MC7, MC8",754,AUTRES UTILISATIONS DU SOL,#exclude,,,False,-,
+164,Bande bordure de champ,752,AUTRES UTILISATIONS DU SOL,#exclude,,,False,-,
+165,Parcours BIO (volaille ou porc),760,AUTRES UTILISATIONS DU SOL,#exclude,,,False,-,
+166,Autres couverts sems *,85,AUTRES UTILISATIONS DU SOL,#indef,,,False,-,
