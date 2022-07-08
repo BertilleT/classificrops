@@ -74,11 +74,6 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
             else : 
                 total = r['sim'].sum()
                 nb = total / len_src
-            #total = r['sim'].sum()
-            #if len(trg_l) < len(src_l):
-            #    nb = total / len(trg_l)
-            #else : 
-            #    nb = total / len(src_l)
 
     elif sim_method == 'basic':
         if src == trg:
@@ -91,7 +86,7 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
         return []
 
 def match_row_df(lg,c,id_src,src,icc_df,threshold,sim_method):
-    #in icc_df, create a column name "temp" that will be updated for each new raw of src_df
+    #in icc_df, create a column name "temp" that will be updated for each new row of src_df
     #"temp" column stores the result matches
     icc_df['temp'] = icc_df.apply(lambda y : match_row_row(c,id_src,src,y['label_'+lg+'_filtered'],y['ID_GROUP'],threshold,sim_method), axis=1)
     my_list = icc_df['temp'].to_list()
@@ -105,13 +100,12 @@ def match_df_df(place, lg,src_df,icc_df,threshold,sim_method):
     #match df source at level = GROUP
     c = 'GROUP_' + place
     src_df2 = src_df.drop_duplicates(subset = ['ID_GROUP_' + place])
-    #create a column match in srcDf2 to store the match
+    #create a column match in src_df2 to store the match
     src_df2['match'] = src_df2.apply(lambda x: match_row_df(lg,c, x['ID_' + c], x[c+ '_filtered'],icc_df,threshold,sim_method), axis=1)
     #spread the match identifies in src_df2 with unique values of group to the source dataframe. 
-    #src_df['match'] = src_df2.apply(lambda x: spread(place, src_df,x), axis=1)
     src_df['match'] = src_df.apply(lambda x: spread(place, src_df2,x), axis=1)
     
-    #CROPS
+    #match df source at level = CROPS
     #--------------------------------------------
     c = 'CROPS_' + place
     #in srcv_df2 concatenate the result already get in match at column level + the match get at crops level
@@ -124,30 +118,6 @@ def max(matches_list):
         if l[5] > t[5]:
             t = l
     return t
-
-def compare(handmade_path,computed,threshold):
-    handmade = pd.read_csv(handmade_path)
-    compare = handmade.copy()
-    compare.rename(columns={'ID_GROUP_ICC':'ID_GROUP_ICC_handmade'}, inplace=True)
-    compare['ID_GROUP_ICC_computed'] = computed['ID_GROUP_ICC']
-    compare2 = compare.copy()
-
-    boolean_serie = compare.apply(lambda x : True if (x.ID_GROUP_ICC_handmade == x.ID_GROUP_ICC_computed) else False,axis=1)
-    boolean_serie2 = compare2.apply(lambda x : True if not (np.isnan(x.ID_GROUP_ICC_computed)) and (x.ID_GROUP_ICC_handmade != x.ID_GROUP_ICC_computed)  else False,axis=1)
-    boolean_df = boolean_serie.to_frame()
-    boolean_df2 = boolean_serie2.to_frame()
-    boolean_df = boolean_df.rename(columns = {0:'bool'})
-    boolean_df2 = boolean_df2.rename(columns = {0:'bool'})
-
-    tot = len(compare)
-    match = boolean_df['bool'].sum()
-    error = boolean_df2['bool'].sum()
-    per = round((match*100)/tot)
-    err = round((error*100)/tot)
-
-    print('The conversion table computed with the threshold = ' + str(threshold) + ', fits to the expected output at ' + str(per) + '%.')
-    print('The conversion script made '+str(err)+'%'+' of errors.')
-    return (threshold, per, err)
 
 def converter(src_file, place, lg, threshold,sim_method):
     src_classes = ['GROUP','CROPS']
@@ -172,7 +142,7 @@ def converter(src_file, place, lg, threshold,sim_method):
     ##Translating
     if 'label_'+lg+'_filtered' not in list(icc_df.columns):
         icc_df['label_'+lg+'_filtered'] = translate_ICC(icc_df, lg)
-        icc_df.to_csv(target, index=False)
+        icc_df.to_csv(ICC_path, index=False)
 
     #the ICC filtering is divided into 2 parts because if you do it in one step before translating
     #you get "Grasses and other fodder crops" that becomes "Grasses fodder" translated into 
@@ -186,10 +156,9 @@ def converter(src_file, place, lg, threshold,sim_method):
 
     ##Filtering2
     french_filters = ['autres','autre',' et',' ou']
-    #we should deal with all the languages ... 
     for c in src_classes:
         src_df[c+'_filtered'] = filter(src_df,c,french_filters)
-        src_df.replace('',np.nan,regex = True,inplace=True)
+        src_df.replace('',np.nan,regex=True,inplace=True)
         if 'ID_'+c not in list(src_df.columns):
             src_df['ID_'+c] = src_df[c] #we could make an identifier generator more sophisticated in the future. example : take the 3 first letters. 
 
@@ -197,7 +166,6 @@ def converter(src_file, place, lg, threshold,sim_method):
     icc_df['ID'] = icc_df['ID'].apply(lambda ID:parse(ID))
     icc_df['ID'] = icc_df['ID'].astype('int')
     icc_df['ID_GROUP'] = icc_df['ID'].astype('str').str[:1].astype('int')
-    #icc_df['ID_CROPS'] = icc_df['ID'].astype('str').str[:3].astype('int')
 
     ##Matching all
     src_df['match'] = match_df_df(place,lg,src_df,icc_df,threshold,sim_method)
@@ -217,10 +185,4 @@ def converter(src_file, place, lg, threshold,sim_method):
     details_path = data_path.joinpath(place,'match_df_detailed_'+place+'.csv')
     src_df.to_csv(details_path, index=False)
 
-    handmade_path = data_path.joinpath(place,'conversion_table_'+place+'_handmade.csv')
-    print(handmade_path)
-    return compare(handmade_path,result_df,threshold)
-
-#converter('../../data/FR/FR_2020.csv', 'FR','fr', 60,'split+ratio')
-#converter('FR_2020.csv', 'FR','fr', 90,'split+ratio')
-
+    return result_df
