@@ -9,10 +9,9 @@ Classificrops's documentation
 .. toctree::
    :numbered:
    
-   user guide
-   analysis and conception notes
-
-
+   Classification harmonization with Classificrops
+   Generate statistics on croplands with Agrivolution
+   
 Contribute
 ----------
 

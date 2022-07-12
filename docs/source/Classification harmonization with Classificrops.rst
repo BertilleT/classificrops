@@ -1,5 +1,5 @@
-User guide
-==============
+Classification harmonization with Classificrops
+=================================================
 Description
 ------------
 Classificrops is a tool able to convert one crops classification from an european country/region to the Indicative Crop Classification made by the FAO. 
@@ -7,8 +7,9 @@ To match 2 classes, the tool uses a function that compute similarity between 2 w
 Thus, this tool is limited when it comes to match strings that need semantic interpretation. 
 As a consequence, this tool is not able to automate fully the conversion from a classification to the ICC one, but at least to semi-automate it. 
 To sum up, Classificrops must be viewed as a helping tool to pre-work the conversion and save the user time by making the easy and basic matching. 
-    .. image:: ../images/goal.png
-      :width: 800
+
+  .. image:: ../images/goal.png
+    :width: 800
 
 How to use it : the workflow
 -----------------------------
@@ -28,7 +29,7 @@ Prepare the data
 The source classification table should stick to the the following expectations : 
     - format : csv
     - table name : place+'_'+year+'.csv' --> example : FR_2020.csv
-    - column name : class+'_'+language        or        'ID_'+class+'_'+language --> example : GROUP_fr, CROPS_fr or ID_GROUP_fr, ID_CROPS_fr
+    - column name : class+'_'+language        or        '\I\D_'+class+'_'+language --> example : GROUP_fr, CROPS_fr or ID_GROUP_fr, ID_CROPS_fr
     - column name should be written in english (this will be updated soon)
     - Once the third step done (download classificrops code available on Github), the source classification well formatted should be put into the folder data/country. For example, if you are working with a crops classification of Wallonia, you can put it into data/WL. 
 
