@@ -54,6 +54,7 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
     
     elif sim_method == 'split+ratio+symetric':
         nb = 0
+        #######BUG
         if type(src) == str and type(trg) == str:
             src_l = src.split()
             len_src = len(src_l)
@@ -78,7 +79,6 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
     elif sim_method == 'basic':
         if src == trg:
             nb = 100
-
     if nb >= threshold: 
         #return the following information when there is a match : ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
         return [c,idS, src, trg, idT, nb]
@@ -119,15 +119,17 @@ def max(matches_list):
             t = l
     return t
 
-def converter(src_file, place, lg, threshold,sim_method):
+def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+ratio+symetric'):
+    print("Preparing the data ... ")
     src_classes = ['GROUP','CROPS']
     parent = Path(__file__).parents[2]
     data_path = parent.joinpath('data')
     ICC_path = data_path.joinpath('ICC','ICC.csv')
 
-    src_path = data_path.joinpath(place, src_file)
+    src_path = data_path.joinpath(place, src_path_input)
     ##Loading
-    src_df = pd.read_csv(src_path)
+    #src_df = pd.read_csv(src_path)
+    src_df = pd.read_csv(src_path_input)
     icc_df = pd.read_csv(ICC_path)
 
     ##Listing classes
@@ -141,8 +143,10 @@ def converter(src_file, place, lg, threshold,sim_method):
 
     ##Translating
     if 'label_'+lg+'_filtered' not in list(icc_df.columns):
+        print("Starting translation")
         icc_df['label_'+lg+'_filtered'] = translate_ICC(icc_df, lg)
         icc_df.to_csv(ICC_path, index=False)
+        print('The translation is done')
 
     #the ICC filtering is divided into 2 parts because if you do it in one step before translating
     #you get "Grasses and other fodder crops" that becomes "Grasses fodder" translated into 
@@ -153,7 +157,6 @@ def converter(src_file, place, lg, threshold,sim_method):
         englishFilters2 = ['other','crops',' and',' or']
         icc_df['label_en_filtered'] = filter(icc_df,'label_en_filtered',englishFilters2)
         icc_df.replace('',np.nan,regex = True,inplace=True)
-
     ##Filtering2
     french_filters = ['autres','autre',' et',' ou']
     for c in src_classes:
@@ -171,18 +174,34 @@ def converter(src_file, place, lg, threshold,sim_method):
     src_df['match'] = match_df_df(place,lg,src_df,icc_df,threshold,sim_method)
     
     src_df["max_match"] = src_df.apply(lambda x: max(x.match) if x.match != [] else [], axis=1)
-
-    src_df['ID_GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][4] if x['max_match'] != [] else np.nan, axix=1)
-    src_df['sim'] = src_df.apply(lambda x : x['max_match'][5] if x['max_match'] != [] else np.nan, axix=1)
+    src_df['ID_GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][4] if x['max_match'] != [] else np.nan, axis=1)
+    print(src_df.head())
+    src_df['sim'] = src_df.apply(lambda x : x['max_match'][5] if x['max_match'] != [] else np.nan, axis=1)
 
     result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
 
     #Writting result
-    result_path = data_path.joinpath(place,'conversion_table_'+place+'_scriptMade.csv')
+    result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
     result_df.to_csv(result_path, index=False)
 
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    details_path = data_path.joinpath(place,'match_df_detailed_'+place+'.csv')
+    details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
     src_df.to_csv(details_path, index=False)
 
+    src_ICC_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
+    for col in src_ICC_df.columns:
+        print(col)
+    #to be continued. The goal i sto have the source classification + ID_GROUP_ICC associated
+    print(src_ICC_df)
+
+    print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
+    print(result_path)
     return result_df
+
+
+if __name__ == '__main__':
+    file_input = input("What is the path toward your source classification ? ")
+    place_input = input("What is the place concerned by your classification ? ")
+    lg_input = input("What is the language in which your classification is written ? ")
+    result = converter(file_input,place_input,lg_input)
+    print(result)
