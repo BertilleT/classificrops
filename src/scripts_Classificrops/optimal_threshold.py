@@ -5,10 +5,11 @@ from pathlib import Path
 
 parent = Path(__file__).parents[2]
 data_path = parent.joinpath('data')
-handmade_path = data_path.joinpath(place,'conversion_table_'+place+'_handmade.csv')
+handmade_path = data_path.joinpath(place,'handmade_Nicolas_light.csv')
 
-def compare(handmade_path,computed,threshold):
+def compare(place, handmade_path,computed,threshold):
     handmade = pd.read_csv(handmade_path)
+    Nicolas_df['Nicolas_match'] = Nicolas_df['ICC1.1'].str[:1]
     compare = handmade.copy()
     compare.rename(columns={'ID_GROUP_ICC':'ID_GROUP_ICC_handmade'}, inplace=True)
     compare['ID_GROUP_ICC_computed'] = computed['ID_GROUP_ICC']
@@ -57,4 +58,4 @@ def optimal_threshold(path, place, lg,sim_method):
   plt.title(place +' : similarity method = '+sim_method)
   plt.show()
 
-#optimal_threshold('../../data/WL/WL_2020.csv', 'WL','fr', 'token_set_ratio')
+optimal_threshold('../../data/WL/WL_2020.csv', 'WL','fr', 'basic')

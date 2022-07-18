@@ -130,6 +130,7 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
     ##Loading
     #src_df = pd.read_csv(src_path)
     src_df = pd.read_csv(src_path_input)
+    src_col = list(src_df)
     icc_df = pd.read_csv(ICC_path)
 
     ##Listing classes
@@ -175,7 +176,6 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
     
     src_df["max_match"] = src_df.apply(lambda x: max(x.match) if x.match != [] else [], axis=1)
     src_df['ID_GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][4] if x['max_match'] != [] else np.nan, axis=1)
-    print(src_df.head())
     src_df['sim'] = src_df.apply(lambda x : x['max_match'][5] if x['max_match'] != [] else np.nan, axis=1)
 
     result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
@@ -188,12 +188,11 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
     details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
     src_df.to_csv(details_path, index=False)
 
-    src_ICC_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
-    for col in src_ICC_df.columns:
-        print(col)
-        
-    #to be continued. The goal is to have the source classification + ID_GROUP_ICC associated
-    print(src_ICC_df)
+    src_col.append('ID_GROUP_ICC')
+    src_icc_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
+    src_icc_df = src_df.filter(src_col)
+    src_with_ICC_col_path = data_path.joinpath('result','src_with_ICC_'+place+'.csv')
+    src_icc_df.to_csv(src_with_ICC_col_path, index=False)
 
     print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
     print(result_path)
@@ -205,4 +204,3 @@ if __name__ == '__main__':
     place_input = input("What is the place concerned by your classification ? ")
     lg_input = input("What is the language in which your classification is written ? ")
     result = converter(file_input,place_input,lg_input)
-    print(result)
