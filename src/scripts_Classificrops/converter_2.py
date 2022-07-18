@@ -191,7 +191,8 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
     src_ICC_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
     for col in src_ICC_df.columns:
         print(col)
-    #to be continued. The goal i sto have the source classification + ID_GROUP_ICC associated
+        
+    #to be continued. The goal is to have the source classification + ID_GROUP_ICC associated
     print(src_ICC_df)
 
     print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")

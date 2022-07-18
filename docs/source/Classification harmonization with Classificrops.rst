@@ -2,7 +2,6 @@ Classification harmonization with Classificrops
 =================================================
 Description
 ------------
-Classificrops is a tool able to convert one crops classification from an european country/region to the Indicative Crop Classification made by the FAO. 
 To match 2 classes, the tool uses a function that compute similarity between 2 words based on the letters they contains. It is not semantic based. 
 Thus, this tool is limited when it comes to match strings that need semantic interpretation. 
 As a consequence, this tool is not able to automate fully the conversion from a classification to the ICC one, but at least to semi-automate it. 
@@ -48,8 +47,9 @@ Download
 ~~~~~~~~~
     - From your terminal : ``git clone https://github.com/BertilleT/Classificrops``
     - Or from your browser : 
-    .. image:: ../images/dwl2_screen.png
-      :width: 800
+
+.. image:: ../images/dwl2_screen.png
+    :width: 800
 
 .. _Go to:
 

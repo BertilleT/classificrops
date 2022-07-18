@@ -1,8 +1,0 @@
-{
-    "f": "optimal_threshold", 
-    "pa": "../../data/FR/FR_2020.csv", 
-    "pl": "FR", 
-    "l": "fr", 
-    "s": "split+ratio+symetric",
-    "t": 80
-}
