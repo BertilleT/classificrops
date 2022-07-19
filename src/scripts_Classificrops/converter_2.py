@@ -119,57 +119,63 @@ def max(matches_list):
             t = l
     return t
 
-def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+ratio+symetric'):
-    print("Preparing the data ... ")
-    src_classes = ['GROUP','CROPS']
-    parent = Path(__file__).parents[2]
-    data_path = parent.joinpath('data')
-    ICC_path = data_path.joinpath('ICC','ICC.csv')
+def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+ratio+symetric', src_df = None, icc_df = None):
+    if src_df is None and icc_df is None : 
+        print("Preparing the data ... ")
+        src_classes = ['GROUP','CROPS']
+        parent = Path(__file__).parents[2]
+        data_path = parent.joinpath('data')
+        ICC_path = data_path.joinpath('ICC','ICC.csv')
 
-    src_path = data_path.joinpath(place, src_path_input)
-    ##Loading
-    #src_df = pd.read_csv(src_path)
-    src_df = pd.read_csv(src_path_input)
-    src_col = list(src_df)
-    icc_df = pd.read_csv(ICC_path)
+        #src_path = data_path.joinpath(place, src_path_input)
+        ##Loading
+        #src_df = pd.read_csv(src_path)
+        src_df = pd.read_csv(src_path_input)
+        src_col = list(src_df)
+        icc_df = pd.read_csv(ICC_path)
 
-    ##Listing classes
-    src_classes = [c+'_'+place for c in src_classes]
+        ##Listing classes
+        src_classes = [c+'_'+place for c in src_classes]
 
-    ##Filtering1a
-    if 'label_en_filtered' not in list(icc_df.columns): 
-        english_filters1 = ['n.e.c.', 'spp','n.e.c']
-        icc_df['label_en_filtered'] = filter(icc_df,'label_en',english_filters1)
-        icc_df.replace('',np.nan,regex = True,inplace=True)
+        ##Filtering1a
+        if 'label_en_filtered' not in list(icc_df.columns): 
+            english_filters1 = ['n.e.c.', 'spp','n.e.c']
+            icc_df['label_en_filtered'] = filter(icc_df,'label_en',english_filters1)
+            icc_df.replace('',np.nan,regex = True,inplace=True)
 
-    ##Translating
-    if 'label_'+lg+'_filtered' not in list(icc_df.columns):
-        print("Starting translation")
-        icc_df['label_'+lg+'_filtered'] = translate_ICC(icc_df, lg)
-        icc_df.to_csv(ICC_path, index=False)
-        print('The translation is done')
+        ##Translating
+        if 'label_'+lg+'_filtered' not in list(icc_df.columns):
+            print("Starting translation")
+            icc_df['label_'+lg+'_filtered'] = translate_ICC(icc_df, lg)
+            icc_df.to_csv(ICC_path, index=False)
+            print('The translation is done')
 
-    #the ICC filtering is divided into 2 parts because if you do it in one step before translating
-    #you get "Grasses and other fodder crops" that becomes "Grasses fodder" translated into 
-    #"Fourrage de graminées whereas it should be translated into "Fourrages et graminées" or into "Fourrages graminées". 
-    
-    ##Filtering1b
-    if 'label_en_filtered' not in list(icc_df.columns): 
-        englishFilters2 = ['other','crops',' and',' or']
-        icc_df['label_en_filtered'] = filter(icc_df,'label_en_filtered',englishFilters2)
-        icc_df.replace('',np.nan,regex = True,inplace=True)
-    ##Filtering2
-    french_filters = ['autres','autre',' et',' ou']
-    for c in src_classes:
-        src_df[c+'_filtered'] = filter(src_df,c,french_filters)
-        src_df.replace('',np.nan,regex=True,inplace=True)
-        if 'ID_'+c not in list(src_df.columns):
-            src_df['ID_'+c] = src_df[c] #we could make an identifier generator more sophisticated in the future. example : take the 3 first letters. 
+        #the ICC filtering is divided into 2 parts because if you do it in one step before translating
+        #you get "Grasses and other fodder crops" that becomes "Grasses fodder" translated into 
+        #"Fourrage de graminées whereas it should be translated into "Fourrages et graminées" or into "Fourrages graminées". 
+        
+        ##Filtering1b
+        if 'label_en_filtered' not in list(icc_df.columns): 
+            englishFilters2 = ['other','crops',' and',' or']
+            icc_df['label_en_filtered'] = filter(icc_df,'label_en_filtered',englishFilters2)
+            icc_df.replace('',np.nan,regex = True,inplace=True)
+        ##Filtering2
+        french_filters = ['autres','autre',' et',' ou']
+        for c in src_classes:
+            src_df[c+'_filtered'] = filter(src_df,c,french_filters)
+            src_df.replace('',np.nan,regex=True,inplace=True)
+            if 'ID_'+c not in list(src_df.columns):
+                src_df['ID_'+c] = src_df[c] #we could make an identifier generator more sophisticated in the future. example : take the 3 first letters. 
 
-    ##Formating ICC
-    icc_df['ID'] = icc_df['ID'].apply(lambda ID:parse(ID))
-    icc_df['ID'] = icc_df['ID'].astype('int')
-    icc_df['ID_GROUP'] = icc_df['ID'].astype('str').str[:1].astype('int')
+        ##Formating ICC
+        icc_df['ID'] = icc_df['ID'].apply(lambda ID:parse(ID))
+        icc_df['ID'] = icc_df['ID'].astype('int')
+        icc_df['ID_GROUP'] = icc_df['ID'].astype('str').str[:1].astype('int')
+
+    #temporary begin
+    src_df_formatted = src_df
+    icc_df_formatted = icc_df
+    #temporary ends
 
     ##Matching all
     src_df['match'] = match_df_df(place,lg,src_df,icc_df,threshold,sim_method)
@@ -180,24 +186,28 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
 
     result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
 
+    #temporary commented
     #Writting result
-    result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
-    result_df.to_csv(result_path, index=False)
+    #result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
+    #result_df.to_csv(result_path, index=False)
 
+    #temporary commented
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
-    src_df.to_csv(details_path, index=False)
+    #details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
+    #src_df.to_csv(details_path, index=False)
+    
+    #temporary commented
+    #src_col.append('ID_GROUP_ICC')
+    #src_icc_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
+    #src_icc_df = src_df.filter(src_col)
+    #src_with_ICC_col_path = data_path.joinpath('result','src_with_ICC_'+place+'.csv')
+    #src_icc_df.to_csv(src_with_ICC_col_path, index=False)
 
-    src_col.append('ID_GROUP_ICC')
-    src_icc_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
-    src_icc_df = src_df.filter(src_col)
-    src_with_ICC_col_path = data_path.joinpath('result','src_with_ICC_'+place+'.csv')
-    src_icc_df.to_csv(src_with_ICC_col_path, index=False)
-
-    print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
-    print(result_path)
-    return result_df
-
+    #print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
+    #print(result_path)
+    #return (result_df)
+    #temporary added 
+    return (src_df_formatted, icc_df_formatted, result_df)
 
 if __name__ == '__main__':
     file_input = input("What is the path toward your source classification ? ")
