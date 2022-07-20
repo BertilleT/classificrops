@@ -31,6 +31,7 @@ This documentation is structured into 4 distinct parts :
    Reference
    Explanation
    Classification harmonization with Classificrops
+   rapport_notes
    Generate statistics on croplands with Agrivolution
 
 Contribute

@@ -74,10 +74,10 @@ def optimal_threshold(src_path_input, place, lg,sim_method, handmade_path):
     plt.title(place +' : similarity method = '+sim_method)
     plt.show()
 
-optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr','token_set_ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv')
+optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/WL_2020.csv', 'WL', 'fr','token_set_ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/handmade_Nicolas_light.csv')
 
 '''handmade = pd.read_csv('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv', encoding= 'unicode_escape')
 handmade['ID_GROUP_ICC_str'] = handmade['ICC1.1'].str[:1]
 handmade['ID_GROUP_ICC'] = pd.to_numeric(handmade['ID_GROUP_ICC_str'], errors='coerce')
 handmade.drop(columns = ["ICC1.1", "ID_GROUP_ICC_str"], axis = 1, inplace = True)
-print(compare(handmade,converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr',90,'split+ratio'),90))'''
+print(compare(handmade,converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr',90,'split+ratio+'),90))'''
