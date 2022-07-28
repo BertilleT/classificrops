@@ -37,6 +37,12 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
     nb = 0
     if sim_method == 'token_set_ratio':
         nb = fuzz.token_set_ratio(src,trg)
+    if sim_method == 'token_sort_ratio':
+        nb = fuzz.token_sort_ratio(src,trg)
+    if sim_method == 'partial_ratio':
+        nb = fuzz.partial_ratio(src,trg)
+    if sim_method == 'ratio':
+        nb = fuzz.ratio(src,trg)
     elif sim_method == 'split+ratio':
         if type(src) == str and type(trg) == str:
             src_l = src.split()

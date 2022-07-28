@@ -61,7 +61,10 @@ def optimal_threshold(src_path_input, place, lg,sim_method, handmade_path):
         compare_list.append(compare(handmade,computed,t))
 
     compare_df = pd.DataFrame (compare_list, columns = ['threshold','correctness(%)', 'errorness(%)'])
-    
+    index_err_0 = compare_df[compare_df['errorness(%)']==0].index[0]
+    threshold_optimal = index_err_0['threshold']
+    print(threshold_optimal)
+    plt.axvline(threshold_optimal, 0, 100, label='minimum errorness reached')
     parent = Path(__file__).parents[2]
     compare_path = parent.joinpath('data', 'result','optimize_threshold_'+place+'_'+sim_method+'.csv')
     compare_df.to_csv(compare_path, index=False)
@@ -74,7 +77,7 @@ def optimal_threshold(src_path_input, place, lg,sim_method, handmade_path):
     plt.title(place +' : similarity method = '+sim_method)
     plt.show()
 
-optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/WL_2020.csv', 'WL', 'fr','token_set_ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/handmade_Nicolas_light.csv')
+optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr','ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv')
 
 '''handmade = pd.read_csv('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv', encoding= 'unicode_escape')
 handmade['ID_GROUP_ICC_str'] = handmade['ICC1.1'].str[:1]
