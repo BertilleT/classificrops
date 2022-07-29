@@ -61,23 +61,49 @@ def optimal_threshold(src_path_input, place, lg,sim_method, handmade_path):
         compare_list.append(compare(handmade,computed,t))
 
     compare_df = pd.DataFrame (compare_list, columns = ['threshold','correctness(%)', 'errorness(%)'])
-    index_err_0 = compare_df[compare_df['errorness(%)']==0].index[0]
-    threshold_optimal = index_err_0['threshold']
-    print(threshold_optimal)
-    plt.axvline(threshold_optimal, 0, 100, label='minimum errorness reached')
+    print(compare_df)
     parent = Path(__file__).parents[2]
     compare_path = parent.joinpath('data', 'result','optimize_threshold_'+place+'_'+sim_method+'.csv')
     compare_df.to_csv(compare_path, index=False)
-
     ax = plt.axis([0, 100, 0, 100])
     ax = plt.gca()
 
     compare_df.plot(kind='line',x='threshold',y='correctness(%)', color = 'green',ax=ax)
     compare_df.plot(kind='line',x='threshold',y='errorness(%)', color='red', ax=ax)
+
+    if 0 in compare_df['errorness(%)'].unique():
+        index_min = compare_df[compare_df['errorness(%)']==0].index[0] 
+    else:
+        index_min = compare_df['errorness(%)'].idxmin()
+    #if index_min == np.nan:
+    #    index_min = compare_df['errorness(%)'].idxmin()
+
+    print(index_min)
+    print(compare_df.iloc[index_min]['threshold'])
+    threshold_optimal = compare_df.iloc[index_min]['threshold']
+
+    plt.axvline(threshold_optimal, 0, 100, label='minimum errorness reached', linestyle='--')
+    plt.plot(threshold_optimal,0, color="red")
+    plt.text(  
+        threshold_optimal+1,1, threshold_optimal,  
+        ha='left', 
+        color='red'
+    )
+
+    cor_max = compare_df.iloc[index_min]['correctness(%)']
+    plt.axhline(y = cor_max, linestyle = '--')
+    plt.plot(0,cor_max, color="green")
+    plt.text(  
+        1,cor_max+1, cor_max,  
+        ha='left', 
+        color='green'
+    )
+
     plt.title(place +' : similarity method = '+sim_method)
     plt.show()
+    #plt.savefig('/home/BTemple-Boyer-Dury/Documents/Classificrops/docs/images/optimal_threshold/'+place+'_'+sim_method+'.png')
 
-optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr','ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv')
+optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/CAT_2020.csv', 'CAT', 'cat','token_set_ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/handmade_Nicolas_light.csv')
 
 '''handmade = pd.read_csv('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv', encoding= 'unicode_escape')
 handmade['ID_GROUP_ICC_str'] = handmade['ICC1.1'].str[:1]

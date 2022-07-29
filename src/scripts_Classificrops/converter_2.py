@@ -152,7 +152,8 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
         ##Translating
         if 'label_'+lg+'_filtered' not in list(icc_df.columns):
             print("Starting translation")
-            icc_df['label_'+lg+'_filtered'] = translate_ICC(icc_df, lg)
+            icc_df['label_'+lg] = translate_ICC(icc_df, lg)
+            icc_df['label_'+lg+'_filtered'] = filter(icc_df,'label_'+lg,filters[lg])
             icc_df.to_csv(ICC_path, index=False)
             print('The translation is done')
 
@@ -166,9 +167,12 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
             icc_df['label_en_filtered'] = filter(icc_df,'label_en_filtered',englishFilters2)
             icc_df.replace('',np.nan,regex = True,inplace=True)
         ##Filtering2
-        french_filters = ['autres','autre',' et',' ou']
+        filters = {
+            'fr': ['autres','autre',' et',' ou'],
+            'cat': ['altres', ' amb', ' o']
+        }
         for c in src_classes:
-            src_df[c+'_filtered'] = filter(src_df,c,french_filters)
+            src_df[c+'_filtered'] = filter(src_df,c,filters[lg])
             src_df.replace('',np.nan,regex=True,inplace=True)
             if 'ID_'+c not in list(src_df.columns):
                 src_df['ID_'+c] = src_df[c] #we could make an identifier generator more sophisticated in the future. example : take the 3 first letters. 
@@ -185,7 +189,6 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
 
     ##Matching all
     src_df['match'] = match_df_df(place,lg,src_df,icc_df,threshold,sim_method)
-    
     src_df["max_match"] = src_df.apply(lambda x: max(x.match) if x.match != [] else [], axis=1)
     src_df['ID_GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][4] if x['max_match'] != [] else np.nan, axis=1)
     src_df['sim'] = src_df.apply(lambda x : x['max_match'][5] if x['max_match'] != [] else np.nan, axis=1)
@@ -194,13 +197,13 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
 
     #temporary commented
     #Writting result
-    #result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
-    #result_df.to_csv(result_path, index=False)
+    result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
+    result_df.to_csv(result_path, index=False)
 
     #temporary commented
     result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    #details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
-    #src_df.to_csv(details_path, index=False)
+    details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
+    src_df.to_csv(details_path, index=False)
     
     #temporary commented
     #src_col.append('ID_GROUP_ICC')
@@ -216,7 +219,8 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
     return (src_df_formatted, icc_df_formatted, result_df)
 
 if __name__ == '__main__':
-    file_input = input("What is the path toward your source classification ? ")
-    place_input = input("What is the place concerned by your classification ? ")
-    lg_input = input("What is the language in which your classification is written ? ")
-    result = converter(file_input,place_input,lg_input)
+    #file_input = input("What is the path toward your source classification ? ")
+    #place_input = input("What is the place concerned by your classification ? ")
+    #lg_input = input("What is the language in which your classification is written ? ")
+    #result = converter(file_input,place_input,lg_input)
+    result = converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/CAT_2020.csv', 'CAT', 'cat', 75, 'split+ratio+symetric')
