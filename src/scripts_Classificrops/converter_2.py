@@ -197,13 +197,13 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
 
     #temporary commented
     #Writting result
-    result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
-    result_df.to_csv(result_path, index=False)
+    #result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
+    #result_df.to_csv(result_path, index=False)
 
     #temporary commented
-    result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
-    src_df.to_csv(details_path, index=False)
+    #result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
+    #details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
+    #src_df.to_csv(details_path, index=False)
     
     #temporary commented
     #src_col.append('ID_GROUP_ICC')

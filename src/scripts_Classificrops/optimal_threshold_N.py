@@ -103,7 +103,7 @@ def optimal_threshold(src_path_input, place, lg,sim_method, handmade_path):
     plt.show()
     #plt.savefig('/home/BTemple-Boyer-Dury/Documents/Classificrops/docs/images/optimal_threshold/'+place+'_'+sim_method+'.png')
 
-optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/CAT_2020.csv', 'CAT', 'cat','token_set_ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/handmade_Nicolas_light.csv')
+optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr','token_sort_ratio', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv')
 
 '''handmade = pd.read_csv('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv', encoding= 'unicode_escape')
 handmade['ID_GROUP_ICC_str'] = handmade['ICC1.1'].str[:1]
