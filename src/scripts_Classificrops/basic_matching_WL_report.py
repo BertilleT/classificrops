@@ -42,15 +42,33 @@ def match_row_df(word_src, df_target):
     #this function returns a tuple (group_icc_matched, similarity) with the group icc matched that has the best similarity score (and that is > to 60)
     return result_max
 
-def match(src_df,place): 
-    src_df['result'] = src_df['GROUP_'+place].apply(lambda group : match_row_df(group, icc_df))
-    src_df['GROUP_icc'], src_df['similarity'] = src_df.result.str
-    src_df = src_df.filter(['GROUP_'+place, 'GROUP_icc', 'similarity'])
-    #this function returns the source dataframe with one column added  that stores the icc group matched, and one column that contains the similarity score. 
+def spread(place, src_df2,x,c):
+    m = src_df2.loc[src_df2[c] == x[c],'match']
+    return m.iloc[0]
+
+def max(matches_list):
+    t = [np.nan, 0]       
+    for l in matches_list:
+        if l[1] > t[1]:
+            t = l
+    return t
+
+def match(src_df,place):     
+    #match at source level = GROUP (parent)
+    c = 'GROUP_' + place
+    src_df2 = src_df.drop_duplicates(subset = [c])
+    #create a column match in src_df2 to store the match
+    src_df2['match'] = src_df2[c].apply(lambda group: match_row_df(group, icc_df))
+    #spread the match identified at source parent level to the child crops of this parent.  
+    src_df['match'] = src_df.apply(lambda x: spread(place, src_df2,x,c))
+    
+    #match df source at level = CROPS (child)
+    c = 'CROPS_' + place
+    #in srcv_df2 concatenate the result already get in match at column level + the match get at crops level
+    src_df['match'] = src_df[c].apply(lambda crop: crop['match'] + match_row_df(crop, icc_df))
+    src_df["max_match"] = src_df.apply(lambda x: max(x.match))
+    src_df['GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][0])
+    src_df['sim'] = src_df.apply(lambda x : x['max_match'][1])
     return src_df
 
-WL_df = match(WL_df, 'WL')
 FR_df = match(FR_df, 'FR')
-
-print(WL_df)
-print(FR_df)

@@ -60,7 +60,6 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
     
     elif sim_method == 'split+ratio+symetric':
         nb = 0
-        #######BUG
         if type(src) == str and type(trg) == str:
             src_l = src.split()
             len_src = len(src_l)
@@ -197,24 +196,24 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
 
     #temporary commented
     #Writting result
-    #result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
-    #result_df.to_csv(result_path, index=False)
+    result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
+    result_df.to_csv(result_path, index=False)
 
     #temporary commented
-    #result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    #details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
-    #src_df.to_csv(details_path, index=False)
+    result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
+    details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
+    src_df.to_csv(details_path, index=False)
     
     #temporary commented
-    #src_col.append('ID_GROUP_ICC')
-    #src_icc_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
-    #src_icc_df = src_df.filter(src_col)
-    #src_with_ICC_col_path = data_path.joinpath('result','src_with_ICC_'+place+'.csv')
-    #src_icc_df.to_csv(src_with_ICC_col_path, index=False)
+    src_col.append('ID_GROUP_ICC')
+    src_icc_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
+    src_icc_df = src_df.filter(src_col)
+    src_with_ICC_col_path = data_path.joinpath('result','src_with_ICC_'+place+'.csv')
+    src_icc_df.to_csv(src_with_ICC_col_path, index=False)
 
-    #print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
-    #print(result_path)
-    #return (result_df)
+    print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
+    print(result_path)
+    return (result_df)
     #temporary added 
     return (src_df_formatted, icc_df_formatted, result_df)
 
@@ -223,4 +222,4 @@ if __name__ == '__main__':
     #place_input = input("What is the place concerned by your classification ? ")
     #lg_input = input("What is the language in which your classification is written ? ")
     #result = converter(file_input,place_input,lg_input)
-    result = converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/CAT_2020.csv', 'CAT', 'cat', 75, 'split+ratio+symetric')
+    result = converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr', 70, 'partial_ratio')
