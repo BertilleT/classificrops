@@ -1,7 +1,7 @@
 # converter.py
 import argparse
-from converter import *
-from optimal_threshold import *
+from scripts_Classificrops.draft.converter_v1 import *
+from scripts_Classificrops.draft.optimal_threshold_B import *
 import json
 
 d = {

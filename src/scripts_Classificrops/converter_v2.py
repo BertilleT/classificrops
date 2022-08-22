@@ -62,8 +62,11 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
         nb = 0
         if type(src) == str and type(trg) == str:
             src_l = src.split()
-            len_src = len(src_l)
             trg_l = trg.split()
+            if len(src_l) > len(trg_l): 
+                src, trg = trg, src
+                src_l, trg_l = trg_l, src_l
+            len_src = len(src_l)
             myList = []
             for w in src_l:
                 for x in trg_l:
@@ -71,16 +74,8 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
             cols = ['index', 'sim']
             myDf = pd.DataFrame(myList, columns=cols)
             r = myDf.groupby('index')['sim'].max().reset_index()
-
-            if len(trg_l) == 1 :
-                #ranger r par ordre de similarité décroissante 
-                sorted_r = r.sort_values(["sim"], ascending=False)
-                #selectionner premier element de r
-                nb = sorted_r.iloc[0,1]
-            else : 
-                total = r['sim'].sum()
-                nb = total / len_src
-
+            total = r['sim'].sum()
+            nb = total / len_src
     elif sim_method == 'basic':
         if src == trg:
             nb = 100
@@ -124,7 +119,7 @@ def max(matches_list):
             t = l
     return t
 
-def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+ratio+symetric', src_df = None, icc_df = None):
+def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+ratio+symetric', src_df = None, icc_df = None, opt=None):
     if src_df is None and icc_df is None : 
         print("Preparing the data ... ")
         src_classes = ['GROUP','CROPS']
@@ -181,11 +176,6 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
         icc_df['ID'] = icc_df['ID'].astype('int')
         icc_df['ID_GROUP'] = icc_df['ID'].astype('str').str[:1].astype('int')
 
-    #temporary begin
-    src_df_formatted = src_df
-    icc_df_formatted = icc_df
-    #temporary ends
-
     ##Matching all
     src_df['match'] = match_df_df(place,lg,src_df,icc_df,threshold,sim_method)
     src_df["max_match"] = src_df.apply(lambda x: max(x.match) if x.match != [] else [], axis=1)
@@ -194,32 +184,36 @@ def converter(src_path_input, place, lg, threshold = 90,sim_method = 'split+rati
 
     result_df = src_df[['ID_CROPS_'+place, 'ID_GROUP_ICC']]
 
-    #temporary commented
-    #Writting result
-    result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
-    result_df.to_csv(result_path, index=False)
+    if opt is None :            
+        #Writting result
+        result_path = data_path.joinpath('result','conversion_table_'+place+'_scriptMade.csv')
+        result_df.to_csv(result_path, index=False)
 
-    #temporary commented
-    result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
-    details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
-    src_df.to_csv(details_path, index=False)
-    
-    #temporary commented
-    src_col.append('ID_GROUP_ICC')
-    src_icc_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
-    src_icc_df = src_df.filter(src_col)
-    src_with_ICC_col_path = data_path.joinpath('result','src_with_ICC_'+place+'.csv')
-    src_icc_df.to_csv(src_with_ICC_col_path, index=False)
+        #temporary commented
+        result_df['ID_GROUP_ICC'] = result_df.loc[:, ['ID_GROUP_ICC']].astype(float)
+        src_df.sort_values(by=['CROPS_CAT'], inplace = True)
+        details_path = data_path.joinpath('result','match_df_detailed_'+place+'.csv')
+        src_df.to_csv(details_path, index=False)
+        
+        #temporary commented
+        src_col.append('ID_GROUP_ICC')
+        src_icc_df = src_df.merge(result_df, how='left', on='ID_CROPS_' + place)
+        src_icc_df = src_df.filter(src_col)
+        src_with_ICC_col_path = data_path.joinpath('result','src_with_ICC_'+place+'.csv')
+        src_icc_df.to_csv(src_with_ICC_col_path, index=False)
 
-    print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
-    print(result_path)
-    return (result_df)
-    #temporary added 
-    return (src_df_formatted, icc_df_formatted, result_df)
+        print("Your classification has been successfully converted to ICC classification. You can download it in the following folder : ")
+        print(result_path)
+        return (result_df)
+    #if we want to test all the thresholds, we will not write the results of each iteration
+    elif opt:
+        src_df_formatted = src_df
+        icc_df_formatted = icc_df
+        return (src_df_formatted, icc_df_formatted, result_df)
 
 if __name__ == '__main__':
-    #file_input = input("What is the path toward your source classification ? ")
-    #place_input = input("What is the place concerned by your classification ? ")
-    #lg_input = input("What is the language in which your classification is written ? ")
-    #result = converter(file_input,place_input,lg_input)
-    result = converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv', 'FR', 'fr', 70, 'partial_ratio')
+    file_input = input("What is the path toward your source classification ? ")
+    place_input = input("What is the place concerned by your classification ? ")
+    lg_input = input("What is the language in which your classification is written ? ")
+    result = converter(file_input,place_input,lg_input)
+    result = converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/CAT_2020.csv', 'CAT', 'cat', 70, 'partial_ratio')

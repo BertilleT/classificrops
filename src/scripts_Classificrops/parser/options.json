@@ -3,5 +3,5 @@
     "pl": "FR", 
     "l": "fr", 
     "t": 80,
-    "s": "split+ratio+symetric"
+    "s": "token_set_ratio"
 }

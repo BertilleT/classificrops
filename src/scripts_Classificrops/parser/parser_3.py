@@ -1,7 +1,7 @@
 # converter.py
 import argparse
-from ast import arg
-from converter_2 import *
+#from ast import arg
+from scripts_Classificrops.converter_v2 import *
 import json
 
 
@@ -15,13 +15,16 @@ if __name__ == '__main__':
     parser.add_argument('-pa',
                         help='the path to the source classification')
     parser.add_argument('-pl',
+                        choices={'WL', 'FR', 'CAT'},
                         help='the place under study, it can be a country, region, lander. It can be situated in France, Belgium or Catalunya. ')
     parser.add_argument('-l',
+                        choices={'fr', 'cat'},
                         help='the language in which the classification is written')
     parser.add_argument('-t', 
                         type = int, 
                         help='similarity threshold')
     parser.add_argument('-s',
+                        choices={'basic','ratio','split+ratio','split+ratio+symetric','partial_ratio','token_sort_ratio', 'token_set_ratio'},
                         help='the similarity method chosen')
 
     args = parser.parse_args()

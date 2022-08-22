@@ -26,10 +26,10 @@ translator = deepl.Translator(DEEPL_AUTH_KEY)
 icc_df['label_'+lg] = icc_df['label_en'].apply(lambda group: translator.translate_text(group, target_lang=lg.upper()) if (pd.notna(group)) else group)
 
 def match_row_row(src, trg): 
-    #we use the similarity function defined by the module fuzz : token_set_ratio as it was described above in the report. 
+    #we use the similarity function fuzz.ratio 
     nb = fuzz.ratio(str(src), str(trg))
     #as a starting point, we say that the source row and the target row should be similar at least at 60% to say there is a match
-    if nb > -1:
+    if nb > 60:
         return (trg, nb)
     else: 
         return('null', 0)
@@ -42,7 +42,7 @@ def match_row_df(word_src, df_target):
     #this function returns a tuple (group_icc_matched, similarity) with the group icc matched that has the best similarity score (and that is > to 60)
     return result_max
 
-def spread(place, src_df2,x,c):
+def spread(src_df2,x,c):
     m = src_df2.loc[src_df2[c] == x[c],'match']
     return m.iloc[0]
 
@@ -66,6 +66,7 @@ def match(src_df,place):
     c = 'CROPS_' + place
     #in srcv_df2 concatenate the result already get in match at column level + the match get at crops level
     src_df['match'] = src_df[c].apply(lambda crop: crop['match'] + match_row_df(crop, icc_df))
+    #select the best match among all matches computed (matches at parent and child level has been merged)
     src_df["max_match"] = src_df.apply(lambda x: max(x.match))
     src_df['GROUP_ICC'] = src_df.apply(lambda x : x['max_match'][0])
     src_df['sim'] = src_df.apply(lambda x : x['max_match'][1])

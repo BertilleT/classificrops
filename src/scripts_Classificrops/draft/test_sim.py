@@ -46,9 +46,11 @@ from difflib import SequenceMatcher
 
 
 
-src='fourrage'
-trg='graminés et autres cultures fourragères'
-
+#src='fourrage'
+#trg='graminés et autres cultures fourragères'
+src = 'fourrage et graminés'
+trg = 'graminés et'
+#print(fuzz.partial_ratio('albercoquers','Albercocs'))
 #difflib
 '''s = SequenceMatcher(None,
                      src,
@@ -82,11 +84,49 @@ print(fuzz.ratio(trg,src))'''
 #src='graminé'
 
 #similarities = ['ratio', 'partial_ratio', 'token_sort_ratio', 'token_set_ratio']
+
+def split_ratio(src,trg):
+    src_l = src.split()
+    len_src = len(src_l)
+    trg_l = trg.split()
+    myList=[]
+    for w in src_l:
+        for x in trg_l:
+            myList.append([src_l.index(w),fuzz.ratio(w,x)])
+    cols = ['index', 'sim']
+    myDf = pd.DataFrame(myList, columns=cols)
+    r = myDf.groupby('index')['sim'].max().reset_index()
+    total = r['sim'].sum()
+    nb = total / len_src
+    return nb
+
+def split_ratio_symetric(src, trg):        
+    nb = 0
+    src_l = src.split()
+    trg_l = trg.split()
+    if len(src_l) > len(trg_l): 
+        src, trg = trg, src
+        src_l, trg_l = trg_l, src_l
+    len_src = len(src_l)
+    myList = []
+    for w in src_l:
+        for x in trg_l:
+            myList.append([src_l.index(w),fuzz.ratio(w,x)])
+    cols = ['index', 'sim']
+    myDf = pd.DataFrame(myList, columns=cols)
+    r = myDf.groupby('index')['sim'].max().reset_index()
+    total = r['sim'].sum()
+    nb = total / len_src
+    print(trg)
+    return nb
+
 similarities = {}
 similarities['ratio'] = fuzz.ratio(src,trg)
 similarities['partial_ratio'] = fuzz.partial_ratio(src, trg)
 similarities['token_sort_ratio'] = fuzz.token_sort_ratio(src, trg)
 similarities['token_set_ratio'] = fuzz.token_set_ratio(src, trg)
+similarities['split_ratio'] = split_ratio(trg, src)
+similarities['split_ratio_symetric'] = split_ratio_symetric(trg, src)
 
 for k,v in similarities.items() : 
     print("Similarity score computed with : "+k+" similarity method = "+str(v))

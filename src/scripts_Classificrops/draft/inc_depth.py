@@ -1,7 +1,7 @@
 #depth +1 when other more than 10 %
 
 import pandas as pd
-from converter import *
+from scripts_Classificrops.draft.converter_v1 import *
 icc_df = pd.read_csv('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/ICC/ICC_src.csv')
 print(icc_df)
 print(icc_df.dtypes)
