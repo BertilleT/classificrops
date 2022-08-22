@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from converter_v2 import * 
+from converter import * 
 
 
 '''def download_handmade(place){
@@ -49,20 +49,19 @@ def optimal_threshold(src_path_input, place, lg,sim_method, handmade_path):
         num+=1 
         if num % 10 == 0: 
             thresholds.append(num)
-    
+
     handmade = pd.read_csv(handmade_path, encoding= 'unicode_escape')
     handmade['ID_GROUP_ICC_str'] = handmade['ICC1.1'].str[:1]
     handmade['ID_GROUP_ICC'] = pd.to_numeric(handmade['ID_GROUP_ICC_str'], errors='coerce')
     handmade.drop(columns = ["ICC1.1", "ID_GROUP_ICC_str"], axis = 1, inplace = True)
-    src_formatted = converter(src_path_input, place, lg, 0, 'basic')[0]
-    icc_formatted = converter(src_path_input, place, lg, 0, 'basic')[1]
+    src_formatted = converter(src_path_input, place, lg, 0, 'basic', None, None, "opt")[0]
+    icc_formatted = converter(src_path_input, place, lg, 0, 'basic', None, None, "opt")[1]
     for t in thresholds:
         print('conversion table with sim_method: '+ sim_method + ', and threshold: '+ str(t) + ' starts to be computed...')
-        computed = converter(src_path_input, place, lg, t, sim_method, src_formatted, icc_formatted)[2]
+        computed = converter(src_path_input, place, lg, t, sim_method, src_formatted, icc_formatted, 'test')[2]
         print('conversion table with sim_method: '+ sim_method + ', and threshold: '+ str(t) + ' successfully computed !')
         compare_list.append(compare(handmade,computed,t, place))
 
-    print(compare_list)
     compare_df = pd.DataFrame (compare_list, columns = ['threshold','correctness(%)', 'errorness(%)'])
     parent = Path(__file__).parents[2]
     compare_path = parent.joinpath('data', 'result','optimize_threshold_'+place+'_'+sim_method+'.csv')
@@ -103,4 +102,5 @@ def optimal_threshold(src_path_input, place, lg,sim_method, handmade_path):
     plt.show()
     #plt.savefig('/home/BTemple-Boyer-Dury/Documents/Classificrops/docs/images/optimal_threshold/'+place+'_'+sim_method+'.png')
 
-optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/WL_2020.csv', 'WL', 'fr','split+ratio+symetric', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/handmade_Nicolas_light.csv')
+if __name__ == '__main__':
+    optimal_threshold('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/WL_2020.csv', 'WL', 'fr','split+ratio+symetric', '/home/BTemple-Boyer-Dury/Documents/Classificrops/data/WL/handmade_Nicolas_light.csv')

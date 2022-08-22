@@ -1,352 +1,352 @@
 ID_CROPS_FR,GROUP_FR,CROPS_FR,ID_GROUP_FR,ID_GROUP_ICC
-BTH,Blé tendre,Blé tendre d’hiver,1,1.0
-BTP,Blé tendre,Blé tendre de printemps,1,1.0
-MID,Maïs grain et ensilage,Maïs doux,2,1.0
-MIE,Maïs grain et ensilage,Maïs ensilage,2,1.0
+BTH,Blé tendre,Blé tendre d’hiver,1,
+BTP,Blé tendre,Blé tendre de printemps,1,
+MID,Maïs grain et ensilage,Maïs doux,2,
+MIE,Maïs grain et ensilage,Maïs ensilage,2,
 MIS,Maïs grain et ensilage,Maïs,2,1.0
 ORH,Orge,Orge d'hiver,3,1.0
 ORP,Orge,Orge de printemps,3,1.0
-AVH,Autres céréales,Avoine d’hiver,4,1.0
-AVP,Autres céréales,Avoine de printemps,4,1.0
-BDH,Autres céréales,Blé dur d’hiver,4,1.0
-BDP,Autres céréales,Blé dur de printemps,4,1.0
-BDT,Autres céréales,Blé dur de printemps semé tardivement (après le 31/05),4,1.0
-CAG,Autres céréales,Autre céréale d’un autre genre,4,1.0
-CGF,Autres céréales,Autre céréale de genre Fagopyrum,4,1.0
-CGH,Autres céréales,Autre céréale de genre Phalaris,4,1.0
-CGO,Autres céréales,Autre céréale de genre Sorghum,4,1.0
-CGP,Autres céréales,Autre céréale de genre Panicum,4,1.0
-CGS,Autres céréales,Autre céréale de genre Setaria,4,1.0
-CHA,Autres céréales,Autre céréale d’hiver de genre Avena,4,1.0
-CHH,Autres céréales,Autre céréale d’hiver de genre Hordeum,4,1.0
-CHS,Autres céréales,Autre céréale d’hiver de genre Secale,4,1.0
-CHT,Autres céréales,Autre céréale d’hiver de genre Triticum,4,1.0
-CPA,Autres céréales,Autre céréale de printemps de genre Avena,4,1.0
-CPH,Autres céréales,Autre céréale de printemps de genre Hordeum,4,1.0
-CPS,Autres céréales,Autre céréale de printemps de genre Secale,4,1.0
-CPT,Autres céréales,Autre céréale de printemps de genre Triticum,4,1.0
-CPZ,Autres céréales,Autre céréale de printemps de genre Zea,4,1.0
-EPE,Autres céréales,Épeautre,4,1.0
-MCR,Autres céréales,Mélange de céréales,4,1.0
+AVH,Autres céréales,Avoine d’hiver,4,
+AVP,Autres céréales,Avoine de printemps,4,
+BDH,Autres céréales,Blé dur d’hiver,4,
+BDP,Autres céréales,Blé dur de printemps,4,
+BDT,Autres céréales,Blé dur de printemps semé tardivement (après le 31/05),4,
+CAG,Autres céréales,Autre céréale d’un autre genre,4,
+CGF,Autres céréales,Autre céréale de genre Fagopyrum,4,
+CGH,Autres céréales,Autre céréale de genre Phalaris,4,
+CGO,Autres céréales,Autre céréale de genre Sorghum,4,
+CGP,Autres céréales,Autre céréale de genre Panicum,4,
+CGS,Autres céréales,Autre céréale de genre Setaria,4,
+CHA,Autres céréales,Autre céréale d’hiver de genre Avena,4,
+CHH,Autres céréales,Autre céréale d’hiver de genre Hordeum,4,
+CHS,Autres céréales,Autre céréale d’hiver de genre Secale,4,
+CHT,Autres céréales,Autre céréale d’hiver de genre Triticum,4,
+CPA,Autres céréales,Autre céréale de printemps de genre Avena,4,
+CPH,Autres céréales,Autre céréale de printemps de genre Hordeum,4,
+CPS,Autres céréales,Autre céréale de printemps de genre Secale,4,
+CPT,Autres céréales,Autre céréale de printemps de genre Triticum,4,
+CPZ,Autres céréales,Autre céréale de printemps de genre Zea,4,
+EPE,Autres céréales,Épeautre,4,
+MCR,Autres céréales,Mélange de céréales,4,
 MLT,Autres céréales,Millet,4,1.0
-SGH,Autres céréales,Seigle d’hiver,4,1.0
-SGP,Autres céréales,Seigle de printemps,4,1.0
+SGH,Autres céréales,Seigle d’hiver,4,
+SGP,Autres céréales,Seigle de printemps,4,
 SOG,Autres céréales,Sorgho,4,1.0
 SRS,Autres céréales,Sarrasin,4,1.0
-TTH,Autres céréales,Triticale d’hiver,4,1.0
-TTP,Autres céréales,Triticale de printemps,4,1.0
+TTH,Autres céréales,Triticale d’hiver,4,
+TTP,Autres céréales,Triticale de printemps,4,
 CZH,Colza,Colza d’hiver,5,4.0
 CZP,Colza,Colza de printemps,5,4.0
 TRN,Tournesol,Tournesol,6,4.0
-ARA,Autres oléagineux,Arachide,7,4.0
-LIH,Autres oléagineux,Lin non textile d’hiver,7,4.0
-LIP,Autres oléagineux,Lin non textile de printemps,7,4.0
-MOL,Autres oléagineux,Mélange d’oléagineux,7,4.0
-NVE,Autres oléagineux,Navette d’été,7,4.0
-NVH,Autres oléagineux,Navette d’hiver,7,4.0
-OAG,Autres oléagineux,Autre oléagineux d’un autre genre,7,4.0
-OEH,Autres oléagineux,Autre oléagineux d’espèce Helianthus,7,4.0
-OEI,Autres oléagineux,Œillette,7,4.0
-OHN,Autres oléagineux,Autre oléagineux d’hiver d’espèce Brassica napus,7,4.0
-OHR,Autres oléagineux,Autre oléagineux d’hiver d’espèce Brassica rapa,7,4.0
-OPN,Autres oléagineux,Autre oléagineux de printemps d’espèce Brassica napus,7,4.0
-OPR,Autres oléagineux,Autre oléagineux de printemps d’espèce Brassica rapa,7,4.0
-SOJ,Autres oléagineux,Soja,7,4.0
-FEV,Protéagineux,Fève,8,4.0
-FVL,Protéagineux,Féverole semée avant le 31/05,8,4.0
-FVT,Protéagineux,Féverole semée tardivement (après le 31/05),8,4.0
-LDH,Protéagineux,Lupin doux d’hiver,8,7.0
-LDP,Protéagineux,Lupin doux de printemps semé avant le 31/05,8,7.0
-LDT,Protéagineux,Lupin doux de printemps semé tardivement (après le 31/05),8,7.0
-MPC,Protéagineux,Mélange de protéagineux (pois et/ou lupin et/ou féverole) prépondérants semés avant le 31/05 et de céréales,8,1.0
-MPP,Protéagineux,Mélange de protéagineux (pois et/ou lupin et/ou féverole),8,4.0
-MPT,Protéagineux,Mélange de protéagineux semés tardivement (après le 31/05),8,4.0
-PAG,Protéagineux,Autre protéagineux d’un autre genre,8,4.0
-PHI,Protéagineux,Pois d’hiver,8,7.0
-PPR,Protéagineux,Pois de printemps semé avant le 31/05,8,7.0
-PPT,Protéagineux,Pois de printemps semé tardivement (après le 31/05),8,7.0
+ARA,Autres oléagineux,Arachide,7,
+LIH,Autres oléagineux,Lin non textile d’hiver,7,
+LIP,Autres oléagineux,Lin non textile de printemps,7,
+MOL,Autres oléagineux,Mélange d’oléagineux,7,
+NVE,Autres oléagineux,Navette d’été,7,
+NVH,Autres oléagineux,Navette d’hiver,7,
+OAG,Autres oléagineux,Autre oléagineux d’un autre genre,7,
+OEH,Autres oléagineux,Autre oléagineux d’espèce Helianthus,7,
+OEI,Autres oléagineux,Œillette,7,
+OHN,Autres oléagineux,Autre oléagineux d’hiver d’espèce Brassica napus,7,
+OHR,Autres oléagineux,Autre oléagineux d’hiver d’espèce Brassica rapa,7,
+OPN,Autres oléagineux,Autre oléagineux de printemps d’espèce Brassica napus,7,
+OPR,Autres oléagineux,Autre oléagineux de printemps d’espèce Brassica rapa,7,
+SOJ,Autres oléagineux,Soja,7,
+FEV,Protéagineux,Fève,8,
+FVL,Protéagineux,Féverole semée avant le 31/05,8,
+FVT,Protéagineux,Féverole semée tardivement (après le 31/05),8,
+LDH,Protéagineux,Lupin doux d’hiver,8,
+LDP,Protéagineux,Lupin doux de printemps semé avant le 31/05,8,
+LDT,Protéagineux,Lupin doux de printemps semé tardivement (après le 31/05),8,
+MPC,Protéagineux,Mélange de protéagineux (pois et/ou lupin et/ou féverole) prépondérants semés avant le 31/05 et de céréales,8,
+MPP,Protéagineux,Mélange de protéagineux (pois et/ou lupin et/ou féverole),8,
+MPT,Protéagineux,Mélange de protéagineux semés tardivement (après le 31/05),8,
+PAG,Protéagineux,Autre protéagineux d’un autre genre,8,
+PHI,Protéagineux,Pois d’hiver,8,
+PPR,Protéagineux,Pois de printemps semé avant le 31/05,8,
+PPT,Protéagineux,Pois de printemps semé tardivement (après le 31/05),8,
 CHV,Plantes à fibres,Chanvre,9,9.0
-CSE,Plantes à fibres,Chanvre sans étiquette conforme,9,9.0
-LIF,Plantes à fibres,Lin fibres,9,9.0
-J5M,Gel (surfaces gelées sans production),Jachère de 5 ans ou moins,11,7.0
+CSE,Plantes à fibres,Chanvre sans étiquette conforme,9,
+LIF,Plantes à fibres,Lin fibres,9,
+J5M,Gel (surfaces gelées sans production),Jachère de 5 ans ou moins,11,
 J6P,Gel (surfaces gelées sans production),Jachère de 6 ans ou plus,11,
 J6S,Gel (surfaces gelées sans production),Jachère de 6 ans ou plus déclarée comme Surface d’intérêt écologique,11,
-JNO,Gel (surfaces gelées sans production),Jachère noire,11,6.0
+JNO,Gel (surfaces gelées sans production),Jachère noire,11,
 RIZ,Riz,Riz,14,1.0
-LEC,Légumineuses à grains,Lentille cultivée (non fourragère),15,7.0
-PCH,Légumineuses à grains,Pois chiche,15,7.0
-BVF,Fourrage,Betterave fourragère,16,1.0
-CAF,Fourrage,Carotte fourragère,16,2.0
-CHF,Fourrage,Chou fourrager,16,2.0
-CPL,Fourrage,Fourrage composé de céréales et/ou de protéagineux (en proportion < 50%) et/ou de légumineuses fourragères (en proportion < 50%),16,7.0
-DTY,Fourrage,Dactyle de 5 ans ou moins,16,1.0
-FAG,Fourrage,Autre fourrage annuel d’un autre genre,16,1.0
-FET,Fourrage,Fétuque de 5 ans ou moins,16,1.0
-FF5,Fourrage,Féverole fourragère implantée pour la récolte 2015,16,1.0
-FF6,Fourrage,Féverole fourragère implantée pour la récolte 2016,16,1.0
-FF7,Fourrage,Féverole fourragère implantée pour la récolte 2017,16,1.0
-FF8,Fourrage,Féverole fourragère implantée pour la récolte 2018,16,1.0
-FFO,Fourrage,Autre féverole fourragère,16,1.0
-FLO,Fourrage,Fléole de 5 ans ou moins,16,1.0
-FSG,Fourrage,Autre plante fourragère sarclée d’un autre genre,16,1.0
-GAI,Fourrage,Gaillet,16,1.0
-GES,Fourrage,Gesse,16,1.0
-GFP,Fourrage,Autre graminée fourragère pure de 5 ans ou moins,16,1.0
-JO5,Fourrage,Jarosse implantée pour la récolte 2015,16,1.0
-JO6,Fourrage,Jarosse implantée pour la récolte 2016,16,1.0
-JO7,Fourrage,Jarosse implantée pour la récolte 2017,16,1.0
-JO8,Fourrage,Jarosse implantée pour la récolte 2018,16,1.0
-JOD,Fourrage,Jarosse déshydratée,16,1.0
-JOS,Fourrage,Autre jarosse,16,1.0
-LEF,Fourrage,Lentille fourragère,16,7.0
-LFH,Fourrage,Autre lupin fourrager d’hiver,16,7.0
-LFP,Fourrage,Autre lupin fourrager de printemps,16,7.0
-LH5,Fourrage,Lupin fourrager d’hiver implanté pour la récolte 2015,16,7.0
-LH6,Fourrage,Lupin fourrager d’hiver implanté pour la récolte 2016,16,7.0
-LH7,Fourrage,Lupin fourrager d’hiver implanté pour la récolte 2017,16,7.0
-LH8,Fourrage,Lupin fourrager d'hiver implanté pour la récolte 2018,16,7.0
-LO7,Fourrage,Lotier implanté pour la récolte 2017,16,1.0
-LO8,Fourrage,Lotier implanté pour la récolte 2018,16,1.0
-LOT,Fourrage,Lotier,16,1.0
-LP5,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2015,16,7.0
-LP6,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2016,16,7.0
-LP7,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2017,16,7.0
-LP8,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2018,16,7.0
-LU5,Fourrage,Luzerne implantée pour la récolte 2015,16,1.0
-LU6,Fourrage,Luzerne implantée pour la récolte 2016,16,1.0
-LU7,Fourrage,Luzerne implantée pour la récolte 2017,16,1.0
-LU8,Fourrage,Luzerne implantée pour la récolte 2018,16,1.0
-LUD,Fourrage,Luzerne déshydratée,16,1.0
-LUZ,Fourrage,Autre luzerne,16,1.0
-MC5,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2015 et de céréales,16,7.0
-MC6,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2016 et de céréales,16,7.0
-MC7,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2017 et de céréales,16,7.0
-MC8,Fourrage,Mélange de légumineuses fourragères prépondérantes implantées pour la récolte 2018 et de céréales et d’oléagineux,16,7.0
-ME5,Fourrage,Mélilot implanté pour la récolte 2015,16,1.0
-ME6,Fourrage,Mélilot implanté pour la récolte 2016,16,1.0
-ME7,Fourrage,Mélilot implanté pour la récolte 2017,16,1.0
-ME8,Fourrage,Mélilot implanté pour la récolte 2018,16,1.0
-MED,Fourrage,Mélilot déshydraté,16,1.0
-MEL,Fourrage,Autre mélilot,16,1.0
-MH5,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2015 et d’herbacées ou de graminées fourragères,16,7.0
-MH6,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2016 et d’herbacées ou de graminées fourragères,16,7.0
-MH7,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2017 et d’herbacées ou de graminées fourragères,16,7.0
-MI7,Fourrage,Minette implanté pour la récolte 2017,16,1.0
-MI8,Fourrage,Minette implanté pour la récolte 2018,16,1.0
-MIN,Fourrage,Minette,16,1.0
-ML5,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2015 (entre elles),16,7.0
-ML6,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2016 (entre elles),16,7.0
-ML7,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2017 (entre elles),16,7.0
-ML8,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2018 (entre elles),16,7.0
-MLC,Fourrage,Mélange de légumineuses fourragères prépondérantes et de céréales et/ou d’oléagineux,16,7.0
-MLD,Fourrage,Mélange de légumineuses déshydratées (entre elles),16,7.0
-MLF,Fourrage,Mélange de légumineuses fourragères (entre elles),16,7.0
-MLG,Fourrage,Mélange de légumineuses prépondérantes au semis et de graminées fourragères de 5 ans ou moins,16,7.0
-MOH,Fourrage,Moha,16,1.0
-NVF,Fourrage,Navet fourrager,16,2.0
-PAT,Fourrage,Pâturin commun de 5 ans ou moins,16,1.0
-PFH,Fourrage,Autre pois fourrager d’hiver,16,1.0
-PFP,Fourrage,Autre pois fourrager de printemps,16,1.0
-PH5,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2015,16,7.0
-PH6,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2016,16,7.0
-PH7,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2017,16,7.0
-PH8,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2018,16,7.0
-PP5,Fourrage,Pois fourrager de printemps implanté pour la récolte 2015,16,7.0
-PP6,Fourrage,Pois fourrager de printemps implanté pour la récolte 2016,16,7.0
-PP7,Fourrage,Pois fourrager de printemps implanté pour la récolte 2017,16,7.0
-PP8,Fourrage,Pois fourrager de printemps implanté pour la récolte 2018,16,7.0
-RDF,Fourrage,Radis fourrager,16,1.0
-SA5,Fourrage,Sainfoin implanté pour la récolte 2015,16,1.0
-SA6,Fourrage,Sainfoin implanté pour la récolte 2016,16,1.0
-SA7,Fourrage,Sainfoin implanté pour la récolte 2017,16,1.0
-SA8,Fourrage,Sainfoin implanté pour la récolte 2018,16,1.0
-SAD,Fourrage,Sainfoin déshydraté,16,1.0
-SAI,Fourrage,Autre sainfoin,16,1.0
-SE5,Fourrage,Serradelle implantée pour la récolte 2015,16,1.0
-SE6,Fourrage,Serradelle implantée pour la récolte 2016,16,1.0
-SE7,Fourrage,Serradelle implantée pour la récolte 2017,16,1.0
-SE8,Fourrage,Serradelle implantée pour la récolte 2018,16,1.0
-SED,Fourrage,Serradelle déshydratée,16,1.0
-SER,Fourrage,Autre serradelle,16,1.0
-TR5,Fourrage,Trèfle implanté pour la récolte 2015,16,1.0
-TR6,Fourrage,Trèfle implanté pour la récolte 2016,16,1.0
-TR7,Fourrage,Trèfle implanté pour la récolte 2017,16,1.0
-TR8,Fourrage,Trèfle implanté pour la récolte 2018,16,1.0
-TRD,Fourrage,Trèfle déshydraté,16,1.0
-TRE,Fourrage,Autre trèfle,16,1.0
-VE5,Fourrage,Vesce implantée pour la récolte 2015,16,1.0
-VE6,Fourrage,Vesce implantée pour la récolte 2016,16,1.0
-VE7,Fourrage,Vesce implantée pour la récolte 2017,16,1.0
-VE8,Fourrage,Vesce implantée pour la récolte 2018,16,1.0
-VED,Fourrage,Vesce déshydratée,16,1.0
-VES,Fourrage,Autre vesce,16,3.0
-XFE,Fourrage,X-Felium de 5 ans ou moins,16,1.0
-BOP,Estives et landes,Bois pâturé,17,7.0
-SPH,Estives et landes,Surface pastorale - herbe prédominante et ressources fourragères ligneuses présentes,17,3.0
-SPL,Estives et landes,Surface pastorale - ressources fourragères ligneuses prédominantes,17,3.0
-PPH,Prairies permanentes,Prairie permanente - herbe prédominante (ressources fourragères ligneuses absentes ou peu présentes),18,9.0
-PRL,Prairies permanentes,Prairie en rotation longue (6 ans ou plus),18,9.0
-PTR,Prairies temporaires,Autre prairie temporaire de 5 ans ou moins,19,9.0
-RGA,Prairies temporaires,Ray-grass de 5 ans ou moins,19,9.0
-AGR,Vergers,Agrume,20,3.0
+LEC,Légumineuses à grains,Lentille cultivée (non fourragère),15,
+PCH,Légumineuses à grains,Pois chiche,15,
+BVF,Fourrage,Betterave fourragère,16,
+CAF,Fourrage,Carotte fourragère,16,
+CHF,Fourrage,Chou fourrager,16,
+CPL,Fourrage,Fourrage composé de céréales et/ou de protéagineux (en proportion < 50%) et/ou de légumineuses fourragères (en proportion < 50%),16,
+DTY,Fourrage,Dactyle de 5 ans ou moins,16,
+FAG,Fourrage,Autre fourrage annuel d’un autre genre,16,
+FET,Fourrage,Fétuque de 5 ans ou moins,16,
+FF5,Fourrage,Féverole fourragère implantée pour la récolte 2015,16,
+FF6,Fourrage,Féverole fourragère implantée pour la récolte 2016,16,
+FF7,Fourrage,Féverole fourragère implantée pour la récolte 2017,16,
+FF8,Fourrage,Féverole fourragère implantée pour la récolte 2018,16,
+FFO,Fourrage,Autre féverole fourragère,16,
+FLO,Fourrage,Fléole de 5 ans ou moins,16,
+FSG,Fourrage,Autre plante fourragère sarclée d’un autre genre,16,
+GAI,Fourrage,Gaillet,16,
+GES,Fourrage,Gesse,16,
+GFP,Fourrage,Autre graminée fourragère pure de 5 ans ou moins,16,
+JO5,Fourrage,Jarosse implantée pour la récolte 2015,16,
+JO6,Fourrage,Jarosse implantée pour la récolte 2016,16,
+JO7,Fourrage,Jarosse implantée pour la récolte 2017,16,
+JO8,Fourrage,Jarosse implantée pour la récolte 2018,16,
+JOD,Fourrage,Jarosse déshydratée,16,
+JOS,Fourrage,Autre jarosse,16,
+LEF,Fourrage,Lentille fourragère,16,
+LFH,Fourrage,Autre lupin fourrager d’hiver,16,
+LFP,Fourrage,Autre lupin fourrager de printemps,16,
+LH5,Fourrage,Lupin fourrager d’hiver implanté pour la récolte 2015,16,
+LH6,Fourrage,Lupin fourrager d’hiver implanté pour la récolte 2016,16,
+LH7,Fourrage,Lupin fourrager d’hiver implanté pour la récolte 2017,16,
+LH8,Fourrage,Lupin fourrager d'hiver implanté pour la récolte 2018,16,
+LO7,Fourrage,Lotier implanté pour la récolte 2017,16,
+LO8,Fourrage,Lotier implanté pour la récolte 2018,16,
+LOT,Fourrage,Lotier,16,
+LP5,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2015,16,
+LP6,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2016,16,
+LP7,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2017,16,
+LP8,Fourrage,Lupin fourrager de printemps implanté pour la récolte 2018,16,
+LU5,Fourrage,Luzerne implantée pour la récolte 2015,16,
+LU6,Fourrage,Luzerne implantée pour la récolte 2016,16,
+LU7,Fourrage,Luzerne implantée pour la récolte 2017,16,
+LU8,Fourrage,Luzerne implantée pour la récolte 2018,16,
+LUD,Fourrage,Luzerne déshydratée,16,
+LUZ,Fourrage,Autre luzerne,16,
+MC5,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2015 et de céréales,16,
+MC6,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2016 et de céréales,16,
+MC7,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2017 et de céréales,16,
+MC8,Fourrage,Mélange de légumineuses fourragères prépondérantes implantées pour la récolte 2018 et de céréales et d’oléagineux,16,
+ME5,Fourrage,Mélilot implanté pour la récolte 2015,16,
+ME6,Fourrage,Mélilot implanté pour la récolte 2016,16,
+ME7,Fourrage,Mélilot implanté pour la récolte 2017,16,
+ME8,Fourrage,Mélilot implanté pour la récolte 2018,16,
+MED,Fourrage,Mélilot déshydraté,16,
+MEL,Fourrage,Autre mélilot,16,
+MH5,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2015 et d’herbacées ou de graminées fourragères,16,
+MH6,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2016 et d’herbacées ou de graminées fourragères,16,
+MH7,Fourrage,Mélange de légumineuses fourragères prépondérantes au semis implantées pour la récolte 2017 et d’herbacées ou de graminées fourragères,16,
+MI7,Fourrage,Minette implanté pour la récolte 2017,16,
+MI8,Fourrage,Minette implanté pour la récolte 2018,16,
+MIN,Fourrage,Minette,16,
+ML5,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2015 (entre elles),16,
+ML6,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2016 (entre elles),16,
+ML7,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2017 (entre elles),16,
+ML8,Fourrage,Mélange de légumineuses fourragères implantées pour la récolte 2018 (entre elles),16,
+MLC,Fourrage,Mélange de légumineuses fourragères prépondérantes et de céréales et/ou d’oléagineux,16,
+MLD,Fourrage,Mélange de légumineuses déshydratées (entre elles),16,
+MLF,Fourrage,Mélange de légumineuses fourragères (entre elles),16,
+MLG,Fourrage,Mélange de légumineuses prépondérantes au semis et de graminées fourragères de 5 ans ou moins,16,
+MOH,Fourrage,Moha,16,
+NVF,Fourrage,Navet fourrager,16,
+PAT,Fourrage,Pâturin commun de 5 ans ou moins,16,
+PFH,Fourrage,Autre pois fourrager d’hiver,16,
+PFP,Fourrage,Autre pois fourrager de printemps,16,
+PH5,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2015,16,
+PH6,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2016,16,
+PH7,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2017,16,
+PH8,Fourrage,Pois fourrager d’hiver implanté pour la récolte 2018,16,
+PP5,Fourrage,Pois fourrager de printemps implanté pour la récolte 2015,16,
+PP6,Fourrage,Pois fourrager de printemps implanté pour la récolte 2016,16,
+PP7,Fourrage,Pois fourrager de printemps implanté pour la récolte 2017,16,
+PP8,Fourrage,Pois fourrager de printemps implanté pour la récolte 2018,16,
+RDF,Fourrage,Radis fourrager,16,
+SA5,Fourrage,Sainfoin implanté pour la récolte 2015,16,
+SA6,Fourrage,Sainfoin implanté pour la récolte 2016,16,
+SA7,Fourrage,Sainfoin implanté pour la récolte 2017,16,
+SA8,Fourrage,Sainfoin implanté pour la récolte 2018,16,
+SAD,Fourrage,Sainfoin déshydraté,16,
+SAI,Fourrage,Autre sainfoin,16,
+SE5,Fourrage,Serradelle implantée pour la récolte 2015,16,
+SE6,Fourrage,Serradelle implantée pour la récolte 2016,16,
+SE7,Fourrage,Serradelle implantée pour la récolte 2017,16,
+SE8,Fourrage,Serradelle implantée pour la récolte 2018,16,
+SED,Fourrage,Serradelle déshydratée,16,
+SER,Fourrage,Autre serradelle,16,
+TR5,Fourrage,Trèfle implanté pour la récolte 2015,16,
+TR6,Fourrage,Trèfle implanté pour la récolte 2016,16,
+TR7,Fourrage,Trèfle implanté pour la récolte 2017,16,
+TR8,Fourrage,Trèfle implanté pour la récolte 2018,16,
+TRD,Fourrage,Trèfle déshydraté,16,
+TRE,Fourrage,Autre trèfle,16,
+VE5,Fourrage,Vesce implantée pour la récolte 2015,16,
+VE6,Fourrage,Vesce implantée pour la récolte 2016,16,
+VE7,Fourrage,Vesce implantée pour la récolte 2017,16,
+VE8,Fourrage,Vesce implantée pour la récolte 2018,16,
+VED,Fourrage,Vesce déshydratée,16,
+VES,Fourrage,Autre vesce,16,
+XFE,Fourrage,X-Felium de 5 ans ou moins,16,
+BOP,Estives et landes,Bois pâturé,17,
+SPH,Estives et landes,Surface pastorale - herbe prédominante et ressources fourragères ligneuses présentes,17,
+SPL,Estives et landes,Surface pastorale - ressources fourragères ligneuses prédominantes,17,
+PPH,Prairies permanentes,Prairie permanente - herbe prédominante (ressources fourragères ligneuses absentes ou peu présentes),18,
+PRL,Prairies permanentes,Prairie en rotation longue (6 ans ou plus),18,
+PTR,Prairies temporaires,Autre prairie temporaire de 5 ans ou moins,19,
+RGA,Prairies temporaires,Ray-grass de 5 ans ou moins,19,
+AGR,Vergers,Agrume,20,
 ANA,Vergers,Ananas,20,3.0
-AVO,Vergers,Avocat,20,3.0
-BCA,Vergers,Banane créole (fruit et légume) - autre,20,3.0
-BCF,Vergers,Banane créole (fruit et légume) - fermage,20,3.0
-BCI,Vergers,Banane créole (fruit et légume) - indivision,20,3.0
-BCP,Vergers,Banane créole (fruit et légume) - propriété ou faire valoir direct,20,3.0
-BCR,Vergers,Banane créole (fruit et légume) - réforme foncière,20,3.0
-BEA,Vergers,Banane export - autre,20,3.0
-BEF,Vergers,Banane export - fermage,20,3.0
-BEI,Vergers,Banane export - indivision,20,3.0
-BEP,Vergers,Banane export - propriété ou faire valoir direct,20,3.0
-BER,Vergers,Banane export - réforme foncière,20,3.0
-CAC,Vergers,Café / Cacao,20,6.0
-CBT,Vergers,Cerise bigarreau pour transformation,20,2.0
-PFR,Vergers,Petit fruit rouge,20,2.0
-PRU,Vergers,Prune d’Ente pour transformation,20,2.0
-PVT,Vergers,Pêche Pavie pour transformation,20,2.0
-PWT,Vergers,Poire Williams pour transformation,20,6.0
-VGD,Vergers,Verger (DOM),20,2.0
-VRG,Vergers,Verger,20,2.0
-RVI,Vignes,Restructuration du vignoble,21,3.0
-VRC,Vignes,Vigne : raisins de cuve,21,3.0
-VRN,Vignes,Vigne : raisins de cuve non en production,21,3.0
-VRT,Vignes,Vigne : raisins de table,21,3.0
-CAB,Fruits à coque,Caroube,22,5.0
-CTG,Fruits à coque,Châtaigne,22,3.0
-NOS,Fruits à coque,Noisette,22,3.0
+AVO,Vergers,Avocat,20,
+BCA,Vergers,Banane créole (fruit et légume) - autre,20,
+BCF,Vergers,Banane créole (fruit et légume) - fermage,20,
+BCI,Vergers,Banane créole (fruit et légume) - indivision,20,
+BCP,Vergers,Banane créole (fruit et légume) - propriété ou faire valoir direct,20,
+BCR,Vergers,Banane créole (fruit et légume) - réforme foncière,20,
+BEA,Vergers,Banane export - autre,20,
+BEF,Vergers,Banane export - fermage,20,
+BEI,Vergers,Banane export - indivision,20,
+BEP,Vergers,Banane export - propriété ou faire valoir direct,20,
+BER,Vergers,Banane export - réforme foncière,20,
+CAC,Vergers,Café / Cacao,20,
+CBT,Vergers,Cerise bigarreau pour transformation,20,
+PFR,Vergers,Petit fruit rouge,20,
+PRU,Vergers,Prune d’Ente pour transformation,20,
+PVT,Vergers,Pêche Pavie pour transformation,20,
+PWT,Vergers,Poire Williams pour transformation,20,
+VGD,Vergers,Verger (DOM),20,
+VRG,Vergers,Verger,20,
+RVI,Vignes,Restructuration du vignoble,21,
+VRC,Vignes,Vigne : raisins de cuve,21,
+VRN,Vignes,Vigne : raisins de cuve non en production,21,
+VRT,Vignes,Vigne : raisins de table,21,
+CAB,Fruits à coque,Caroube,22,
+CTG,Fruits à coque,Châtaigne,22,
+NOS,Fruits à coque,Noisette,22,
 NOX,Fruits à coque,Noix,22,3.0
-PIS,Fruits à coque,Pistache,22,3.0
-OLI,Oliviers,Oliveraie,23,4.0
-ANE,Autres cultures industrielles,Aneth,24,8.0
-ANG,Autres cultures industrielles,Angélique,24,8.0
-ANI,Autres cultures industrielles,Anis,24,6.0
-BAR,Autres cultures industrielles,Bardane,24,3.0
+PIS,Fruits à coque,Pistache,22,
+OLI,Oliviers,Oliveraie,23,
+ANE,Autres cultures industrielles,Aneth,24,
+ANG,Autres cultures industrielles,Angélique,24,
+ANI,Autres cultures industrielles,Anis,24,
+BAR,Autres cultures industrielles,Bardane,24,
 BAS,Autres cultures industrielles,Basilic,24,9.0
-BRH,Autres cultures industrielles,Bourrache de 5 ans ou moins,24,7.0
-BTN,Autres cultures industrielles,Betterave non fourragère / Bette,24,8.0
-CAV,Autres cultures industrielles,Carvi,24,8.0
-CHR,Autres cultures industrielles,Chardon Marie,24,5.0
-CIB,Autres cultures industrielles,Ciboulette,24,8.0
-CML,Autres cultures industrielles,Cameline,24,8.0
-CMM,Autres cultures industrielles,Camomille,24,1.0
-CRD,Autres cultures industrielles,Coriandre,24,8.0
-CRF,Autres cultures industrielles,Cerfeuil,24,8.0
-CUM,Autres cultures industrielles,Cumin,24,7.0
-CUR,Autres cultures industrielles,Curcuma,24,8.0
-EST,Autres cultures industrielles,Estragon,24,8.0
-FNO,Autres cultures industrielles,Fenouil,24,6.0
-FNU,Autres cultures industrielles,Fenugrec,24,8.0
+BRH,Autres cultures industrielles,Bourrache de 5 ans ou moins,24,
+BTN,Autres cultures industrielles,Betterave non fourragère / Bette,24,
+CAV,Autres cultures industrielles,Carvi,24,
+CHR,Autres cultures industrielles,Chardon Marie,24,
+CIB,Autres cultures industrielles,Ciboulette,24,
+CML,Autres cultures industrielles,Cameline,24,
+CMM,Autres cultures industrielles,Camomille,24,
+CRD,Autres cultures industrielles,Coriandre,24,
+CRF,Autres cultures industrielles,Cerfeuil,24,
+CUM,Autres cultures industrielles,Cumin,24,
+CUR,Autres cultures industrielles,Curcuma,24,
+EST,Autres cultures industrielles,Estragon,24,
+FNO,Autres cultures industrielles,Fenouil,24,
+FNU,Autres cultures industrielles,Fenugrec,24,
 HBL,Autres cultures industrielles,Houblon,24,6.0
-LAV,Autres cultures industrielles,Lavande / Lavandin,24,9.0
-MAV,Autres cultures industrielles,Mauve,24,8.0
-MLI,Autres cultures industrielles,Mélisse,24,8.0
-MLP,Autres cultures industrielles,Millepertuis,24,1.0
+LAV,Autres cultures industrielles,Lavande / Lavandin,24,
+MAV,Autres cultures industrielles,Mauve,24,
+MLI,Autres cultures industrielles,Mélisse,24,
+MLP,Autres cultures industrielles,Millepertuis,24,
 MOT,Autres cultures industrielles,Moutarde,24,4.0
-MRJ,Autres cultures industrielles,Marjolaine / Origan,24,1.0
+MRJ,Autres cultures industrielles,Marjolaine / Origan,24,
 MTH,Autres cultures industrielles,Menthe,24,9.0
-ORT,Autres cultures industrielles,Ortie,24,8.0
-OSE,Autres cultures industrielles,Oseille,24,3.0
-PAR,Autres cultures industrielles,Plante aromatique (autre que vanille),24,6.0
-PMD,Autres cultures industrielles,Plante médicinale,24,9.0
-PPA,Autres cultures industrielles,Autre plante à parfum aromatique et médicinale annuelle,24,6.0
-PPF,Autres cultures industrielles,Plante à parfum (autre que géranium et vétiver),24,8.0
-PPP,Autres cultures industrielles,Autre plante à parfum aromatique et médicinale pérenne,24,5.0
-PSL,Autres cultures industrielles,Persil,24,8.0
-PSN,Autres cultures industrielles,Psyllium noir de Provence,24,8.0
-PSY,Autres cultures industrielles,Plantain psyllium,24,3.0
-ROM,Autres cultures industrielles,Romarin,24,8.0
-SGE,Autres cultures industrielles,Sauge,24,8.0
-SRI,Autres cultures industrielles,Sarriette,24,8.0
+ORT,Autres cultures industrielles,Ortie,24,
+OSE,Autres cultures industrielles,Oseille,24,
+PAR,Autres cultures industrielles,Plante aromatique (autre que vanille),24,
+PMD,Autres cultures industrielles,Plante médicinale,24,
+PPA,Autres cultures industrielles,Autre plante à parfum aromatique et médicinale annuelle,24,
+PPF,Autres cultures industrielles,Plante à parfum (autre que géranium et vétiver),24,
+PPP,Autres cultures industrielles,Autre plante à parfum aromatique et médicinale pérenne,24,
+PSL,Autres cultures industrielles,Persil,24,
+PSN,Autres cultures industrielles,Psyllium noir de Provence,24,
+PSY,Autres cultures industrielles,Plantain psyllium,24,
+ROM,Autres cultures industrielles,Romarin,24,
+SGE,Autres cultures industrielles,Sauge,24,
+SRI,Autres cultures industrielles,Sarriette,24,
 TAB,Autres cultures industrielles,Tabac,24,9.0
-THY,Autres cultures industrielles,Thym,24,8.0
-TOT,Autres cultures industrielles,Tomate pour transformation,24,2.0
-VAL,Autres cultures industrielles,Valériane,24,8.0
-VNB,Autres cultures industrielles,Vanille sous bois,24,6.0
+THY,Autres cultures industrielles,Thym,24,
+TOT,Autres cultures industrielles,Tomate pour transformation,24,
+VAL,Autres cultures industrielles,Valériane,24,
+VNB,Autres cultures industrielles,Vanille sous bois,24,
 VNL,Autres cultures industrielles,Vanille,24,6.0
-VNV,Autres cultures industrielles,Vanille verte,24,6.0
-YLA,Autres cultures industrielles,Ylang-ylang,24,8.0
-AIL,Légumes ou fleurs,Aïl,25,2.0
-ART,Légumes ou fleurs,Artichaut,25,2.0
-AUB,Légumes ou fleurs,Aubergine,25,2.0
-BLT,Légumes ou fleurs,Bleuet,25,2.0
-BUR,Légumes ou fleurs,Bugle rampante,25,2.0
-CAR,Légumes ou fleurs,Carotte,25,2.0
-CCN,Légumes ou fleurs,Concombre / Cornichon,25,2.0
-CCT,Légumes ou fleurs,Courgette / Citrouille,25,2.0
-CEL,Légumes ou fleurs,Céleri,25,2.0
-CES,Légumes ou fleurs,Chicorée / Endive / Scarole,25,2.0
-CHU,Légumes ou fleurs,Chou,25,2.0
-CMB,Légumes ou fleurs,Courge musquée / Butternut,25,2.0
-CRA,Légumes ou fleurs,Cresson alénois de 5 ans ou moins,25,2.0
-CRN,Légumes ou fleurs,Cornille,25,2.0
-CRS,Légumes ou fleurs,Cresson,25,2.0
-CSS,Légumes ou fleurs,Culture sous serre hors sol,25,2.0
-DOL,Légumes ou fleurs,Dolique,25,2.0
-EPI,Légumes ou fleurs,Épinard,25,2.0
-FLA,Légumes ou fleurs,Autre légume ou fruit annuel,25,2.0
-FLP,Légumes ou fleurs,Autre légume ou fruit pérenne,25,2.0
-FRA,Légumes ou fleurs,Fraise,25,3.0
-GER,Légumes ou fleurs,Géranium,25,2.0
-HAR,Légumes ou fleurs,Haricot / Flageolet,25,7.0
-HPC,Légumes ou fleurs,Horticulture ornementale de plein champ,25,2.0
-HSA,Légumes ou fleurs,Horticulture ornementale sous abri,25,2.0
-LBF,Légumes ou fleurs,Laitue / Batavia / Feuille de chêne,25,2.0
-LSA,Légumes ou fleurs,Légume sous abri,25,2.0
-MAC,Légumes ou fleurs,Mâche,25,2.0
-MLO,Légumes ou fleurs,Melon,25,2.0
-MRG,Légumes ou fleurs,Marguerite,25,2.0
-NVT,Légumes ou fleurs,Navet,25,2.0
-OIG,Légumes ou fleurs,Oignon / Échalote,25,2.0
-PAN,Légumes ou fleurs,Panais,25,2.0
-PAQ,Légumes ou fleurs,Pâquerette,25,2.0
-PAS,Légumes ou fleurs,Pastèque,25,2.0
-PMV,Légumes ou fleurs,Primevère,25,2.0
-POR,Légumes ou fleurs,Poireau,25,2.0
-POT,Légumes ou fleurs,Potiron / Potimarron,25,2.0
-PPO,Légumes ou fleurs,Petits pois,25,2.0
-PSE,Légumes ou fleurs,Pensée,25,2.0
-PTC,Légumes ou fleurs,Pomme de terre de consommation,25,5.0
-PTF,Légumes ou fleurs,Pomme de terre féculière,25,5.0
-PVP,Légumes ou fleurs,Poivron / Piment,25,6.0
-RDI,Légumes ou fleurs,Radis,25,2.0
-ROQ,Légumes ou fleurs,Roquette,25,2.0
-RUT,Légumes ou fleurs,Rutabaga,25,2.0
-SFI,Légumes ou fleurs,Salsifis,25,2.0
-TOM,Légumes ou fleurs,Tomate,25,2.0
-TOP,Légumes ou fleurs,Topinambour,25,2.0
-VER,Légumes ou fleurs,Véronique,25,2.0
+VNV,Autres cultures industrielles,Vanille verte,24,
+YLA,Autres cultures industrielles,Ylang-ylang,24,
+AIL,Légumes ou fleurs,Aïl,25,
+ART,Légumes ou fleurs,Artichaut,25,
+AUB,Légumes ou fleurs,Aubergine,25,
+BLT,Légumes ou fleurs,Bleuet,25,
+BUR,Légumes ou fleurs,Bugle rampante,25,
+CAR,Légumes ou fleurs,Carotte,25,
+CCN,Légumes ou fleurs,Concombre / Cornichon,25,
+CCT,Légumes ou fleurs,Courgette / Citrouille,25,
+CEL,Légumes ou fleurs,Céleri,25,
+CES,Légumes ou fleurs,Chicorée / Endive / Scarole,25,
+CHU,Légumes ou fleurs,Chou,25,
+CMB,Légumes ou fleurs,Courge musquée / Butternut,25,
+CRA,Légumes ou fleurs,Cresson alénois de 5 ans ou moins,25,
+CRN,Légumes ou fleurs,Cornille,25,
+CRS,Légumes ou fleurs,Cresson,25,
+CSS,Légumes ou fleurs,Culture sous serre hors sol,25,
+DOL,Légumes ou fleurs,Dolique,25,
+EPI,Légumes ou fleurs,Épinard,25,
+FLA,Légumes ou fleurs,Autre légume ou fruit annuel,25,
+FLP,Légumes ou fleurs,Autre légume ou fruit pérenne,25,
+FRA,Légumes ou fleurs,Fraise,25,
+GER,Légumes ou fleurs,Géranium,25,
+HAR,Légumes ou fleurs,Haricot / Flageolet,25,
+HPC,Légumes ou fleurs,Horticulture ornementale de plein champ,25,
+HSA,Légumes ou fleurs,Horticulture ornementale sous abri,25,
+LBF,Légumes ou fleurs,Laitue / Batavia / Feuille de chêne,25,
+LSA,Légumes ou fleurs,Légume sous abri,25,
+MAC,Légumes ou fleurs,Mâche,25,
+MLO,Légumes ou fleurs,Melon,25,
+MRG,Légumes ou fleurs,Marguerite,25,
+NVT,Légumes ou fleurs,Navet,25,
+OIG,Légumes ou fleurs,Oignon / Échalote,25,
+PAN,Légumes ou fleurs,Panais,25,
+PAQ,Légumes ou fleurs,Pâquerette,25,
+PAS,Légumes ou fleurs,Pastèque,25,
+PMV,Légumes ou fleurs,Primevère,25,
+POR,Légumes ou fleurs,Poireau,25,
+POT,Légumes ou fleurs,Potiron / Potimarron,25,
+PPO,Légumes ou fleurs,Petits pois,25,
+PSE,Légumes ou fleurs,Pensée,25,
+PTC,Légumes ou fleurs,Pomme de terre de consommation,25,
+PTF,Légumes ou fleurs,Pomme de terre féculière,25,
+PVP,Légumes ou fleurs,Poivron / Piment,25,
+RDI,Légumes ou fleurs,Radis,25,
+ROQ,Légumes ou fleurs,Roquette,25,
+RUT,Légumes ou fleurs,Rutabaga,25,
+SFI,Légumes ou fleurs,Salsifis,25,
+TOM,Légumes ou fleurs,Tomate,25,
+TOP,Légumes ou fleurs,Topinambour,25,
+VER,Légumes ou fleurs,Véronique,25,
 CSA,Canne à sucre,Canne à sucre - autre,26,8.0
 CSF,Canne à sucre,Canne à sucre - fermage,26,8.0
 CSI,Canne à sucre,Canne à sucre - indivision,26,8.0
 CSP,Canne à sucre,Canne à sucre - propriété ou faire valoir direct,26,8.0
 CSR,Canne à sucre,Canne à sucre - réforme foncière,26,8.0
-ACA,Divers,Autre culture non précisée dans la liste (admissible),28,4.0
-BFP,Divers,Bande admissible le long d’une forêt avec production,28,4.0
-BFS,Divers,Bande admissible le long d’une forêt sans production,28,4.0
-BOR,Divers,Bordure de champ,28,4.0
-BRO,Divers,Brome de 5 ans ou moins,28,7.0
-BTA,Divers,Bande tampon,28,4.0
-CAE,Divers,Châtaigneraie entretenue par des porcins ou des petits ruminants,28,3.0
-CEE,Divers,Chênaie entretenue par des porcins ou des petits ruminants,28,4.0
-CNE,Divers,Chênaie non entretenue par des porcins ou des petits ruminants,28,4.0
-CID,Divers,Cultures conduites en interrangs : 2 cultures représentant chacune plus de 25%,28,4.0
-CIT,Divers,Cultures conduites en interrangs : 3 cultures représentant chacune plus de 25%,28,4.0
-CUA,Divers,Culture sous abattis,28,4.0
-MCT,Divers,Miscanthus,28,4.0
-MPA,Divers,Autre mélange de plantes fixant l’azote,28,3.0
-MRS,Divers,Marais salant,28,4.0
-NYG,Divers,Nyger,28,4.0
-PCL,Divers,Phacélie de 5 ans ou moins,28,7.0
-PEP,Divers,Pépinière,28,4.0
-ROS,Divers,Roselière,28,4.0
-SBO,Divers,Surface boisée sur une ancienne terre agricole,28,7.0
-SNA,Divers,Surface non agricole non visible sur l’orthophotographie,28,4.0
-SNE,Divers,Surface agricole temporairement non exploitée,28,4.0
-TBT,Divers,Tubercule tropical,28,4.0
-TCR,Divers,Taillis à courte rotation,28,4.0
-TRU,Divers,Truffière (chênaie de plants mycorhizés),28,4.0
-VET,Divers,Vétiver,28,4.0
-ZZZ,Divers,Culture inconnue,28,4.0
-MLS,Protéagineux,Mélange de légumineuses non fourragères prépondérantes et de céréales et/ou d'oléagineux,8,7.0
+ACA,Divers,Autre culture non précisée dans la liste (admissible),28,
+BFP,Divers,Bande admissible le long d’une forêt avec production,28,
+BFS,Divers,Bande admissible le long d’une forêt sans production,28,
+BOR,Divers,Bordure de champ,28,
+BRO,Divers,Brome de 5 ans ou moins,28,
+BTA,Divers,Bande tampon,28,
+CAE,Divers,Châtaigneraie entretenue par des porcins ou des petits ruminants,28,
+CEE,Divers,Chênaie entretenue par des porcins ou des petits ruminants,28,
+CNE,Divers,Chênaie non entretenue par des porcins ou des petits ruminants,28,
+CID,Divers,Cultures conduites en interrangs : 2 cultures représentant chacune plus de 25%,28,
+CIT,Divers,Cultures conduites en interrangs : 3 cultures représentant chacune plus de 25%,28,
+CUA,Divers,Culture sous abattis,28,
+MCT,Divers,Miscanthus,28,
+MPA,Divers,Autre mélange de plantes fixant l’azote,28,
+MRS,Divers,Marais salant,28,
+NYG,Divers,Nyger,28,
+PCL,Divers,Phacélie de 5 ans ou moins,28,
+PEP,Divers,Pépinière,28,
+ROS,Divers,Roselière,28,
+SBO,Divers,Surface boisée sur une ancienne terre agricole,28,
+SNA,Divers,Surface non agricole non visible sur l’orthophotographie,28,
+SNE,Divers,Surface agricole temporairement non exploitée,28,
+TBT,Divers,Tubercule tropical,28,
+TCR,Divers,Taillis à courte rotation,28,
+TRU,Divers,Truffière (chênaie de plants mycorhizés),28,
+VET,Divers,Vétiver,28,
+ZZZ,Divers,Culture inconnue,28,
+MLS,Protéagineux,Mélange de légumineuses non fourragères prépondérantes et de céréales et/ou d'oléagineux,8,
