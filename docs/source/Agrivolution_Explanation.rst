@@ -1,2 +1,2 @@
-How-to-guide
+Explanation 
 =============
