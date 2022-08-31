@@ -29,11 +29,6 @@ Restrictions
 ~~~~~~~~~~~~~~~~
 To begin with, we will focus on France and border countries from EU : Belgium, Luxembourg, Germany, Suisse, Italy, Spain. 
 
-Detailed specifications
-~~~~~~~~~~~~~~~~~~~~~~~~
-to be done
-
-
 
 Conception
 -----------

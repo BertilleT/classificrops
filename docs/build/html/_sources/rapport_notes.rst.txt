@@ -87,5 +87,8 @@ Compare similarity computing and optimize the threshold :
    .. image:: ../images/optimal_threshold/FR_split+ratio.png
       :width: 800
 
+   .. image:: ../images/optimal_threshold/FR_split+ratio+symetric.png
+      :width: 800
+
    .. image:: ../images/optimal_threshold/FR_token_set_ratio.png
       :width: 800

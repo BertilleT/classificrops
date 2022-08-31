@@ -3,42 +3,27 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Classificrops's documentation
-==============================
-Classificrops is a tool able to convert one crops classification from an european country/region to the Indicative Crop Classification made by the FAO in a semi-automated way.
+Toolbox to  facilitate the re-use of Land Parcel Identification System national and regional data 
+==================================================================================================
+Each year, millions of croplands data are saved in national and regional Land Parcel Identification Systems(LPIS) to benefit from the Common Agricole Policy. 
+This toolbox developed in python (version 3.9.12) was built to facilitate the re-use of those data.
+For now, 2 tools are available : Classificrops and Agrivolution. To know more about them, please read their documentation.
 
-This documentation is structured into 4 distinct parts : 
-    1. :doc:`Tutorials`
-        **Start here**: Prepare your classification, prepare the environment, download the code source, make your first conversion !
-
-        In this section, you will be supervised with detailed instructions to learn to be familiar with the main function of the tool. 
-    2. :doc:`How-to-guide`
-        Improve your threshold, change the similarity method, visualize statistics. 
-
-        Here, you will be guided to solve specific problem with series of short steps. 
-    3. :doc:`Reference`
-        Read information about key functions. 
-        
-        This part contains the description of the tool. 
-    4. :doc:`Explanation`
-        Understand the context and the alternatives approach to crops classification conversion. 
-
+    1. :doc:`Classificrops`
+        Classificrops helps to convert one LPIS classification toward the Indicative Crops Classification(ICC) made by the FAO, in a semi-automated way. 
+    2. :doc:`Agrivolution`
+        Agrivolution is a croplands statistics viewer that allow to view shared statistics in Occitania and Catalonia. 
 .. toctree::
    :numbered:
 
-   Tutorials
-   How-to-guide
-   Reference
-   Explanation
-   Classification harmonization with Classificrops
-   rapport_notes
-   Generate statistics on croplands with Agrivolution
-
+   Classificrops
+   Agrivolution
+   
 Contribute
 ----------
 
-- Issue Tracker: github.com/BertilleT/Classificrops/issues
-- Source Code: github.com/BertilleT/Classificrops
+- Issue Tracker: github.com/BertilleT/LPIS_re-use_toolbox/issues
+- Source Code: github.com/BertilleT/LPIS_re-use_toolbox
 
 Support
 -------
