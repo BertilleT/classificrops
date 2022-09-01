@@ -1,83 +1,22 @@
 Tutorials 
 ==============
 
-How to use it : the workflow
------------------------------
-#. :ref:`Download the classification`.
-#. :ref:`Rename the classification labels`.
-#. If not already installed, :ref:`install` python3, numpy, and pandas.  
+How to install the toolbox
+--------------------------------------
+#. If not already installed, :ref:`Install` python3, numpy, deepl and pandas.  
 #. :ref:`Download the code` the source code from Github.
-#. :ref:`Go to` the folder src/scripts/classificrops/ 
-#. :ref:`Choose your inputs`. 
-#. :ref:`Run` the script converter.py with the source classification path and the inputs chosen in parameters. 
+#. :ref:`Go to the scripts_Classificrops folder`
 
-Step by step
--------------
-Download the classification
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _Download the classification:
-First, the source classification should be downloaded at CSV format. It can be found in the LPIS website of the country/region under study. 
-Here is a an index of 3 LPIS classifications references: 
-
-.. _WL_url_c: https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend 
-.. _FR_url_c: https://geoservices.ign.fr/documentation/donnees/vecteur/rpg
-.. _CAT_url_c: http://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/
-
-+-----------+-------------+------------------------------------------------------------------------------------------------------------------+
-| Area      | url         | note                                                                                                             |
-+===========+=============+==================================================================================================================+
-| Wallonia  | `WL_url_c`_ | It can be downloaded in csv format from html website with the script src/modules/download/download_WL_to_csv.py  |
-+-----------+-------------+------------------------------------------------------------------------------------------------------------------+
-| France    | `FR_url_c`_ | The LPIS classification is called "Table référentielle des cultures et des groupes de cultures"                  |
-+-----------+-------------+------------------------------------------------------------------------------------------------------------------+
-| Catalonia | `CAT_url_c`_| To extract the LPIS classification from Catalonia, you need to download the LPIS data, open it in QGIS, and make |
-|           |             | a request on the attributes table to extract unique "Cultiu". You can stock the result into a csv file, and      |
-|           |             | lower every items using : src/modules/download/download_WL_to_csv.py                                             |
-+-----------+-------------+------------------------------------------------------------------------------------------------------------------+
-Actually, the LPIS classifications from Wallonia, France and Catalonia are already downloaded and prepared for the year 2020 : 
-::
-
-    Classificrops
-    ├── data          
-    │   ├── CAT
-    |   │   └── CAT_2020.csv
-    │   └── FR
-    |   |   └── FR_2020.csv
-    │   └── WL
-    |   |   └── WL_2020.csv
-    
-    
-
-.. _Rename the classification labels:
-
-Rename the classification labels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Rename the labels of the classification by choosing a value in each column and concatenating with an "\_". X can be replaced by a value of your choice.
-
-+-------+---------+---------+
-| ID    | class   | PLACE   |
-+=======+=========+=========+
-| - ID  | - GROUP | - FR    |
-| -     | - CROPS | - WL    |
-|       |         | - CAT   |
-|       |         | - X     |
-+-------+---------+---------+
-
-Column names examples : 
- - GROUP_CAT   
- - CROPS_CAT  
- - ID_CROPS_FR   
- - GROUP_IT (X replaced by IT that stands for Italy) 
-
-.. _install:
+.. _Install:
 
 Install
 ~~~~~~~~~
 From your terminal : 
-``pip install python3``  
-``pip install numpy``  
-``pip install pandas``  
-
+ -  ``pip install python3``   
+ -  ``pip install numpy``   
+ -  ``pip install pandas``   
+ -  ``pip install deepl``   
+ 
 .. _Download the code:
 
 Download the code
@@ -87,36 +26,69 @@ Download the code
 
 .. image:: ../images/dwl2_screen.png
     :width: 800
+--> do not forget to dezip the folder  
 
-.. _Go to:
+.. _Go to the scripts_Classificrops folder:
 
-Go to 
-~~~~~~
-    - From your terminal : ``cd src/scripts/classificrops/``
-    - Or : from your graphic interface.
+Go to the scripts_Classificrops folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+From your terminal : ``cd Classificrops/src/scripts_Classificrops``
 
-.. _Choose your inputs:
+How to convert 2020 Wallonia LPIS classification to ICC
+-----------------------------------------------------------
+Run 
+~~~
+``python3 converter.py -f converter``
 
-Choose your inputs
-~~~~~~~~~~~~~~~~~~
-+-----------------------+-----------------------------------+-------------------------------------------+
-| name input            | format                            | domain                                    |
-+=======================+===================================+===========================================+
-| path                  | 'data/' + place + '/' + tablename |                                           |
-+-----------------------+-----------------------------------+-------------------------------------------+
-| place                 | 2 capitalized letters             | [WL,CT,FR,IT]                             |
-+-----------------------+-----------------------------------+-------------------------------------------+
-| language              | 2 lowercase letters               | [en,fr,it,...]                            |
-+-----------------------+-----------------------------------+-------------------------------------------+
-| threshold             | a number                          | [0,100]                                   |
-+-----------------------+-----------------------------------+-------------------------------------------+
-| sim_method            | a string                          | ['basic','split+ratio','token_set_ratio'] |
-+-----------------------+-----------------------------------+-------------------------------------------+
+How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized with ICC
+----------------------------------------------------------------------------------------
+#. :ref:`Download the geo-data` in a separated folder from Classificrops 
+#. :ref:`Go to the scripts_Classificrops folder`
+#. :ref:`Write paths into json` file options_view_stats.json
+#. :ref:`Run the command` 
 
-.. _Run:
+.. _Download the geo-data: 
+
+Download the geo-data
+~~~~~~~~~~~~~~~~~~~~~~
+.. list-table:: Url sources of LPIS data and outlines for Occitania and Catalonia
+   :widths: 30 20 30
+   :header-rows: 1
+
+   * - url
+     - file name
+     - note
+   * - `Regions outline of France <https://geo.data.gouv.fr/fr/datasets/abd5ac0296e370c97d3ee440c7d126ee12106df5>`_
+     - Region2020.shp
+     - 
+   * - `Departments outline of France <https://osm13.openstreetmap.fr/~cquest/openfla/export/>`_
+     - departements-20220101-shp.zip
+     -
+   * - `Provinces outline of Catalonia <https://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/L-mits-administratius-provincials-de-Catalunya/ghr8-wp3h>`_
+     - 
+     - On the right part of the screen, click on "exportar" and "ShapeFile"
+   * - `LPIS data from Occitania 2020 <ftp://RPG_ext:quoojaicaiqu6ahD@ftp3.ign.fr/RPG_2-0__SHP_LAMB93_R76_2020-01-01.7z>`_
+     - 
+     - if you use linux, use "wget url_copied_from_here" command from your terminal to download this file. Do not forget to dezip it too
+   * - `LPIS data from Catalonia 2020 <http://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/>`_
+     -  Mapa de cultius 2020
+     - 
+
+
+.. _Go to the scripts_Classificrops folder:
+
+Go to the scripts_Classificrops folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+From your terminal : ``cd Classificrops/src/scripts_Classificrops``
+
+.. _Write paths into json:
+
+Write paths into json
+~~~~~~~~~~~~~~~~~~~~~~~~
+Inside the options_view_stats.json file, overwrite the registered paths by the paths that lead to the shapefiles data freshly downloaded on your local computer. 
+
+.. _Run the command:
 
 Run 
 ~~~
-``python3 converter.py -c path language place threshold sim_method``
-If you want to test different hreshold between 0 and 100 for a same similarity measure, please run : 
-``python3 converter.py -t path language place sim_method``
+``python3 converter.py -f view_stats``

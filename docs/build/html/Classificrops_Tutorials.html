@@ -35,120 +35,27 @@
             
   <section id="tutorials">
 <h1><span class="section-number">1. </span>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
-<section id="how-to-use-it-the-workflow">
-<h2><span class="section-number">1.1. </span>How to use it : the workflow<a class="headerlink" href="#how-to-use-it-the-workflow" title="Permalink to this headline">¶</a></h2>
+<section id="how-to-install-the-toolbox">
+<h2><span class="section-number">1.1. </span>How to install the toolbox<a class="headerlink" href="#how-to-install-the-toolbox" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p><span class="xref std std-ref">Download the classification</span>.</p></li>
-<li><p><a class="reference internal" href="#rename-the-classification-labels"><span class="std std-ref">Rename the classification labels</span></a>.</p></li>
-<li><p>If not already installed, <a class="reference internal" href="#install"><span class="std std-ref">Install</span></a> python3, numpy, and pandas.</p></li>
+<li><p>If not already installed, <a class="reference internal" href="#install"><span class="std std-ref">Install</span></a> python3, numpy, deepl and pandas.</p></li>
 <li><p><a class="reference internal" href="#download-the-code"><span class="std std-ref">Download the code</span></a> the source code from Github.</p></li>
-<li><p><a class="reference internal" href="#go-to"><span class="std std-ref">Go to</span></a> the folder src/scripts/classificrops/</p></li>
-<li><p><a class="reference internal" href="#choose-your-inputs"><span class="std std-ref">Choose your inputs</span></a>.</p></li>
-<li><p><a class="reference internal" href="#run"><span class="std std-ref">Run</span></a> the script converter.py with the source classification path and the inputs chosen in parameters.</p></li>
+<li><p><span class="xref std std-ref">Go to the scripts_Classificrops folder</span></p></li>
 </ol>
-</section>
-<section id="step-by-step">
-<h2><span class="section-number">1.2. </span>Step by step<a class="headerlink" href="#step-by-step" title="Permalink to this headline">¶</a></h2>
-<section id="download-the-classification">
-<h3><span class="section-number">1.2.1. </span>Download the classification<a class="headerlink" href="#download-the-classification" title="Permalink to this headline">¶</a></h3>
-<p>First, the source classification should be downloaded at CSV format. It can be found in the LPIS website of the country/region under study.
-Here is a an index of 3 LPIS classifications references:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 9%" />
-<col style="width: 83%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Area</p></th>
-<th class="head"><p>url</p></th>
-<th class="head"><p>note</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Wallonia</p></td>
-<td><p><a class="reference external" href="https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend">WL_url_c</a></p></td>
-<td><p>It can be downloaded in csv format from html website with the script src/modules/download/download_WL_to_csv.py</p></td>
-</tr>
-<tr class="row-odd"><td><p>France</p></td>
-<td><p><a class="reference external" href="https://geoservices.ign.fr/documentation/donnees/vecteur/rpg">FR_url_c</a></p></td>
-<td><p>The LPIS classification is called “Table référentielle des cultures et des groupes de cultures”</p></td>
-</tr>
-<tr class="row-even"><td><p>Catalonia</p></td>
-<td><p><a class="reference external" href="http://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/">CAT_url_c</a></p></td>
-<td><p>To extract the LPIS classification from Catalonia, you need to download the LPIS data, open it in QGIS, and make
-a request on the attributes table to extract unique “Cultiu”. You can stock the result into a csv file, and
-lower every items using : src/modules/download/download_WL_to_csv.py</p></td>
-</tr>
-</tbody>
-</table>
-<p>Actually, the LPIS classifications from Wallonia, France and Catalonia are already downloaded and prepared for the year 2020 :</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Classificrops
-├── data
-│   ├── CAT
-|   │   └── CAT_2020.csv
-│   └── FR
-|   |   └── FR_2020.csv
-│   └── WL
-|   |   └── WL_2020.csv
-</pre></div>
-</div>
-</section>
-<section id="rename-the-classification-labels">
-<span id="id2"></span><h3><span class="section-number">1.2.2. </span>Rename the classification labels<a class="headerlink" href="#rename-the-classification-labels" title="Permalink to this headline">¶</a></h3>
-<p>Rename the labels of the classification by choosing a value in each column and concatenating with an “_”. X can be replaced by a value of your choice.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 36%" />
-<col style="width: 36%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>ID</p></th>
-<th class="head"><p>class</p></th>
-<th class="head"><p>PLACE</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><ul class="simple">
-<li><p>ID</p></li>
-<li></li>
-</ul>
-</td>
-<td><ul class="simple">
-<li><p>GROUP</p></li>
-<li><p>CROPS</p></li>
-</ul>
-</td>
-<td><ul class="simple">
-<li><p>FR</p></li>
-<li><p>WL</p></li>
-<li><p>CAT</p></li>
-<li><p>X</p></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+<section id="install">
+<span id="id1"></span><h3><span class="section-number">1.1.1. </span>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
 <dl class="simple">
-<dt>Column names examples :</dt><dd><ul class="simple">
-<li><p>GROUP_CAT</p></li>
-<li><p>CROPS_CAT</p></li>
-<li><p>ID_CROPS_FR</p></li>
-<li><p>GROUP_IT (X replaced by IT that stands for Italy)</p></li>
+<dt>From your terminal :</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">python3</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">numpy</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pandas</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">deepl</span></code></p></li>
 </ul>
 </dd>
 </dl>
 </section>
-<section id="install">
-<span id="id3"></span><h3><span class="section-number">1.2.3. </span>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
-<p>From your terminal :
-<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">python3</span></code>
-<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">numpy</span></code>
-<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pandas</span></code></p>
-</section>
 <section id="download-the-code">
-<span id="id4"></span><h3><span class="section-number">1.2.4. </span>Download the code<a class="headerlink" href="#download-the-code" title="Permalink to this headline">¶</a></h3>
+<span id="id2"></span><h3><span class="section-number">1.1.2. </span>Download the code<a class="headerlink" href="#download-the-code" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>From your terminal : <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/BertilleT/Classificrops</span></code></p></li>
@@ -156,59 +63,78 @@ lower every items using : src/modules/download/download_WL_to_csv.py</p></td>
 </ul>
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/dwl2_screen.png"><img alt="_images/dwl2_screen.png" src="_images/dwl2_screen.png" style="width: 800px;" /></a>
+<p>–&gt; do not forget to dezip the folder</p>
 </section>
-<section id="go-to">
-<span id="id5"></span><h3><span class="section-number">1.2.5. </span>Go to<a class="headerlink" href="#go-to" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>From your terminal : <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">src/scripts/classificrops/</span></code></p></li>
-<li><p>Or : from your graphic interface.</p></li>
-</ul>
-</div></blockquote>
+<section id="go-to-the-scripts-classificrops-folder">
+<span id="id3"></span><h3><span class="section-number">1.1.3. </span>Go to the scripts_Classificrops folder<a class="headerlink" href="#go-to-the-scripts-classificrops-folder" title="Permalink to this headline">¶</a></h3>
+<p>From your terminal : <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">Classificrops/src/scripts_Classificrops</span></code></p>
 </section>
-<section id="choose-your-inputs">
-<span id="id6"></span><h3><span class="section-number">1.2.6. </span>Choose your inputs<a class="headerlink" href="#choose-your-inputs" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
+</section>
+<section id="how-to-convert-2020-wallonia-lpis-classification-to-icc">
+<h2><span class="section-number">1.2. </span>How to convert 2020 Wallonia LPIS classification to ICC<a class="headerlink" href="#how-to-convert-2020-wallonia-lpis-classification-to-icc" title="Permalink to this headline">¶</a></h2>
+<section id="run">
+<h3><span class="section-number">1.2.1. </span>Run<a class="headerlink" href="#run" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-f</span> <span class="pre">converter</span></code></p>
+</section>
+</section>
+<section id="how-to-view-statistics-on-catalonia-and-girona-lpis-data-from-2020-harmonized-with-icc">
+<h2><span class="section-number">1.3. </span>How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized with ICC<a class="headerlink" href="#how-to-view-statistics-on-catalonia-and-girona-lpis-data-from-2020-harmonized-with-icc" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#download-the-geo-data"><span class="std std-ref">Download the geo-data</span></a> in a separated folder from Classificrops</p></li>
+<li><p><span class="xref std std-ref">Go to the scripts_Classificrops folder</span></p></li>
+<li><p><a class="reference internal" href="#write-paths-into-json"><span class="std std-ref">Write paths into json</span></a> file options_view_stats.json</p></li>
+<li><p><a class="reference internal" href="#run-the-command"><span class="std std-ref">Run</span></a></p></li>
+</ol>
+<section id="download-the-geo-data">
+<span id="id4"></span><h3><span class="section-number">1.3.1. </span>Download the geo-data<a class="headerlink" href="#download-the-geo-data" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default" id="id9">
+<caption><span class="caption-text">Url sources of LPIS data and outlines for Occitania and Catalonia</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 35%" />
-<col style="width: 43%" />
+<col style="width: 38%" />
+<col style="width: 25%" />
+<col style="width: 38%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>name input</p></th>
-<th class="head"><p>format</p></th>
-<th class="head"><p>domain</p></th>
+<tr class="row-odd"><th class="head"><p>url</p></th>
+<th class="head"><p>file name</p></th>
+<th class="head"><p>note</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>path</p></td>
-<td><p>‘data/’ + place + ‘/’ + tablename</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://geo.data.gouv.fr/fr/datasets/abd5ac0296e370c97d3ee440c7d126ee12106df5">Regions outline of France</a></p></td>
+<td><p>Region2020.shp</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>place</p></td>
-<td><p>2 capitalized letters</p></td>
-<td><p>[WL,CT,FR,IT]</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://osm13.openstreetmap.fr/~cquest/openfla/export/">Departments outline of France</a></p></td>
+<td><p>departements-20220101-shp.zip</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td><p>language</p></td>
-<td><p>2 lowercase letters</p></td>
-<td><p>[en,fr,it,…]</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/L-mits-administratius-provincials-de-Catalunya/ghr8-wp3h">Provinces outline of Catalonia</a></p></td>
+<td></td>
+<td><p>On the right part of the screen, click on “exportar” and “ShapeFile”</p></td>
 </tr>
-<tr class="row-odd"><td><p>threshold</p></td>
-<td><p>a number</p></td>
-<td><p>[0,100]</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="ftp://RPG_ext:quoojaicaiqu6ahD&#64;ftp3.ign.fr/RPG_2-0__SHP_LAMB93_R76_2020-01-01.7z">LPIS data from Occitania 2020</a></p></td>
+<td></td>
+<td><p>if you use linux, use “wget url_copied_from_here” command from your terminal to download this file. Do not forget to dezip it too</p></td>
 </tr>
-<tr class="row-even"><td><p>sim_method</p></td>
-<td><p>a string</p></td>
-<td><p>[‘basic’,’split+ratio’,’token_set_ratio’]</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="http://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/">LPIS data from Catalonia 2020</a></p></td>
+<td><p>Mapa de cultius 2020</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="run">
-<span id="id7"></span><h3><span class="section-number">1.2.7. </span>Run<a class="headerlink" href="#run" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-c</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">threshold</span> <span class="pre">sim_method</span></code>
-If you want to test different hreshold between 0 and 100 for a same similarity measure, please run :
-<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-t</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">sim_method</span></code></p>
+<section id="id5">
+<span id="id6"></span><h3><span class="section-number">1.3.2. </span>Go to the scripts_Classificrops folder<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>From your terminal : <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">Classificrops/src/scripts_Classificrops</span></code></p>
+</section>
+<section id="write-paths-into-json">
+<span id="id7"></span><h3><span class="section-number">1.3.3. </span>Write paths into json<a class="headerlink" href="#write-paths-into-json" title="Permalink to this headline">¶</a></h3>
+<p>Inside the options_view_stats.json file, overwrite the registered paths by the paths that lead to the shapefiles data freshly downloaded on your local computer.</p>
+</section>
+<section id="run-the-command">
+<span id="id8"></span><h3><span class="section-number">1.3.4. </span>Run<a class="headerlink" href="#run-the-command" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-f</span> <span class="pre">view_stats</span></code></p>
 </section>
 </section>
 </section>
@@ -233,15 +159,21 @@ If you want to test different hreshold between 0 and 100 for a same similarity m
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="Classificrops.html">1. Classificrops’s documentation</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">1. Tutorials</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#how-to-use-it-the-workflow">1.1. How to use it : the workflow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#step-by-step">1.2. Step by step</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#download-the-classification">1.2.1. Download the classification</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rename-the-classification-labels">1.2.2. Rename the classification labels</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#install">1.2.3. Install</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#download-the-code">1.2.4. Download the code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#go-to">1.2.5. Go to</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#choose-your-inputs">1.2.6. Choose your inputs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#run">1.2.7. Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-install-the-toolbox">1.1. How to install the toolbox</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#install">1.1.1. Install</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#download-the-code">1.1.2. Download the code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#go-to-the-scripts-classificrops-folder">1.1.3. Go to the scripts_Classificrops folder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-convert-2020-wallonia-lpis-classification-to-icc">1.2. How to convert 2020 Wallonia LPIS classification to ICC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#run">1.2.1. Run</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-view-statistics-on-catalonia-and-girona-lpis-data-from-2020-harmonized-with-icc">1.3. How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized with ICC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#download-the-geo-data">1.3.1. Download the geo-data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">1.3.2. Go to the scripts_Classificrops folder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#write-paths-into-json">1.3.3. Write paths into json</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run-the-command">1.3.4. Run</a></li>
 </ul>
 </li>
 </ul>
@@ -251,7 +183,7 @@ If you want to test different hreshold between 0 and 100 for a same similarity m
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Explanation.html">4. Explanation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Agrivolution.html">1. Agrivolution’s documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Agrivolution.html">2. Agrivolution’s documentation</a></li>
 </ul>
 
 <div class="relations">

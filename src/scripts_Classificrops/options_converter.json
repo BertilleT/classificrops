@@ -1,6 +1,6 @@
 {
-    "pa": "/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/FR_2020.csv", 
-    "pl": "FR", 
+    "pa": "data/WL/WL_2020.csv", 
+    "pl": "WL", 
     "l": "fr", 
     "t": 80,
     "s": "token_set_ratio"

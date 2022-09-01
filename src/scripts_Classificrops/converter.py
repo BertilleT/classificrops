@@ -216,4 +216,4 @@ if __name__ == '__main__':
     place_input = input("What is the place concerned by your classification ? ")
     lg_input = input("What is the language in which your classification is written ? ")
     result = converter(file_input,place_input,lg_input)
-    result = converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/CAT_2020.csv', 'CAT', 'cat', 70, 'partial_ratio')
+    #result = converter('/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/CAT_2020.csv', 'CAT', 'cat', 70, 'partial_ratio')

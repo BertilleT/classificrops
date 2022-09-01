@@ -6,12 +6,16 @@ from view_stats import *
 
 
 def main(args): 
+    parent = Path(__file__).parents[2]
     if args.f == 'converter':
-        converter(args.pa,args.pl,args.l,args.t,args.s)
+        src_path = parent.joinpath(args.pa)
+        converter(src_path,args.pl,args.l,args.t,args.s)
     elif args.f == "optimal_threshold":
-        optimal_threshold(args.pa, args.pl, args.l,args.s, args.hd)
+        src_path = parent.joinpath(args.pa)
+        hd_path = parent.joinpath(args.hd)
+        optimal_threshold(src_path, args.pl, args.l,args.s, hd_path)
     elif args.f == "view_stats":
-        view_stats(args.path_r, args.path_d, args.path_p, args.Occitania, args.Catalonia)
+        view_stats(args.path_r, args.path_d, args.path_p, args.path_LPIS_Catalonia, args.path_LPIS_Catalonia)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -29,17 +33,17 @@ if __name__ == '__main__':
                         help='the path to the source classification')
     parser.add_argument('-pl',
                         choices={'WL', 'FR', 'CAT'},
-                        help='the place under study, it can be a country, region, lander. It can be situated in France, Belgium or Catalunya. ')
+                        help='the place under study, it can be a country, region, lander. It can be situated in France, Belgium or Catalonia. ')
     parser.add_argument('-l',
                         choices={'fr', 'cat'},
                         help='the language in which the classification is written')
 
     parser.add_argument('-s',
                         choices={'basic','ratio','split+ratio','split+ratio+symetric','partial_ratio','token_sort_ratio', 'token_set_ratio'},
-                        help='the similarity method chosen')
+                        help='the similarity method chosen to match 2 classes')
     
     ##optimal_threshold
-    parser.add_argument('-hd',
+    parser.add_argument('--hd',
                         help='path toward the handmade conversion table if you want to compare the scriptmade and handmade result'
     )
 
@@ -53,10 +57,10 @@ if __name__ == '__main__':
     parser.add_argument('--path_p',
                         help='path toward the provincia outline shapefile'
     )
-    parser.add_argument('--Occitania',
+    parser.add_argument('--path_LPIS_Occitania',
                         help='path toward the Occitania LPIS shapefile'
     )
-    parser.add_argument('--Catalonia',
+    parser.add_argument('--path_LPIS_Catalonia',
                         help='path toward the Catalonia LPIS shapefile'
     )
     args = parser.parse_args()
