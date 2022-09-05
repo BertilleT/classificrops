@@ -17,6 +17,7 @@ From your terminal :
  -  ``pip install numpy``   
  -  ``pip install pandas``   
  -  ``pip install deepl``   
+ -  ``pip install deopandas``   
  
 .. _Download the code:
 
@@ -39,7 +40,7 @@ How to convert 2020 Wallonia LPIS classification to ICC
 -----------------------------------------------------------
 Run 
 ~~~
-``python3 converter.py -f converter``
+``python3 parser.py -f converter``
 
 How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized with ICC
 ----------------------------------------------------------------------------------------
@@ -94,4 +95,4 @@ Inside the options_view_stats.json file, overwrite the registered paths by the p
 
 Run 
 ~~~
-``python3 converter.py -f view_stats``
+``python3 parser.py -f view_stats``

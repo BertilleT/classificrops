@@ -188,11 +188,9 @@ lower every items using : src/modules/download/download_WL_to_csv.py</p></td>
 <section id="run">
 <span id="id6"></span><h3><span class="section-number">2.2.5. </span>Run<a class="headerlink" href="#run" title="Permalink to this heading">¶</a></h3>
 <p>If you do not get what threshold and sim_method are or if you do not want to choose them, run :  <br>
-<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-pa</span> <span class="pre">path_value</span> <span class="pre">-pl</span> <span class="pre">place_value</span> <span class="pre">-l</span> <span class="pre">language_value</span></code>
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">parser.py</span> <span class="pre">-f</span> <span class="pre">converter</span> <span class="pre">-pa</span> <span class="pre">path_value</span> <span class="pre">-pl</span> <span class="pre">place_value</span> <span class="pre">-l</span> <span class="pre">language_value</span></code>
 Else, run :  <br>
-<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-pa</span> <span class="pre">path_value</span> <span class="pre">-pl</span> <span class="pre">place_value</span> <span class="pre">-l</span> <span class="pre">language_value</span> <span class="pre">-t</span> <span class="pre">threshold_value</span> <span class="pre">-s</span> <span class="pre">sim_method_value</span></code></p>
-<p>If you want to test different hreshold between 0 and 100 for a same similarity measure, please run :
-<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-t</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">sim_method</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">parser.py</span> <span class="pre">-f</span> <span class="pre">converter</span> <span class="pre">-pa</span> <span class="pre">path_value</span> <span class="pre">-pl</span> <span class="pre">place_value</span> <span class="pre">-l</span> <span class="pre">language_value</span> <span class="pre">-t</span> <span class="pre">threshold_value</span> <span class="pre">-s</span> <span class="pre">sim_method_value</span></code></p>
 </section>
 </section>
 <section id="how-to-compare-handmade-and-scriptmade-conversion-tables-for-a-specific-similarity-method">
@@ -229,9 +227,54 @@ Else, run :  <br>
 </section>
 <section id="choose-your-inputs-2">
 <span id="id8"></span><h3><span class="section-number">2.3.2. </span>Choose your inputs<a class="headerlink" href="#choose-your-inputs-2" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Inputs choice</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>argument</p></th>
+<th class="head"><p>format</p></th>
+<th class="head"><p>examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>path</p></td>
+<td><p>-pa</p></td>
+<td></td>
+<td><p>data/CAT/CAT_2020.csv</p></td>
+</tr>
+<tr class="row-odd"><td><p>place</p></td>
+<td><p>-pl</p></td>
+<td><p>2 or 3 capitalized letters</p></td>
+<td><p>CAT</p></td>
+</tr>
+<tr class="row-even"><td><p>language</p></td>
+<td><p>-l</p></td>
+<td><p>2 lowercase letters</p></td>
+<td><p>cat</p></td>
+</tr>
+<tr class="row-odd"><td><p>sim_method</p></td>
+<td><p>-s</p></td>
+<td><p>a string</p></td>
+<td><p>token_set_ratio</p></td>
+</tr>
+<tr class="row-even"><td><p>handmade_path</p></td>
+<td><p>-hd</p></td>
+<td></td>
+<td><p>/data/FR/handmade_Nicolas_light.csv</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="run-2">
 <span id="id9"></span><h3><span class="section-number">2.3.3. </span>Run<a class="headerlink" href="#run-2" title="Permalink to this heading">¶</a></h3>
+<p>Run : <br>
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">parser.py</span> <span class="pre">-f</span> <span class="pre">optimal_threshold</span> <span class="pre">-pa</span> <span class="pre">path_value</span> <span class="pre">-pl</span> <span class="pre">place_value</span> <span class="pre">-l</span> <span class="pre">language_value</span> <span class="pre">-s</span> <span class="pre">sim_method_value</span> <span class="pre">-hd</span> <span class="pre">handmade_path_value</span></code></p>
 </section>
 </section>
 </section>
@@ -278,7 +321,7 @@ Else, run :  <br>
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Explanation.html">4. Explanation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Agrivolution.html">2. Agrivolution’s documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Agrivolution.html">1. Agrivolution’s documentation</a></li>
 </ul>
 
 <div class="relations">

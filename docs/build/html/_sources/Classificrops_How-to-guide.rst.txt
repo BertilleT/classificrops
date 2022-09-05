@@ -123,12 +123,9 @@ If you do not get what threshold and sim_method are or if you do not want to cho
 Run 
 ~~~
 If you do not get what threshold and sim_method are or if you do not want to choose them, run :  |br|
-``python3 converter.py -pa path_value -pl place_value -l language_value``  
+``python3 parser.py -f converter -pa path_value -pl place_value -l language_value``  
 Else, run :  |br|
-``python3 converter.py -pa path_value -pl place_value -l language_value -t threshold_value -s sim_method_value``  
-
-If you want to test different hreshold between 0 and 100 for a same similarity measure, please run : 
-``python3 converter.py -t path language place sim_method``
+``python3 parser.py -f converter -pa path_value -pl place_value -l language_value -t threshold_value -s sim_method_value``  
 
 .. _How to test various thresholds ?:
 
@@ -170,10 +167,41 @@ As an example you can see the handmade conversion tables already made for Wallon
 Choose your inputs 
 ~~~~~~~~~~~~~~~~~~~
 
+.. list-table:: Inputs choice
+   :widths: 20 20 30 30
+   :header-rows: 1
+
+   * - name
+     - argument
+     - format
+     - examples
+   * - path
+     - -pa
+     - 
+     - data/CAT/CAT_2020.csv
+   * - place
+     - -pl
+     - 2 or 3 capitalized letters
+     - CAT
+   * - language
+     - -l
+     - 2 lowercase letters
+     - cat
+   * - sim_method
+     - -s
+     - a string
+     - token_set_ratio
+   * - handmade_path
+     - -hd
+     - 
+     - /data/FR/handmade_Nicolas_light.csv
+
 .. _Run 2:
 
 Run
 ~~~~
+Run : |br|
+``python3 parser.py -f optimal_threshold -pa path_value -pl place_value -l language_value -s sim_method_value -hd handmade_path_value``  
 
 .. |br| raw:: html
 
