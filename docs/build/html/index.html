@@ -1,17 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Toolbox to facilitate the re-use of Land Parcel Identification System national and regional data &#8212; Classificrops 1.0 documentation</title>
+    <title>Toolbox to facilitate the re-use of national and regional data from Land Parcel Identification System &#8212; Classificrops 1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -32,11 +33,12 @@
 
           <div class="body" role="main">
             
-  <section id="toolbox-to-facilitate-the-re-use-of-land-parcel-identification-system-national-and-regional-data">
-<h1>Toolbox to  facilitate the re-use of Land Parcel Identification System national and regional data<a class="headerlink" href="#toolbox-to-facilitate-the-re-use-of-land-parcel-identification-system-national-and-regional-data" title="Permalink to this headline">¶</a></h1>
+  <section id="toolbox-to-facilitate-the-re-use-of-national-and-regional-data-from-land-parcel-identification-system">
+<h1>Toolbox to  facilitate the re-use of national and regional data from Land Parcel Identification System<a class="headerlink" href="#toolbox-to-facilitate-the-re-use-of-national-and-regional-data-from-land-parcel-identification-system" title="Permalink to this heading">¶</a></h1>
 <p>Each year, millions of croplands data are saved in national and regional Land Parcel Identification Systems(LPIS) to benefit from the Common Agricole Policy.
 This toolbox developed in python (version 3.9.12) was built to facilitate the re-use of those data.
-For now, 2 tools are available : Classificrops and Agrivolution. To know more about them, please read their documentation.</p>
+For now, 2 tools are available : Classificrops and Agrivolution. To know more about them, please read their documentation.
+These documentation are dedicated to users that have soome basic knowledges on coding.</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><dl class="simple">
@@ -74,7 +76,24 @@ For now, 2 tools are available : Classificrops and Agrivolution. To know more ab
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Classificrops_How-to-guide.html">2. How-to-guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Classificrops_How-to-guide.html">2. How-to-guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#how-to-convert-my-regional-or-national-lpis-classification-to-the-icc">2.1. How to convert my regional or national LPIS classification to the ICC ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#step-by-step">2.2. Step by step</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#download-the-lpis-classification">2.2.1. Download the LPIS classification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#rename-the-classification-labels">2.2.2. Rename the classification labels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#go-to-the-scripts-classificrops-folder">2.2.3. Go to the scripts_Classificrops folder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#choose-your-inputs">2.2.4. Choose your inputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#run">2.2.5. Run</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#how-to-compare-handmade-and-scriptmade-conversion-tables-for-a-specific-similarity-method">2.3. How to compare handmade and scriptmade conversion tables for a specific similarity method ?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#create-the-handmade-conversion-table">2.3.1. Create the handmade conversion table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#choose-your-inputs-2">2.3.2. Choose your inputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Classificrops_How-to-guide.html#run-2">2.3.3. Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Reference.html">3. Reference</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Classificrops_Reference.html#how-to-use-it-the-workflow">3.1. How to use it : the workflow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Classificrops_Reference.html#step-by-step">3.2. Step by step</a><ul>
@@ -105,18 +124,18 @@ For now, 2 tools are available : Classificrops and Agrivolution. To know more ab
 </ul>
 </div>
 <section id="contribute">
-<h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this headline">¶</a></h2>
+<h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Issue Tracker: github.com/BertilleT/LPIS_re-use_toolbox/issues</p></li>
 <li><p>Source Code: github.com/BertilleT/LPIS_re-use_toolbox</p></li>
 </ul>
 </section>
 <section id="support">
-<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h2>
 <p>If you are having issues, please let me know at <a class="reference external" href="mailto:bertilletemple&#37;&#52;&#48;yahoo&#46;fr">bertilletemple<span>&#64;</span>yahoo<span>&#46;</span>fr</a></p>
 </section>
 <section id="license">
-<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<h2>License<a class="headerlink" href="#license" title="Permalink to this heading">¶</a></h2>
 <p>GNU General Public License v3.0</p>
 </section>
 </section>
@@ -160,7 +179,7 @@ For now, 2 tools are available : Classificrops and Agrivolution. To know more ab
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -177,7 +196,7 @@ For now, 2 tools are available : Classificrops and Agrivolution. To know more ab
       &copy;2022, Bertille Temple.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

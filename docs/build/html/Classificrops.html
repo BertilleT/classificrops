@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>1. Classificrops’s documentation &#8212; Classificrops 1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -12,11 +12,12 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="1. Tutorials" href="Classificrops_Tutorials.html" />
-    <link rel="prev" title="Toolbox to facilitate the re-use of Land Parcel Identification System national and regional data" href="index.html" />
+    <link rel="prev" title="Toolbox to facilitate the re-use of national and regional data from Land Parcel Identification System" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,7 +35,7 @@
           <div class="body" role="main">
             
   <section id="classificrops-s-documentation">
-<h1>Classificrops’s documentation<a class="headerlink" href="#classificrops-s-documentation" title="Permalink to this headline">¶</a></h1>
+<h1>Classificrops’s documentation<a class="headerlink" href="#classificrops-s-documentation" title="Permalink to this heading">¶</a></h1>
 <p>Classificrops is a tool able to convert one crops classification from an european country/region to the Indicative Crop Classification made by the FAO in a semi-automated way.</p>
 <dl>
 <dt>This documentation is structured into 4 distinct parts :</dt><dd><ol class="arabic">
@@ -86,7 +87,24 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Classificrops_How-to-guide.html">2. How-to-guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classificrops_How-to-guide.html">2. How-to-guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Classificrops_How-to-guide.html#how-to-convert-my-regional-or-national-lpis-classification-to-the-icc">2.1. How to convert my regional or national LPIS classification to the ICC ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Classificrops_How-to-guide.html#step-by-step">2.2. Step by step</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#download-the-lpis-classification">2.2.1. Download the LPIS classification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#rename-the-classification-labels">2.2.2. Rename the classification labels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#go-to-the-scripts-classificrops-folder">2.2.3. Go to the scripts_Classificrops folder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#choose-your-inputs">2.2.4. Choose your inputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#run">2.2.5. Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Classificrops_How-to-guide.html#how-to-compare-handmade-and-scriptmade-conversion-tables-for-a-specific-similarity-method">2.3. How to compare handmade and scriptmade conversion tables for a specific similarity method ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#create-the-handmade-conversion-table">2.3.1. Create the handmade conversion table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#choose-your-inputs-2">2.3.2. Choose your inputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Classificrops_How-to-guide.html#run-2">2.3.3. Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Classificrops_Reference.html">3. Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Reference.html#how-to-use-it-the-workflow">3.1. How to use it : the workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Reference.html#step-by-step">3.2. Step by step</a><ul>
@@ -141,7 +159,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Toolbox to  facilitate the re-use of Land Parcel Identification System national and regional data</a></li>
+      <li>Previous: <a href="index.html" title="previous chapter">Toolbox to  facilitate the re-use of national and regional data from Land Parcel Identification System</a></li>
       <li>Next: <a href="Classificrops_Tutorials.html" title="next chapter"><span class="section-number">1. </span>Tutorials</a></li>
   </ul></li>
 </ul>
@@ -155,7 +173,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -172,7 +190,7 @@
       &copy;2022, Bertille Temple.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

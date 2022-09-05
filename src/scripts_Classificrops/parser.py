@@ -9,7 +9,12 @@ def main(args):
     parent = Path(__file__).parents[2]
     if args.f == 'converter':
         src_path = parent.joinpath(args.pa)
-        converter(src_path,args.pl,args.l,args.t,args.s)
+        if args.t is None :
+            args.t = 80
+        if args.s is None : 
+            args.s = 'token_set_ratio'
+        else : 
+            converter(src_path,args.pl,args.l,args.t,args.s)
     elif args.f == "optimal_threshold":
         src_path = parent.joinpath(args.pa)
         hd_path = parent.joinpath(args.hd)

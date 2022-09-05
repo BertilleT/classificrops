@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>2. Rapport notes &#8212; Classificrops 1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -12,6 +12,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -32,22 +33,22 @@
           <div class="body" role="main">
             
   <section id="rapport-notes">
-<h1><span class="section-number">2. </span>Rapport notes<a class="headerlink" href="#rapport-notes" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Rapport notes<a class="headerlink" href="#rapport-notes" title="Permalink to this heading">¶</a></h1>
 <section id="wallonia-and-france-classification">
-<h2><span class="section-number">2.1. </span>Wallonia and France classification<a class="headerlink" href="#wallonia-and-france-classification" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>Wallonia and France classification<a class="headerlink" href="#wallonia-and-france-classification" title="Permalink to this heading">¶</a></h2>
 <p>This section is dedicated to the comparison of croplands classification between Wallonia and France. We focus on the level 1 of classification (by group of crops).</p>
 <p>1) In Wallonia
 | source data : <a class="reference external" href="https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend">https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend</a></p>
 <p>2) In France
 | source data : <a class="reference external" href="https://geoservices.ign.fr/documentation/donnees/vecteur/rpg">https://geoservices.ign.fr/documentation/donnees/vecteur/rpg</a></p>
-<table class="colwidths-given longtable docutils align-default" id="id1">
+<table class="longtable docutils align-default" id="id1">
 <caption><span class="caption-text">Wallonia and France side by side</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 4%" />
-<col style="width: 43%" />
-<col style="width: 4%" />
-<col style="width: 4%" />
-<col style="width: 43%" />
+<col style="width: 4.3%" />
+<col style="width: 43.5%" />
+<col style="width: 4.3%" />
+<col style="width: 4.3%" />
+<col style="width: 43.5%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>index</p></th>
@@ -217,7 +218,7 @@ negative delta and a positive &gt;&gt; n²-n is never inferior to 0. n²+n-2n &g
 <p>This brings us to the following question : how to define a shared classification ?</p>
 </section>
 <section id="european-classification">
-<h2><span class="section-number">2.2. </span>European classification<a class="headerlink" href="#european-classification" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>European classification<a class="headerlink" href="#european-classification" title="Permalink to this heading">¶</a></h2>
 <p>Instead of creating a shared classification from scratch, we will choose an existing classification as a reference.
 At first glance, the Indicative Crop Classification (ICC), issued by the Food and Agricultural Organization (FAO) seems to fit well.
 | source data : <a class="reference external" href="https://www.fao.org/3/a0135e/A0135E10.htm#app3">https://www.fao.org/3/a0135e/A0135E10.htm#app3</a></p>
@@ -249,7 +250,7 @@ Recap of the classification under study :</p>
 </div></blockquote>
 </section>
 <section id="languages">
-<h2><span class="section-number">2.3. </span>Languages<a class="headerlink" href="#languages" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.3. </span>Languages<a class="headerlink" href="#languages" title="Permalink to this heading">¶</a></h2>
 <p>How to compare croplands classification when they are written in various languages ? If we stick to the large run goal which is to study all countries from EU, we have
 at least <strong>24</strong> official languages.
 The idea is to create a table that contains ICC classification written in the 24 official languages.
@@ -263,7 +264,7 @@ To do so : 2 alternatives studies :</p>
 <p>Comparison pros and cons of each method</p>
 </section>
 <section id="similarity-computing">
-<h2><span class="section-number">2.4. </span>Similarity computing<a class="headerlink" href="#similarity-computing" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.4. </span>Similarity computing<a class="headerlink" href="#similarity-computing" title="Permalink to this heading">¶</a></h2>
 <p>Compare similarity computing and optimize the threshold :</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="../images/optimal_threshold/FR_basic.png"><img alt="../images/optimal_threshold/FR_basic.png" src="../images/optimal_threshold/FR_basic.png" style="width: 800px;" /></a>
@@ -312,7 +313,7 @@ To do so : 2 alternatives studies :</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -329,7 +330,7 @@ To do so : 2 alternatives studies :</p>
       &copy;2022, Bertille Temple.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

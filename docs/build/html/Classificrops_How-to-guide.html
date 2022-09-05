@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>2. How-to-guide &#8212; Classificrops 1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -12,6 +12,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -34,7 +35,205 @@
           <div class="body" role="main">
             
   <section id="how-to-guide">
-<h1><span class="section-number">2. </span>How-to-guide<a class="headerlink" href="#how-to-guide" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>How-to-guide<a class="headerlink" href="#how-to-guide" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="#how-to-convert-my-regional-or-national-lpis-classification-to-the-icc"><span class="std std-ref">How to convert my regional or national LPIS classification to the ICC ?</span></a></p></li>
+<li><p><span class="xref std std-ref">How to compare handmade and scriptmade conversion tables ?</span></p></li>
+</ul>
+<section id="how-to-convert-my-regional-or-national-lpis-classification-to-the-icc">
+<span id="id1"></span><h2><span class="section-number">2.1. </span>How to convert my regional or national LPIS classification to the ICC ?<a class="headerlink" href="#how-to-convert-my-regional-or-national-lpis-classification-to-the-icc" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#download-the-lpis-classification"><span class="std std-ref">Download the LPIS classification</span></a></p></li>
+<li><p><a class="reference internal" href="#rename-the-classification-labels"><span class="std std-ref">Rename the classification labels</span></a></p></li>
+<li><p><a class="reference internal" href="#go-to-the-scripts-classificrops-folder"><span class="std std-ref">Go to the scripts_Classificrops folder</span></a></p></li>
+<li><p><a class="reference internal" href="#choose-your-inputs"><span class="std std-ref">Choose your inputs</span></a></p></li>
+<li><p><a class="reference internal" href="#run"><span class="std std-ref">Run</span></a> the script converter.py with the source classification path and the inputs chosen in parameters</p></li>
+</ol>
+</section>
+<section id="step-by-step">
+<h2><span class="section-number">2.2. </span>Step by step<a class="headerlink" href="#step-by-step" title="Permalink to this heading">¶</a></h2>
+<section id="download-the-lpis-classification">
+<span id="id2"></span><h3><span class="section-number">2.2.1. </span>Download the LPIS classification<a class="headerlink" href="#download-the-lpis-classification" title="Permalink to this heading">¶</a></h3>
+<p>First, the source LPIS classification should be downloaded at CSV format. It can be found in the LPIS website of the country/region under study.
+Here is a an index of 3 LPIS classifications references:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Area</p></th>
+<th class="head"><p>url</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Wallonia</p></td>
+<td><p><a class="reference external" href="https://geoservices.wallonie.be/arcgis/rest/services/AGRICULTURE/SIGEC_PARC_AGRI_ANON__2020/MapServer/legend">WL_url_c</a></p></td>
+<td><p>It can be downloaded in csv format from html website with the script src/modules/download/download_WL_to_csv.py</p></td>
+</tr>
+<tr class="row-odd"><td><p>France</p></td>
+<td><p><a class="reference external" href="https://geoservices.ign.fr/documentation/donnees/vecteur/rpg">FR_url_c</a></p></td>
+<td><p>The LPIS classification is called “Table référentielle des cultures et des groupes de cultures”</p></td>
+</tr>
+<tr class="row-even"><td><p>Catalonia</p></td>
+<td><p><a class="reference external" href="http://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/">CAT_url_c</a></p></td>
+<td><p>To extract the LPIS classification from Catalonia, you need to download the LPIS data, open it in QGIS, and make
+a request on the attributes table to extract unique “Cultiu”. You can stock the result into a csv file, and
+lower every items using : src/modules/download/download_WL_to_csv.py</p></td>
+</tr>
+</tbody>
+</table>
+<p>The LPIS classifications from Wallonia, France and Catalonia are already downloaded and prepared for the year 2020 :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Classificrops
+├── data
+│   ├── CAT
+|   │   └── CAT_2020.csv
+│   └── FR
+|   |   └── FR_2020.csv
+│   └── WL
+|   |   └── WL_2020.csv
+</pre></div>
+</div>
+</section>
+<section id="rename-the-classification-labels">
+<span id="id3"></span><h3><span class="section-number">2.2.2. </span>Rename the classification labels<a class="headerlink" href="#rename-the-classification-labels" title="Permalink to this heading">¶</a></h3>
+<p>Rename the labels of the classification by choosing a value in each column and concatenating with an “_”. X can be replaced by a value of your choice but must be 2 or 3 capitalized letters..</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>class</p></th>
+<th class="head"><p>place</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ul class="simple">
+<li><p>ID</p></li>
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>GROUP</p></li>
+<li><p>CROPS</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>FR</p></li>
+<li><p>WL</p></li>
+<li><p>CAT</p></li>
+<li><p>X</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
+<dt>Column names examples :</dt><dd><ul class="simple">
+<li><p>GROUP_CAT</p></li>
+<li><p>CROPS_CAT</p></li>
+<li><p>ID_CROPS_FR</p></li>
+<li><p>GROUP_IT (X replaced by IT that stands for Italy)</p></li>
+</ul>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="_images/rename_labels.png"><img alt="_images/rename_labels.png" src="_images/rename_labels.png" style="width: 800px;" /></a>
+</section>
+<section id="go-to-the-scripts-classificrops-folder">
+<span id="id4"></span><h3><span class="section-number">2.2.3. </span>Go to the scripts_Classificrops folder<a class="headerlink" href="#go-to-the-scripts-classificrops-folder" title="Permalink to this heading">¶</a></h3>
+<p>From your terminal : <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">Classificrops/src/scripts_Classificrops</span></code></p>
+</section>
+<section id="choose-your-inputs">
+<span id="id5"></span><h3><span class="section-number">2.2.4. </span>Choose your inputs<a class="headerlink" href="#choose-your-inputs" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Inputs choice</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>argument</p></th>
+<th class="head"><p>format</p></th>
+<th class="head"><p>examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>path</p></td>
+<td><p>-pa</p></td>
+<td></td>
+<td><p>data/CAT/CAT_2020.csv</p></td>
+</tr>
+<tr class="row-odd"><td><p>place</p></td>
+<td><p>-pl</p></td>
+<td><p>2 or 3 capitalized letters</p></td>
+<td><p>CAT</p></td>
+</tr>
+<tr class="row-even"><td><p>language</p></td>
+<td><p>-l</p></td>
+<td><p>2 lowercase letters</p></td>
+<td><p>cat</p></td>
+</tr>
+<tr class="row-odd"><td><p>threshold</p></td>
+<td><p>-t</p></td>
+<td><p>a number between 0 and 100</p></td>
+<td><p>80</p></td>
+</tr>
+<tr class="row-even"><td><p>sim_method</p></td>
+<td><p>-s</p></td>
+<td><p>a string</p></td>
+<td><p>token_set_ratio</p></td>
+</tr>
+</tbody>
+</table>
+<p>If you do not get what threshold and sim_method are or if you do not want to choose them, do not pay attention to the threshold and sim_method line.</p>
+</section>
+<section id="run">
+<span id="id6"></span><h3><span class="section-number">2.2.5. </span>Run<a class="headerlink" href="#run" title="Permalink to this heading">¶</a></h3>
+<p>If you do not get what threshold and sim_method are or if you do not want to choose them, run :  <br>
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-pa</span> <span class="pre">path_value</span> <span class="pre">-pl</span> <span class="pre">place_value</span> <span class="pre">-l</span> <span class="pre">language_value</span></code>
+Else, run :  <br>
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-pa</span> <span class="pre">path_value</span> <span class="pre">-pl</span> <span class="pre">place_value</span> <span class="pre">-l</span> <span class="pre">language_value</span> <span class="pre">-t</span> <span class="pre">threshold_value</span> <span class="pre">-s</span> <span class="pre">sim_method_value</span></code></p>
+<p>If you want to test different hreshold between 0 and 100 for a same similarity measure, please run :
+<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-t</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">sim_method</span></code></p>
+</section>
+</section>
+<section id="how-to-compare-handmade-and-scriptmade-conversion-tables-for-a-specific-similarity-method">
+<span id="how-to-test-various-thresholds"></span><h2><span class="section-number">2.3. </span>How to compare handmade and scriptmade conversion tables for a specific similarity method ?<a class="headerlink" href="#how-to-compare-handmade-and-scriptmade-conversion-tables-for-a-specific-similarity-method" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#download-the-lpis-classification"><span class="std std-ref">Download the LPIS classification</span></a></p></li>
+<li><p><a class="reference internal" href="#rename-the-classification-labels"><span class="std std-ref">Rename the classification labels</span></a></p></li>
+<li><p><a class="reference internal" href="#go-to-the-scripts-classificrops-folder"><span class="std std-ref">Go to the scripts_Classificrops folder</span></a></p></li>
+<li><p><a class="reference internal" href="#create-the-handmade-conversion-table"><span class="std std-ref">Create the handmade conversion table</span></a></p></li>
+<li><p><a class="reference internal" href="#choose-your-inputs-2"><span class="std std-ref">Choose your inputs</span></a></p></li>
+<li><p><a class="reference internal" href="#run-2"><span class="std std-ref">Run</span></a> the script converter.py with the source classification path and the inputs chosen in parameters.</p></li>
+</ol>
+<p>Note that the steps 1, 2 and 3 are the same than for the previous “how-to”</p>
+<section id="create-the-handmade-conversion-table">
+<span id="id7"></span><h3><span class="section-number">2.3.1. </span>Create the handmade conversion table<a class="headerlink" href="#create-the-handmade-conversion-table" title="Permalink to this heading">¶</a></h3>
+<dl class="simple">
+<dt>The conversion table should have 2 columns :</dt><dd><ul class="simple">
+<li><p>ID_CROPS_ + place : corresponds to the source keys</p></li>
+<li><p>ICC1.1 : corresponds to the icc classes keys.</p></li>
+</ul>
+</dd>
+</dl>
+<p>As an example you can see the handmade conversion tables already made for Wallonia, France and Catalonia. They are located as followed :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Classificrops
+├── data
+│   ├── CAT
+|   │   └── handmade_Nicolas_light.csv
+│   └── FR
+|   |   └── handmade_Nicolas_light.csv
+│   └── WL
+|   |   └── handmade_Nicolas_light.csv
+</pre></div>
+</div>
+</section>
+<section id="choose-your-inputs-2">
+<span id="id8"></span><h3><span class="section-number">2.3.2. </span>Choose your inputs<a class="headerlink" href="#choose-your-inputs-2" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="run-2">
+<span id="id9"></span><h3><span class="section-number">2.3.3. </span>Run<a class="headerlink" href="#run-2" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
 </section>
 
 
@@ -57,7 +256,24 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="Classificrops.html">1. Classificrops’s documentation</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Tutorials.html">1. Tutorials</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2. How-to-guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. How-to-guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-convert-my-regional-or-national-lpis-classification-to-the-icc">2.1. How to convert my regional or national LPIS classification to the ICC ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-by-step">2.2. Step by step</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#download-the-lpis-classification">2.2.1. Download the LPIS classification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rename-the-classification-labels">2.2.2. Rename the classification labels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#go-to-the-scripts-classificrops-folder">2.2.3. Go to the scripts_Classificrops folder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#choose-your-inputs">2.2.4. Choose your inputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run">2.2.5. Run</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-compare-handmade-and-scriptmade-conversion-tables-for-a-specific-similarity-method">2.3. How to compare handmade and scriptmade conversion tables for a specific similarity method ?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-the-handmade-conversion-table">2.3.1. Create the handmade conversion table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#choose-your-inputs-2">2.3.2. Choose your inputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run-2">2.3.3. Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Reference.html">3. Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Classificrops_Explanation.html">4. Explanation</a></li>
 </ul>
@@ -85,7 +301,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -102,7 +318,7 @@
       &copy;2022, Bertille Temple.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

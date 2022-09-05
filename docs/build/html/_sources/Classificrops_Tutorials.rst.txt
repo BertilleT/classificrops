@@ -1,5 +1,6 @@
 Tutorials 
 ==============
+To use the toolbox, first of all you need to pass by the installation step. 
 
 How to install the toolbox
 --------------------------------------
@@ -51,6 +52,8 @@ How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized w
 
 Download the geo-data
 ~~~~~~~~~~~~~~~~~~~~~~
+Downlaod the LPIS data, be careful to NOT download it in Classificrops.  
+
 .. list-table:: Url sources of LPIS data and outlines for Occitania and Catalonia
    :widths: 30 20 30
    :header-rows: 1

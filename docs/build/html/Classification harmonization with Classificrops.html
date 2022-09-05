@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>1. Classification harmonization with Classificrops &#8212; Classificrops 1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -12,6 +12,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -32,9 +33,9 @@
           <div class="body" role="main">
             
   <section id="classification-harmonization-with-classificrops">
-<h1><span class="section-number">1. </span>Classification harmonization with Classificrops<a class="headerlink" href="#classification-harmonization-with-classificrops" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">1. </span>Classification harmonization with Classificrops<a class="headerlink" href="#classification-harmonization-with-classificrops" title="Permalink to this heading">¶</a></h1>
 <section id="description">
-<h2><span class="section-number">1.1. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.1. </span>Description<a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
 <p>To match 2 classes, the tool uses a function that compute similarity between 2 words based on the letters they contains. It is not semantic based.
 Thus, this tool is limited when it comes to match strings that need semantic interpretation.
 As a consequence, this tool is not able to automate fully the conversion from a classification to the ICC one, but at least to semi-automate it.
@@ -44,20 +45,20 @@ To sum up, Classificrops must be viewed as a helping tool to pre-work the conver
 </div></blockquote>
 </section>
 <section id="how-to-use-it-the-workflow">
-<h2><span class="section-number">1.2. </span>How to use it : the workflow<a class="headerlink" href="#how-to-use-it-the-workflow" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.2. </span>How to use it : the workflow<a class="headerlink" href="#how-to-use-it-the-workflow" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="#prepare-the-data"><span class="std std-ref">Prepare the data</span></a>.</p></li>
-<li><p>If not already installed, <a class="reference internal" href="#install"><span class="std std-ref">Install</span></a> python3, numpy, and pandas.</p></li>
+<li><p>If not already installed, <a class="reference internal" href="Classificrops_Tutorials.html#install"><span class="std std-ref">Install</span></a> python3, numpy, and pandas.</p></li>
 <li><p><a class="reference internal" href="#download"><span class="std std-ref">Download</span></a> the source code from Github.</p></li>
-<li><p><a class="reference internal" href="#go-to"><span class="std std-ref">Go to</span></a> the folder src/scripts/classificrops/</p></li>
-<li><p><a class="reference internal" href="#choose-your-inputs"><span class="std std-ref">Choose your inputs</span></a>.</p></li>
-<li><p><a class="reference internal" href="#run"><span class="std std-ref">Run</span></a> the script converter.py with the source classification path and the inputs chosen in parameters.</p></li>
+<li><p><a class="reference internal" href="Classificrops_Reference.html#go-to"><span class="std std-ref">Go to</span></a> the folder src/scripts/classificrops/</p></li>
+<li><p><a class="reference internal" href="Classificrops_Reference.html#choose-your-inputs"><span class="std std-ref">Choose your inputs</span></a>.</p></li>
+<li><p><a class="reference internal" href="Classificrops_Reference.html#run"><span class="std std-ref">Run</span></a> the script converter.py with the source classification path and the inputs chosen in parameters.</p></li>
 </ol>
 </section>
 <section id="step-by-step">
-<h2><span class="section-number">1.3. </span>Step by step<a class="headerlink" href="#step-by-step" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.3. </span>Step by step<a class="headerlink" href="#step-by-step" title="Permalink to this heading">¶</a></h2>
 <section id="prepare-the-data">
-<span id="id1"></span><h3><span class="section-number">1.3.1. </span>Prepare the data<a class="headerlink" href="#prepare-the-data" title="Permalink to this headline">¶</a></h3>
+<span id="id1"></span><h3><span class="section-number">1.3.1. </span>Prepare the data<a class="headerlink" href="#prepare-the-data" title="Permalink to this heading">¶</a></h3>
 <dl class="simple">
 <dt>The source classification table should stick to the the following expectations :</dt><dd><ul class="simple">
 <li><p>format : csv</p></li>
@@ -70,14 +71,14 @@ To sum up, Classificrops must be viewed as a helping tool to pre-work the conver
 </dl>
 </section>
 <section id="install">
-<span id="id2"></span><h3><span class="section-number">1.3.2. </span>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
+<span id="id2"></span><h3><span class="section-number">1.3.2. </span>Install<a class="headerlink" href="#install" title="Permalink to this heading">¶</a></h3>
 <p>From your terminal :
 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">python3</span></code>
 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">numpy</span></code>
 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pandas</span></code></p>
 </section>
 <section id="download">
-<span id="id3"></span><h3><span class="section-number">1.3.3. </span>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h3>
+<span id="id3"></span><h3><span class="section-number">1.3.3. </span>Download<a class="headerlink" href="#download" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>From your terminal : <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/BertilleT/Classificrops</span></code></p></li>
@@ -87,7 +88,7 @@ To sum up, Classificrops must be viewed as a helping tool to pre-work the conver
 <a class="reference internal image-reference" href="_images/dwl2_screen.png"><img alt="_images/dwl2_screen.png" src="_images/dwl2_screen.png" style="width: 800px;" /></a>
 </section>
 <section id="go-to">
-<span id="id4"></span><h3><span class="section-number">1.3.4. </span>Go to<a class="headerlink" href="#go-to" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3><span class="section-number">1.3.4. </span>Go to<a class="headerlink" href="#go-to" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>From your terminal : <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">src/scripts/classificrops/</span></code></p></li>
@@ -96,13 +97,8 @@ To sum up, Classificrops must be viewed as a helping tool to pre-work the conver
 </div></blockquote>
 </section>
 <section id="choose-your-inputs">
-<span id="id5"></span><h3><span class="section-number">1.3.5. </span>Choose your inputs<a class="headerlink" href="#choose-your-inputs" title="Permalink to this headline">¶</a></h3>
+<span id="id5"></span><h3><span class="section-number">1.3.5. </span>Choose your inputs<a class="headerlink" href="#choose-your-inputs" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 35%" />
-<col style="width: 43%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>name input</p></th>
 <th class="head"><p>format</p></th>
@@ -134,14 +130,14 @@ To sum up, Classificrops must be viewed as a helping tool to pre-work the conver
 </table>
 </section>
 <section id="run">
-<span id="id6"></span><h3><span class="section-number">1.3.6. </span>Run<a class="headerlink" href="#run" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3><span class="section-number">1.3.6. </span>Run<a class="headerlink" href="#run" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-c</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">threshold</span> <span class="pre">sim_method</span></code>
 If you want to test different hreshold between 0 and 100 for a same similarity measure, please run :
 <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">converter.py</span> <span class="pre">-t</span> <span class="pre">path</span> <span class="pre">language</span> <span class="pre">place</span> <span class="pre">sim_method</span></code></p>
 </section>
 </section>
 <section id="main-issues">
-<h2><span class="section-number">1.4. </span>Main issues<a class="headerlink" href="#main-issues" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.4. </span>Main issues<a class="headerlink" href="#main-issues" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>How to go from a classification written in one language to the ICC classification written in english ? <strong>Translation</strong></p></li>
@@ -170,8 +166,8 @@ If you want to test different hreshold between 0 and 100 for a same similarity m
 
 <h3>Navigation</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Classificrops.html">Classificrops’s documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Agrivolution.html">Agrivolution’s documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classificrops.html">1. Classificrops’s documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Agrivolution.html">2. Agrivolution’s documentation</a></li>
 </ul>
 
 <div class="relations">
@@ -190,7 +186,7 @@ If you want to test different hreshold between 0 and 100 for a same similarity m
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -207,7 +203,7 @@ If you want to test different hreshold between 0 and 100 for a same similarity m
       &copy;2022, Bertille Temple.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

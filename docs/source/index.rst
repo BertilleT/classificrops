@@ -3,11 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Toolbox to  facilitate the re-use of Land Parcel Identification System national and regional data 
-==================================================================================================
+Toolbox to  facilitate the re-use of national and regional data from Land Parcel Identification System 
+======================================================================================================
 Each year, millions of croplands data are saved in national and regional Land Parcel Identification Systems(LPIS) to benefit from the Common Agricole Policy. 
 This toolbox developed in python (version 3.9.12) was built to facilitate the re-use of those data.
-For now, 2 tools are available : Classificrops and Agrivolution. To know more about them, please read their documentation.
+For now, 2 tools are available : Classificrops and Agrivolution. To know more about them, please read their documentation. 
+These documentation are dedicated to users that have soome basic knowledges on coding. 
 
     1. :doc:`Classificrops`
         Classificrops helps to convert one LPIS classification toward the Indicative Crops Classification(ICC) made by the FAO, in a semi-automated way. 
