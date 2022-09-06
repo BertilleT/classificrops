@@ -3,28 +3,42 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Toolbox to  facilitate the re-use of national and regional data from Land Parcel Identification System 
+Classificrops
 ======================================================================================================
 Each year, millions of croplands data are saved in national and regional Land Parcel Identification Systems(LPIS) to benefit from the Common Agricole Policy. 
-This toolbox developed in python (version 3.9.12) was built to facilitate the re-use of those data.
-For now, 2 tools are available : Classificrops and Agrivolution. To know more about them, please read their documentation. 
-These documentation are dedicated to users that have soome basic knowledges on coding. 
+The toolbox called Classificrops (Classification + crops) and developed in python (version 3.9.12) was built to facilitate the re-use of those data.
+For now, 3 tools are available in Classificrops : converter, optimal_threshold and view_stats. To know more about them, please read the documentation which is dedicated to users who have basic knowledges in python and in LPIS data. 
 
-    1. :doc:`Classificrops`
-        Classificrops helps to convert one LPIS classification toward the Indicative Crops Classification(ICC) made by the FAO, in a semi-automated way. 
-    2. :doc:`Agrivolution`
-        Agrivolution is a croplands statistics viewer that allow to view shared statistics in Occitania and Catalonia. 
+
+This documentation is structured into 4 distinct parts : 
+    1. :doc:`Tutorials`
+        **Start here**: Install the libraries, download the code and make your first conversion!
+
+        In this section, you will be supervised with detailed instructions to learn to be familiar with the main function of the tool. 
+    2. :doc:`How-to-guide`
+        Convert your national/regional LPIS classification to ICC, compare the handmade and the scriptmade results, visualize statistics on Catalonia and Girona. 
+
+        Here, you will be guided to solve specific problem with series of short steps. 
+    3. :doc:`Reference`
+        Read information about key functions. 
+        
+        This part contains the description of Classificrops functions.
+    4. :doc:`Explanation`
+        Understand the context and the alternatives approach to LPIS data harmonisation. 
+
 .. toctree::
    :numbered:
 
-   Classificrops
-   Agrivolution
-   
+   Tutorials
+   How-to-guide
+   Reference
+   Explanation
+
 Contribute
 ----------
 
-- Issue Tracker: github.com/BertilleT/LPIS_re-use_toolbox/issues
-- Source Code: github.com/BertilleT/LPIS_re-use_toolbox
+- Issue Tracker: github.com/BertilleT/Classificrops/issues
+- Source Code: github.com/BertilleT/Classificrops
 
 Support
 -------

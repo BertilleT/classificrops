@@ -2,6 +2,7 @@ How-to-guide
 ==============
 - :ref:`How to convert my regional or national LPIS classification to the ICC ?`
 - :ref:`How to compare handmade and scriptmade conversion tables ?`
+- :ref:`How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized with ICC ?`
 
 .. _How to convert my regional or national LPIS classification to the ICC ?:
 
@@ -12,9 +13,6 @@ How to convert my regional or national LPIS classification to the ICC ?
 #. :ref:`Go to the scripts_Classificrops folder`
 #. :ref:`Choose your inputs`
 #. :ref:`Run` the script parser.py with the source classification path and the inputs chosen in parameters
-
-Step by step
--------------
 
 .. _Download the LPIS classification:
 
@@ -127,7 +125,7 @@ If you do not get what threshold and sim_method are or if you do not want to cho
 Else, run :  |br|
 ``python3 parser.py -f converter -pa path_value -pl place_value -l language_value -t threshold_value -s sim_method_value``  
 
-.. _How to test various thresholds ?:
+.. _How to compare handmade and scriptmade conversion tables ?:
 
 How to compare handmade and scriptmade conversion tables for a specific similarity method ?
 -------------------------------------------------------------------------------------------
@@ -202,6 +200,64 @@ Run
 ~~~~
 Run : |br|
 ``python3 parser.py -f optimal_threshold -pa path_value -pl place_value -l language_value -s sim_method_value -hd handmade_path_value``  
+
+
+.. _How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized with ICC ?:
+
+How to view statistics on Catalonia and Girona LPIS data from 2020, harmonized with ICC
+----------------------------------------------------------------------------------------
+#. :ref:`Download the geo-data` in a separated folder from Classificrops 
+#. :ref:`Go to the scripts_Classificrops folder`
+#. :ref:`Write paths into json` file options_view_stats.json
+#. :ref:`Run the command` 
+
+.. _Download the geo-data: 
+
+Download the geo-data
+~~~~~~~~~~~~~~~~~~~~~~
+Downlaod the LPIS data, be careful to NOT download it in Classificrops.  
+
+.. list-table:: Url sources of LPIS data and outlines for Occitania and Catalonia
+   :widths: 30 20 30
+   :header-rows: 1
+
+   * - url
+     - file name
+     - note
+   * - `Regions outline of France <https://geo.data.gouv.fr/fr/datasets/abd5ac0296e370c97d3ee440c7d126ee12106df5>`_
+     - Region2020.shp
+     - 
+   * - `Departments outline of France <https://osm13.openstreetmap.fr/~cquest/openfla/export/>`_
+     - departements-20220101-shp.zip
+     -
+   * - `Provinces outline of Catalonia <https://analisi.transparenciacatalunya.cat/Urbanisme-infraestructures/L-mits-administratius-provincials-de-Catalunya/ghr8-wp3h>`_
+     - 
+     - On the right part of the screen, click on "exportar" and "ShapeFile"
+   * - `LPIS data from Occitania 2020 <ftp://RPG_ext:quoojaicaiqu6ahD@ftp3.ign.fr/RPG_2-0__SHP_LAMB93_R76_2020-01-01.7z>`_
+     - 
+     - if you use linux, use "wget url_copied_from_here" command from your terminal to download this file. Do not forget to dezip it too
+   * - `LPIS data from Catalonia 2020 <http://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/>`_
+     -  Mapa de cultius 2020
+     - 
+
+
+.. _Go to the scripts_Classificrops folder:
+
+Go to the scripts_Classificrops folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+From your terminal : ``cd Classificrops/src/scripts_Classificrops``
+
+.. _Write paths into json:
+
+Write paths into json
+~~~~~~~~~~~~~~~~~~~~~~~~
+Inside the options_view_stats.json file, overwrite the registered paths by the paths that lead to the shapefiles data freshly downloaded on your local computer. 
+
+.. _Run the command:
+
+Run 
+~~~
+``python3 parser.py -f view_stats``
 
 .. |br| raw:: html
 
