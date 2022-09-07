@@ -9,9 +9,6 @@ from pathlib import Path
 def filter(df, col, filters):
     return df[col+'_filtered']
 
-def translate_word(translator, word, language):
-    return result
-
 def translate_ICC(df, lg):
     return df['label_'+lg+'_filtered']
 
@@ -25,8 +22,6 @@ def match_row_row(c,idS,src,trg,idT,threshold,sim_method):
     if nb >= threshold: 
         #return the following information when there is a match : ['class_level_src', 'id_src',' words_src', 'words_trg', 'id_trg', 'similarity']
         return [c,idS, src, trg, idT, nb]
-    else:
-        return []
 
 def match_row_df(lg,c,id_src,src,icc_df,threshold,sim_method):
     if new_list:
