@@ -58,7 +58,8 @@ def view_stats(path_regions_outline, path_dep_outline, path_prov_outline, path_O
     Catalunya_crops.to_crs(4326, inplace=True)
 
     ##download the ICC classification, to be shared by the 2 areas under study
-    path_icc = "/home/BTemple-Boyer-Dury/Documents/Classificrops/data/ICC/ICC_src.csv"
+    parent = Path(__file__).parents[2]
+    path_icc = parent.joinpath('ICC','ICC_src.csv')
     icc_df = pd.read_csv(path_icc, encoding= 'unicode_escape')
     icc_df['code'] = icc_df['code'].astype('str')
     mask_0 = (icc_df['code'].str.len() == 1)
@@ -68,7 +69,7 @@ def view_stats(path_regions_outline, path_dep_outline, path_prov_outline, path_O
     d_icc_0 = LEVEL_0.to_dict('dict')
     group_dict_icc_0 = d_icc_0['label_en']
     print("groups dict prepared")
-
+    
     ##define the areas that can selected and ask the user to choose
     options = dep_Occ + prov_Cat
     print('options possibilities initialized')
@@ -80,7 +81,8 @@ def view_stats(path_regions_outline, path_dep_outline, path_prov_outline, path_O
             selected_outline = departments_outline.loc[departments_outline.loc[:,'nom']==dep]
             selected_crops = gpd.sjoin(Occitania_crops, selected_outline, predicate='intersects')
             selected_crops.loc[:,'validity'] = selected_crops.loc[:,'geometry'].is_valid
-            conversion_fr_icc = pd.read_csv("/home/BTemple-Boyer-Dury/Documents/Classificrops/data/FR/handmade_Nicolas_light.csv", encoding= 'unicode_escape')
+            conversion_Occ_ICC_path = parent.joinpath('data', 'FR', 'handmade_Nicolas_light.csv')
+            conversion_fr_icc = pd.read_csv(conversion_Occ_ICC_path, encoding= 'unicode_escape')
             conversion_fr_icc['ID_GROUP_ICC'] = conversion_fr_icc['ICC1.1'].str[:1]
             conversion_fr_icc.drop(['ICC1.1'],axis=1, inplace=True)
             conversion_fr_icc.rename(columns = {'ID_CROPS_FR':'CODE_CULTU'}, inplace=True)
@@ -103,7 +105,8 @@ def view_stats(path_regions_outline, path_dep_outline, path_prov_outline, path_O
         if dep in prov_Cat:
             selected_crops = Catalunya_crops.loc[Catalunya_crops.loc[:,'Provincia']==dep]
             selected_crops = selected_crops[['Grup','Cultiu','HA','geometry']]
-            conversion_cat_icc = pd.read_csv("/home/BTemple-Boyer-Dury/Documents/Classificrops/data/CAT/handmade_Nicolas_light.csv", encoding= 'unicode_escape')
+            conversion_Cat_ICC_path = parent.joinpath('data', 'CAT', 'handmade_Nicolas_light.csv')
+            conversion_cat_icc = pd.read_csv(conversion_Cat_ICC_path, encoding= 'unicode_escape')
             conversion_cat_icc['ID_GROUP_ICC'] = conversion_cat_icc['ICC1.1'].str[:1]
             conversion_cat_icc.drop(['ICC1.1'],axis=1, inplace=True)
             conversion_cat_icc.rename(columns = {'ID_CROPS_CAT':'Cultiu'}, inplace=True)

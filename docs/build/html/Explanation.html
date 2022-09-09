@@ -35,75 +35,24 @@
             
   <section id="explanation">
 <h1><span class="section-number">4. </span>Explanation<a class="headerlink" href="#explanation" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><a class="reference internal image-reference" href="_images/goal.pdf"><img alt="_images/goal.pdf" src="_images/goal.pdf" style="width: 800px;" /></a>
-</div></blockquote>
-<section id="description">
-<h2><span class="section-number">4.1. </span>Description<a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
-<p>To match 2 classes, the tool uses a function that compute similarity between 2 words based on the letters they contains. It is not semantic based.
-Thus, this tool is limited when it comes to match strings that need semantic interpretation.
-As a consequence, this tool is not able to automate fully the conversion from a classification to the ICC one, but at least to semi-automate it.
-To sum up, Classificrops must be viewed as a helping tool to pre-work the conversion and save the user time by making the easy and basic matching.</p>
+<section id="context">
+<h2><span class="section-number">4.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
+<p>This Github is dedicated to help to build an European dataset from existing
+national and regional agricultural data(LPIS data). It aims at simplifying the reuse of those data, especially for
+Artificial Intelligence at the European level(to increase the size of AI datasets). In order to build this set, first a data format has to
+be chosen, including geographical coordinates systems, language and an agricultural classification
+that suits everyone. Then the existing data has to be converted into this common format. With this
+in mind, I developed converter, a tool that helps matching a national crop nomenclature with
+a common crop nomenclature, here the Indicative Crop Classification from the Food Agriculture
+Organisation, in a semi-automated way. The scope of the LPIS data harmonisation should not be limited to its use in machine learning.
+To illustrate the broad field of application of the LPIS data harmonisation eased by the converter function,
+I developed a tool that uses LPIS harmonized data to visualise statistics
+on agricultural crops in Occitania and Catalonia. This second tool, called view_stats, could be
+useful for public policies on land use planning.</p>
 </section>
-<section id="main-issues">
-<h2><span class="section-number">4.2. </span>Main issues<a class="headerlink" href="#main-issues" title="Permalink to this heading">¶</a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>How to go from a classification written in one language to the ICC classification written in english ? <strong>Translation</strong></p></li>
-<li><p>Which <strong>shared classification</strong> should we choose ?</p></li>
-<li><p>How to compute <strong>similarity</strong> between 2 strings ?</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="generate-statistics-on-croplands-with-agrivolution">
-<h2><span class="section-number">4.3. </span>Generate statistics on croplands with Agrivolution<a class="headerlink" href="#generate-statistics-on-croplands-with-agrivolution" title="Permalink to this heading">¶</a></h2>
-</section>
-<section id="analysis">
-<h2><span class="section-number">4.4. </span>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">¶</a></h2>
-<p>SIG software to study crops evolution and repartition in Europe.
-expected deliverable : to be detailed.
-Data ? Yes : SIG database with anonymous geographic data used to receive funds from the agricole common policy.
-[Agrivolution will be an interface able to request easily a database that stores anonymous data about agricultural lands in Europe. The answer of the request should be viewable on a map.]</p>
-<section id="actors">
-<h3><span class="section-number">4.4.1. </span>Actors<a class="headerlink" href="#actors" title="Permalink to this heading">¶</a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>standard user. For example : land use planning consultant, employee of a local authority, agriculture’s minister, agricultural historian, common citizen</p></li>
-<li><p>programmer</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="specifications">
-<h3><span class="section-number">4.4.2. </span>Specifications<a class="headerlink" href="#specifications" title="Permalink to this heading">¶</a></h3>
-<dl class="simple">
-<dt>The standard user should be able to :</dt><dd><ul class="simple">
-<li><p>select an area of several parcels. The area can be selected at an european level. (example : select all the agricultural lands from Italia and Slovenia).</p></li>
-<li><p>make specific request about the growing type of an area (example : where in Catalonia tomatoes are cultivated ?).</p></li>
-<li><p>to generate statistics on an area (example : what is the proportion of barley growing in Wallonia ?)</p></li>
-<li><p>to visualize the evolution of agricultural parcels in a specific period of time (example : in Occitania, where agricultural lands have disappeared ?)</p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="restrictions">
-<h3><span class="section-number">4.4.3. </span>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this heading">¶</a></h3>
-<p>To begin with, we will focus on France and border countries from EU : Belgium, Luxembourg, Germany, Suisse, Italy, Spain.</p>
-</section>
-</section>
-<section id="conception">
-<h2><span class="section-number">4.5. </span>Conception<a class="headerlink" href="#conception" title="Permalink to this heading">¶</a></h2>
-<section id="use-cases">
-<h3><span class="section-number">4.5.1. </span>Use cases<a class="headerlink" href="#use-cases" title="Permalink to this heading">¶</a></h3>
-<blockquote>
-<div><a class="reference internal image-reference" href="_images/useCases.png"><img alt="_images/useCases.png" src="_images/useCases.png" style="width: 800px;" /></a>
-</div></blockquote>
-</section>
-<section id="classes">
-<h3><span class="section-number">4.5.2. </span>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">¶</a></h3>
-<blockquote>
-<div><a class="reference internal image-reference" href="_images/classes.png"><img alt="_images/classes.png" src="_images/classes.png" style="width: 800px;" /></a>
-</div></blockquote>
-</section>
+<section id="alternatives-approach">
+<h2><span class="section-number">4.2. </span>Alternatives approach<a class="headerlink" href="#alternatives-approach" title="Permalink to this heading">¶</a></h2>
+<p>LPIS data could be harmonized with other classification than ICC. For example, the Eurocrops project made by researchers from Munich University did it with the HCAT taxonomy, inpired from the EAGLE matrix: <a class="reference external" href="https://github.com/maja601/EuroCrops">https://github.com/maja601/EuroCrops</a></p>
 </section>
 </section>
 
@@ -129,20 +78,8 @@ Data ? Yes : SIG database with anonymous geographic data used to receive funds f
 <li class="toctree-l1"><a class="reference internal" href="How-to-guide.html">2. How-to-guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Reference.html">3. Reference</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">4. Explanation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#description">4.1. Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#main-issues">4.2. Main issues</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#generate-statistics-on-croplands-with-agrivolution">4.3. Generate statistics on croplands with Agrivolution</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#analysis">4.4. Analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#actors">4.4.1. Actors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#specifications">4.4.2. Specifications</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#restrictions">4.4.3. Restrictions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#conception">4.5. Conception</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#use-cases">4.5.1. Use cases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#classes">4.5.2. Classes</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#context">4.1. Context</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alternatives-approach">4.2. Alternatives approach</a></li>
 </ul>
 </li>
 </ul>

@@ -38,7 +38,7 @@
 <h1><span class="section-number">3. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">¶</a></h1>
 <p>Let us take a look at the 3 functions of Classificrops:</p>
 <ol class="arabic">
-<li><p>converter: <br>
+<li><p><strong>converter</strong>: <br>
 Function: to make automatically at least 30% of the conversion table of the matching between a LPIS classification source and the ICC.  <br>
 Note: To match 2 classes, the converter uses a function that compute similarity between 2 words based on the letters they contains. It is not semantic based.
 Thus, this tool is limited when it comes to match strings that need semantic interpretation. As a consequence, this tool is not able to automate fully the conversion from a classification to the ICC one, but at least to semi-automate it.
@@ -63,7 +63,45 @@ Function steps:</p>
 </dd>
 </dl>
 </li>
-<li><p>The view_stats function view croplands statistics from Occitania and Catalonia, grouped according to the icc classification.</p></li>
+<li><p><strong>view_stats</strong> <br>
+Function: to view croplands statistics with LPIS data from Occitania and Catalonia, grouped according to the icc classification. <br>
+Note: it makes sense to select Occitania and Catalonia as they are border regions.
+The user should select one department from Occitania, and one community from Catalonia. <br>
+Function steps:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>download LPIS data, ICC and conversion tables from LPIS to ICC</p></li>
+<li><p>convert LPIS data to the same crs with EPSG code 4326 (projection)</p></li>
+<li><p>ask user to choose 2 areas (one in Occitania, the other in Catalonia)</p></li>
+<li><p>keep data on the selected areas</p></li>
+<li><p>correct the geometry for Occ data (some LPIS data geometries are incorrect)</p></li>
+<li><p>convert LPIS data for each area selected to ICC</p></li>
+<li><p>for each area, view LPIS stats in pie charts with ICC</p></li>
+</ul>
+</div></blockquote>
+<dl>
+<dt>As a result, you can get the image below.</dt><dd><a class="reference internal image-reference" href="_images/stats_PO_Girona_ICC.png"><img alt="_images/stats_PO_Girona_ICC.png" src="_images/stats_PO_Girona_ICC.png" style="width: 800px;" /></a>
+</dd>
+</dl>
+</li>
+<li><p><strong>optimal_threshold</strong> <br>
+Function: compare handmade and scriptmade conversion tables for one specific similarity method, tested with thresholds from 0 to 100 in steps of 10. <br>
+Function steps:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>for each threshold in [0,10,20,30,40,50,60,70,80,90,100] compute the conversion table with the converter function.</p></li>
+<li><p>for each conversion table computed, merged it with the conversion table handmade</p></li>
+<li><p>compute the correctness which is the percentage rate of correct matches found by the algorithm. correctness = number of correct matches*100/number total of LPIS classes</p></li>
+<li><p>compute the errorness which is the percentage rate of error(when the algorithm does not find a match, it is not a error)found by the algorithm. errorness = number of errors*100/number total of LPIS classes.</p></li>
+<li><p>find the threshold for which the errorness is minimum and the correctness is maximum. This threshold is the optimal one.</p></li>
+<li><p>plot a graph with threshold in the x-axis, errorness and correcntess in the y-axis. The graph points out the optimal threshold.</p></li>
+</ul>
+</div></blockquote>
+<dl>
+<dt>As a result, you can get the image below.</dt><dd><a class="reference internal image-reference" href="_images/CAT_token_set_ratio.png"><img alt="_images/CAT_token_set_ratio.png" src="_images/CAT_token_set_ratio.png" style="width: 800px;" /></a>
+</dd>
+</dl>
+</li>
 </ol>
 </section>
 

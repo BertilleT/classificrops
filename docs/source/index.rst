@@ -16,7 +16,7 @@ This documentation is structured into 4 distinct parts :
 
         In this section, you will be supervised with detailed instructions to learn to be familiar with the main function of the tool. 
     2. :doc:`How-to-guide`
-        Convert your national/regional LPIS classification to ICC, compare the handmade and the scriptmade results, visualize statistics on Catalonia and Girona. 
+        Convert your national/regional LPIS classification to ICC, compare the handmade and the scriptmade results, visualize statistics on Occitania and Catalonia. 
 
         Here, you will be guided to solve specific problem with series of short steps. 
     3. :doc:`Reference`
